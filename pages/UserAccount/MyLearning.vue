@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="row" style="height: 100vh; border: 2px solid red">
+    <div class="row">
       <NuxtChild />
     </div>
   </div>
