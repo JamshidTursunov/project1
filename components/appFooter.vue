@@ -68,15 +68,36 @@
       <div class="flex">
         <p class="mr-1">greatsoftacademy_info@gmail.com</p>
 
-        <button class="btn mr-1">
-          <!-- <fa :icon="fas.faCircle" /> -->
-        </button>
-        <button class="mr-1 btn">
-          <img src="~assets/images/facebookk.png" alt="facebook" />
-        </button>
-        <button class="mr-1 btn">
-          <img src="~assets/images/telegram.png" alt="telegram" />
-        </button>
+        <ul class="socials px-0 flex social-icons">
+          <li class="mx-1">
+            <a
+              href="https://www.instagram.com/greatsoft.uz/"
+              target="_blank"
+              title="Instagram | GreatSoft"
+            >
+              <fa :icon="['fab', 'instagram']" />
+            </a>
+          </li>
+          <li class="mx-1">
+            <a
+              href="https://t.me/greatsoft"
+              target="_blank"
+              title="Telegram | GreatSoft"
+            >
+              <fa :icon="['fab', 'telegram-plane']" />
+            </a>
+          </li>
+          <li class="mx-1">
+            <a
+              class="px-2"
+              href="https://www.facebook.com/greatsoft.uz"
+              target="_blank"
+              title="Facebook | GreatSoft"
+            >
+              <fa :icon="['fab', 'facebook-f']" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -126,10 +147,13 @@ section.ymap-container {
   line-height: 21px;
   color: rgba(51, 51, 102, 0.6);
 }
-.btn {
-  background: #5d30db;
-  border-radius: 2.88px;
+
+.social-icons li a {
   width: 25.2px;
   height: 25.2px;
+  border-radius: 2.88px;
+  background: #5d30db;
+  color: white;
+  padding: 0.2rem 0.4rem;
 }
 </style>

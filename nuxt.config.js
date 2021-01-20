@@ -25,15 +25,18 @@ export default {
         component: 'fa',
         imports: [
           {
-            set: '@fortawesome/free-solid-svg-icons',
-            icons: ['faMapMarkerAlt','faEnvelope','faPhone','faChevronLeft','faChevronRight']
-          },
-          {
             set: '@fortawesome/free-brands-svg-icons',
-            icons: ['faInstagram','faTelegramPlane','faLinkedinIn','faTwitter','faFacebookF','faTelegram','faFacebook']
-          }
+            icons: [
+              'faInstagram',
+              'faTelegramPlane',
+              'faLinkedinIn',
+              'faTwitter',
+              'faFacebookF',
+              'faTelegram',
+              'faFacebook',
+            ],
+          },
         ],
-        suffix: true,
       },
     ],
   ],

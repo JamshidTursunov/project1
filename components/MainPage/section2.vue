@@ -13,6 +13,7 @@
         <h1 class="flex justify-center text-center align-self-center">
           Place for video
         </h1>
+        <video-player />
       </div>
       <div class="col-md-6 mb-20 row px-10">
         <table-2 />
@@ -26,7 +27,7 @@ export default {}
 </script>
 
 <style scoped>
-.section-2 {
+.s VideoPlayerection-2 {
   position: relative;
   overflow: hidden;
 }
