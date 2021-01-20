@@ -3,13 +3,13 @@
     <nav
       class="container-fluid mx-auto px-28 flex flex-wrap justify-between items-center"
     >
-      <nuxta-link :to="`/${$i18n.locale}`" class="flex-shrink-0">
+      <nuxt-link :to="`/${$i18n.locale}`" class="flex-shrink-0">
         <img
           class="pt-3 h-15"
           src="~/assets/images/logo.png"
           alt="logo image"
         />
-      </nuxta-link>
+      </nuxt-link>
       <div class="block lg:hidden">
         <button
           @click="toggleMenu"

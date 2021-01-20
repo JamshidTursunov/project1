@@ -1,0 +1,26 @@
+<template>
+  <section class="instructors">
+    <InstructorHeader />
+    <InsructorContent />
+    <InstructorProcess />
+  </section>
+</template>
+
+<script>
+import InstructorHeader from '~/components/Instructors/InstructorHeader.vue'
+import InsructorContent from '~/components/Instructors/InstructorContent.vue'
+import InstructorProcess from '~/components/Instructors/InstructorProcess.vue'
+export default {
+  components: {
+    InstructorHeader,
+    InsructorContent,
+    InstructorProcess,
+  },
+}
+</script>
+
+<style scoped>
+.instructors {
+  padding: 0 0 6rem;
+}
+</style>

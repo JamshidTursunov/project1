@@ -1,0 +1,63 @@
+<template>
+  <div class="header__container">
+    <h1>Become a Greatsoft Academy’s Instructor</h1>
+    <p>
+      and get paid to teach Greatsoft Academy’s students and expand your
+      knowledge
+    </p>
+    <nuxt-link class="instructor__link" to="/">Apply Now</nuxt-link>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped>
+.header__container {
+  background-image: url('~assets/images/instructor/instructor.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7.9rem 8.2rem 12.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  color: #333366;
+}
+
+h1 {
+  margin-left: 43%;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+p {
+  margin-left: 43%;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 3rem;
+}
+
+.instructor__link,
+.instructor__link:link,
+.instructor__link:visited {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff9900;
+  box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.6rem 3rem;
+  transition: all 0.2s;
+  margin-left: 43%;
+}
+
+.instructor__link:hover {
+  transform: translateY(-0.3rem);
+}
+
+.instructor__link:active {
+  transform: translateY(-0.1rem);
+}
+</style>
