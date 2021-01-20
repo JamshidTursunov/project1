@@ -1,23 +1,12 @@
 <template>
-  <Media
-    :kind="'video'"
-    :isMuted="false"
-    :src="['https://www.w3schools.com/html/mov_bbb.mp4']"
-    :poster="'https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217'"
-    :controls="true"
-    :loop="true"
-    :ref="'video_player'"
-    width="300px"
-    height="300px"
-  ></Media>
+  <video controls poster="~assets/images/videoImg.png" style="height: 350px">
+    <source src="~assets/video/short.mp4" type="video/mp4" />
+    Your browser does not support video tag
+  </video>
 </template>
 
 <script>
-import Media from '@dongido/vue-viaudio'
-
-export default {
-  components: {
-    Media,
-  },
-}
+export default {}
 </script>
+
+<style lang="scss" scoped></style>
