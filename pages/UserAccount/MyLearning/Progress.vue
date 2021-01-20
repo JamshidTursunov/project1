@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <h1>Progress</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam minima
-      velit, sed excepturi omnis veritatis praesentium voluptate, non nulla
-      labore dolore quidem, itaque cumque quae aliquam quis ipsa illum
-      molestias.
-    </p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <on-going-page />
+      </div>
+    </div>
   </div>
 </template>
 

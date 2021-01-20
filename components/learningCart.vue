@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid learning-cart">
     <div class="row wrap-row">
-      <div class="col-md-6 h-100">
-        <p class="content-p">School of business</p>
+      <div class="col-md-4 h-100">
+        <p class="content-p mb-1">School of business</p>
         <h1 class="content-h1">Front end Development</h1>
         <ul class="flex ul-list">
           <li class="mr-3" v-for="i in links" :key="i.id">
@@ -10,8 +10,26 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-2 h-10" style="border: 1px solid blue"></div>
-      <div class="col-md-4 h-10" style="border: 1px solid green"></div>
+      <div class="col-md-4 flex justify-center">
+        <div class="progress" data-percentage="74">
+          <span class="progress-left">
+            <span class="progress-bar"></span>
+          </span>
+          <span class="progress-right">
+            <span class="progress-bar"></span>
+          </span>
+          <div class="progress-value">
+            <div>
+              74%<br />
+              <span>completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 h-10">
+        <p class="content-p ml-4 mb-2">Current lesson</p>
+        <h2 class="content-h2">Video: Corporate Leadership</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +62,9 @@ export default {
 </script>
 
 <style scoped>
+.learning-cart {
+  background: #fff;
+}
 .content-p {
   font-family: Open Sans;
   font-style: normal;
@@ -68,10 +89,29 @@ export default {
 }
 .ul-list a {
   text-decoration: none;
-  color: #5d30db;
+  color: #4fa0e9;
 }
 .wrap-row {
-  padding: 1rem 0.5rem;
-  border: 3px solid green;
+  padding: 1.5rem 0.5rem;
+}
+.content-h2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.6741px;
+  line-height: 21px;
+  letter-spacing: -0.391852px;
+  color: #121212;
+}
+.content-p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.7148px;
+  line-height: 19px;
+  color: #121212;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  text-transform: uppercase;
 }
 </style>

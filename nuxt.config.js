@@ -39,6 +39,10 @@ export default {
         component: 'fa',
         imports: [
           {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['faTools'],
+          },
+          {
             set: '@fortawesome/free-brands-svg-icons',
             icons: [
               'faInstagram',

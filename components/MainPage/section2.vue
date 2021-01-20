@@ -7,13 +7,10 @@
     </div>
     <div class="row">
       <div
-        class="col-md-6 h-40 flex justify-center"
-        style="border: 1px solid red"
+        class="col-md-6 flex justify-center"
+        style="border: 1px solid red; height: 400px"
       >
-        <h1 class="flex justify-center text-center align-self-center">
-          Place for video
-        </h1>
-        <video-player />
+        <video-player class="video-player" style="border: 1px solid green" />
       </div>
       <div class="col-md-6 mb-20 row px-10">
         <table-2 />
