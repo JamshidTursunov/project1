@@ -38,33 +38,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.partners {
-  padding: 4rem 6rem 10rem;
-}
-
-.partners h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4.5rem;
-  color: #5d30db;
-  font-weight: 700;
-  margin-left: 2.5rem;
-}
-
-.column__margin {
-  padding: 0;
-  margin: 0;
-}
-
-.partners__box {
-  margin: 2rem 3rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.partners__img {
-  height: 100%;
-}
-</style>
+<style></style>

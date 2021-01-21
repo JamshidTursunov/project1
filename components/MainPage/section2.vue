@@ -6,9 +6,7 @@
       </h1>
     </div>
     <div class="row">
-      <div
-        class="col-md-6 flex justify-center items-center mb-6"
-      >
+      <div class="col-md-6 flex justify-center items-center mb-6">
         <video-player class="video-player" />
       </div>
       <div class="col-md-6 mb-20 row px-10">

@@ -106,6 +106,10 @@ export default {
   width: 60.5%;
   margin-top: 14%;
   margin-left: auto;
+  @media only screen and (max-width: 61.9em) {
+    /* margin: 14% auto 0; */
+    display: none;
+  }
 }
 .button-submit {
   width: 100%;

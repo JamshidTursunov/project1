@@ -40,36 +40,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.description__container {
-  padding: 3rem 1rem 2rem;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 42px;
-  color: #333366;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  font-size: 18px;
-  margin-bottom: 0.3rem;
-}
-
-ul li::before {
-  content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ff9900; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block;
-  /* Needed to add space between the bullet and the text */
-  width: 3em; /* Also needed for space (tweak if needed) */
-  margin-right: -2em; /* Also needed for space (tweak if needed) */
-}
-</style>
+<style></style>

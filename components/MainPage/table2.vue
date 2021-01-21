@@ -110,6 +110,7 @@ tbody {
   font-weight: 400;
   font-size: 16px;
   line-height: 38px;
+  white-space: nowrap;
 }
 .col-md-3 {
   background: #f3f8ff;

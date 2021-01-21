@@ -1,2 +1,20 @@
-@import 'progressCircle/variable';
-@import 'progressCircle/progressCircle';
+@import 'components/progressCircle/progressCircle'; 
+
+@import 'components/aboutPage/instructorsHead'; 
+@import 'components/aboutPage/partners'; 
+@import 'components/aboutPage/promo'; 
+
+@import 'components/controlFields/button'; 
+@import 'components/controlFields/input'; 
+ 
+@import 'components/coursesPage/description'; 
+@import 'components/coursesPage/introduction'; 
+@import 'components/coursesPage/promoVideo'; 
+
+@import 'components/instructorApplication/instructorApplication'; 
+
+@import 'components/instructors/instructorContent'; 
+@import 'components/instructors/instructorHeader'; 
+@import 'components/instructors/instructorProcess'; 
+
+@import 'responsive/responsive'; 
