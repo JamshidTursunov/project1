@@ -19,7 +19,7 @@
           />
         </div>
       </div>
-      <div class="col-md-6" style="z-index: 9999">
+      <div class="col-md-6">
         <form-1 style="z-index: 9999" />
       </div>
     </div>
@@ -84,7 +84,7 @@
 }
 .man-image {
   z-index: 10;
-  transform: translate(-8%, -10%)
+  transform: translate(-8%, -10%);
 }
 .content {
   position: relative;

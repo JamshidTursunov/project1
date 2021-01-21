@@ -32,7 +32,7 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <language-switcher />
+        <language-switcher style="z-index: 9999" />
         <b-nav-item>Login</b-nav-item>
         <b-nav-item>Sign up</b-nav-item>
       </b-navbar-nav>
