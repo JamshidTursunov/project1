@@ -4,7 +4,8 @@
 
 <script>
 export default {
-    name: 'default'
+  name: 'default',
+  middleware: 'routeRedirect',
 }
 </script>
 

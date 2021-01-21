@@ -11,7 +11,7 @@
           No need to worry, we’ll help you<br />
           make sense of it all.
         </p>
-        <button class="btn btn-warning">Take Our 5 minute Quiz</button>
+        <button class="btn-quiz px-2">Take Our 5 minute Quiz</button>
       </div>
       <div class="col-md-8 row">
         <div class="col-md-12 text-start text-white mt-5">
@@ -25,7 +25,7 @@
             alt="..."
             class="google-image mt-16 flex-shrink"
           />
-          <div class="progress flex flex-grow items-end">
+          <div class="progress-google flex flex-grow items-end">
             <div class="flex-grow"></div>
             <div class="flex-grow"></div>
             <div class="flex-grow"></div>
@@ -45,34 +45,34 @@ export default {
 </script>
 
 <style scoped>
-.progress {
+.progress-google {
   background: transparent;
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.progress > div:nth-child(1) {
+.progress-google > div:nth-child(1) {
   width: 140px;
   height: 48px;
   background: #333366;
 }
-.progress > div:nth-child(2) {
+.progress-google div:nth-child(2) {
   width: 109px;
   height: 94px;
   background: #33337b;
 }
-.progress > div:nth-child(3) {
+.progress-google div:nth-child(3) {
   width: 109px;
   height: 138px;
   background: #383897;
 }
-.progress > div:nth-child(4) {
+.progress-google div:nth-child(4) {
   width: 109px;
   height: 176px;
   background: #292996;
 }
-.progress > div:nth-child(5) {
+.progress-google div:nth-child(5) {
   width: 103px;
   height: 230px;
   background: #202084;
@@ -107,12 +107,22 @@ export default {
   line-height: 122.5%;
   color: #ffffff;
 }
-.btn {
+.btn-quiz {
   background: #ff9900;
   border-radius: 3px;
-  width: 199px;
   height: 45px;
   color: white;
+  outline: none;
+}
+.btn-quiz:hover {
+  color: #ff9900;
+  background: #fff;
+  transition: all 0.2s linear;
+  transform: translateY(-3px);
+}
+.btn-quiz:active {
+  color: red;
+  transform: translateY(0px);
 }
 .google-image {
   width: 204px;
