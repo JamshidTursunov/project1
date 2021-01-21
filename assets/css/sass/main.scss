@@ -21,3 +21,10 @@
 @import 'components/signIn/signIn';
 
 @import 'responsive/responsive';
+
+@import 'abstracts/variables'; // Main page component scss
+@import 'components/homePage/section-1';
+@import 'components/homePage/section-2';
+@import 'components/homePage/section-3';
+@import 'components/homePage/section-4';
+@import 'components/homePage/section-5';

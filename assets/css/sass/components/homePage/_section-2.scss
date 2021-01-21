@@ -1,0 +1,29 @@
+.section-2-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    bottom: -5%;
+    right: 2%;
+    border-radius: 50%;
+    background: #64edbf;
+  }
+
+  .text-h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27.7895px;
+    line-height: 38px;
+    color: #ff9900;
+  }
+  .text-h1-span {
+    font-size: 29.7895px;
+    font-weight: 700;
+    color: #333366;
+  }
+}

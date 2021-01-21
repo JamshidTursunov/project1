@@ -25,8 +25,12 @@ export const I18N = {
   ],
   defaultLocale: 'en',
   routes: {
+    index: {
+      en: '/',
+    },
     about: {
-      en: '/about-us',
+      en: '/about',
+      ru: '/about',
     },
     posts: {
       en: '/posts',

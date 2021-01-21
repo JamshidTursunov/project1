@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid all-wrapper">
+  <div class="container-fluid all-wrapper section-1-wrapper">
     <div class="row">
       <div class="col-md-12 col-lg-6 flex flex-column">
         <h1 class="text-h1 space-around my-14">
@@ -19,7 +19,7 @@
           />
         </div>
       </div>
-      <div class="col-md-12 col-lg-6" style="z-index: 9999">
+      <div class="col-md-12 col-lg-6">
         <form-1 style="z-index: 9999" />
       </div>
     </div>
@@ -70,7 +70,7 @@
     padding: 0 30px;
   }
 }
-.all-wrapper::after {
+/* .all-wrapper::after {
   position: absolute;
   content: '';
   top: -10%;
@@ -79,24 +79,24 @@
   height: 100%;
   background: url('~assets/images/shape.png');
   background-repeat: no-repeat;
-}
+} */
 .all-wrapper::before {
-  position: absolute;
+  /* position: absolute;
   content: '';
   top: -8%;
   right: 0%;
   width: 13%;
   height: 30%;
   background: url('~assets/images/shape1.png');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .text-h1 {
-  font-family: Roboto;
+  /* font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 100%;
-  color: #333366;
+  color: #333366; */
   @media only screen and (max-width: 61.9em) {
     font-size: 55px;
   }
@@ -108,8 +108,8 @@
   }
 }
 .man-image {
-  z-index: 10;
-  transform: translate(-8%, -10%);
+  /* z-index: 10;
+  transform: translate(-8%, -10%); */
   @media only screen and (max-width: 79em) {
     transform: translate(-23%, 10%) scale(0.85);
   }
