@@ -4,7 +4,7 @@
       <spinner class="mt-5" />
     </div>
     <div v-else>
-      <app-navbar />
+      <app-navbar-1 />
       <Nuxt />
       <app-footer />
     </div>

@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white z-9999 w-full shadow-md app-navbar">
     <nav
-      class="container-fluid mx-auto px-28 flex flex-wrap justify-between items-center"
+      class="container-fluid app-header mx-auto px-28 flex flex-wrap justify-between items-center"
     >
       <nuxt-link :to="localePath('index')" class="flex-shrink-0">
         <img class="logo-image" src="~/assets/svgs/logo.svg" alt="logo image" />
@@ -9,7 +9,7 @@
       <div class="block lg:hidden">
         <button
           @click="toggleMenu"
-          class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
+          class="flex items-center px-3 py-2 mr-4 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600"
         >
           <svg
             class="current-color h-3 w-3"
@@ -22,7 +22,8 @@
       </div>
 
       <ul
-        class="tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-grow lg:w-auto items-center mt-8 lg:mt-0 justify-between xs:flex-col"
+        style="border: 1px solid green"
+        class="list-items tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-grow lg:w-auto items-center lg:mt-0 justify-between xs:flex-col"
         :class="menuOpen ? 'block' : 'hidden'"
       >
         <div class="flexation md:flex">
@@ -103,10 +104,7 @@ export default {
 *:active {
   outline: none;
 }
-.language-toggler:active {
-  /* outline: none;
-  border: 1px solid red; */
-}
+
 .app-navbar {
   height: 100px;
   z-index: 999999;
@@ -169,5 +167,16 @@ li a {
   color: white;
 }
 @media only screen and (max-width: 900px) {
+  /* .app-header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .list-items {
+    padding: 1rem 1rem;
+  }
+  .list-items li {
+    margin: 1rem 0;
+  } */
 }
 </style>
