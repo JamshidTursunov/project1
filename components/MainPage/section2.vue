@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div
-        class="col-md-6 flex justify-center items-center"
+        class="col-md-6 flex justify-center items-center mb-6"
       >
         <video-player class="video-player" />
       </div>

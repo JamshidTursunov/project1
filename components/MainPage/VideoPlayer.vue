@@ -1,6 +1,12 @@
 <template>
-  <video controls poster="~assets/images/videoImg.png" style="height: 350px">
-    <source src="~assets/video/short.mp4" type="video/mp4" />
+  <video
+    class="video-js"
+    data-setup="{}"
+    controls
+    poster=""
+    style="height: 350px; border: none"
+  >
+    <source src="~assets/video/dog.mp4" type="video/mp4" />
     Your browser does not support video tag
   </video>
 </template>
@@ -9,4 +15,8 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+*:focus {
+  outline: none;
+}
+</style>
