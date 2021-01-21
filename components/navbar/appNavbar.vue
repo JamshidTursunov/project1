@@ -3,12 +3,8 @@
     <nav
       class="container-fluid mx-auto px-28 flex flex-wrap justify-between items-center"
     >
-      <nuxt-link :to="`/${$i18n.locale}`" class="flex-shrink-0">
-        <img
-          class="pt-3 h-15"
-          src="~/assets/images/logo.png"
-          alt="logo image"
-        />
+      <nuxt-link :to="localePath('index')" class="flex-shrink-0">
+        <img class="logo-image" src="~/assets/svgs/logo.svg" alt="logo image" />
       </nuxt-link>
       <div class="block lg:hidden">
         <button
@@ -30,41 +26,46 @@
         :class="menuOpen ? 'block' : 'hidden'"
       >
         <div class="flexation md:flex">
-          <li class="mr-8 mb-6 lg:mb-0">
-            <nuxt-link :to="localePath('index')">
+          <li class="mr-8 lg:mb-0 btn-hover">
+            <nuxt-link :to="localePath('/')">
               <mega-menu style="z-index: 9999" />
             </nuxt-link>
           </li>
 
-          <li class="mr-8 mb-6 lg:mb-0">
-            <nuxt-link :to="localePath('posts')">
-              {{ $t('posts') }}
+          <li class="mr-8 lg:mb-0 btn-hover">
+            <nuxt-link :to="localePath('/plans_pricing')">
+              {{ $t('navbar.PlansAndPricing') }}
             </nuxt-link>
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
-            <nuxt-link :to="localePath('about')">
-              {{ $t('about') }}
+          <li class="mr-8 lg:mb-0 btn-hover">
+            <nuxt-link :to="localePath('/careers')">
+              {{ $t('navbar.Careers') }}
+            </nuxt-link>
+          </li>
+          <li class="mr-8 lg:mb-0 btn-hover">
+            <nuxt-link :to="localePath('/about')">
+              {{ $t('navbar.AboutUs') }}
+            </nuxt-link>
+          </li>
+          <li class="mr-8 lg:mb-0 btn-hover">
+            <nuxt-link :to="localePath('/contactUs')">
+              {{ $t('navbar.ContactUs') }}
             </nuxt-link>
           </li>
         </div>
         <div class="flexation md:flex">
-          <li class="mr-8 mb-6 lg:mb-0">
-            <nuxt-link :to="localePath('index')">
-              {{ $t('home') }}
-            </nuxt-link>
-          </li>
-          <li class="mr-8 mb-6 lg:mb-0">
-            <nuxt-link :to="localePath('posts')">
-              {{ $t('posts') }}
-            </nuxt-link>
-          </li>
-          <li class="mr-8 mb-6 lg:mb-0">
-            <nuxt-link :to="localePath('about')">
-              {{ $t('about') }}
-            </nuxt-link>
-          </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <li class="mr-4 lg:mb-0 language-toggler">
             <language-switcher />
+          </li>
+          <li class="mr-2 px-4 lg:mb-0 btn login-btn">
+            <nuxt-link :to="localePath('/login')">
+              {{ $t('navbar.logIn') }}
+            </nuxt-link>
+          </li>
+          <li class="lg:mb-0 btn signup-btn">
+            <nuxt-link :to="localePath('/signup')">
+              {{ $t('navbar.signUp') }}
+            </nuxt-link>
           </li>
         </div>
       </ul>
@@ -96,14 +97,19 @@ export default {
 </script>
 
 <style scoped>
-/* :root {
-  --blush: red;
-} */
+*:focus {
+  outline: none;
+}
+*:active {
+  outline: none;
+}
+.language-toggler:active {
+  /* outline: none;
+  border: 1px solid red; */
+}
 .app-navbar {
   height: 100px;
-  padding: 0 137px;
   z-index: 999999;
-  /* border: 1px solid red; */
 }
 .flexation {
   font-size: 18px;
@@ -114,6 +120,53 @@ export default {
 }
 .flexation a {
   padding-top: 1rem;
+}
+.logo-image {
+  width: 108px;
+  height: 108px;
+}
+li a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333366;
+  text-decoration: none;
+}
+.login-btn {
+  border: 1px solid #333366;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333366;
+  transition: all 0.1s linear;
+}
+.login-btn:hover {
+  transform: scale(1.05);
+}
+.btn-hover {
+  transition: all 0.2s ease;
+}
+.btn-hover:hover {
+  transform: scale(1.05);
+}
+
+.signup-btn {
+  background: #333366;
+  border: 1px solid #333366;
+  transition: all 0.1s linear;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.signup-btn:hover {
+  transform: scale(1.05);
+}
+
+.signup-btn a {
+  color: white;
 }
 @media only screen and (max-width: 900px) {
 }

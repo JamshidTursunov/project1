@@ -1,8 +1,11 @@
 export default {
-  home: 'Все курсы',
-  posts: 'Посты',
-  about: 'О нас',
-  homepage: {
-    subtitle: 'nuxt-i18n демонмтрации',
+  navbar: {
+    AllCourses: 'Все курсы',
+    PlansAndPricing: 'Планы и цены',
+    Careers: 'Карьера',
+    AboutUs: 'О нас',
+    ContactUs: 'Связаться с нами',
+    logIn: 'Вход',
+    signUp: 'Регистрация',
   },
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="relative" @mouseover="showMenu" @mouseleave="hideMenu">
     <a
-      href="/#features"
+      href="/"
       class="text-copy-primary hover:text-gray-600"
       @focus="showMenu"
       @keydown.shift.tab="hideMenu"
@@ -9,7 +9,7 @@
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      {{ $t('home') }}
+      {{ $t('navbar.AllCourses') }}
     </a>
 
     <div class="absolute w-full">&nbsp;</div>

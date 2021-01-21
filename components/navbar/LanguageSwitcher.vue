@@ -2,7 +2,8 @@
   <div class="relative">
     <button
       href="#"
-      class="flex items-center"
+      class="flex items-center language-switcher"
+      style="outline: none"
       @click="toggleVisibility"
       @keydown.space.exact.prevent="toggleVisibility"
       @keydown.esc.exact="hideDropdown"
@@ -15,7 +16,7 @@
         class="w-8 h-8"
       />
       <span class="ml-2 d-flex py-2">
-        {{ $i18n.locale.toUpperCase() }}
+        {{ $i18n.locale }}
       </span>
       <svg
         fill="currentColor"
@@ -44,7 +45,6 @@
             :key="i"
             class="d-flex"
           >
-            <!-- <img :src="require(locale.img)" class="w-8 h-8" /> -->
             <span class="ml-2">{{ locale.name }}</span>
           </nuxt-link>
         </li>

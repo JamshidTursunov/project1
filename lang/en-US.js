@@ -1,8 +1,11 @@
 export default {
-  home: 'All courses',
-  posts: 'Posts',
-  about: 'About us',
-  homepage: {
-    subtitle: 'nuxt-i18n demo',
+  navbar: {
+    AllCourses: 'All courses',
+    PlansAndPricing: 'Plans & pricing',
+    Careers: 'Careers',
+    AboutUs: 'About us',
+    ContactUs: 'Contact us',
+    logIn: 'Log in',
+    signUp: 'Sign up',
   },
 }
