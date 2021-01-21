@@ -1,5 +1,5 @@
 <template>
-  <section class="instructors">
+  <section class="instructorsPage">
     <InstructorHeader />
     <InsructorContent />
     <InstructorProcess />
@@ -19,8 +19,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.instructors {
-  padding: 0 0 6rem;
-}
-</style>
+<style></style>

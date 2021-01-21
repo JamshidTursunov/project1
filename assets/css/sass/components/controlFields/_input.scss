@@ -1,32 +1,29 @@
-.input-control {
-    position: relative;
-    & input,
-    & textarea {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      font-family: inherit;
-      border: 2px solid #ccc;
-      padding: 0.5rem 1.2rem;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      background-color: transparent;
-    }
-    
-    & input:focus,
-    & textarea:focus {
-      background-color: #eaeef3;
-      outline: none;
-    }
+.inputControl {
+  position: relative;
+  & input,
+  & textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    border: 2px solid #ccc;
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
   }
-  
 
-  
-  .hidden {
+  & input:focus,
+  & textarea:focus {
+    background-color: #eaeef3;
+    outline: none;
+  }
+
+  &__hidden {
     visibility: hidden;
   }
-  
-  label {
+
+  & label {
     position: absolute;
     top: 10%;
     left: 0;
@@ -40,9 +37,10 @@
     display: flex;
     justify-content: space-between;
   }
-  
-  span:last-child {
+
+  & label span:last-child {
     height: 100%;
     border-left: 2px solid #ccc;
     padding: 0 1.2rem;
   }
+}

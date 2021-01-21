@@ -1,9 +1,11 @@
 <template>
   <section class="courses">
     <div class="container">
-      <h3>Web Development > Frontend > Vue.js</h3>
+      <h3 class="courses__h3">Web Development > Frontend > Vue.js</h3>
       <div class="row">
-        <div class="col-lg-6 column__margin d-flex align-items-stretch">
+        <div
+          class="col-lg-6 courses__column__margin d-flex align-items-stretch"
+        >
           <div class="courses__box">
             <Introduction />
             <Description />
@@ -32,31 +34,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.courses {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(243, 248, 255, 1) 0,
-    rgb(243, 248, 255, 1) 58%,
-    rgb(255, 255, 255, 1) 32%
-  );
-  padding: 3.5rem 8.2rem 10rem;
-}
-
-.column__margin {
-  padding: 0;
-  margin: 0;
-}
-
-.courses__box {
-}
-
-h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  color: #5d30db;
-  margin-bottom: 1.5rem;
-}
-</style>
+<style></style>

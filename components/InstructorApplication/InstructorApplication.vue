@@ -23,7 +23,7 @@
           By clicking Sign Up, you agree to our Terms of Use and our Privacy
           Policy.
         </p>
-        <Button type="submit" btnStyle="submit">Submit</Button>
+        <Button type="submit" btnStyle="controlButtonSubmit">Submit</Button>
       </div>
     </form>
   </div>
