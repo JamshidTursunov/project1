@@ -16,6 +16,7 @@
         "components/instructors/_instructorContent.scss",
         "components/instructors/_instructorHeader.scss",
         "components/instructors/_instructorProcess.scss",
+<<<<<<< HEAD
         "responsive/_responsive.scss",
         "abstracts/_variables.scss",
         "components/homePage/_section-1.scss",
@@ -23,6 +24,11 @@
         "components/homePage/_section-3.scss",
         "components/homePage/_section-4.scss",
         "components/homePage/_section-5.scss"
+=======
+        "components/pricing/_pricing.scss",
+        "components/signIn/_signIn.scss",
+        "responsive/_responsive.scss"
+>>>>>>> 157ed26eb4e3ab944100b7fa61aa6dc46df4ed34
     ],
     "names": [],
     "file": "main.css"

@@ -1,10 +1,10 @@
 <template>
   <div class="partners">
-    <div class="container column__margin">
+    <div class="container partners__column__margin">
       <h1 class="mb-4">Our partners</h1>
       <div class="row">
         <div
-          class="col-lg-3 col-md-4 column__margin"
+          class="col-lg-3 col-md-4 partners__column__margin"
           v-for="partner in partnersNumber"
           :key="partner.id"
         >

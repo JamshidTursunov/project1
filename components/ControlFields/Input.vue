@@ -1,5 +1,5 @@
 <template>
-  <div class="input-control">
+  <div class="inputControl">
     <input
       v-if="controlType === 'input'"
       v-bind="$attrs"
@@ -9,7 +9,7 @@
       :type="type"
       :id="type"
       :class="{
-        hidden: type == 'file',
+        inputControl__hidden: type == 'file',
       }"
       required
     />
@@ -59,6 +59,4 @@ export default {
 }
 </script>
 
-<style >
-
-</style>
+<style></style>

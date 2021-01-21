@@ -1,28 +1,28 @@
-.button {
-    font-size: 1rem;
-    color: white;
-    padding: 0.5rem 1.2rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .submit {
+.controlButton {
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+
+  &Submit {
     background-color: #5d30db;
   }
-  
-  .submit:hover,
-  .submit:active {
+
+  &Submit:hover,
+  &Submit:active {
     background-color: #4d25bb;
   }
-  
-  .cancel {
+
+  &Cancel {
     background-color: red;
     color: white;
   }
-  
-  .cancel:hover,
-  .cancel:active {
+
+  &Cancel:hover,
+  &Cancel:active {
     background-color: #c90e0e;
   }
+}

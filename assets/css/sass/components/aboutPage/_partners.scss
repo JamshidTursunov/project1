@@ -1,4 +1,5 @@
 .partners {
+<<<<<<< HEAD
     padding: 4rem 6rem 10rem;
     &__box {
       margin: 2rem 3rem;
@@ -12,21 +13,31 @@
       height: 100%;
     }
    
-
-    & h1 {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 4.5rem;
-      color: #5d30db;
-      font-weight: 700;
-      margin-left: 2.5rem;
-    }
+=======
+  padding: 4rem 6rem 10rem;
+  &__box {
+    margin: 2rem 3rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
- 
-  
-  .column__margin {
+
+  &__img {
+    height: 100%;
+  }
+>>>>>>> 157ed26eb4e3ab944100b7fa61aa6dc46df4ed34
+
+  & h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+    color: #5d30db;
+    font-weight: 700;
+    margin-left: 2.5rem;
+  }
+
+  __column__margin {
     padding: 0;
     margin: 0;
   }
-  
- 
+}
