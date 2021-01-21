@@ -1,0 +1,151 @@
+<template>
+  <div class="limit-size container-fluid">
+    <div class="row showcase">
+      <div class="col-md-4 left-bar">
+        <div class="flex items-center justify-center flex-col">
+          <b-avatar size="6em" class="avatar-default my-3"></b-avatar>
+          <h1 class="text-h1">Name Surname</h1>
+        </div>
+        <b-list-group class="list-group mt-4">
+          <b-list-group-item
+            class="list-group-item"
+            variant="transparent"
+            v-for="{ id, title, name } in infos"
+            :key="id"
+            :to="`/userprofile/${name}`"
+            :class="{ 'is-active': id === activeItem }"
+            @click="selectItem(id)"
+            >{{ title }}
+          </b-list-group-item>
+        </b-list-group>
+      </div>
+      <div class="col-md-8 px-0 right-bar">
+        <div class="w-full">
+          <NuxtChild :itemDetails="itemDetails" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Profile',
+
+  data() {
+    return {
+      activeItem: null,
+      itemDetails: null,
+      infos: [
+        {
+          title: 'Profile',
+          id: 1,
+          name: '',
+          headerTitle: 'Public profile',
+          description: 'Add information about yourself',
+        },
+        {
+          title: 'Photo',
+          id: 4,
+          name: 'photo',
+          headerTitle: 'Photo',
+          description: 'Add a nice photo of yourself for your profile',
+        },
+        {
+          title: 'Payment methods',
+          id: 3,
+          name: 'payment',
+          headerTitle: 'Payment methods',
+          description: 'Update your credit card information',
+        },
+        {
+          title: 'Account ',
+          id: 2,
+          name: 'account',
+          headerTitle: 'Account',
+          description:
+            'Edit your account settings and change your password here.',
+        },
+      ],
+    }
+  },
+  methods: {
+    selectItem(itemId) {
+      this.activeItem = itemId
+      this.itemDetails = this.infos.find((item) => item.id === itemId)
+      console.log('item details', this.itemDetails)
+    },
+  },
+  created() {
+    if (this.infos.length) {
+      this.selectItem(this.infos[0].id)
+    }
+  },
+}
+</script>
+
+<style scoped>
+.limit-size {
+  padding: 0 137px;
+  background: #f3f8ff;
+  height: 110vh;
+}
+
+.left-bar {
+  border: 1px solid rgba(51, 51, 102, 0.5);
+  border-right: none;
+  padding: 0 0;
+}
+.right-bar {
+  border: 1px solid rgba(51, 51, 102, 0.5);
+}
+.list-group-item {
+  background: transparent;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.list-group-item:hover {
+  /* background: #5d30db;
+  color: #fff; */
+  padding-left: 1.8rem;
+}
+.showcase {
+  min-height: 80vh;
+  padding-top: 3rem;
+}
+.is-active {
+  background: #5d30db;
+  color: #fff;
+}
+.top-header {
+  border-bottom: 1px solid rgba(51, 51, 102, 0.5);
+  min-height: 7rem;
+}
+.top-header .content-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  color: #333366;
+}
+.top-header .content-p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333366;
+}
+.text-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28.4097px;
+  line-height: 39px;
+  color: #333366;
+}
+.avatar-default {
+  background: #333366;
+}
+</style>
