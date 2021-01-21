@@ -1,0 +1,35 @@
+.column__margin {
+  padding: 0;
+  margin: 0;
+}
+.instructors {
+  padding: 4rem 9rem;
+  & h1 {
+    font-size: 4.5rem;
+    color: #5d30db;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  &__box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  &__box h1 {
+    font-size: 4.5rem;
+    color: #ff9900;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+  
+  &__box p {
+    font-size: 2rem;
+    color: #333366;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+  }
+}

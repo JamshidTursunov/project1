@@ -1,5 +1,5 @@
 <template>
-  <section class="signIn">
+  <section class="signIn responsivenes">
     <svg
       width="40"
       height="40"
@@ -35,7 +35,7 @@
 export default {}
 </script>
 
-<style scoped>
+<style>
 .signIn {
   padding: 3.2rem 25.6rem 10rem;
   background-image: linear-gradient(

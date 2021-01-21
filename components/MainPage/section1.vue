@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid all-wrapper">
     <div class="row">
-      <div class="col-md-6 flex flex-column">
+      <div class="col-md-12 col-lg-6 flex flex-column">
         <h1 class="text-h1 space-around my-14">
           Boost your skills and <br />Build your future
         </h1>
@@ -19,29 +19,39 @@
           />
         </div>
       </div>
-      <div class="col-md-6" style="z-index: 9999">
+      <div class="col-md-12 col-lg-6" style="z-index: 9999">
         <form-1 style="z-index: 9999" />
       </div>
     </div>
     <div class="row flex justify-center mt-8">
-      <div class="col-md flex items-center justify-center">
-        <img src="~assets/images/python.png" alt="...." class="w-20 h-20" />
+      <div
+        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+      >
+        <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
         <h1>PYTHON</h1>
       </div>
-      <div class="col-md flex items-center justify-center">
-        <img src="~assets/images/python1.png" alt="...." class="w-20 h-20" />
+      <div
+        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+      >
+        <img src="~assets/images/python4.png" alt="...." class="w-20 h-20" />
         <h1>Django</h1>
       </div>
-      <div class="col-md flex items-center justify-center">
-        <img src="~assets/images/python.png" alt="...." class="w-20 h-20" />
+      <div
+        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+      >
+        <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
         <h1>PYTHON</h1>
       </div>
-      <div class="col-md flex items-center justify-center">
-        <img src="~assets/images/python1.png" alt="...." class="w-20 h-20" />
+      <div
+        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+      >
+        <img src="~assets/images/python4.png" alt="...." class="w-20 h-20" />
         <h1>Django</h1>
       </div>
-      <div class="col-md flex items-center justify-center">
-        <img src="~assets/images/python.png" alt="...." class="w-20 h-20" />
+      <div
+        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+      >
+        <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
         <h1>PYTHON</h1>
       </div>
     </div>
@@ -53,6 +63,12 @@
 <style scoped>
 .all-wrapper {
   position: relative;
+  @media only screen and (max-width: 56em) {
+    padding: 0 100px;
+  }
+  @media only screen and (max-width: 37.5em) {
+    padding: 0 30px;
+  }
 }
 .all-wrapper::after {
   position: absolute;
@@ -81,10 +97,29 @@
   font-size: 64px;
   line-height: 100%;
   color: #333366;
+  @media only screen and (max-width: 61.9em) {
+    font-size: 55px;
+  }
+  @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
+    font-size: 45px;
+  }
+  @media only screen and (max-width: 37.5em) {
+    font-size: 35px;
+  }
 }
 .man-image {
   z-index: 10;
-  transform: translate(-8%, -10%)
+  transform: translate(-8%, -10%);
+  @media only screen and (max-width: 79em) {
+    transform: translate(-23%, 10%) scale(0.85);
+  }
+  @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
+    transform: translate(-40%, 18%) scale(0.8);
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    display: none;
+  }
 }
 .content {
   position: relative;
@@ -94,6 +129,14 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
+  @media only screen and (min-width: 32.9em) and (max-width: 37.5em) {
+    padding: 2rem 15rem 2rem 2rem;
+    margin-bottom: 30%;
+  }
+  @media only screen and (max-width: 32.9em) {
+    padding: 2rem;
+    margin-bottom: 40%;
+  }
 }
 .content::after {
   content: '';
@@ -105,6 +148,9 @@
   background: #ff9900;
   border-radius: 4px 80px 4px 25px;
   z-index: -1;
+  @media only screen and (max-width: 22.5em) {
+    width: 250px;
+  }
 }
 .content::before {
   content: '';
@@ -117,6 +163,9 @@
   border: 3px solid #333366;
   border-radius: 4px 80px 4px 25px;
   z-index: -1;
+  @media only screen and (max-width: 22.5em) {
+    width: 250px;
+  }
 }
 .content-title {
   font-family: Oswald;
@@ -126,6 +175,15 @@
   line-height: 104.5%;
   color: #ffffff;
   margin-bottom: 1rem;
+  @media only screen and (max-width: 61.9em) {
+    font-size: 40px;
+  }
+  @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
+    font-size: 35px;
+  }
+  @media only screen and (max-width: 37.5em) {
+    font-size: 30px;
+  }
 }
 .content-context {
   font-family: Open Sans;
