@@ -1,27 +1,30 @@
-.header__container {
-  background-image: url('~assets/images/instructor/instructor.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 7.9rem 8.2rem 12.2rem;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  color: #333366;
+.header__instructor {
+  &__container {
+    background-image: url('~assets/images/instructor/instructor.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7.9rem 8.2rem 12.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    color: #333366;
 
-  & h1 {
-    margin-left: 43%;
-    font-weight: bold;
-    font-size: 32px;
+    & h1 {
+      margin-left: 43%;
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    & p {
+      margin-left: 43%;
+      font-weight: 600;
+      font-size: 26px;
+      margin-bottom: 3rem;
+    }
   }
 
-  & p {
-    margin-left: 43%;
-    font-weight: 600;
-    font-size: 26px;
-    margin-bottom: 3rem;
-  }
-
-  &__instructor__link {
-    & &:link,
+  &__link {
+    &,
+    &:link,
     &:visited {
       display: inline-block;
       font-size: 18px;

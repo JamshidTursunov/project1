@@ -1,5 +1,5 @@
 <template>
-  <div class="header__container">
+  <div class="header__instructor__container">
     <h1>Become a Greatsoft Academy’s Instructor</h1>
     <p>
       and get paid to teach Greatsoft Academy’s students and expand your

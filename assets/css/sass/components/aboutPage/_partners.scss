@@ -1,17 +1,16 @@
 .partners {
-    padding: 4rem 6rem 10rem;
-    &__box {
-      margin: 2rem 3rem;
-      height: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    &__img {
-      height: 100%;
-    }
-   
+  padding: 4rem 6rem 10rem;
+  &__box {
+    margin: 2rem 3rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    height: 100%;
+  }
 
   & h1 {
     font-family: 'Open Sans', sans-serif;

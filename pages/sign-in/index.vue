@@ -35,4 +35,29 @@
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.signInPage {
+  padding: 3.2rem 25.6rem 10rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(243, 248, 255, 0.2),
+      rgba(243, 248, 255, 0.2)
+    ),
+    url('~assets/images/form/background-image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__circle1 {
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+  }
+
+  &__circle2 {
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+  }
+}
+</style>

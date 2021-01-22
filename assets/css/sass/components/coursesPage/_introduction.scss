@@ -65,6 +65,7 @@
 
   &__link:hover {
     transform: translateY(-0.3rem);
+    text-decoration: none;
   }
 
   &__link:active {
@@ -75,6 +76,14 @@
     background-color: #5d30db;
     box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
     color: white;
+  }
+
+  &__link1:hover {
+    color: white;
+  }
+
+  &__link2:hover {
+    color: #5d30db;
   }
 
   &__link2 {
