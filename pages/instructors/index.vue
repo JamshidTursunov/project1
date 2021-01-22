@@ -19,4 +19,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.instructorsPage {
+  padding: 0 0 6rem;
+}
+</style>

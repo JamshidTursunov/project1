@@ -34,4 +34,31 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.courses {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(243, 248, 255, 1) 0,
+    rgba(243, 248, 255, 1) 58%,
+    rgba(255, 255, 255, 1) 32%
+  );
+  padding: 3.5rem 8.2rem 10rem;
+
+  &__column__margin {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__box {
+  }
+
+  &__h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5d30db;
+    margin-bottom: 1.5rem;
+  }
+}
+</style>

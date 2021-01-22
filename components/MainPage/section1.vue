@@ -25,31 +25,31 @@
     </div>
     <div class="row flex justify-center mt-8">
       <div
-        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+        class="col-lg mb-4 col-md-4 col-sm-6 col-6 flex items-center justify-center"
       >
         <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
         <h1>PYTHON</h1>
       </div>
       <div
-        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+        class="col-lg mb-4 col-md-4 col-sm-6 col-6 flex items-center justify-center"
       >
         <img src="~assets/images/python4.png" alt="...." class="w-20 h-20" />
         <h1>Django</h1>
       </div>
       <div
-        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+        class="col-lg mb-4 col-md-4 col-sm-6 col-6 d-none d-md-flex flex items-center justify-center"
       >
         <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
         <h1>PYTHON</h1>
       </div>
       <div
-        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+        class="col-lg mb-4 col-md-4 col-sm-6 col-6 d-none d-xl-flex items-center justify-center"
       >
         <img src="~assets/images/python4.png" alt="...." class="w-20 h-20" />
         <h1>Django</h1>
       </div>
       <div
-        class="col-lg mb-4 col-md-4 col-sm-6 flex items-center justify-center"
+        class="col-lg mb-4 col-md-4 col-sm-6 col-6 d-none d-xl-flex items-center justify-center"
       >
         <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
         <h1>PYTHON</h1>
@@ -80,23 +80,23 @@
   background: url('~assets/images/shape.png');
   background-repeat: no-repeat;
 } */
-.all-wrapper::before {
-  /* position: absolute;
+/* .all-wrapper::before {
+  position: absolute;
   content: '';
   top: -8%;
   right: 0%;
   width: 13%;
   height: 30%;
   background: url('~assets/images/shape1.png');
-  background-repeat: no-repeat; */
-}
-.text-h1 {
-  /* font-family: Roboto;
+  background-repeat: no-repeat;
+} */
+/* .text-h1 {
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
   line-height: 100%;
-  color: #333366; */
+  color: #333366;
   @media only screen and (max-width: 61.9em) {
     font-size: 55px;
   }
@@ -106,10 +106,10 @@
   @media only screen and (max-width: 37.5em) {
     font-size: 35px;
   }
-}
-.man-image {
-  /* z-index: 10;
-  transform: translate(-8%, -10%); */
+} */
+/* .man-image {
+  z-index: 10;
+  transform: translate(-8%, -10%);
   @media only screen and (max-width: 79em) {
     transform: translate(-23%, 10%) scale(0.85);
   }
@@ -120,8 +120,8 @@
   @media only screen and (max-width: 37.5em) {
     display: none;
   }
-}
-.content {
+} */
+/* .content {
   position: relative;
   z-index: 10;
   margin-top: 6%;
@@ -192,5 +192,5 @@
   font-size: 15px;
   line-height: 107.5%;
   color: #333366;
-}
+} */
 </style>

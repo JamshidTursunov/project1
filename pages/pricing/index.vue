@@ -13,4 +13,13 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.pricing {
+  padding: 5rem 8.125rem 13rem;
+  background-color: #f3f8ff;
+  background: url('~assets/images/pricing/pricing.png');
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+</style>
