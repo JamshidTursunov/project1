@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Shadow&display=swap');
 .progress {
   width: 100px;
   height: 100px;
@@ -5,12 +6,12 @@
   background: none;
   margin: 0 auto;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   position: relative;
 }
 
 .progress:after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -41,7 +42,7 @@
   border-style: solid;
   position: absolute;
   top: 0;
-  border-color: #4FA0E9;
+  border-color: #4fa0e9;
 }
 
 .progress .progress-left .progress-bar {
@@ -75,11 +76,11 @@
   text-align: center;
   line-height: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   font-weight: 300;
@@ -93,1004 +94,1004 @@
 /* This for loop creates the necessary css animation names 
 Due to the split circle of progress-left and progress right, we must use the animations on each side. 
 */
-.progress[data-percentage="1"] .progress-right .progress-bar {
+.progress[data-percentage='1'] .progress-right .progress-bar {
   -webkit-animation: loading-1 0.5s linear forwards;
-          animation: loading-1 0.5s linear forwards;
+  animation: loading-1 0.5s linear forwards;
 }
 
-.progress[data-percentage="1"] .progress-left .progress-bar {
+.progress[data-percentage='1'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="2"] .progress-right .progress-bar {
+.progress[data-percentage='2'] .progress-right .progress-bar {
   -webkit-animation: loading-2 0.5s linear forwards;
-          animation: loading-2 0.5s linear forwards;
+  animation: loading-2 0.5s linear forwards;
 }
 
-.progress[data-percentage="2"] .progress-left .progress-bar {
+.progress[data-percentage='2'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="3"] .progress-right .progress-bar {
+.progress[data-percentage='3'] .progress-right .progress-bar {
   -webkit-animation: loading-3 0.5s linear forwards;
-          animation: loading-3 0.5s linear forwards;
+  animation: loading-3 0.5s linear forwards;
 }
 
-.progress[data-percentage="3"] .progress-left .progress-bar {
+.progress[data-percentage='3'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="4"] .progress-right .progress-bar {
+.progress[data-percentage='4'] .progress-right .progress-bar {
   -webkit-animation: loading-4 0.5s linear forwards;
-          animation: loading-4 0.5s linear forwards;
+  animation: loading-4 0.5s linear forwards;
 }
 
-.progress[data-percentage="4"] .progress-left .progress-bar {
+.progress[data-percentage='4'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="5"] .progress-right .progress-bar {
+.progress[data-percentage='5'] .progress-right .progress-bar {
   -webkit-animation: loading-5 0.5s linear forwards;
-          animation: loading-5 0.5s linear forwards;
+  animation: loading-5 0.5s linear forwards;
 }
 
-.progress[data-percentage="5"] .progress-left .progress-bar {
+.progress[data-percentage='5'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="6"] .progress-right .progress-bar {
+.progress[data-percentage='6'] .progress-right .progress-bar {
   -webkit-animation: loading-6 0.5s linear forwards;
-          animation: loading-6 0.5s linear forwards;
+  animation: loading-6 0.5s linear forwards;
 }
 
-.progress[data-percentage="6"] .progress-left .progress-bar {
+.progress[data-percentage='6'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="7"] .progress-right .progress-bar {
+.progress[data-percentage='7'] .progress-right .progress-bar {
   -webkit-animation: loading-7 0.5s linear forwards;
-          animation: loading-7 0.5s linear forwards;
+  animation: loading-7 0.5s linear forwards;
 }
 
-.progress[data-percentage="7"] .progress-left .progress-bar {
+.progress[data-percentage='7'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="8"] .progress-right .progress-bar {
+.progress[data-percentage='8'] .progress-right .progress-bar {
   -webkit-animation: loading-8 0.5s linear forwards;
-          animation: loading-8 0.5s linear forwards;
+  animation: loading-8 0.5s linear forwards;
 }
 
-.progress[data-percentage="8"] .progress-left .progress-bar {
+.progress[data-percentage='8'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="9"] .progress-right .progress-bar {
+.progress[data-percentage='9'] .progress-right .progress-bar {
   -webkit-animation: loading-9 0.5s linear forwards;
-          animation: loading-9 0.5s linear forwards;
+  animation: loading-9 0.5s linear forwards;
 }
 
-.progress[data-percentage="9"] .progress-left .progress-bar {
+.progress[data-percentage='9'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="10"] .progress-right .progress-bar {
+.progress[data-percentage='10'] .progress-right .progress-bar {
   -webkit-animation: loading-10 0.5s linear forwards;
-          animation: loading-10 0.5s linear forwards;
+  animation: loading-10 0.5s linear forwards;
 }
 
-.progress[data-percentage="10"] .progress-left .progress-bar {
+.progress[data-percentage='10'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="11"] .progress-right .progress-bar {
+.progress[data-percentage='11'] .progress-right .progress-bar {
   -webkit-animation: loading-11 0.5s linear forwards;
-          animation: loading-11 0.5s linear forwards;
+  animation: loading-11 0.5s linear forwards;
 }
 
-.progress[data-percentage="11"] .progress-left .progress-bar {
+.progress[data-percentage='11'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="12"] .progress-right .progress-bar {
+.progress[data-percentage='12'] .progress-right .progress-bar {
   -webkit-animation: loading-12 0.5s linear forwards;
-          animation: loading-12 0.5s linear forwards;
+  animation: loading-12 0.5s linear forwards;
 }
 
-.progress[data-percentage="12"] .progress-left .progress-bar {
+.progress[data-percentage='12'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="13"] .progress-right .progress-bar {
+.progress[data-percentage='13'] .progress-right .progress-bar {
   -webkit-animation: loading-13 0.5s linear forwards;
-          animation: loading-13 0.5s linear forwards;
+  animation: loading-13 0.5s linear forwards;
 }
 
-.progress[data-percentage="13"] .progress-left .progress-bar {
+.progress[data-percentage='13'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="14"] .progress-right .progress-bar {
+.progress[data-percentage='14'] .progress-right .progress-bar {
   -webkit-animation: loading-14 0.5s linear forwards;
-          animation: loading-14 0.5s linear forwards;
+  animation: loading-14 0.5s linear forwards;
 }
 
-.progress[data-percentage="14"] .progress-left .progress-bar {
+.progress[data-percentage='14'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="15"] .progress-right .progress-bar {
+.progress[data-percentage='15'] .progress-right .progress-bar {
   -webkit-animation: loading-15 0.5s linear forwards;
-          animation: loading-15 0.5s linear forwards;
+  animation: loading-15 0.5s linear forwards;
 }
 
-.progress[data-percentage="15"] .progress-left .progress-bar {
+.progress[data-percentage='15'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="16"] .progress-right .progress-bar {
+.progress[data-percentage='16'] .progress-right .progress-bar {
   -webkit-animation: loading-16 0.5s linear forwards;
-          animation: loading-16 0.5s linear forwards;
+  animation: loading-16 0.5s linear forwards;
 }
 
-.progress[data-percentage="16"] .progress-left .progress-bar {
+.progress[data-percentage='16'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="17"] .progress-right .progress-bar {
+.progress[data-percentage='17'] .progress-right .progress-bar {
   -webkit-animation: loading-17 0.5s linear forwards;
-          animation: loading-17 0.5s linear forwards;
+  animation: loading-17 0.5s linear forwards;
 }
 
-.progress[data-percentage="17"] .progress-left .progress-bar {
+.progress[data-percentage='17'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="18"] .progress-right .progress-bar {
+.progress[data-percentage='18'] .progress-right .progress-bar {
   -webkit-animation: loading-18 0.5s linear forwards;
-          animation: loading-18 0.5s linear forwards;
+  animation: loading-18 0.5s linear forwards;
 }
 
-.progress[data-percentage="18"] .progress-left .progress-bar {
+.progress[data-percentage='18'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="19"] .progress-right .progress-bar {
+.progress[data-percentage='19'] .progress-right .progress-bar {
   -webkit-animation: loading-19 0.5s linear forwards;
-          animation: loading-19 0.5s linear forwards;
+  animation: loading-19 0.5s linear forwards;
 }
 
-.progress[data-percentage="19"] .progress-left .progress-bar {
+.progress[data-percentage='19'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="20"] .progress-right .progress-bar {
+.progress[data-percentage='20'] .progress-right .progress-bar {
   -webkit-animation: loading-20 0.5s linear forwards;
-          animation: loading-20 0.5s linear forwards;
+  animation: loading-20 0.5s linear forwards;
 }
 
-.progress[data-percentage="20"] .progress-left .progress-bar {
+.progress[data-percentage='20'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="21"] .progress-right .progress-bar {
+.progress[data-percentage='21'] .progress-right .progress-bar {
   -webkit-animation: loading-21 0.5s linear forwards;
-          animation: loading-21 0.5s linear forwards;
+  animation: loading-21 0.5s linear forwards;
 }
 
-.progress[data-percentage="21"] .progress-left .progress-bar {
+.progress[data-percentage='21'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="22"] .progress-right .progress-bar {
+.progress[data-percentage='22'] .progress-right .progress-bar {
   -webkit-animation: loading-22 0.5s linear forwards;
-          animation: loading-22 0.5s linear forwards;
+  animation: loading-22 0.5s linear forwards;
 }
 
-.progress[data-percentage="22"] .progress-left .progress-bar {
+.progress[data-percentage='22'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="23"] .progress-right .progress-bar {
+.progress[data-percentage='23'] .progress-right .progress-bar {
   -webkit-animation: loading-23 0.5s linear forwards;
-          animation: loading-23 0.5s linear forwards;
+  animation: loading-23 0.5s linear forwards;
 }
 
-.progress[data-percentage="23"] .progress-left .progress-bar {
+.progress[data-percentage='23'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="24"] .progress-right .progress-bar {
+.progress[data-percentage='24'] .progress-right .progress-bar {
   -webkit-animation: loading-24 0.5s linear forwards;
-          animation: loading-24 0.5s linear forwards;
+  animation: loading-24 0.5s linear forwards;
 }
 
-.progress[data-percentage="24"] .progress-left .progress-bar {
+.progress[data-percentage='24'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="25"] .progress-right .progress-bar {
+.progress[data-percentage='25'] .progress-right .progress-bar {
   -webkit-animation: loading-25 0.5s linear forwards;
-          animation: loading-25 0.5s linear forwards;
+  animation: loading-25 0.5s linear forwards;
 }
 
-.progress[data-percentage="25"] .progress-left .progress-bar {
+.progress[data-percentage='25'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="26"] .progress-right .progress-bar {
+.progress[data-percentage='26'] .progress-right .progress-bar {
   -webkit-animation: loading-26 0.5s linear forwards;
-          animation: loading-26 0.5s linear forwards;
+  animation: loading-26 0.5s linear forwards;
 }
 
-.progress[data-percentage="26"] .progress-left .progress-bar {
+.progress[data-percentage='26'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="27"] .progress-right .progress-bar {
+.progress[data-percentage='27'] .progress-right .progress-bar {
   -webkit-animation: loading-27 0.5s linear forwards;
-          animation: loading-27 0.5s linear forwards;
+  animation: loading-27 0.5s linear forwards;
 }
 
-.progress[data-percentage="27"] .progress-left .progress-bar {
+.progress[data-percentage='27'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="28"] .progress-right .progress-bar {
+.progress[data-percentage='28'] .progress-right .progress-bar {
   -webkit-animation: loading-28 0.5s linear forwards;
-          animation: loading-28 0.5s linear forwards;
+  animation: loading-28 0.5s linear forwards;
 }
 
-.progress[data-percentage="28"] .progress-left .progress-bar {
+.progress[data-percentage='28'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="29"] .progress-right .progress-bar {
+.progress[data-percentage='29'] .progress-right .progress-bar {
   -webkit-animation: loading-29 0.5s linear forwards;
-          animation: loading-29 0.5s linear forwards;
+  animation: loading-29 0.5s linear forwards;
 }
 
-.progress[data-percentage="29"] .progress-left .progress-bar {
+.progress[data-percentage='29'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="30"] .progress-right .progress-bar {
+.progress[data-percentage='30'] .progress-right .progress-bar {
   -webkit-animation: loading-30 0.5s linear forwards;
-          animation: loading-30 0.5s linear forwards;
+  animation: loading-30 0.5s linear forwards;
 }
 
-.progress[data-percentage="30"] .progress-left .progress-bar {
+.progress[data-percentage='30'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="31"] .progress-right .progress-bar {
+.progress[data-percentage='31'] .progress-right .progress-bar {
   -webkit-animation: loading-31 0.5s linear forwards;
-          animation: loading-31 0.5s linear forwards;
+  animation: loading-31 0.5s linear forwards;
 }
 
-.progress[data-percentage="31"] .progress-left .progress-bar {
+.progress[data-percentage='31'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="32"] .progress-right .progress-bar {
+.progress[data-percentage='32'] .progress-right .progress-bar {
   -webkit-animation: loading-32 0.5s linear forwards;
-          animation: loading-32 0.5s linear forwards;
+  animation: loading-32 0.5s linear forwards;
 }
 
-.progress[data-percentage="32"] .progress-left .progress-bar {
+.progress[data-percentage='32'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="33"] .progress-right .progress-bar {
+.progress[data-percentage='33'] .progress-right .progress-bar {
   -webkit-animation: loading-33 0.5s linear forwards;
-          animation: loading-33 0.5s linear forwards;
+  animation: loading-33 0.5s linear forwards;
 }
 
-.progress[data-percentage="33"] .progress-left .progress-bar {
+.progress[data-percentage='33'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="34"] .progress-right .progress-bar {
+.progress[data-percentage='34'] .progress-right .progress-bar {
   -webkit-animation: loading-34 0.5s linear forwards;
-          animation: loading-34 0.5s linear forwards;
+  animation: loading-34 0.5s linear forwards;
 }
 
-.progress[data-percentage="34"] .progress-left .progress-bar {
+.progress[data-percentage='34'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="35"] .progress-right .progress-bar {
+.progress[data-percentage='35'] .progress-right .progress-bar {
   -webkit-animation: loading-35 0.5s linear forwards;
-          animation: loading-35 0.5s linear forwards;
+  animation: loading-35 0.5s linear forwards;
 }
 
-.progress[data-percentage="35"] .progress-left .progress-bar {
+.progress[data-percentage='35'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="36"] .progress-right .progress-bar {
+.progress[data-percentage='36'] .progress-right .progress-bar {
   -webkit-animation: loading-36 0.5s linear forwards;
-          animation: loading-36 0.5s linear forwards;
+  animation: loading-36 0.5s linear forwards;
 }
 
-.progress[data-percentage="36"] .progress-left .progress-bar {
+.progress[data-percentage='36'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="37"] .progress-right .progress-bar {
+.progress[data-percentage='37'] .progress-right .progress-bar {
   -webkit-animation: loading-37 0.5s linear forwards;
-          animation: loading-37 0.5s linear forwards;
+  animation: loading-37 0.5s linear forwards;
 }
 
-.progress[data-percentage="37"] .progress-left .progress-bar {
+.progress[data-percentage='37'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="38"] .progress-right .progress-bar {
+.progress[data-percentage='38'] .progress-right .progress-bar {
   -webkit-animation: loading-38 0.5s linear forwards;
-          animation: loading-38 0.5s linear forwards;
+  animation: loading-38 0.5s linear forwards;
 }
 
-.progress[data-percentage="38"] .progress-left .progress-bar {
+.progress[data-percentage='38'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="39"] .progress-right .progress-bar {
+.progress[data-percentage='39'] .progress-right .progress-bar {
   -webkit-animation: loading-39 0.5s linear forwards;
-          animation: loading-39 0.5s linear forwards;
+  animation: loading-39 0.5s linear forwards;
 }
 
-.progress[data-percentage="39"] .progress-left .progress-bar {
+.progress[data-percentage='39'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="40"] .progress-right .progress-bar {
+.progress[data-percentage='40'] .progress-right .progress-bar {
   -webkit-animation: loading-40 0.5s linear forwards;
-          animation: loading-40 0.5s linear forwards;
+  animation: loading-40 0.5s linear forwards;
 }
 
-.progress[data-percentage="40"] .progress-left .progress-bar {
+.progress[data-percentage='40'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="41"] .progress-right .progress-bar {
+.progress[data-percentage='41'] .progress-right .progress-bar {
   -webkit-animation: loading-41 0.5s linear forwards;
-          animation: loading-41 0.5s linear forwards;
+  animation: loading-41 0.5s linear forwards;
 }
 
-.progress[data-percentage="41"] .progress-left .progress-bar {
+.progress[data-percentage='41'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="42"] .progress-right .progress-bar {
+.progress[data-percentage='42'] .progress-right .progress-bar {
   -webkit-animation: loading-42 0.5s linear forwards;
-          animation: loading-42 0.5s linear forwards;
+  animation: loading-42 0.5s linear forwards;
 }
 
-.progress[data-percentage="42"] .progress-left .progress-bar {
+.progress[data-percentage='42'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="43"] .progress-right .progress-bar {
+.progress[data-percentage='43'] .progress-right .progress-bar {
   -webkit-animation: loading-43 0.5s linear forwards;
-          animation: loading-43 0.5s linear forwards;
+  animation: loading-43 0.5s linear forwards;
 }
 
-.progress[data-percentage="43"] .progress-left .progress-bar {
+.progress[data-percentage='43'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="44"] .progress-right .progress-bar {
+.progress[data-percentage='44'] .progress-right .progress-bar {
   -webkit-animation: loading-44 0.5s linear forwards;
-          animation: loading-44 0.5s linear forwards;
+  animation: loading-44 0.5s linear forwards;
 }
 
-.progress[data-percentage="44"] .progress-left .progress-bar {
+.progress[data-percentage='44'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="45"] .progress-right .progress-bar {
+.progress[data-percentage='45'] .progress-right .progress-bar {
   -webkit-animation: loading-45 0.5s linear forwards;
-          animation: loading-45 0.5s linear forwards;
+  animation: loading-45 0.5s linear forwards;
 }
 
-.progress[data-percentage="45"] .progress-left .progress-bar {
+.progress[data-percentage='45'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="46"] .progress-right .progress-bar {
+.progress[data-percentage='46'] .progress-right .progress-bar {
   -webkit-animation: loading-46 0.5s linear forwards;
-          animation: loading-46 0.5s linear forwards;
+  animation: loading-46 0.5s linear forwards;
 }
 
-.progress[data-percentage="46"] .progress-left .progress-bar {
+.progress[data-percentage='46'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="47"] .progress-right .progress-bar {
+.progress[data-percentage='47'] .progress-right .progress-bar {
   -webkit-animation: loading-47 0.5s linear forwards;
-          animation: loading-47 0.5s linear forwards;
+  animation: loading-47 0.5s linear forwards;
 }
 
-.progress[data-percentage="47"] .progress-left .progress-bar {
+.progress[data-percentage='47'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="48"] .progress-right .progress-bar {
+.progress[data-percentage='48'] .progress-right .progress-bar {
   -webkit-animation: loading-48 0.5s linear forwards;
-          animation: loading-48 0.5s linear forwards;
+  animation: loading-48 0.5s linear forwards;
 }
 
-.progress[data-percentage="48"] .progress-left .progress-bar {
+.progress[data-percentage='48'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="49"] .progress-right .progress-bar {
+.progress[data-percentage='49'] .progress-right .progress-bar {
   -webkit-animation: loading-49 0.5s linear forwards;
-          animation: loading-49 0.5s linear forwards;
+  animation: loading-49 0.5s linear forwards;
 }
 
-.progress[data-percentage="49"] .progress-left .progress-bar {
+.progress[data-percentage='49'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="50"] .progress-right .progress-bar {
+.progress[data-percentage='50'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="50"] .progress-left .progress-bar {
+.progress[data-percentage='50'] .progress-left .progress-bar {
   -webkit-animation: 0;
-          animation: 0;
+  animation: 0;
 }
 
-.progress[data-percentage="51"] .progress-right .progress-bar {
+.progress[data-percentage='51'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="51"] .progress-left .progress-bar {
+.progress[data-percentage='51'] .progress-left .progress-bar {
   -webkit-animation: loading-1 0.5s linear forwards 0.5s;
-          animation: loading-1 0.5s linear forwards 0.5s;
+  animation: loading-1 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="52"] .progress-right .progress-bar {
+.progress[data-percentage='52'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="52"] .progress-left .progress-bar {
+.progress[data-percentage='52'] .progress-left .progress-bar {
   -webkit-animation: loading-2 0.5s linear forwards 0.5s;
-          animation: loading-2 0.5s linear forwards 0.5s;
+  animation: loading-2 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="53"] .progress-right .progress-bar {
+.progress[data-percentage='53'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="53"] .progress-left .progress-bar {
+.progress[data-percentage='53'] .progress-left .progress-bar {
   -webkit-animation: loading-3 0.5s linear forwards 0.5s;
-          animation: loading-3 0.5s linear forwards 0.5s;
+  animation: loading-3 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="54"] .progress-right .progress-bar {
+.progress[data-percentage='54'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="54"] .progress-left .progress-bar {
+.progress[data-percentage='54'] .progress-left .progress-bar {
   -webkit-animation: loading-4 0.5s linear forwards 0.5s;
-          animation: loading-4 0.5s linear forwards 0.5s;
+  animation: loading-4 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="55"] .progress-right .progress-bar {
+.progress[data-percentage='55'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="55"] .progress-left .progress-bar {
+.progress[data-percentage='55'] .progress-left .progress-bar {
   -webkit-animation: loading-5 0.5s linear forwards 0.5s;
-          animation: loading-5 0.5s linear forwards 0.5s;
+  animation: loading-5 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="56"] .progress-right .progress-bar {
+.progress[data-percentage='56'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="56"] .progress-left .progress-bar {
+.progress[data-percentage='56'] .progress-left .progress-bar {
   -webkit-animation: loading-6 0.5s linear forwards 0.5s;
-          animation: loading-6 0.5s linear forwards 0.5s;
+  animation: loading-6 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="57"] .progress-right .progress-bar {
+.progress[data-percentage='57'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="57"] .progress-left .progress-bar {
+.progress[data-percentage='57'] .progress-left .progress-bar {
   -webkit-animation: loading-7 0.5s linear forwards 0.5s;
-          animation: loading-7 0.5s linear forwards 0.5s;
+  animation: loading-7 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="58"] .progress-right .progress-bar {
+.progress[data-percentage='58'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="58"] .progress-left .progress-bar {
+.progress[data-percentage='58'] .progress-left .progress-bar {
   -webkit-animation: loading-8 0.5s linear forwards 0.5s;
-          animation: loading-8 0.5s linear forwards 0.5s;
+  animation: loading-8 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="59"] .progress-right .progress-bar {
+.progress[data-percentage='59'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="59"] .progress-left .progress-bar {
+.progress[data-percentage='59'] .progress-left .progress-bar {
   -webkit-animation: loading-9 0.5s linear forwards 0.5s;
-          animation: loading-9 0.5s linear forwards 0.5s;
+  animation: loading-9 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="60"] .progress-right .progress-bar {
+.progress[data-percentage='60'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="60"] .progress-left .progress-bar {
+.progress[data-percentage='60'] .progress-left .progress-bar {
   -webkit-animation: loading-10 0.5s linear forwards 0.5s;
-          animation: loading-10 0.5s linear forwards 0.5s;
+  animation: loading-10 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="61"] .progress-right .progress-bar {
+.progress[data-percentage='61'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="61"] .progress-left .progress-bar {
+.progress[data-percentage='61'] .progress-left .progress-bar {
   -webkit-animation: loading-11 0.5s linear forwards 0.5s;
-          animation: loading-11 0.5s linear forwards 0.5s;
+  animation: loading-11 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="62"] .progress-right .progress-bar {
+.progress[data-percentage='62'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="62"] .progress-left .progress-bar {
+.progress[data-percentage='62'] .progress-left .progress-bar {
   -webkit-animation: loading-12 0.5s linear forwards 0.5s;
-          animation: loading-12 0.5s linear forwards 0.5s;
+  animation: loading-12 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="63"] .progress-right .progress-bar {
+.progress[data-percentage='63'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="63"] .progress-left .progress-bar {
+.progress[data-percentage='63'] .progress-left .progress-bar {
   -webkit-animation: loading-13 0.5s linear forwards 0.5s;
-          animation: loading-13 0.5s linear forwards 0.5s;
+  animation: loading-13 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="64"] .progress-right .progress-bar {
+.progress[data-percentage='64'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="64"] .progress-left .progress-bar {
+.progress[data-percentage='64'] .progress-left .progress-bar {
   -webkit-animation: loading-14 0.5s linear forwards 0.5s;
-          animation: loading-14 0.5s linear forwards 0.5s;
+  animation: loading-14 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="65"] .progress-right .progress-bar {
+.progress[data-percentage='65'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="65"] .progress-left .progress-bar {
+.progress[data-percentage='65'] .progress-left .progress-bar {
   -webkit-animation: loading-15 0.5s linear forwards 0.5s;
-          animation: loading-15 0.5s linear forwards 0.5s;
+  animation: loading-15 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="66"] .progress-right .progress-bar {
+.progress[data-percentage='66'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="66"] .progress-left .progress-bar {
+.progress[data-percentage='66'] .progress-left .progress-bar {
   -webkit-animation: loading-16 0.5s linear forwards 0.5s;
-          animation: loading-16 0.5s linear forwards 0.5s;
+  animation: loading-16 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="67"] .progress-right .progress-bar {
+.progress[data-percentage='67'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="67"] .progress-left .progress-bar {
+.progress[data-percentage='67'] .progress-left .progress-bar {
   -webkit-animation: loading-17 0.5s linear forwards 0.5s;
-          animation: loading-17 0.5s linear forwards 0.5s;
+  animation: loading-17 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="68"] .progress-right .progress-bar {
+.progress[data-percentage='68'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="68"] .progress-left .progress-bar {
+.progress[data-percentage='68'] .progress-left .progress-bar {
   -webkit-animation: loading-18 0.5s linear forwards 0.5s;
-          animation: loading-18 0.5s linear forwards 0.5s;
+  animation: loading-18 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="69"] .progress-right .progress-bar {
+.progress[data-percentage='69'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="69"] .progress-left .progress-bar {
+.progress[data-percentage='69'] .progress-left .progress-bar {
   -webkit-animation: loading-19 0.5s linear forwards 0.5s;
-          animation: loading-19 0.5s linear forwards 0.5s;
+  animation: loading-19 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="70"] .progress-right .progress-bar {
+.progress[data-percentage='70'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="70"] .progress-left .progress-bar {
+.progress[data-percentage='70'] .progress-left .progress-bar {
   -webkit-animation: loading-20 0.5s linear forwards 0.5s;
-          animation: loading-20 0.5s linear forwards 0.5s;
+  animation: loading-20 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="71"] .progress-right .progress-bar {
+.progress[data-percentage='71'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="71"] .progress-left .progress-bar {
+.progress[data-percentage='71'] .progress-left .progress-bar {
   -webkit-animation: loading-21 0.5s linear forwards 0.5s;
-          animation: loading-21 0.5s linear forwards 0.5s;
+  animation: loading-21 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="72"] .progress-right .progress-bar {
+.progress[data-percentage='72'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="72"] .progress-left .progress-bar {
+.progress[data-percentage='72'] .progress-left .progress-bar {
   -webkit-animation: loading-22 0.5s linear forwards 0.5s;
-          animation: loading-22 0.5s linear forwards 0.5s;
+  animation: loading-22 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="73"] .progress-right .progress-bar {
+.progress[data-percentage='73'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="73"] .progress-left .progress-bar {
+.progress[data-percentage='73'] .progress-left .progress-bar {
   -webkit-animation: loading-23 0.5s linear forwards 0.5s;
-          animation: loading-23 0.5s linear forwards 0.5s;
+  animation: loading-23 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="74"] .progress-right .progress-bar {
+.progress[data-percentage='74'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="74"] .progress-left .progress-bar {
+.progress[data-percentage='74'] .progress-left .progress-bar {
   -webkit-animation: loading-24 0.5s linear forwards 0.5s;
-          animation: loading-24 0.5s linear forwards 0.5s;
+  animation: loading-24 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="75"] .progress-right .progress-bar {
+.progress[data-percentage='75'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="75"] .progress-left .progress-bar {
+.progress[data-percentage='75'] .progress-left .progress-bar {
   -webkit-animation: loading-25 0.5s linear forwards 0.5s;
-          animation: loading-25 0.5s linear forwards 0.5s;
+  animation: loading-25 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="76"] .progress-right .progress-bar {
+.progress[data-percentage='76'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="76"] .progress-left .progress-bar {
+.progress[data-percentage='76'] .progress-left .progress-bar {
   -webkit-animation: loading-26 0.5s linear forwards 0.5s;
-          animation: loading-26 0.5s linear forwards 0.5s;
+  animation: loading-26 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="77"] .progress-right .progress-bar {
+.progress[data-percentage='77'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="77"] .progress-left .progress-bar {
+.progress[data-percentage='77'] .progress-left .progress-bar {
   -webkit-animation: loading-27 0.5s linear forwards 0.5s;
-          animation: loading-27 0.5s linear forwards 0.5s;
+  animation: loading-27 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="78"] .progress-right .progress-bar {
+.progress[data-percentage='78'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="78"] .progress-left .progress-bar {
+.progress[data-percentage='78'] .progress-left .progress-bar {
   -webkit-animation: loading-28 0.5s linear forwards 0.5s;
-          animation: loading-28 0.5s linear forwards 0.5s;
+  animation: loading-28 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="79"] .progress-right .progress-bar {
+.progress[data-percentage='79'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="79"] .progress-left .progress-bar {
+.progress[data-percentage='79'] .progress-left .progress-bar {
   -webkit-animation: loading-29 0.5s linear forwards 0.5s;
-          animation: loading-29 0.5s linear forwards 0.5s;
+  animation: loading-29 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="80"] .progress-right .progress-bar {
+.progress[data-percentage='80'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="80"] .progress-left .progress-bar {
+.progress[data-percentage='80'] .progress-left .progress-bar {
   -webkit-animation: loading-30 0.5s linear forwards 0.5s;
-          animation: loading-30 0.5s linear forwards 0.5s;
+  animation: loading-30 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="81"] .progress-right .progress-bar {
+.progress[data-percentage='81'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="81"] .progress-left .progress-bar {
+.progress[data-percentage='81'] .progress-left .progress-bar {
   -webkit-animation: loading-31 0.5s linear forwards 0.5s;
-          animation: loading-31 0.5s linear forwards 0.5s;
+  animation: loading-31 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="82"] .progress-right .progress-bar {
+.progress[data-percentage='82'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="82"] .progress-left .progress-bar {
+.progress[data-percentage='82'] .progress-left .progress-bar {
   -webkit-animation: loading-32 0.5s linear forwards 0.5s;
-          animation: loading-32 0.5s linear forwards 0.5s;
+  animation: loading-32 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="83"] .progress-right .progress-bar {
+.progress[data-percentage='83'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="83"] .progress-left .progress-bar {
+.progress[data-percentage='83'] .progress-left .progress-bar {
   -webkit-animation: loading-33 0.5s linear forwards 0.5s;
-          animation: loading-33 0.5s linear forwards 0.5s;
+  animation: loading-33 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="84"] .progress-right .progress-bar {
+.progress[data-percentage='84'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="84"] .progress-left .progress-bar {
+.progress[data-percentage='84'] .progress-left .progress-bar {
   -webkit-animation: loading-34 0.5s linear forwards 0.5s;
-          animation: loading-34 0.5s linear forwards 0.5s;
+  animation: loading-34 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="85"] .progress-right .progress-bar {
+.progress[data-percentage='85'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="85"] .progress-left .progress-bar {
+.progress[data-percentage='85'] .progress-left .progress-bar {
   -webkit-animation: loading-35 0.5s linear forwards 0.5s;
-          animation: loading-35 0.5s linear forwards 0.5s;
+  animation: loading-35 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="86"] .progress-right .progress-bar {
+.progress[data-percentage='86'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="86"] .progress-left .progress-bar {
+.progress[data-percentage='86'] .progress-left .progress-bar {
   -webkit-animation: loading-36 0.5s linear forwards 0.5s;
-          animation: loading-36 0.5s linear forwards 0.5s;
+  animation: loading-36 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="87"] .progress-right .progress-bar {
+.progress[data-percentage='87'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="87"] .progress-left .progress-bar {
+.progress[data-percentage='87'] .progress-left .progress-bar {
   -webkit-animation: loading-37 0.5s linear forwards 0.5s;
-          animation: loading-37 0.5s linear forwards 0.5s;
+  animation: loading-37 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="88"] .progress-right .progress-bar {
+.progress[data-percentage='88'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="88"] .progress-left .progress-bar {
+.progress[data-percentage='88'] .progress-left .progress-bar {
   -webkit-animation: loading-38 0.5s linear forwards 0.5s;
-          animation: loading-38 0.5s linear forwards 0.5s;
+  animation: loading-38 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="89"] .progress-right .progress-bar {
+.progress[data-percentage='89'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="89"] .progress-left .progress-bar {
+.progress[data-percentage='89'] .progress-left .progress-bar {
   -webkit-animation: loading-39 0.5s linear forwards 0.5s;
-          animation: loading-39 0.5s linear forwards 0.5s;
+  animation: loading-39 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="90"] .progress-right .progress-bar {
+.progress[data-percentage='90'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="90"] .progress-left .progress-bar {
+.progress[data-percentage='90'] .progress-left .progress-bar {
   -webkit-animation: loading-40 0.5s linear forwards 0.5s;
-          animation: loading-40 0.5s linear forwards 0.5s;
+  animation: loading-40 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="91"] .progress-right .progress-bar {
+.progress[data-percentage='91'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="91"] .progress-left .progress-bar {
+.progress[data-percentage='91'] .progress-left .progress-bar {
   -webkit-animation: loading-41 0.5s linear forwards 0.5s;
-          animation: loading-41 0.5s linear forwards 0.5s;
+  animation: loading-41 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="92"] .progress-right .progress-bar {
+.progress[data-percentage='92'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="92"] .progress-left .progress-bar {
+.progress[data-percentage='92'] .progress-left .progress-bar {
   -webkit-animation: loading-42 0.5s linear forwards 0.5s;
-          animation: loading-42 0.5s linear forwards 0.5s;
+  animation: loading-42 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="93"] .progress-right .progress-bar {
+.progress[data-percentage='93'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="93"] .progress-left .progress-bar {
+.progress[data-percentage='93'] .progress-left .progress-bar {
   -webkit-animation: loading-43 0.5s linear forwards 0.5s;
-          animation: loading-43 0.5s linear forwards 0.5s;
+  animation: loading-43 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="94"] .progress-right .progress-bar {
+.progress[data-percentage='94'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="94"] .progress-left .progress-bar {
+.progress[data-percentage='94'] .progress-left .progress-bar {
   -webkit-animation: loading-44 0.5s linear forwards 0.5s;
-          animation: loading-44 0.5s linear forwards 0.5s;
+  animation: loading-44 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="95"] .progress-right .progress-bar {
+.progress[data-percentage='95'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="95"] .progress-left .progress-bar {
+.progress[data-percentage='95'] .progress-left .progress-bar {
   -webkit-animation: loading-45 0.5s linear forwards 0.5s;
-          animation: loading-45 0.5s linear forwards 0.5s;
+  animation: loading-45 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="96"] .progress-right .progress-bar {
+.progress[data-percentage='96'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="96"] .progress-left .progress-bar {
+.progress[data-percentage='96'] .progress-left .progress-bar {
   -webkit-animation: loading-46 0.5s linear forwards 0.5s;
-          animation: loading-46 0.5s linear forwards 0.5s;
+  animation: loading-46 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="97"] .progress-right .progress-bar {
+.progress[data-percentage='97'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="97"] .progress-left .progress-bar {
+.progress[data-percentage='97'] .progress-left .progress-bar {
   -webkit-animation: loading-47 0.5s linear forwards 0.5s;
-          animation: loading-47 0.5s linear forwards 0.5s;
+  animation: loading-47 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="98"] .progress-right .progress-bar {
+.progress[data-percentage='98'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="98"] .progress-left .progress-bar {
+.progress[data-percentage='98'] .progress-left .progress-bar {
   -webkit-animation: loading-48 0.5s linear forwards 0.5s;
-          animation: loading-48 0.5s linear forwards 0.5s;
+  animation: loading-48 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="99"] .progress-right .progress-bar {
+.progress[data-percentage='99'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="99"] .progress-left .progress-bar {
+.progress[data-percentage='99'] .progress-left .progress-bar {
   -webkit-animation: loading-49 0.5s linear forwards 0.5s;
-          animation: loading-49 0.5s linear forwards 0.5s;
+  animation: loading-49 0.5s linear forwards 0.5s;
 }
 
-.progress[data-percentage="100"] .progress-right .progress-bar {
+.progress[data-percentage='100'] .progress-right .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards;
-          animation: loading-50 0.5s linear forwards;
+  animation: loading-50 0.5s linear forwards;
 }
 
-.progress[data-percentage="100"] .progress-left .progress-bar {
+.progress[data-percentage='100'] .progress-left .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards 0.5s;
-          animation: loading-50 0.5s linear forwards 0.5s;
+  animation: loading-50 0.5s linear forwards 0.5s;
 }
 
 @-webkit-keyframes loading-1 {
@@ -2217,11 +2218,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 1rem 0;
 }
 
@@ -2250,11 +2251,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .partners__img {
@@ -2299,11 +2300,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 13rem 9rem;
 }
 
@@ -2327,13 +2328,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .promo__video__box {
   border-radius: 160px 8px 8px 8px;
-  background: url("~assets/images/about/video.png");
+  background: url('~assets/images/about/video.png');
   height: 27.5rem;
   width: 38rem;
   background-repeat: no-repeat;
   background-position: center;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   position: absolute;
   left: -5rem;
   top: 2rem;
@@ -2353,7 +2354,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #5d30db;
 }
 
-.controlButtonSubmit:hover, .controlButtonSubmit:active {
+.controlButtonSubmit:hover,
+.controlButtonSubmit:active {
   background-color: #4d25bb;
 }
 
@@ -2362,7 +2364,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: white;
 }
 
-.controlButtonCancel:hover, .controlButtonCancel:active {
+.controlButtonCancel:hover,
+.controlButtonCancel:active {
   background-color: #c90e0e;
 }
 
@@ -2375,7 +2378,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: block;
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: inherit;
   border: 2px solid #ccc;
   padding: 0.5rem 1.2rem;
@@ -2409,8 +2412,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .inputControl label span:last-child {
@@ -2489,11 +2492,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 1.5rem 1.5rem 0;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 2px;
@@ -2513,7 +2516,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: 0 1.5rem 1.5rem 0;
 }
 
-.introduction__link, .introduction__link:visited {
+.introduction__link,
+.introduction__link:visited {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -2530,18 +2534,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .introduction__link:hover {
   -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
 }
 
 .introduction__link:active {
   -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .introduction__link1 {
   background-color: #5d30db;
   -webkit-box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
-          box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
+  box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
   color: white;
 }
 
@@ -2549,7 +2553,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border: 1px solid #5d30db;
   color: #5d30db;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
-          filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
+  filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
   background-color: transparent;
 }
 
@@ -2558,8 +2562,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .video__wrapper {
@@ -2570,15 +2574,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
   background-color: white;
   -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -2586,7 +2590,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .video__promo {
   width: 100%;
   height: 12.5rem;
-  background-image: url("~assets/images/courses/promo.png");
+  background-image: url('~assets/images/courses/promo.png');
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 1rem;
@@ -2613,7 +2617,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 1.6rem;
 }
 
-.video__button, .video__button:link, .video__button:visited {
+.video__button,
+.video__button:link,
+.video__button:visited {
   text-decoration: none;
   width: 100%;
   padding: 1rem;
@@ -2622,7 +2628,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 600;
   margin-bottom: 1rem;
   -webkit-box-shadow: 0px 16px 24px rgba(255, 153, 0, 0.1);
-          box-shadow: 0px 16px 24px rgba(255, 153, 0, 0.1);
+  box-shadow: 0px 16px 24px rgba(255, 153, 0, 0.1);
   border-radius: 4px;
   text-align: center;
   -webkit-transition: all 0.2s;
@@ -2631,12 +2637,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .video__button:hover {
   -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
 }
 
 .video__button:active {
   -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .video__button1 {
@@ -2688,15 +2694,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 3.8rem;
 }
 
@@ -2747,7 +2753,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .header__container {
-  background-image: url("~assets/images/instructor/instructor.png");
+  background-image: url('~assets/images/instructor/instructor.png');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 7.9rem 8.2rem 12.2rem;
@@ -2769,14 +2775,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 3rem;
 }
 
-.header__container__instructor__link .header__container__instructor__link:link, .header__container__instructor__link:visited {
+.header__container__instructor__link .header__container__instructor__link:link,
+.header__container__instructor__link:visited {
   display: inline-block;
   font-size: 18px;
   text-decoration: none;
   color: white;
   background-color: #ff9900;
   -webkit-box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
-          box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
+  box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
   border-radius: 4px;
   text-align: center;
   padding: 0.6rem 3rem;
@@ -2785,14 +2792,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-left: 43%;
 }
 
-.instructor__link:hover {
+.header__container__instructor__link:hover {
   -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
 }
 
-.instructor__link:active {
+.header__container__instructor__link:active {
   -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .process__container {
@@ -2830,14 +2837,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 1rem 3rem;
   z-index: 100;
   position: relative;
@@ -2857,7 +2864,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 2rem 3rem;
   border-radius: 50%;
   -webkit-box-shadow: 2px 4px 25px rgba(54, 54, 54, 0.12);
-          box-shadow: 2px 4px 25px rgba(54, 54, 54, 0.12);
+  box-shadow: 2px 4px 25px rgba(54, 54, 54, 0.12);
   background-color: white;
 }
 
@@ -2865,301 +2872,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
   color: #333366;
   font-size: 14px;
-}
-
-.pricing__row {
-  margin-bottom: 10rem;
-}
-
-.pricing__box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8rem;
-}
-
-.pricing__box h1 {
-  font-family: 'Open Sans', sans-serif;
-  color: 333366;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.pricing__dropdown p {
-  font-family: 'Open Sans', sans-serif;
-  color: 333366;
-  font-weight: bold;
-  font-size: 1.125rem;
-  margin-bottom: 0.4rem;
-}
-
-.pricing__card {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0 1rem 3rem;
-  background-color: white;
-  border-radius: 30px;
-  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.pricing__active__card {
-  transform: scale(1.2, 1.3);
-}
-
-.pricing__tarif {
-  background-color: #5d30db;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.75rem;
-  color: white;
-}
-
-.pricing__content {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22.9687px;
-  padding: 1.25rem 3.875rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pricing__price {
-  padding: 1.25rem 3.875rem;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: baseline;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 21px;
-  color: #202020;
-}
-
-.pricing__price span:nth-child(1) {
-  position: absolute;
-  top: 16%;
-  left: 23%;
-}
-
-.pricing__price span:nth-child(2) {
-  font-size: 69.1743px;
-  line-height: 94px;
-  color: #333366;
-  font-weight: bold;
-}
-
-.pricing__price span:nth-child(4) {
-  position: absolute;
-  top: 19%;
-  left: 52%;
-}
-
-.pricing__button__box {
-  text-align: center;
-}
-
-.pricing__button, .pricing__button:link, .pricing__button:visited {
-  display: inline-block;
-  margin: 2rem 0 5rem;
-  color: #5d30db;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 2px solid #5d30db;
-  padding: 0.5rem 3rem;
-  border-radius: 6px;
-  transition: all 0.2s;
-}
-
-.pricing__button:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-.pricing__button:active {
-  transform: translateY(-0.1rem);
-}
-
-.pricing__active__button, .pricing__active__button:link, .pricing__active__button:visited {
-  background: #ff9900;
-  color: white;
-  border: none;
-}
-
-.pricing__details__box {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  margin: 0 1rem;
-}
-
-.pricing__details__box h3 {
-  font-size: 18px;
-  color: #202020;
-  margin-bottom: 0.7rem;
-}
-
-.pricing__details__list {
-  list-style: none;
-}
-
-.pricing__details__item {
-  margin-bottom: 0.5rem;
-  font-size: 14px;
-  color: #333366;
-}
-
-.pricing__details__item .check {
-  font-size: 14px;
-  color: #333366;
-  margin-right: 0.4rem;
-}
-
-.pricing__details__item .check__gold {
-  font-size: 14px;
-  color: #ff9900;
-  margin-right: 0.4rem;
-}
-
-.form__container {
-  background-color: transparent;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-}
-
-.form__switch__box {
-  padding: 0;
-  border: 2px solid #ccc;
-}
-
-.form__switch__box1 {
-  border-right: none;
-}
-
-.form__swith__btn {
-  background-color: transparent;
-  width: 100%;
-  padding: 1.2rem 3rem;
-  font-weight: 600;
-  font-size: 18px;
-  border: none;
-  color: rgba(0, 0, 0, 0.5);
-  transition: all 0.2s;
-}
-
-.form__swith__btn:hover {
-  background-color: #eaeef3;
-}
-
-.form__swith__btn:focus {
-  outline: none;
-}
-
-.form__search {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-
-.form__search button {
-  background-color: white;
-  padding: 0.6rem 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 17rem;
-  border-radius: 5px;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-  font-weight: 600;
-  font-size: 16px;
-  color: #333366;
-  transition: all 0.2s;
-}
-
-.form__search button:hover {
-  background-color: #f3f3f3;
-}
-
-.form__search button:focus {
-  outline: none;
-}
-
-.form__search__img {
-  height: 2.1rem;
-  float: left;
-  margin-right: 1rem;
-}
-
-.form__wrapper {
-  padding: 2.5rem 3.75rem;
-  border-radius: 0 0 5px 5px;
-  color: #111111;
-  border-left: 2px solid #ccc;
-  border-right: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
-}
-
-.form__content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-.form__content h1 {
-  font-weight: 600;
-  font-size: 36px;
-  margin-bottom: 1rem;
-}
-
-.form__button h4 {
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
-  color: #5d30db;
-  margin: 2rem 0;
-}
-
-.form__content__p {
-  font-weight: normal;
-  font-size: 18px;
-  text-align: center;
-}
-
-.form__button p {
-  text-align: left;
-  font-size: 14px;
-  margin-bottom: 2.5rem;
-}
-
-.form__button {
-  text-align: center;
-}
-
-.form__line {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.form__line div {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
 }
 
 .responsivenes {
@@ -3177,25 +2889,25 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
 }
 
-.section-1-wrapper::after {
-  position: absolute;
-  content: '';
-  top: -10%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("~assets/images/shape.png");
-  background-repeat: no-repeat;
-}
-
 .section-1-wrapper::before {
   position: absolute;
   content: '';
-  top: -8%;
-  right: 0%;
-  width: 13%;
+  top: -5%;
+  right: -5%;
+  width: 23%;
   height: 30%;
-  background: url("~assets/images/shape1.png");
+  background: url('~assets/images/shape1.png');
+  background-repeat: no-repeat;
+}
+
+.section-1-wrapper::after {
+  position: absolute;
+  content: '';
+  top: -8%;
+  left: 0%;
+  width: 20%;
+  height: 40%;
+  background: url('~assets/images/shape.png');
   background-repeat: no-repeat;
 }
 
@@ -3211,7 +2923,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-1-wrapper .man-image {
   z-index: 10;
   -webkit-transform: translate(-8%, -10%);
-          transform: translate(-8%, -10%);
+  transform: translate(-8%, -10%);
 }
 
 .section-2-wrapper {
@@ -3248,6 +2960,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-3 {
   height: 100%;
   position: relative;
+  padding-bottom: 3rem !important;
+}
+
+.section-3 .image {
+  width: 80%;
+  margin: auto;
 }
 
 .section-3::after {
@@ -3270,7 +2988,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   height: 70px;
   border: 11px solid #ff9900;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 50%;
 }
 
@@ -3295,14 +3013,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   left: -5%;
   border: 7px solid #ff9900;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .section-3 .text-h1 {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 46px;
+  font-size: 34px;
   line-height: 152%;
   text-align: center;
   color: #333366;
@@ -3312,15 +3030,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 127.5%;
   color: #333366;
 }
 
 .section-3 .circle {
   background: #ffffff;
-  -webkit-box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15), inset 2px 2px 5px rgba(100, 106, 112, 0.15);
-          box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15), inset 2px 2px 5px rgba(100, 106, 112, 0.15);
+  -webkit-box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15),
+    inset 2px 2px 5px rgba(100, 106, 112, 0.15);
+  box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15),
+    inset 2px 2px 5px rgba(100, 106, 112, 0.15);
   border-radius: 50%;
   width: 103px;
   height: 103px;
@@ -3328,11 +3048,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .section-3 .inner-set {
@@ -3341,16 +3061,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 70px;
   height: 70px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   border-radius: 50%;
   font-family: Open Sans;
@@ -3448,12 +3168,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .section-4 .btn-quiz:active {
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .section-4 .google-image {
@@ -3462,12 +3182,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-5 {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .section-5 .cart {
   padding: 1.5rem 1.5rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .section-5 .text-h1 {
@@ -3505,5 +3227,131 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 14px;
   line-height: 19px;
   color: #f3f8ff;
+  margin-top: 2rem;
+}
+
+.section-6 {
+  background: #5d30db;
+  padding-top: 5rem !important;
+  padding-bottom: 4rem !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-6 .image-ellipse {
+  position: absolute;
+  width: 464px;
+  height: 464px;
+  bottom: -70% !important;
+  left: 0 !important;
+  background-image: url('~assets/images/Ellipse.png');
+  background-repeat: no-repeat;
+}
+
+.section-6 .text-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-6 .text-paragraph {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-6 .btn-outline-light {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 0.5rem 6rem;
+  margin: 2rem auto;
+}
+
+.section-7 {
+  min-height: 100vh;
+  /* for temporary height */
+}
+
+.section-7 .text-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  color: #333366;
+}
+
+.section-7 .text-h1-rotate {
+  font-family: 'Londrina Outline', cursive;
+  font-style: normal;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 136px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* .app-footer {
+  padding: 50px 137px;
+}
+
+.app-footer .map-yandex {
+  position: relative;
+}
+
+.app-footer .footer-map {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.app-footer section.ymap-container {
+  width: 100%;
+  height: 100%;
+} */
+
+.app-footer .text-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #333366;
+  margin: 3rem auto 2rem auto;
+}
+
+.app-footer .col-md-2 ul li {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 102, 0.6);
+}
+
+.app-footer .social-icons li a {
+  width: 25.2px;
+  height: 25.2px;
+  border-radius: 2.88px;
+  background: #5d30db;
+  color: white;
+  padding: 0.2rem 0.4rem;
 }
 /*# sourceMappingURL=main.css.map */

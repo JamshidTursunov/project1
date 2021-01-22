@@ -96,10 +96,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'section-5',
-}
-</script>
-

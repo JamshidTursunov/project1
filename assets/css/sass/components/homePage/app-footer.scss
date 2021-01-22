@@ -1,0 +1,67 @@
+.app-footer {
+//   padding: 50px 110px;
+  background: $background;
+  height: 100%;
+
+  .map-yandex {
+    position: relative;
+    padding: 0;
+    width: 320px;
+    height: 320px;
+  }
+  .footer-map {
+    width: 100%;
+    height: 100%;
+    border: 10px solid $white;
+    border-radius: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  section.ymap-container {
+    width: 100%;
+    height: 100%;
+  }
+  .text-h1 {
+    font-family: $sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: $dark_blue;
+    margin: 3rem auto 2rem auto;
+  }
+  ul li {
+    font-family: $sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: $blush;
+  }
+
+  .social-icons li a {
+    width: 25.2px;
+    height: 25.2px;
+    border-radius: 2.88px;
+    background: $light_blue;
+    color: white;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+// @media only screen and (max-width: 990px) {
+//   .app-footer {
+//     padding: 20px 20px;
+//     .footer-map {
+//       width: 320px;
+//       height: 320px;
+//       position: absolute;
+//       border: 10px solid $white;
+//       border-radius: 10px;
+//       overflow: hidden;
+//     }
+//   }
+// }

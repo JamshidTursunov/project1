@@ -2,8 +2,8 @@
   <div>
     <vueper-slides
       class="no-shadow"
-      :visible-slides="4"
-      :slide-ratio="2 / 7"
+      :visible-slides="visibleSlides"
+      :slide-ratio="ratio"
       :dragging-distance="70"
     >
       <vueper-slide class="cart-self" v-for="i in slides" :key="i">
@@ -69,7 +69,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisic with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
           image: require('@/assets/images/cart-image-2.png'),
         },
         {
@@ -85,7 +85,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariaturComplex content with Vue.js hic libero unde necessitatibus,pariatur',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet o unde necessitatibus,pariaturComplex content with Vuesitatibus,pariatur',
           image: require('@/assets/images/cart-image-4.png'),
         },
         {
@@ -113,7 +113,47 @@ export default {
           image: require('@/assets/images/cart-image-3.png'),
         },
       ],
+      window: {
+        width: 0,
+        height: 0,
+      },
+      visibleSlides: 4,
+      ratio: 3 / 10,
     }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+      console.log('window width', this.window.width)
+      if (this.window.width < 1296) {
+        this.visibleSlides = 3
+        this.ratio = 3 / 8
+      }
+      if (this.window.width < 1122) {
+        this.visibleSlides = 2
+        this.ratio = 3 / 6
+      }
+      if (this.window.width < 1083) {
+        this.visibleSlides = 2
+        this.ratio = 3 / 6
+      }
+      if (this.window.width < 712) {
+        this.visibleSlides = 1
+        this.ratio = 3 / 4
+      }
+      if (this.window.width < 535) {
+        this.visibleSlides = 1
+        this.ratio = 4 / 3.5
+      }
+    },
   },
 }
 </script>
@@ -175,6 +215,7 @@ export default {
   font-size: 12px;
   line-height: 160%;
   color: #333366;
+  overflow: hidden;
 }
 .work-line {
   height: 2px;
