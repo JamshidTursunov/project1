@@ -9,7 +9,7 @@
       <div class="col-md-4" v-for="i in 6" :key="i">
         <div class="cart grid hover:shadow-lg">
           <img
-            src="~assets/images/vector.png"
+            src="~assets/images/ux-design.png"
             class="justify-self-center w-20 h-20 mb-4"
             alt="..."
           />

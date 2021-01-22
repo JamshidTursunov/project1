@@ -1,16 +1,14 @@
 .app-footer {
-  //   padding: 50px 110px;
   background: $background;
   height: 100%;
 
   .map-yandex {
     position: relative;
-    padding: 0;
     width: 320px;
     height: 320px;
   }
   .footer-map {
-    width: 100%;
+    width: 90%;
     height: 100%;
     border: 10px solid $white;
     border-radius: 50%;
@@ -51,17 +49,3 @@
     padding: 0.2rem 0.4rem;
   }
 }
-
-// @media only screen and (max-width: 990px) {
-//   .app-footer {
-//     padding: 20px 20px;
-//     .footer-map {
-//       width: 320px;
-//       height: 320px;
-//       position: absolute;
-//       border: 10px solid $white;
-//       border-radius: 10px;
-//       overflow: hidden;
-//     }
-//   }
-// }

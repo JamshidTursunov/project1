@@ -10,8 +10,8 @@
           <div class="inner-set">{{ i }}</div>
         </div>
       </div>
-      <div class="col-md-4 flex justify-center items-center">
-        <img class="image" src="~assets/images/laptop.png" alt="..." />
+      <div class="col-md-4 my-6 flex justify-center items-center">
+        <img class="image" src="~assets/images/iMac.png" alt="..." />
       </div>
       <div class="col-md-6 px-5">
         <h1 class="text-h1 text-left mb-2">Choose what to learn</h1>

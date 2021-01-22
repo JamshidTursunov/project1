@@ -3937,13 +3937,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .app-footer .map-yandex {
   position: relative;
-  padding: 0;
   width: 320px;
   height: 320px;
 }
 
 .app-footer .footer-map {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border: 10px solid #ffffff;
   border-radius: 50%;
