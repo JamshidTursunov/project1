@@ -2238,25 +2238,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-right: 0.4rem;
 }
 
-@media only screen and (max-width: 56em) {
-  .signInPage {
-    padding: 3.2rem 15rem 10rem !important;
-  }
-}
-
 .section-1-wrapper {
   position: relative;
-}
-
-.section-1-wrapper::after {
-  position: absolute;
-  content: '';
-  top: -8%;
-  left: 0;
-  width: 20%;
-  height: 40%;
-  background: url("~assets/images/shape.png");
-  background-repeat: no-repeat;
+  padding: 0 137px;
 }
 
 .section-1-wrapper::before {
@@ -2270,6 +2254,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-repeat: no-repeat;
 }
 
+.section-1-wrapper::after {
+  position: absolute;
+  content: '';
+  top: -8%;
+  left: 0%;
+  width: 20%;
+  height: 40%;
+  background: url("~assets/images/shape.png");
+  background-repeat: no-repeat;
+}
+
 .section-1-wrapper .text-h1 {
   font-family: Roboto;
   font-style: normal;
@@ -2279,9 +2274,34 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
 }
 
+@media only screen and (max-width: 61.9em) {
+  .section-1-wrapper .text-h1 {
+    font-size: 55px;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
+  .section-1-wrapper .text-h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-1-wrapper .text-h1 {
+    font-size: 35px;
+  }
+}
+
 .section-1-wrapper .man-image {
   z-index: 10;
   transform: translate(-8%, -10%);
+}
+
+@media only screen and (max-width: 600px) {
+  .section-1-wrapper .man-image {
+    transform: translate(-38%, 12%) scale(0.9);
+  }
 }
 
 .section-1-wrapper .content {
@@ -2292,6 +2312,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-1-wrapper .content {
+    margin: 0;
+    padding: 1rem 1rem;
+  }
 }
 
 .section-1-wrapper .content::after {
@@ -2329,6 +2356,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-1-wrapper .content-title {
+    font-size: 24px;
+  }
+}
+
 .section-1-wrapper .content-context {
   font-family: Open Sans;
   font-style: normal;
@@ -2341,6 +2374,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-2-wrapper {
   position: relative;
   overflow: hidden;
+  padding: 0 137px;
 }
 
 .section-2-wrapper::after {
@@ -2369,10 +2403,44 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
 }
 
+@media only screen and (max-width: 1055px) {
+  .section-2-wrapper .row-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-2-wrapper {
+    padding: 1rem 1rem;
+  }
+  .section-2-wrapper .context {
+    display: flex;
+    justify-content: center;
+  }
+  .section-2-wrapper .context .text-h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  .section-2-wrapper .context .text-h1-span {
+    font-size: 24px;
+  }
+  .section-2-wrapper .table {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .section-3 {
   height: 100%;
   position: relative;
-  padding-bottom: 3rem !important;
+  padding: 0 137px;
+  padding-bottom: 2rem;
 }
 
 .section-3 .image {
@@ -2414,13 +2482,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
 }
 
-.section-3 .header-title::after {
+.section-3 .header-title::before {
   content: '';
   position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  top: 25%;
+  top: 30%;
   left: -5%;
   border: 7px solid #ff9900;
   box-sizing: border-box;
@@ -2476,8 +2544,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-3 {
+    padding: 1rem 1rem;
+  }
+  .section-3 .header-title {
+    font-size: 28px;
+  }
+  .section-3 .header-title::before {
+    top: 70%;
+  }
+}
+
 .section-4 {
   background: #5d30db;
+  padding: 0 137px;
 }
 
 .section-4 .progress-google {
@@ -2572,9 +2653,90 @@ Due to the split circle of progress-left and progress right, we must use the ani
   height: 214px;
 }
 
+@media only screen and (max-width: 900px) {
+  .section-4 {
+    padding: 0 1rem;
+  }
+  .section-4 .row .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-4 .btn-quiz {
+    width: 70%;
+    margin: auto;
+  }
+  .section-4 .google-image {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .section-4 .progress-google > div:nth-child(1) {
+    width: 60px;
+    height: 48px;
+    background: #333366;
+  }
+  .section-4 .progress-google div:nth-child(2) {
+    width: 60px;
+    height: 94px;
+    background: #33337b;
+  }
+  .section-4 .progress-google div:nth-child(3) {
+    width: 60px;
+    height: 138px;
+    background: #383897;
+  }
+  .section-4 .progress-google div:nth-child(4) {
+    width: 60px;
+    height: 176px;
+    background: #292996;
+  }
+  .section-4 .progress-google div:nth-child(5) {
+    width: 90px;
+    height: 230px;
+    background: #202084;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-4 {
+    padding: 0 0;
+  }
+  .section-4 .google-image {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .section-4 .progress-google > div:nth-child(1) {
+    width: 60px;
+    height: 48px;
+    background: #333366;
+  }
+  .section-4 .progress-google div:nth-child(2) {
+    width: 60px;
+    height: 94px;
+    background: #33337b;
+  }
+  .section-4 .progress-google div:nth-child(3) {
+    width: 60px;
+    height: 138px;
+    background: #383897;
+  }
+  .section-4 .progress-google div:nth-child(4) {
+    width: 60px;
+    height: 176px;
+    background: #292996;
+  }
+  .section-4 .progress-google div:nth-child(5) {
+    width: 90px;
+    height: 230px;
+    background: #202084;
+  }
+}
+
 .section-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+  padding-right: 137px;
+  padding-left: 137px;
 }
 
 .section-5 .cart {
@@ -2618,6 +2780,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 19px;
   color: #f3f8ff;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-5 {
+    padding: 3rem 3rem;
+  }
 }
 
 .section-6 {
@@ -2668,6 +2836,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: 2rem auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-6 {
+    padding: 4rem 2rem !important;
+  }
+  .section-6 .image-ellipse {
+    display: none;
+  }
+}
+
 .section-7 {
   min-height: 100vh;
   /* for temporary height */
@@ -2700,13 +2877,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .app-footer .map-yandex {
   position: relative;
-  padding: 0;
   width: 320px;
   height: 320px;
 }
 
 .app-footer .footer-map {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border: 10px solid #ffffff;
   border-radius: 50%;

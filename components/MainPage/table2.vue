@@ -2,63 +2,67 @@
   <table class="table table-borderless">
     <thead>
       <tr>
-        <th class="col-md-6" scope="col"></th>
-        <th class="col-md-3 header-title" scope="col">GreatSoft</th>
-        <th class="col-md-3 header-title" scope="col">Others</th>
+        <th class="col-md-6 col-sm-2" scope="col"></th>
+        <th class="col-md-3 col-sm-1 header-title" scope="col">GreatSoft</th>
+        <th class="col-md-3 col-sm-1 header-title" scope="col">Others</th>
       </tr>
     </thead>
     <tbody class="table-bordered table-striped">
       <tr>
-        <td class="col col-start col-md-6">Learn by doing</td>
-        <td class="col col-md-3 right-side left-top text-center">
+        <td class="col col-start col-md-6 col-sm-2">Learn by doing</td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
-        <td class="col col-md-3 right-side text-center">
+        <td class="col col-md-3 col-sm-1 right-side text-center">
           <b-icon icon="x-circle" variant="secondary"></b-icon>
         </td>
       </tr>
       <tr>
-        <td class="col col-start col-md-6">Practitional lever - skills</td>
-        <td class="col col-md-3 right-side left-top text-center">
+        <td class="col col-start col-md-6 col-sm-2">
+          Practitional lever - skills
+        </td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
-        <td class="col col-md-3 right-side text-center">
+        <td class="col col-md-3 col-sm-1 right-side text-center">
           <b-icon icon="x-circle" variant="secondary"></b-icon>
         </td>
       </tr>
       <tr>
-        <td class="col col-start col-md-6">Job focused content</td>
-        <td class="col col-md-3 right-side left-top text-center">
+        <td class="col col-start col-md-6 col-sm-2">Job focused content</td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
-        <td class="col col-md-3 right-side text-center">
+        <td class="col col-md-3 col-sm-1 right-side text-center">
           <b-icon icon="x-circle" variant="secondary"></b-icon>
         </td>
       </tr>
       <tr>
-        <td class="col col-start col-md-6">Real human help</td>
-        <td class="col col-md-3 right-side left-top text-center">
+        <td class="col col-start col-md-6 col-sm-2">Real human help</td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
-        <td class="col col-md-3 right-side text-center">
+        <td class="col col-md-3 col-sm-1 right-side text-center">
           <b-icon icon="x-circle" variant="secondary"></b-icon>
         </td>
       </tr>
       <tr>
-        <td class="col col-start col-md-6">Personalized code reviews</td>
-        <td class="col col-md-3 right-side left-top text-center">
+        <td class="col col-start col-md-6 col-sm-2">
+          Personalized code reviews
+        </td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
-        <td class="col col-md-3 right-side text-center">
+        <td class="col col-md-3 col-sm-1 right-side text-center">
           <b-icon icon="x-circle" variant="secondary"></b-icon>
         </td>
       </tr>
       <tr>
-        <td class="col col-start col-md-6">Real life projects</td>
-        <td class="col col-md-3 right-side left-top text-center">
+        <td class="col col-start col-md-6 col-sm-2">Real life projects</td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
-        <td class="col col-md-3 right-side text-center">
+        <td class="col col-md-3 col-sm-1 right-side text-center">
           <b-icon icon="x-circle" variant="secondary"></b-icon>
         </td>
       </tr>
@@ -68,7 +72,7 @@
 
 <style scoped>
 .table {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   padding: 0.5rem 0.5rem;
   position: relative;
@@ -133,5 +137,24 @@ tbody {
   border: 1px solid #ccc;
   color: #ccc;
   z-index: 9999;
+}
+
+@media only screen and (max-width: 600px) {
+  .table {
+    margin-left: 0;
+    margin: auto;
+  }
+  tbody {
+    margin: 2rem;
+    background: #5d30db;
+    color: white;
+    border: 4px solid #5d30db;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 38px;
+    white-space: nowrap;
+  }
 }
 </style>

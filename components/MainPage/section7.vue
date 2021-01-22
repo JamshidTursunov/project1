@@ -8,9 +8,13 @@
     </div>
     <div class="row">
       <div :class="{ resMiddle: resMiddle }" class="col-md-1 flex">
-        <h1 class="text-h1-rotate">GreatSoft</h1>
+        <img
+          src="~assets/images/greatsoft.png"
+          alt="greatsoft"
+          style="height: 70%; width: 75%; margin-top: 0"
+        />
       </div>
-      <div class="col-md-10 offset-md-1">
+      <div class="col-md-10">
         <vueperslides />
       </div>
     </div>

@@ -61,7 +61,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur ',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur  ',
           image: require('@/assets/images/cart-image-1.png'),
         },
         {
@@ -69,7 +69,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisic with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus ipsum, dolor sit amet ',
           image: require('@/assets/images/cart-image-2.png'),
         },
         {
@@ -85,7 +85,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur Complex content with Vue.js Lorem ipsum, dolor sit amet o unde necessitatibus,pariaturComplex content with Vuesitatibus,pariatur',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus, Lorem ipsum, dolor sit amet o unde ',
           image: require('@/assets/images/cart-image-4.png'),
         },
         {
@@ -93,7 +93,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur ',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero  ',
           image: require('@/assets/images/cart-image-1.png'),
         },
         {
@@ -101,7 +101,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, ipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariaturComdolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur ',
+            'Complex content with Vue.js Lorem ipsum, ipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariaturComdolor sit amet conss hic libero unde ',
           image: require('@/assets/images/cart-image-2.png'),
         },
         {
@@ -109,7 +109,7 @@ export default {
           level: 'senior',
           profession: 'Graphics & UX/UI designer',
           experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur ',
+            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde  ',
           image: require('@/assets/images/cart-image-3.png'),
         },
       ],
@@ -167,7 +167,7 @@ export default {
   position: relative;
 }
 .cart-self {
-  padding: 3rem 1rem 0 1rem;
+  padding: 3rem 0rem 0 1rem;
   height: 100%;
 }
 .cart-image {

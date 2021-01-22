@@ -30,7 +30,6 @@
         ><b-nav-item> {{ $t('navbar.ContactUs') }}</b-nav-item>
       </b-navbar-nav>
 
-      <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <language-switcher style="z-index: 9999" />
         <b-nav-item> {{ $t('navbar.logIn') }}</b-nav-item>
@@ -49,7 +48,7 @@
     flex-direction: column;
   }
   .app-navbar {
-    padding: 0 10px;
+    padding: 0 2rem;
   }
 }
 </style>
