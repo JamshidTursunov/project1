@@ -1,18 +1,20 @@
 <template>
-  <div class="form__container">
+  <div class="form__container" v-if="toggler">
     <div class="container form__switch__container">
       <div class="row">
         <div class="col-lg-6 form__switch__box form__switch__box1">
-          <button class="form__swith__btn">SIGN UP</button>
+          <button @click="handleSignToggler" class="form__swith__btn">
+            SIGN IN
+          </button>
         </div>
         <div class="col-lg-6 form__switch__box">
-          <button class="form__swith__btn">SIGN IN</button>
+          <button class="form__swith__btn">SIGN UP</button>
         </div>
       </div>
     </div>
     <div class="form__wrapper">
       <div class="form__content">
-        <h1>Log in to your account</h1>
+        <h1>Create your free account</h1>
         <p class="form__content__p">
           Build skills for today, tomorrow, and beyond. Education to
           future-proof your career.
@@ -24,7 +26,7 @@
               src="~/assets/images/form/google.png"
               alt="google"
             />
-            Sign in with Google
+            Sign up with Google
           </button>
           <button>
             <img
@@ -32,7 +34,7 @@
               alt="google"
               class="form__search__img"
             />
-            Sign in with Facebook
+            Sign up with Facebook
           </button>
         </div>
         <div class="form__line">
@@ -42,21 +44,17 @@
         </div>
       </div>
       <form>
+        <Input inputPlaceholder="First Name" />
+        <Input inputPlaceholder="Last Name" />
         <Input type="email" inputPlaceholder="Email Address" />
         <Input type="password" inputPlaceholder="Password" />
+        <Input type="password" inputPlaceholder="Confirm your password" />
         <div class="form__button">
           <p class="form__content__p">
             By clicking Sign Up, you agree to our Terms of Use and our Privacy
             Policy.
           </p>
           <Button type="submit" btnStyle="controlButtonSubmit">Sign in</Button>
-          <h4>Forgot your password?</h4>
-          <div class="form__line">
-            <div>&nbsp;</div>
-            or
-            <div>&nbsp;</div>
-          </div>
-          <h4>Sign in with your organization</h4>
         </div>
       </form>
     </div>
@@ -65,11 +63,19 @@
 
 <script>
 export default {
-  props: {},
+  props: {
+    toggler: {
+      type: Boolean,
+    },
+  },
   data() {
     return {}
   },
-  methods: {},
+  methods: {
+    handleSignToggler() {
+      this.$emit('showSignUp')
+    },
+  },
 }
 </script>
 
