@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Shadow&display=swap');
+
+.section-7 {
+  min-height: 100vh; /* for temporary height */
+
+  .text-h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #333366;
+  }
+  .text-h1-rotate {
+    font-family: 'Londrina Outline', cursive;
+    font-style: normal;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 136px;
+    transform: rotate(-90deg);
+  }
+}

@@ -21,9 +21,7 @@
 </template>
 
 <script>
-export default {
-  name: 'section-6',
-}
+export default {}
 </script>
 
 <style scoped>

@@ -7,10 +7,10 @@
       </h1>
     </div>
     <div class="row">
-      <div class="col-md-1 flex">
+      <div :class="{ resMiddle: resMiddle }" class="col-md-1 flex">
         <h1 class="text-h1-rotate">GreatSoft</h1>
       </div>
-      <div class="col-md-11">
+      <div class="col-md-10 offset-md-1">
         <vueperslides />
       </div>
     </div>
@@ -19,35 +19,39 @@
 
 <script>
 export default {
-  name: 'section-7',
+  data() {
+    return {
+      resMiddle: false,
+      window: {
+        width: 0,
+        height: 0,
+      },
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.window.width = window.innerWidth
+      this.window.height = window.innerHeight
+      console.log('window width', this.window.width)
+      if (this.window.width < 1296) {
+        this.resMiddle = true
+      }
+      if (this.window.width < 1122) {
+      }
+    },
+  },
 }
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Shadow&display=swap');
-
-/* font-family: 'Londrina Outline', cursive;
-font-family: 'Londrina Shadow', cursive; */
-
-.section-7 {
-  height: 100vh; /* for temporary height */
-}
-.text-h1 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 65px;
-  text-align: center;
-  color: #333366;
-}
-.text-h1-rotate {
-  font-family: 'Londrina Outline', cursive;
-  font-style: normal;
-  color: #ccc;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 136px;
-  transform: rotate(-90deg);
+.resMiddle {
+  display: none;
 }
 </style>

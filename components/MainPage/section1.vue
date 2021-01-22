@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="col-md-12 col-lg-6">
-        <form-1 style="z-index: 9999" />
+        <form-1 />
       </div>
     </div>
     <div class="row flex justify-center mt-8">

@@ -32,7 +32,10 @@ export default {
   //   { src: '@/assets/css/sass/main.scss', lang: 'scss' },
   // ],
 
-  css: ['~assets/css/sass/main.css'],
+  css: [
+    '~assets/css/sass/main.css',
+    { src: '~assets/css/sass/main.scss', lang: 'scss' },
+  ],
 
   plugins: [{ src: '~/plugins/yMap', mode: 'client' }, '~/plugins/clickaway'],
 

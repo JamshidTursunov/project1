@@ -1,6 +1,6 @@
 <template>
   <div class="form-bootstrap">
-    <b-form @submit="onSubmit" class="">
+    <b-form @submit="onSubmit">
       <h1 class="text-h1 mb-3">Sign Up form</h1>
       <b-form-group id="input-group-1" label-for="input-1">
         <b-form-input
@@ -107,13 +107,11 @@ export default {
   margin-top: 14%;
   margin-left: auto;
   @media only screen and (max-width: 61.9em) {
-    /* margin: 14% auto 0; */
     display: none;
   }
 }
 .button-submit {
   width: 100%;
-  /* width: 367px; */
   height: 53px;
   background: #ff9900;
   border-radius: 4px;

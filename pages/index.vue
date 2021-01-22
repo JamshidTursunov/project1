@@ -6,7 +6,7 @@
     <section-4 class="custom-p" />
     <section-5 class="custom-p" />
     <section-6 class="custom-p" />
-    <section-7 /> -->
+    <section-7 />
   </div>
 </template>
 
