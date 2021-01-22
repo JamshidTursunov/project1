@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid section-6">
     <div class="row flex justify-center">
-      <div class="col-md-6 grid justify-items-center">
+      <div class="col-md-6 col-sm-12 grid justify-items-center">
         <h1 class="text-h1">
           IT’S TIME TO START<br />
           INVESTING IN YOURSELF
@@ -40,15 +40,7 @@ export default {}
   background-image: url('~assets/images/Ellipse.png');
   background-repeat: no-repeat;
 }
-/* .image-ellipse::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  background: red;
-  width: 100%;
-  height: 100%;
-} */
+
 .text-h1 {
   font-family: Open Sans;
   font-style: normal;

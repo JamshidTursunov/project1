@@ -14,11 +14,11 @@
 .wrapper {
   overflow: hidden;
 }
-.custom-p {
+/* .custom-p {
   padding: 0 137px;
 }
 .limit-size {
   padding: 0 137px;
   background: #f3f8ff;
-}
+} */
 </style>

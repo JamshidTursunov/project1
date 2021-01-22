@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4" v-for="i in 6" :key="i">
         <div class="cart grid hover:shadow-lg">
           <img
             src="~assets/images/vector.png"
@@ -14,66 +14,6 @@
             alt="..."
           />
           <h2 class="text-h2 mb-2">Frontend web development</h2>
-          <p class="text-paragraph">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley o scrambled it to
-            make a type specimen book.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="cart grid hover:shadow-lg">
-          <img
-            src="~assets/images/vector.png"
-            class="justify-self-center w-20 h-20 mb-4"
-            alt="..."
-          />
-          <h2 class="text-h2 mb-2">Backend development</h2>
-          <p class="text-paragraph">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley o scrambled it to
-            make a type specimen book.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="cart grid hover:shadow-lg">
-          <img
-            src="~assets/images/vector.png"
-            class="justify-self-center w-20 h-20 mb-4"
-            alt="..."
-          />
-          <h2 class="text-h2 mb-2">Mobile development</h2>
-          <p class="text-paragraph">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley o scrambled it to
-            make a type specimen book.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="cart grid hover:shadow-lg">
-          <img
-            src="~assets/images/vector.png"
-            class="justify-self-center w-20 h-20 mb-4"
-            alt="..."
-          />
-          <h2 class="text-h2 mb-2">Data science with python</h2>
-          <p class="text-paragraph">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley o scrambled it to
-            make a type specimen book.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="cart grid hover:shadow-lg">
-          <img
-            src="~assets/images/vector.png"
-            class="justify-self-center w-20 h-20 mb-4"
-            alt="..."
-          />
-          <h2 class="text-h2 mb-2">Machine learning with python</h2>
           <p class="text-paragraph">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley o scrambled it to

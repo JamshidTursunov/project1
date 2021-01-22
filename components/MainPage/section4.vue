@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid section-4">
     <div class="row">
-      <div class="col-md-4 py-12">
+      <div class="col-md-4 col-sm-12 py-12">
         <h2 class="text-h2">
           Not sure how<br />
           and where to
@@ -13,7 +13,7 @@
         </p>
         <button class="btn-quiz px-2">Take Our 5 minute Quiz</button>
       </div>
-      <div class="col-md-8 row">
+      <div class="col-md-8 col-sm-12 row m-0">
         <div class="col-md-12 text-start text-white mt-5">
           25 tests are reaydy to<br />
           check your skills
@@ -25,7 +25,7 @@
             alt="..."
             class="google-image mt-16 flex-shrink"
           />
-          <div class="progress-google flex flex-grow items-end">
+          <div class="progress-google flex flex-grow flex-shrink items-end">
             <div class="flex-grow"></div>
             <div class="flex-grow"></div>
             <div class="flex-grow"></div>
