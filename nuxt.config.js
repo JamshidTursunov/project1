@@ -25,17 +25,7 @@ export default {
     ],
   },
 
-  // css: [
-  //   // SCSS file in the project
-  //   { src: '@/assets/css/sass/main.scss', lang: 'scss' },
-  //   { src: '@/assets/css/sass/main.scss', lang: 'scss' },
-  //   { src: '@/assets/css/sass/main.scss', lang: 'scss' },
-  // ],
-
-  css: [
-    '~assets/css/sass/main.css',
-    { src: '~assets/css/sass/main.scss', lang: 'scss' },
-  ],
+  css: ['~assets/css/sass/main.css'],
 
   plugins: [{ src: '~/plugins/yMap', mode: 'client' }, '~/plugins/clickaway'],
 

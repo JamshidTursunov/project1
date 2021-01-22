@@ -60,14 +60,10 @@
 
 <script></script>
 
-<style scoped>
-.all-wrapper {
-  position: relative;
-  @media only screen and (max-width: 56em) {
-    padding: 0 100px;
-  }
-  @media only screen and (max-width: 37.5em) {
-    padding: 0 30px;
+<style lang="scss" scoped>
+.section-1-wrapper {
+  &.all-wrapper {
+    position: relative;
   }
 }
 </style>

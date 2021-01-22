@@ -1,5 +1,6 @@
 <template>
   <div class="inputControl">
+    <label :for="type" v-if="type == ''"></label>
     <input
       v-if="controlType === 'input'"
       v-bind="$attrs"

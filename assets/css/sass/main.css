@@ -2683,6 +2683,166 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 0.7rem;
 }
 
+.form__container {
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+}
+
+.form__switch__box {
+  padding: 0;
+  border: 2px solid #ccc;
+}
+
+.form__switch__box1 {
+  border-right: none;
+}
+
+.form__swith__btn {
+  background-color: transparent;
+  width: 100%;
+  padding: 1.2rem 3rem;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form__swith__btn:hover {
+  background-color: #eaeef3;
+}
+
+.form__swith__btn:focus {
+  outline: none;
+}
+
+.form__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.form__search button {
+  background-color: white;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 17rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  font-size: 16px;
+  color: #333366;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form__search button:hover {
+  background-color: #f3f3f3;
+}
+
+.form__search button:focus {
+  outline: none;
+}
+
+.form__search__img {
+  height: 2.1rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.form__wrapper {
+  padding: 2.5rem 3.75rem;
+  border-radius: 0 0 5px 5px;
+  color: #111111;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.form__content h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.form__button h4 {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #5d30db;
+  margin: 2rem 0;
+}
+
+.form__content__p {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.form__button p {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 2.5rem;
+}
+
+.form__button {
+  text-align: center;
+}
+
+.form__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.form__line div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
 .form__wrapper {
   padding: 2.5rem 3.75rem;
   background-color: transparent;
@@ -3078,164 +3238,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-right: 0.4rem;
 }
 
-.form__container {
-  background-color: transparent;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-}
-
-.form__switch__box {
-  padding: 0;
-  border: 2px solid #ccc;
-}
-
-.form__switch__box1 {
-  border-right: none;
-}
-
-.form__swith__btn {
-  background-color: transparent;
-  width: 100%;
-  padding: 1.2rem 3rem;
-  font-weight: 600;
-  font-size: 18px;
-  border: none;
-  color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.form__swith__btn:hover {
-  background-color: #eaeef3;
-}
-
-.form__swith__btn:focus {
-  outline: none;
-}
-
-.form__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 3rem;
-}
-
-.form__search button {
-  background-color: white;
-  padding: 0.6rem 1rem;
-  margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 17rem;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-  font-weight: 600;
-  font-size: 16px;
-  color: #333366;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.form__search button:hover {
-  background-color: #f3f3f3;
-}
-
-.form__search button:focus {
-  outline: none;
-}
-
-.form__search__img {
-  height: 2.1rem;
-  float: left;
-  margin-right: 1rem;
-}
-
-.form__wrapper {
-  padding: 2.5rem 3.75rem;
-  border-radius: 0 0 5px 5px;
-  color: #111111;
-  border-left: 2px solid #ccc;
-  border-right: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
-}
-
-.form__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 3rem;
-}
-
-.form__content h1 {
-  font-weight: 600;
-  font-size: 36px;
-  margin-bottom: 1rem;
-}
-
-.form__button h4 {
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
-  color: #5d30db;
-  margin: 2rem 0;
-}
-
-.form__content__p {
-  font-weight: normal;
-  font-size: 18px;
-  text-align: center;
-}
-
-.form__button p {
-  text-align: left;
-  font-size: 14px;
-  margin-bottom: 2.5rem;
-}
-
-.form__button {
-  text-align: center;
-}
-
-.form__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-.form__line div {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
+@media only screen and (max-width: 56em) {
+  .signInPage {
+    padding: 3.2rem 15rem 10rem !important;
+  }
 }
 
 .section-1-wrapper {
@@ -3340,12 +3346,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   z-index: -1;
 }
 
-@media only screen and (max-width: 22.5em) {
-  .section-1-wrapper .content::after {
-    width: 250px;
-  }
-}
-
 .section-1-wrapper .content::before {
   content: '';
   position: absolute;
@@ -3357,12 +3357,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border: 3px solid #333366;
   border-radius: 4px 80px 4px 25px;
   z-index: -1;
-}
-
-@media only screen and (max-width: 22.5em) {
-  .section-1-wrapper .content::before {
-    width: 250px;
-  }
 }
 
 .section-1-wrapper .content-title {
@@ -3507,7 +3501,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-3 .header-title {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
@@ -3531,7 +3525,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-3 .text-h1 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -3541,7 +3535,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-3 .text-paragraph {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -3653,7 +3647,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-4 .text-h1 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -3662,7 +3656,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-4 .text-h2 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -3671,7 +3665,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-4 .text-paragraph {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -3804,7 +3798,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-5 .text-h1 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -3813,7 +3807,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-5 .text-h2 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -3822,7 +3816,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-5 .text-paragraph {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -3832,7 +3826,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-5 .btn-know-more {
   background: #5d30db;
   border-radius: 4px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -3866,7 +3860,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-6 .text-h1 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
@@ -3876,7 +3870,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-6 .text-paragraph {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -3886,7 +3880,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .section-6 .btn-outline-light {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -3959,7 +3953,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .app-footer .text-h1 {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -3969,7 +3963,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .app-footer ul li {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

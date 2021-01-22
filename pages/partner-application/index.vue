@@ -17,7 +17,7 @@
         stroke-width="7"
       />
     </svg>
-    <SignIn />
+    <PartnerApplication />
     <svg
       width="56"
       height="56"
@@ -32,7 +32,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {}
+  },
+
+  methods: {},
+}
 </script>
 
 <style lang="scss" scoped>
