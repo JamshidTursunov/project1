@@ -14,7 +14,7 @@
       required
     />
     <label v-if="type == 'file'" :for="type"
-      ><span> <slot /> </span><span>Upload</span></label
+      ><span> {{ slotLabel }} </span><span>Upload</span></label
     >
     <textarea
       v-if="controlType === 'textarea'"
@@ -59,6 +59,10 @@ export default {
     type: {
       type: String,
       default: 'text',
+    },
+
+    slotLabel: {
+      type: String,
     },
   },
 }

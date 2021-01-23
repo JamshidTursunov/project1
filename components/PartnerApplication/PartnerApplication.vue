@@ -11,7 +11,7 @@
       <form>
         <Input inputPlaceholder="Company Name" />
         <Input inputPlaceholder="Company work sphere " />
-        <Input type="file"> Company logo </Input>
+        <Input type="file" slotLabel="Company logo" />
         <Input
           controlType="textarea"
           textPlaceholder="Why do you want to become partner with us? "
