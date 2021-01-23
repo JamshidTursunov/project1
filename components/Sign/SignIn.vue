@@ -44,10 +44,15 @@
         </div>
       </div>
       <form>
-        <Input type="email" inputPlaceholder="Email Address" />
-        <Input type="password" inputPlaceholder="Password" />
+        <Input type="email" inputPlaceholder="Email Address" v-model="email" />
+        <Input type="password" inputPlaceholder="Password" v-model="password" />
         <div class="form__button">
-          <Button type="submit" btnStyle="controlButtonSubmit">Sign in</Button>
+          <Button
+            type="submit"
+            @click="submitSignIn"
+            btnStyle="controlButtonSubmit"
+            >Sign in</Button
+          >
           <h4>Forgot your password?</h4>
           <div class="form__line">
             <div>&nbsp;</div>
@@ -69,11 +74,17 @@ export default {
     },
   },
   data() {
-    return {}
+    return {
+      email: 'jamshid',
+      password: null,
+    }
   },
   methods: {
     handleSignToggler() {
       this.$emit('showSignIn')
+    },
+    submitSignIn() {
+      console.log('sub')
     },
   },
 }

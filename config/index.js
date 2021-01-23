@@ -32,8 +32,8 @@ export const I18N = {
       en: '/about',
       ru: '/about',
     },
-    posts: {
-      en: '/posts',
+    sign: {
+      en: '/sign',
     },
   },
   vueI18n: {

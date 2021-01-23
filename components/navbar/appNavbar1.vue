@@ -32,7 +32,9 @@
 
       <b-navbar-nav class="ml-auto">
         <language-switcher style="z-index: 9999" />
-        <b-nav-item> {{ $t('navbar.logIn') }}</b-nav-item>
+        <b-nav-item :to="localePath('/sign')">
+          {{ $t('navbar.logIn') }}</b-nav-item
+        >
         <b-nav-item> {{ $t('navbar.signUp') }}</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
