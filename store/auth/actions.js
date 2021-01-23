@@ -15,9 +15,10 @@ export function register({ commit }, { email, name, password }) {
   }
 }
 
-export function login({ commit }, { email, password }) {
+export function login({ commit }) {
   try {
     commit('setIsAuthorized', true)
+    console.log('isAuthorized has been set')
   } catch {
     commit('setIsAuthorized', false)
   }

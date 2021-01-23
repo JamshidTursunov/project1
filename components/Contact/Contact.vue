@@ -4,7 +4,12 @@
       <h1>Contact Us!</h1>
       <p>Ask your question. Our administrator will call you soon</p>
       <div class="row">
-        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+          <ContactForm />
+        </div>
+        <div class="col-lg-6">
+          <ContactMap />
+        </div>
       </div>
     </div>
   </div>

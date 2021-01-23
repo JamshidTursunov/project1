@@ -43,7 +43,7 @@
           <div>&nbsp;</div>
         </div>
       </div>
-      <form>
+      <form @submit.prevent="submitSignIn">
         <Input type="email" inputPlaceholder="Email Address" v-model="email" />
         <Input type="password" inputPlaceholder="Password" v-model="password" />
         <div class="form__button">
@@ -75,7 +75,7 @@ export default {
   },
   data() {
     return {
-      email: 'jamshid',
+      email: '',
       password: null,
     }
   },
@@ -83,8 +83,18 @@ export default {
     handleSignToggler() {
       this.$emit('showSignIn')
     },
-    submitSignIn() {
-      console.log('sub')
+    async submitSignIn() {
+      const loggedUser = await this.$store.getters['auth/loggedUser']
+      if (
+        this.email === loggedUser.email &&
+        this.password === loggedUser.password
+      ) {
+        await this.$store.dispatch('auth/login')
+        console.log('user has logged in succesfully')
+        this.$router.replace('/')
+      } else {
+        console.log('login is failed')
+      }
     },
   },
 }

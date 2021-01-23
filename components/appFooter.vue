@@ -46,11 +46,7 @@
       <div class="map-yandex flex-shrink-0" style="flex: 2">
         <div class="footer-map">
           <client-only>
-            <yandex-map
-              :settings="settings"
-              :coords="[41.339118, 69.335715]"
-              zoom="19.17"
-            >
+            <yandex-map :coords="[41.339118, 69.335715]" zoom="19.17">
               <ymap-marker
                 markerId="1"
                 marker-type="placemark"
