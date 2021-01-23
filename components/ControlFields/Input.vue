@@ -14,7 +14,7 @@
       required
     />
     <label v-if="type == 'file'" :for="type"
-      ><span>Select file</span><span>Upload</span></label
+      ><span> <slot /> </span><span>Upload</span></label
     >
     <textarea
       v-if="controlType === 'textarea'"
