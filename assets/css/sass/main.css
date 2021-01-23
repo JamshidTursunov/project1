@@ -1901,6 +1901,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 18px;
   border: none;
   color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -1913,11 +1914,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 3rem;
 }
 
@@ -1925,15 +1933,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #ffffff;
   padding: 0.6rem 1rem;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 17rem;
   border-radius: 5px;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   font-weight: 600;
   font-size: 16px;
   color: #333366;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -1961,10 +1977,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 3rem;
 }
 
@@ -1999,8 +2024,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 

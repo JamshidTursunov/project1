@@ -73,9 +73,6 @@
     background: #ff9900;
     border-radius: 4px 80px 4px 25px;
     z-index: -1;
-    // @media only screen and (max-width: 22.5em) {
-    //   width: 250px;
-    // }
   }
   .content::before {
     content: '';
@@ -88,9 +85,6 @@
     border: 3px solid #333366;
     border-radius: 4px 80px 4px 25px;
     z-index: -1;
-    // @media only screen and (max-width: 22.5em) {
-    //   width: 250px;
-    // }
   }
   .content-title {
     font-family: Oswald;
@@ -103,6 +97,8 @@
     @media only screen and (max-width: 600px) {
       font-size: 24px;
     }
+<<<<<<< HEAD
+=======
     // @media only screen and (max-width: 61.9em) {
     //   font-size: 40px;
     // }
@@ -112,6 +108,7 @@
     // @media only screen and (max-width: 37.5em) {
     //   font-size: 30px;
     // }
+>>>>>>> 3ed33a0be5a7360ebf99c9e7a1024c1bb63e62c2
   }
   .content-context {
     font-family: Open Sans;

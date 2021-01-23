@@ -136,20 +136,16 @@ export default {
       if (this.window.width < 1296) {
         this.visibleSlides = 3
         this.ratio = 3 / 8
-      }
-      if (this.window.width < 1122) {
+      } else if (this.window.width < 1122) {
         this.visibleSlides = 2
         this.ratio = 3 / 6
-      }
-      if (this.window.width < 1083) {
+      } else if (this.window.width < 1083) {
         this.visibleSlides = 2
         this.ratio = 3 / 6
-      }
-      if (this.window.width < 712) {
+      } else if (this.window.width < 712) {
         this.visibleSlides = 1
         this.ratio = 3 / 4
-      }
-      if (this.window.width < 535) {
+      } else if (this.window.width < 535) {
         this.visibleSlides = 1
         this.ratio = 4 / 3.5
       }

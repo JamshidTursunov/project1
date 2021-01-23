@@ -43,11 +43,16 @@
           <div>&nbsp;</div>
         </div>
       </div>
-      <form @submit.prevent="showModel">
+      <form @submit.prevent="submitSignIn">
         <Input type="email" inputPlaceholder="Email Address" v-model="email" />
         <Input type="password" inputPlaceholder="Password" v-model="password" />
         <div class="form__button">
-          <Button type="submit" btnStyle="controlButtonSubmit">Sign in</Button>
+          <Button
+            type="submit"
+            @click="submitSignIn"
+            btnStyle="controlButtonSubmit"
+            >Sign in</Button
+          >
           <h4>Forgot your password?</h4>
           <div class="form__line">
             <div>&nbsp;</div>
@@ -71,16 +76,25 @@ export default {
   data() {
     return {
       email: '',
-      password: '',
+      password: null,
     }
   },
   methods: {
     handleSignToggler() {
       this.$emit('showSignIn')
     },
-    showModel() {
-      console.log(this.email)
-      console.log(this.password)
+    async submitSignIn() {
+      const loggedUser = await this.$store.getters['auth/loggedUser']
+      if (
+        this.email === loggedUser.email &&
+        this.password === loggedUser.password
+      ) {
+        await this.$store.dispatch('auth/login')
+        console.log('user has logged in succesfully')
+        this.$router.replace('/')
+      } else {
+        console.log('login is failed')
+      }
     },
   },
 }
