@@ -1503,11 +1503,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 5px;
 }
 
+.contact__form__input:focus {
+  outline: none;
+}
+
 .contact__form__textArea {
   display: block;
   width: 100%;
   padding: 0.6rem 1rem;
   border-radius: 5px;
+}
+
+.contact__form__textArea:focus {
+  outline: none;
 }
 
 .contact__btn {
@@ -1519,6 +1527,44 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 5px;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.contact__map__content h3 {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333366;
+}
+
+.contact__map__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact__map__icons h3 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333366;
+}
+
+.contact__map__copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__map__copy p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333366;
+}
+
+.contact__map__i {
+  font-size: 24px;
+  color: #333366;
+  margin-right: 0.5rem;
 }
 
 .controlButton {

@@ -70,7 +70,7 @@ export default {
   },
   data() {
     return {
-      email: 'Jahongir',
+      email: '',
       password: '',
     }
   },
