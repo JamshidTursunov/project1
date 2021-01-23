@@ -3,16 +3,16 @@
   }
 
   &__heading__primary {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-size: 2rem;
     font-weight: 700;
-    color: white;
+    color: $white;
   }
 
   &__paragraph {
     font-size: 0.9rem;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
+    font-family: $sans;
+    color: $white;
   }
 
   &__column__margin {
@@ -21,7 +21,7 @@
   }
 
   &__box {
-    background-color: #5d30db;
+    background-color: $light_blue;
     position: relative;
     display: flex;
     justify-content: center;

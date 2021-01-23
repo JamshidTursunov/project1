@@ -1,13 +1,13 @@
 .form {
   &__container {
     background-color: transparent;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
   }
 
   &__switch__box {
     padding: 0;
-    border: 2px solid #ccc;
+    border: 2px solid $dark_white;
   }
 
   &__switch__box1 {
@@ -26,7 +26,7 @@
   }
 
   &__swith__btn:hover {
-    background-color: #eaeef3;
+    background-color: $tertiary_white;
   }
 
   &__swith__btn:focus {
@@ -43,7 +43,7 @@
   }
 
   &__search button {
-    background-color: white;
+    background-color: $white;
     padding: 0.6rem 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -54,7 +54,7 @@
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     font-weight: 600;
     font-size: 16px;
-    color: #333366;
+    color: $dark_blue;
     transition: all 0.2s;
   }
 
@@ -75,10 +75,10 @@
   &__wrapper {
     padding: 2.5rem 3.75rem;
     border-radius: 0 0 5px 5px;
-    color: #111111;
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    color: $darkest_black;
+    border-left: 2px solid $dark_white;
+    border-right: 2px solid $dark_white;
+    border-bottom: 2px solid $dark_white;
   }
 
   &__content {
@@ -99,7 +99,7 @@
     font-weight: 600;
     font-size: 18px;
     text-align: center;
-    color: #5d30db;
+    color: $light_blue;
     margin: 2rem 0;
   }
 

@@ -2,9 +2,9 @@
   padding: 4rem 9rem;
   & h1 {
     font-size: 4.5rem;
-    color: #5d30db;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    color: $light_blue;
+    font-family: $sans;
+    font-weight: $bold;
     margin-bottom: 1rem;
   }
 
@@ -23,14 +23,14 @@
   &__box h1 {
     font-size: 4.5rem;
     color: $orange;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-family: $sans;
+    font-weight: $bold;
   }
 
   &__box p {
     font-size: 2rem;
-    color: #333366;
+    color: $dark_blue;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
   }
 }

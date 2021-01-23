@@ -14,8 +14,8 @@
   }
 
   &__box h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: 333366;
+    font-family: $sans;
+    color: $dark_blue;
     font-size: 3rem;
     font-weight: bold;
   }
@@ -24,17 +24,17 @@
   }
 
   &__dropdown p {
-    font-family: 'Open Sans', sans-serif;
-    color: 333366;
+    font-family: $sans;
+    color: $dark_blue;
     font-weight: bold;
     font-size: 1.125rem;
     margin-bottom: 0.4rem;
   }
 
   &__card {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     margin: 0 1rem 3rem;
-    background-color: white;
+    background-color: $white;
     border-radius: 30px;
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -48,7 +48,7 @@
   }
 
   &__tarif {
-    background-color: #5d30db;
+    background-color: $light_blue;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 1.75rem;
-    color: white;
+    color: $white;
   }
 
   &__content {
@@ -92,7 +92,7 @@
   &__price span:nth-child(2) {
     font-size: 69.1743px;
     line-height: 94px;
-    color: #333366;
+    color: $dark_blue;
     font-weight: bold;
   }
   &__price span:nth-child(3) {
@@ -112,12 +112,12 @@
   &__button:visited {
     display: inline-block;
     margin: 2rem 0 5rem;
-    color: #5d30db;
+    color: $light_blue;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
-    border: 2px solid #5d30db;
+    border: 2px solid $light_blue;
     padding: 0.5rem 3rem;
     border-radius: 6px;
     transition: all 0.2s;
@@ -135,13 +135,13 @@
   &__active__button,
   &__active__button:link,
   &__active__button:visited {
-    background: #ff9900;
-    color: white;
+    background: $orange;
+    color: $white;
     border: none;
   }
 
   &__details__box {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
     font-weight: bold;
     margin: 0 1rem;
@@ -160,18 +160,18 @@
   &__details__item {
     margin-bottom: 0.5rem;
     font-size: 14px;
-    color: #333366;
+    color: $dark_blue;
   }
 
   &__details__item .check {
     font-size: 14px;
-    color: #333366;
+    color: $dark_blue;
     margin-right: 0.4rem;
   }
 
   &__details__item .check__gold {
     font-size: 14px;
-    color: #ff9900;
+    color: $orange;
     margin-right: 0.4rem;
   }
 }

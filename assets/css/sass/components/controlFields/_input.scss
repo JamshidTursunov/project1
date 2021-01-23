@@ -6,7 +6,7 @@
     width: 100%;
     box-sizing: border-box;
     font-family: inherit;
-    border: 2px solid #ccc;
+    border: 2px solid $dark_white;
     padding: 0.5rem 1.2rem;
     margin-bottom: 1rem;
     border-radius: 5px;
@@ -15,7 +15,7 @@
 
   & input:focus,
   & textarea:focus {
-    background-color: #eaeef3;
+    background-color: $tertiary_white;
     outline: none;
   }
 
@@ -32,15 +32,15 @@
     background-color: transparent;
     padding: 0.5rem 1.2rem;
     border-radius: 5px;
-    color: #b6b3b3;
-    border: 2px solid #ccc;
+    color: $light_white;
+    border: 2px solid $dark_white;
     display: flex;
     justify-content: space-between;
   }
 
   & label span:last-child {
     height: 100%;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid $dark_white;
     padding: 0 1.2rem;
   }
 }
