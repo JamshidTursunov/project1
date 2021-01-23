@@ -1,6 +1,5 @@
 <template>
   <div class="inputControl">
-    <label :for="type" v-if="type == ''"></label>
     <input
       v-if="controlType === 'input'"
       v-bind="$attrs"
@@ -35,6 +34,11 @@ export default {
     controlType: {
       type: String,
       default: 'input',
+    },
+
+    value: {
+      type: String,
+      default: '',
     },
 
     rows: {

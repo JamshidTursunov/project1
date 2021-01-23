@@ -1461,6 +1461,66 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 2rem;
 }
 
+.contact {
+  padding: 5rem 9rem;
+  background-image: url("~assets/images/contact/bitmap.png");
+  background-size: contain;
+}
+
+.contact__us h1 {
+  color: #333366;
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__us p {
+  color: #333366;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact__container {
+  margin: 0;
+  padding: 0;
+}
+
+.contact__input__group {
+  margin-bottom: 2rem;
+}
+
+.contact__form__label {
+  display: block;
+  font-size: 1rem;
+  color: #2c3241;
+  font-weight: bold;
+}
+
+.contact__form__input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+
+.contact__form__textArea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+
+.contact__btn {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #5d30db;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .controlButton {
   font-size: 1rem;
   color: white;

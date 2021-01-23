@@ -43,9 +43,9 @@
           <div>&nbsp;</div>
         </div>
       </div>
-      <form>
-        <Input type="email" inputPlaceholder="Email Address" />
-        <Input type="password" inputPlaceholder="Password" />
+      <form @submit.prevent="showModel">
+        <Input type="email" inputPlaceholder="Email Address" v-model="email" />
+        <Input type="password" inputPlaceholder="Password" v-model="password" />
         <div class="form__button">
           <Button type="submit" btnStyle="controlButtonSubmit">Sign in</Button>
           <h4>Forgot your password?</h4>
@@ -69,11 +69,18 @@ export default {
     },
   },
   data() {
-    return {}
+    return {
+      email: '',
+      password: '',
+    }
   },
   methods: {
     handleSignToggler() {
       this.$emit('showSignIn')
+    },
+    showModel() {
+      console.log(this.email)
+      console.log(this.password)
     },
   },
 }
