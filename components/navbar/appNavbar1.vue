@@ -39,10 +39,12 @@
 
       <b-navbar-nav v-else class="ml-auto">
         <language-switcher />
-        <b-nav-item :to="localePath('/sign')">
+        <b-nav-item :to="localePath('/sign')" @click="handleGoToSignIn">
           {{ $t('navbar.logIn') }}</b-nav-item
         >
-        <b-nav-item> {{ $t('navbar.signUp') }}</b-nav-item>
+        <b-nav-item :to="localePath('/sign')" @click="handleGoToSignUp">
+          {{ $t('navbar.signUp') }}</b-nav-item
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -58,6 +60,7 @@ export default {
       console.log('logout')
       this.$store.dispatch('auth/logout')
     },
+    handleGoToSignIn() {},
   },
   computed: {
     isAuthorized() {

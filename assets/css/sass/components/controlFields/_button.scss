@@ -1,6 +1,6 @@
 .controlButton {
   font-size: 1rem;
-  color: white;
+  color: $white;
   padding: 0.5rem 1.2rem;
   cursor: pointer;
   border: none;
@@ -8,21 +8,21 @@
   text-align: center;
 
   &Submit {
-    background-color: #5d30db;
+    background-color: $light_blue;
   }
 
   &Submit:hover,
   &Submit:active {
-    background-color: #4d25bb;
+    background-color: $blue_tertiary;
   }
 
   &Cancel {
-    background-color: red;
+    background-color: $red_light;
     color: white;
   }
 
   &Cancel:hover,
   &Cancel:active {
-    background-color: #c90e0e;
+    background-color: $red_dark;
   }
 }

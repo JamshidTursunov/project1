@@ -1,6 +1,6 @@
 .process {
   &__container {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
     padding: 0 8.2rem 6.75rem;
   }
@@ -11,10 +11,10 @@
   &__wrapper {
     position: relative;
     & h1 {
-      font-weight: 600;
+      font-weight: $bold;
       font-size: 32px;
       text-align: center;
-      color: #5d30db;
+      color: $light_blue;
       margin-bottom: 4.2rem;
     }
   }
@@ -44,14 +44,14 @@
 
     & h3 {
       font-size: 18px;
-      color: #333366;
+      color: $dark_blue;
       margin-bottom: 2rem;
     }
 
     & span {
       font-weight: 600;
       font-size: 38px;
-      color: #333366;
+      color: $dark_blue;
       margin-bottom: 3.6rem;
       padding: 2rem 3rem;
       border-radius: 50%;
@@ -61,7 +61,7 @@
 
     & p {
       text-align: center;
-      color: #333366;
+      color: $dark_blue;
       font-size: 14px;
     }
   }

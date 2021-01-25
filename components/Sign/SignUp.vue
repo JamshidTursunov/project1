@@ -1,22 +1,10 @@
 <template>
-  <div class="form__container" v-if="toggler">
-    <div class="container form__switch__container">
-      <div class="row">
-        <div class="col-lg-6 form__switch__box form__switch__box1">
-          <button @click="handleSignToggler" class="form__swith__btn">
-            SIGN IN
-          </button>
-        </div>
-        <div class="col-lg-6 form__switch__box">
-          <button class="form__swith__btn">SIGN UP</button>
-        </div>
-      </div>
-    </div>
+  <div class="form__container">
     <div class="form__wrapper">
       <div class="form__content">
         <h1>Create your free account</h1>
         <p class="form__content__p">
-          Build skills for today, tomorrow, and beyond. Education to
+          Build skills for today, tomorrow and beyond. Education allows to
           future-proof your career.
         </p>
         <div class="form__search">
@@ -38,9 +26,9 @@
           </button>
         </div>
         <div class="form__line">
-          <div>&nbsp;</div>
+          <span></span>
           or
-          <div>&nbsp;</div>
+          <span></span>
         </div>
       </div>
       <form>
@@ -51,15 +39,10 @@
         <Input type="password" inputPlaceholder="Confirm your password" />
         <div class="form__button">
           <p class="form__content__p">
-            By clicking Sign Up, you agree to our Terms of Use and our Privacy
-            Policy.
+            By clicking Sign Up, you agree to GreatSoft Academy's Terms of
+            Service & Privacy Policy.
           </p>
-          <Button
-            type="submit"
-            @click="submitSignUp"
-            btnStyle="controlButtonSubmit"
-            >Sign in</Button
-          >
+          <Button type="submit" btnStyle="controlButtonSubmit">Sign up</Button>
         </div>
       </form>
     </div>
@@ -68,11 +51,7 @@
 
 <script>
 export default {
-  props: {
-    toggler: {
-      type: Boolean,
-    },
-  },
+  props: {},
   data() {
     return {
       firstName: '',
@@ -81,22 +60,7 @@ export default {
       email: '',
     }
   },
-  methods: {
-    handleSignToggler() {
-      this.$emit('showSignUp')
-    },
-    async submitSignUp() {
-      const user = {
-        firstName: this.firstName,
-        lastName: this.lastName,
-        email: this.email,
-        password: this.password,
-      }
-      await this.$store.dispatch('auth/register', user)
-      console.log('user has registered succesfully')
-      this.$router.push('/')
-    },
-  },
+  methods: {},
 }
 </script>
 

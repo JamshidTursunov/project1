@@ -11,7 +11,7 @@
       <Input inputPlaceholder="First Name" />
       <Input inputPlaceholder="Last Name" />
       <Input type="email" inputPlaceholder="Email Address" />
-      <Input type="file" inputPlaceholder="Send your resume" />
+      <Input type="file" slotLabel="Send your resume" />
       <Input inputPlaceholder="Send your portfolio" />
       <Input
         controlType="textarea"

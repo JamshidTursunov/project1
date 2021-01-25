@@ -3,9 +3,9 @@
     padding: 0 0 2rem;
   }
   &__content {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
-    color: #333366;
+    color: $dark_blue;
     margin-bottom: 3.5rem;
 
     & h1 {
@@ -22,11 +22,11 @@
   }
 
   &__info {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    color: #333366;
+    color: $dark_blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@
 
   &__link,
   &__link:visited {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
     font-weight: 600;
     text-decoration: none;
@@ -73,7 +73,7 @@
   }
 
   &__link1 {
-    background-color: #5d30db;
+    background-color: $light_blue;
     box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
     color: white;
   }
@@ -83,12 +83,12 @@
   }
 
   &__link2:hover {
-    color: #5d30db;
+    color: $light_blue;
   }
 
   &__link2 {
-    border: 1px solid #5d30db;
-    color: #5d30db;
+    border: 1px solid $light_blue;
+    color: $light_blue;
     filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
     background-color: transparent;
   }

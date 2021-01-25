@@ -1,36 +1,22 @@
 .form {
   &__container {
     background-color: transparent;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
   }
 
   &__switch__box {
-    padding: 0;
-    border: 2px solid #ccc;
-  }
-
-  &__switch__box1 {
-    border-right: none;
-  }
-
-  &__swith__btn {
-    background-color: transparent;
-    width: 100%;
     padding: 1.2rem 3rem;
+    border: 2px solid $dark_white;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
     font-weight: 600;
     font-size: 18px;
-    border: none;
     color: rgba(0, 0, 0, 0.5);
-    transition: all 0.2s;
-  }
-
-  &__swith__btn:hover {
-    background-color: #eaeef3;
-  }
-
-  &__swith__btn:focus {
-    outline: none;
+    background-color: $tertiary_white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__search {
@@ -43,7 +29,7 @@
   }
 
   &__search button {
-    background-color: white;
+    background-color: $white;
     padding: 0.6rem 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -54,7 +40,7 @@
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     font-weight: 600;
     font-size: 16px;
-    color: #333366;
+    color: $dark_blue;
     transition: all 0.2s;
   }
 
@@ -74,11 +60,11 @@
 
   &__wrapper {
     padding: 2.5rem 3.75rem;
-    border-radius: 0 0 5px 5px;
-    color: #111111;
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-radius: 0px 0px 5px 5px !important;
+    color: $darkest_black;
+    border-left: 2px solid $dark_white;
+    border-right: 2px solid $dark_white;
+    border-bottom: 2px solid $dark_white;
   }
 
   &__content {
@@ -99,7 +85,7 @@
     font-weight: 600;
     font-size: 18px;
     text-align: center;
-    color: #5d30db;
+    color: $light_blue;
     margin: 2rem 0;
   }
 
@@ -123,10 +109,23 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+    margin-top: 2rem;
   }
 
-  &__line div {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    width: 100%;
+  &__line span {
+    width: 45%;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      transition: all 0.2s;
+      color: $light_blue;
+    }
   }
 }

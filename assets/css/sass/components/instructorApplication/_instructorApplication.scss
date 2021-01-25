@@ -3,10 +3,10 @@
     padding: 2.5rem 3.75rem;
     background-color: transparent;
     border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $sans;
     font-style: normal;
-    color: #111111;
-    border: 2px solid #ccc;
+    color: $darkest_black;
+    border: 2px solid $dark_white;
   }
 
   &__content {

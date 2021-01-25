@@ -1,0 +1,43 @@
+.contact__map {
+  &__container {
+  }
+
+  &__content {
+    & h3 {
+      display: block;
+      font-weight: bold;
+      font-size: 24px;
+      color: $dark_blue;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & h3 {
+      font-weight: bold;
+      font-size: 24px;
+      color: $dark_blue;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & p {
+      font-weight: 600;
+      font-size: 14px;
+      color: $dark_blue;
+    }
+  }
+
+  &__i {
+    font-size: 24px;
+    color: $dark_blue;
+    margin-right: 0.5rem;
+  }
+}

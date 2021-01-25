@@ -20,6 +20,9 @@
     width: 100%;
     padding: 0.6rem 1rem;
     border-radius: 5px;
+    &:focus {
+      outline: none;
+    }
   }
 
   &__form__textArea {
@@ -27,6 +30,9 @@
     width: 100%;
     padding: 0.6rem 1rem;
     border-radius: 5px;
+    &:focus {
+      outline: none;
+    }
   }
 
   &__btn {
