@@ -1,14 +1,9 @@
 <template>
-  <div class="form__container" v-if="toggler">
+  <div class="form__container">
     <div class="container form__switch__container">
       <div class="row">
-        <div class="col-lg-6 form__switch__box form__switch__box1">
-          <button class="form__swith__btn">SIGN IN</button>
-        </div>
-        <div class="col-lg-6 form__switch__box">
-          <button @click="handleSignToggler" class="form__swith__btn">
-            SIGN UP
-          </button>
+        <div class="col-lg-12 form__switch__box">
+          SIGN IN TO GREATSOFT ACADEMY
         </div>
       </div>
     </div>
@@ -16,7 +11,7 @@
       <div class="form__content">
         <h1>Log in to your account</h1>
         <p class="form__content__p">
-          Build skills for today, tomorrow, and beyond. Education to
+          Build skills for today, tomorrow and beyond. Education allows to
           future-proof your career.
         </p>
         <div class="form__search">
@@ -38,9 +33,9 @@
           </button>
         </div>
         <div class="form__line">
-          <div>&nbsp;</div>
+          <span></span>
           or
-          <div>&nbsp;</div>
+          <span></span>
         </div>
       </div>
       <form @submit.prevent="submitSignIn">
@@ -55,11 +50,14 @@
           >
           <h4>Forgot your password?</h4>
           <div class="form__line">
-            <div>&nbsp;</div>
+            <span></span>
             or
-            <div>&nbsp;</div>
+            <span></span>
           </div>
           <h4>Sign in with your organization</h4>
+          <nuxt-link to="/sign/signUp" class="form__link"
+            >Not a member yet! Sign up for free</nuxt-link
+          >
         </div>
       </form>
     </div>
@@ -68,11 +66,7 @@
 
 <script>
 export default {
-  props: {
-    toggler: {
-      type: Boolean,
-    },
-  },
+  props: {},
   data() {
     return {
       email: '',
@@ -80,9 +74,6 @@ export default {
     }
   },
   methods: {
-    handleSignToggler() {
-      this.$emit('showSignIn')
-    },
     async submitSignIn() {
       const loggedUser = await this.$store.getters['auth/loggedUser']
       if (

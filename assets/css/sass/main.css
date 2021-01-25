@@ -1885,47 +1885,25 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__switch__box {
-  padding: 0;
-  border: 2px solid #ccc;
-}
-
-.form__switch__box1 {
-  border-right: none;
-}
-
-.form__swith__btn {
-  background-color: transparent;
-  width: 100%;
   padding: 1.2rem 3rem;
+  border: 2px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
   font-weight: 600;
   font-size: 18px;
-  border: none;
   color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.form__swith__btn:hover {
   background-color: #eaeef3;
-}
-
-.form__swith__btn:focus {
-  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 3rem;
 }
 
@@ -1933,23 +1911,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #ffffff;
   padding: 0.6rem 1rem;
   margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 17rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   font-weight: 600;
   font-size: 16px;
   color: #333366;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -1969,7 +1939,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .form__wrapper {
   padding: 2.5rem 3.75rem;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0px 0px 5px 5px !important;
   color: #111111;
   border-left: 2px solid #ccc;
   border-right: 2px solid #ccc;
@@ -1977,19 +1947,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem;
 }
 
@@ -2024,18 +1985,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.form__line div {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
+.form__line span {
+  width: 45%;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form__link, .form__link:link, .form__link:visited {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: #5d30db;
 }
 
 .form__wrapper {
@@ -2371,6 +2337,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 14px;
   color: #ff9900;
   margin-right: 0.4rem;
+}
+
+@media only screen and (max-width: 56em) {
+  .signInPage {
+    padding: 3.2rem 15rem 10rem !important;
+  }
 }
 
 .section-1-wrapper {

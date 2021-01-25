@@ -59,12 +59,12 @@
             <language-switcher />
           </li>
           <li class="mr-2 px-4 lg:mb-0 btn login-btn">
-            <nuxt-link :to="localePath('/login')">
+            <nuxt-link :to="localePath('/sign')">
               {{ $t('navbar.logIn') }}
             </nuxt-link>
           </li>
           <li class="lg:mb-0 btn signup-btn">
-            <nuxt-link :to="localePath('/signup')">
+            <nuxt-link :to="localePath('/sign')">
               {{ $t('navbar.signUp') }}
             </nuxt-link>
           </li>

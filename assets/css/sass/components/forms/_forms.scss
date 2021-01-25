@@ -6,31 +6,17 @@
   }
 
   &__switch__box {
-    padding: 0;
-    border: 2px solid $dark_white;
-  }
-
-  &__switch__box1 {
-    border-right: none;
-  }
-
-  &__swith__btn {
-    background-color: transparent;
-    width: 100%;
     padding: 1.2rem 3rem;
+    border: 2px solid $dark_white;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
     font-weight: 600;
     font-size: 18px;
-    border: none;
     color: rgba(0, 0, 0, 0.5);
-    transition: all 0.2s;
-  }
-
-  &__swith__btn:hover {
     background-color: $tertiary_white;
-  }
-
-  &__swith__btn:focus {
-    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__search {
@@ -74,7 +60,7 @@
 
   &__wrapper {
     padding: 2.5rem 3.75rem;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0px 0px 5px 5px !important;
     color: $darkest_black;
     border-left: 2px solid $dark_white;
     border-right: 2px solid $dark_white;
@@ -123,10 +109,23 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+    margin-top: 2rem;
   }
 
-  &__line div {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    width: 100%;
+  &__line span {
+    width: 45%;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      transition: all 0.2s;
+      color: $light_blue;
+    }
   }
 }
