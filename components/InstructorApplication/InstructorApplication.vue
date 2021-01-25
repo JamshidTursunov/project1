@@ -11,7 +11,18 @@
       <Input inputPlaceholder="First Name" />
       <Input inputPlaceholder="Last Name" />
       <Input type="email" inputPlaceholder="Email Address" />
-      <b-form-file class="mb-3 inputControl__file" plain required></b-form-file>
+      <div class="inputControl__box">
+        <input
+          type="file"
+          name="file"
+          id="file"
+          class="inputControl__file"
+          @change="valChange"
+        />
+        <label for="file">
+          <span>{{ label }}</span> <span>Upload file</span>
+        </label>
+      </div>
       <Input inputPlaceholder="Send your portfolio" />
       <Input
         controlType="textarea"
@@ -33,9 +44,15 @@
 export default {
   props: {},
   data() {
-    return {}
+    return {
+      label: 'Send your resume',
+    }
   },
-  methods: {},
+  methods: {
+    valChange(event) {
+      this.label = event.target.files[0].name
+    },
+  },
 }
 </script>
 
