@@ -11,7 +11,11 @@
       <form>
         <Input inputPlaceholder="Company Name" />
         <Input inputPlaceholder="Company work sphere " />
-        <Input type="file" slotLabel="Company logo" />
+        <b-form-file
+          class="mb-3 inputControl__file"
+          plain
+          required
+        ></b-form-file>
         <Input
           controlType="textarea"
           textPlaceholder="Why do you want to become partner with us? "

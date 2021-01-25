@@ -11,7 +11,7 @@
       <Input inputPlaceholder="First Name" />
       <Input inputPlaceholder="Last Name" />
       <Input type="email" inputPlaceholder="Email Address" />
-      <Input type="file" slotLabel="Send your resume" />
+      <b-form-file class="mb-3 inputControl__file" plain required></b-form-file>
       <Input inputPlaceholder="Send your portfolio" />
       <Input
         controlType="textarea"
