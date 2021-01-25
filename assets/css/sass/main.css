@@ -1403,6 +1403,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: 0;
 }
 
+.partners__btn, .partners__btn:link, .partners__btn:visited {
+  padding: 0.5rem 1rem;
+  background-color: #5d30db;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.partners__btn:hover {
+  background-color: #4d25bb;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.partners__btn:active {
+  transform: translateY(-0.1rem);
+}
+
 .promo__heading__primary {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;

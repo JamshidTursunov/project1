@@ -2,7 +2,7 @@
   <div class="partners">
     <div class="container partners__column__margin">
       <h1 class="mb-4">Our partners</h1>
-      <div class="row">
+      <div class="row mb-5">
         <div
           class="col-lg-3 col-md-4 partners__column__margin"
           v-for="partner in partnersNumber"
@@ -15,6 +15,13 @@
               class="partners__img"
             />
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 flex justify-center">
+          <nuxt-link to="/partner-application" class="partners__btn"
+            >Become a partner</nuxt-link
+          >
         </div>
       </div>
     </div>
