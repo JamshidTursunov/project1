@@ -1,9 +1,11 @@
 <template>
   <div class="contact__map">
-    <div class="contact__map__container"></div>
+    <div class="contact__map__container">
+      <y-map />
+    </div>
     <div class="contact__map__content">
-      <h3>+998991091320</h3>
-      <div class="contact__map__icons">
+      <h3 class="mb-2">+998991091320</h3>
+      <div class="contact__map__icons mb-2">
         <h3>+998991091420</h3>
         <div>
           <i class="fab fa-telegram-plane contact__map__i" />
