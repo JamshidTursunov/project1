@@ -32,10 +32,10 @@
         </div>
       </div>
       <form>
-        <Input inputPlaceholder="First Name" v-model="firstName" />
-        <Input inputPlaceholder="Last Name" v-model="lastName" />
-        <Input type="email" inputPlaceholder="Email Address" v-model="email" />
-        <Input type="password" inputPlaceholder="Password" v-model="password" />
+        <Input inputPlaceholder="First Name" />
+        <Input inputPlaceholder="Last Name" />
+        <Input type="email" inputPlaceholder="Email Address" />
+        <Input type="password" inputPlaceholder="Password" />
         <Input type="password" inputPlaceholder="Confirm your password" />
         <div class="form__button">
           <p class="form__content__p">
@@ -53,12 +53,7 @@
 export default {
   props: {},
   data() {
-    return {
-      firstName: '',
-      lastName: '',
-      password: '',
-      email: '',
-    }
+    return {}
   },
   methods: {},
 }

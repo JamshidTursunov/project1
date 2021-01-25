@@ -1,6 +1,10 @@
 export default function () {
   return {
     isAuthorized: false,
-    user: null,
+    defaultUser: {
+      email: 'john@mail.ru',
+      name: 'john',
+      password: 'pass',
+    },
   }
 }

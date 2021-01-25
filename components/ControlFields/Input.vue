@@ -8,14 +8,8 @@
       :placeholder="inputPlaceholder"
       :type="type"
       :id="type"
-      :class="{
-        inputControl__hidden: type == 'file',
-      }"
       required
     />
-    <label v-if="type == 'file'" :for="type"
-      ><span> {{ slotLabel }} </span><span>Upload</span></label
-    >
     <textarea
       v-if="controlType === 'textarea'"
       :rows="rows"
