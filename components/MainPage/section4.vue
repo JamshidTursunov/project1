@@ -37,3 +37,9 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  .progress-google{
+    
+  }
+</style>

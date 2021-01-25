@@ -43,22 +43,8 @@
           <li>Become an instructor</li>
         </ul>
       </div>
-      <div class="map-yandex flex-shrink-0" style="flex: 2">
-        <div class="footer-map">
-          <client-only>
-            <yandex-map :coords="[41.339118, 69.335715]" zoom="19.17">
-              <ymap-marker
-                markerId="1"
-                marker-type="placemark"
-                :coords="[41.339118, 69.335715]"
-                hint-content="GreatSoft Software Development Company"
-                :balloon="{ header: 'GreatSoft' }"
-                :icon="markerIcon"
-                cluster-name="1"
-              ></ymap-marker>
-            </yandex-map>
-          </client-only>
-        </div>
+      <div style="flex: 2">
+        <y-map />
       </div>
     </div>
     <hr class="my-4" />
@@ -109,49 +95,16 @@
   padding: 50px 110px;
 }
 
-.map-yandex {
-  position: relative;
-}
-.footer-map {
-  transform: translate(-10%, -40%);
-}
-
 .bottom-row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-@media only screen and (max-width: 1100px) {
-  .app-footer {
-    padding: 30px 30px;
-  }
-}
-@media only screen and (max-width: 990px) {
-  .app-footer {
-    padding: 30px 50px;
-  }
-  .map-yandex {
-    margin-top: 1rem;
-    flex: 1 100% !important;
-    border-radius: 0;
-  }
-  .footer-map {
-    border-radius: 0;
-    transform: translate(0%, 0%);
-  }
-}
+
 @media only screen and (max-width: 770px) {
   .item {
     flex: 1;
     margin: 0rem 0.1rem;
-  }
-  .map-yandex {
-    margin-top: 1rem;
-    border-radius: 0;
-  }
-  .footer-map {
-    margin-top: 0.5rem;
-    transform: translate(0%, 0%);
   }
 }
 @media only screen and (max-width: 726px) {
@@ -176,7 +129,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center !important;
-    /* align-items: center !important; */
   }
   .bottom-row {
     flex-direction: column !important;

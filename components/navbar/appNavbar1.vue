@@ -30,17 +30,17 @@
         ><b-nav-item> {{ $t('navbar.ContactUs') }}</b-nav-item>
       </b-navbar-nav>
 
-      <b-navbar-nav v-if="isAuthenticated === false" class="ml-auto">
+      <b-navbar-nav class="ml-auto" v-if="loggedIn">
         <language-switcher />
-        <b-nav-item :to="localePath('/sign')" @click="handleGoToSignIn">
+        <b-nav-item :to="localePath('/sign')">
           {{ $t('navbar.logIn') }}</b-nav-item
         >
-        <b-nav-item :to="localePath('/sign')" @click="handleGoToSignUp">
+        <b-nav-item :to="localePath('/sign')">
           {{ $t('navbar.signUp') }}</b-nav-item
         >
       </b-navbar-nav>
 
-      <b-navbar-nav v-else-if="isAuthenticated === true" class="ml-auto">
+      <b-navbar-nav class="ml-auto" v-else>
         <language-switcher style="z-index: 9999" />
         <b-nav-item :to="localePath('/')"> korzinka</b-nav-item>
         <b-nav-item> user profile</b-nav-item>
@@ -54,7 +54,7 @@
 export default {
   data() {
     return {
-      isAuthenticated: false,
+      loggedIn: true,
     }
   },
   methods: {
@@ -64,12 +64,7 @@ export default {
     },
     handleGoToSignIn() {},
   },
-  computed: {
-    isAuthenticated() {
-      console.log('is authorized', this.$store.getters['auth/isAuthorized'])
-      return this.$store.getters['auth/isAuthorized']
-    },
-  },
+  computed: {},
 }
 </script>
 
