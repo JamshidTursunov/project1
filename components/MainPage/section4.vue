@@ -38,8 +38,4 @@
   </div>
 </template>
 
-<style scoped>
-  .progress-google{
-    
-  }
-</style>
+<style scoped></style>

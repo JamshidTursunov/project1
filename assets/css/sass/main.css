@@ -4337,4 +4337,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: white;
   padding: 0.2rem 0.4rem;
 }
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333366;
+}
 /*# sourceMappingURL=main.css.map */
