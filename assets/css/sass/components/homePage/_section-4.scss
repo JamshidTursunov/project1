@@ -7,27 +7,174 @@
     width: 100%;
     height: 100%;
     position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 82%;
+      height: 0%;
+      top: 35%;
+      left: 0;
+      position: absolute;
+      border-top: 8px dotted white;
+      transform: rotate(-20deg);
+    }
+    @media only screen and (max-width: 900px) {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 0%;
+        top: 18%;
+        left: 0;
+        position: absolute;
+        border-top: 6px dotted white;
+        transform: rotate(-35deg);
+      }
+    }
   }
 
   .progress-google > div:nth-child(1) {
-    width: 140px;
+    width: 100px;
     height: 48px;
     background: #333366;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -72px;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      background: orange;
+      border-radius: 50%;
+      @media only screen and (max-width: 900px) {
+        top: -86px;
+        left: 52%;
+      }
+    }
+    &::before {
+      content: 'Now';
+      position: absolute;
+      top: -120px;
+      left: 20%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 122.5%;
+      color: #e4dbff;
+      @media only screen and (max-width: 900px) {
+        font-size: 14px;
+      }
+    }
   }
   .progress-google div:nth-child(2) {
     width: 109px;
     height: 94px;
+    position: relative;
     background: #33337b;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -66px;
+      left: 42%;
+      width: 15px;
+      height: 15px;
+      background: orange;
+      border-radius: 50%;
+      @media only screen and (max-width: 900px) {
+        top: -76px;
+        left: 40%;
+      }
+    }
+    &::before {
+      content: 'Good';
+      position: absolute;
+      top: -120px;
+      left: 20%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 122.5%;
+      color: #e4dbff;
+      @media only screen and (max-width: 900px) {
+        font-size: 14px;
+      }
+    }
   }
   .progress-google div:nth-child(3) {
     width: 109px;
     height: 138px;
     background: #383897;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -64px;
+      left: 43%;
+      width: 15px;
+      height: 15px;
+      background: orange;
+      border-radius: 50%;
+      @media only screen and (max-width: 900px) {
+        top: -68px;
+        left: 25%;
+      }
+    }
+    &::before {
+      content: 'Just done';
+      position: absolute;
+      top: -120px;
+      left: 20%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 122.5%;
+      color: #e4dbff;
+      @media only screen and (max-width: 900px) {
+        top: -128;
+        left: 20%;
+        font-size: 14px;
+      }
+    }
   }
   .progress-google div:nth-child(4) {
     width: 109px;
     height: 176px;
     background: #292996;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -65px;
+      left: 30%;
+      width: 15px;
+      height: 15px;
+      background: orange;
+      border-radius: 50%;
+      @media only screen and (max-width: 900px) {
+        top: -75px;
+        left: 37%;
+      }
+    }
+    &::before {
+      content: 'Already';
+      position: absolute;
+      top: -120px;
+      left: 20%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 122.5%;
+      color: #e4dbff;
+      @media only screen and (max-width: 900px) {
+        font-size: 14px;
+        left: 0;
+      }
+    }
   }
   .progress-google div:nth-child(5) {
     width: 115px;
@@ -43,7 +190,11 @@
       height: 50%;
       background: url('~assets/images/google_head.png');
       background-position: center;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media only screen and (max-width: 900px) {
+        top: -45%;
+      }
     }
   }
 
