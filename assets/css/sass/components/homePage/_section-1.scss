@@ -1,7 +1,6 @@
 .section-1-wrapper {
   position: relative;
   padding: $custom-size;
-
   &::before {
     position: absolute;
     content: '';
@@ -30,24 +29,10 @@
     font-size: 64px;
     line-height: 100%;
     color: #333366;
-
-    @media only screen and (max-width: 61.9em) {
-      font-size: 55px;
-      margin-top: 1rem;
-    }
-    @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
-      font-size: 45px;
-    }
-    @media only screen and (max-width: 37.5em) {
-      font-size: 35px;
-    }
   }
   .man-image {
     z-index: 10;
     transform: translate(-8%, -10%);
-    @media only screen and (max-width: 600px) {
-      transform: translate(-38%, 12%) scale(0.9);
-    }
   }
 
   .content {
@@ -58,10 +43,6 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
-    @media only screen and (max-width: 600px) {
-      margin: 0;
-      padding: 1rem 1rem;
-    }
   }
   .content::after {
     content: '';
@@ -94,18 +75,6 @@
     line-height: 104.5%;
     color: #ffffff;
     margin-bottom: 1rem;
-    @media only screen and (max-width: 600px) {
-      font-size: 24px;
-    }
-    // @media only screen and (max-width: 61.9em) {
-    //   font-size: 40px;
-    // }
-    // @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
-    //   font-size: 35px;
-    // }
-    // @media only screen and (max-width: 37.5em) {
-    //   font-size: 30px;
-    // }
   }
   .content-context {
     font-family: Open Sans;
@@ -114,5 +83,66 @@
     font-size: 15px;
     line-height: 107.5%;
     color: #333366;
+  }
+
+  @media only screen and (max-width: 80em) {
+    padding: 0 100px;
+    .man-image {
+      transform: translate(-38%, 12%) scale(0.8);
+    }
+  }
+
+  @media only screen and (max-width: 61.9em) {
+    .text-h1 {
+      font-size: 55px;
+      margin-top: 1rem;
+    }
+    .content-title {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
+    padding: 0 80px;
+    .text-h1 {
+      font-size: 45px;
+    }
+    .content-title {
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 37.5em) {
+    padding: 0 50px;
+    .text-h1 {
+      font-size: 35px;
+    }
+    .content-title {
+      font-size: 30px;
+    }
+    .content-title {
+      font-size: 24px;
+    }
+    .content {
+      margin: 0;
+      padding: 1rem 1rem;
+    }
+    .man-image {
+      transform: translate(-38%, 12%) scale(0.9);
+    }
+  }
+
+  @media only screen and (max-width: 27.5em) {
+    .content::after {
+      width: 230px;
+      height: 200px;
+    }
+
+    .content::before {
+      width: 230px;
+      height: 200px;
+    }
+    .man-image {
+      transform: translate(-30%, 22%) scale(0.9);
+      margin-bottom: 10%;
+    }
   }
 }

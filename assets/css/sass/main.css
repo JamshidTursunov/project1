@@ -2325,12 +2325,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-right: 0.4rem;
 }
 
-@media only screen and (max-width: 56em) {
-  .signInPage {
-    padding: 3.2rem 15rem 10rem !important;
-  }
-}
-
 .section-1-wrapper {
   position: relative;
   padding: 0 137px;
@@ -2367,34 +2361,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
 }
 
-@media only screen and (max-width: 61.9em) {
-  .section-1-wrapper .text-h1 {
-    font-size: 55px;
-    margin-top: 1rem;
-  }
-}
-
-@media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
-  .section-1-wrapper .text-h1 {
-    font-size: 45px;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .section-1-wrapper .text-h1 {
-    font-size: 35px;
-  }
-}
-
 .section-1-wrapper .man-image {
   z-index: 10;
   transform: translate(-8%, -10%);
-}
-
-@media only screen and (max-width: 600px) {
-  .section-1-wrapper .man-image {
-    transform: translate(-38%, 12%) scale(0.9);
-  }
 }
 
 .section-1-wrapper .content {
@@ -2405,13 +2374,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .section-1-wrapper .content {
-    margin: 0;
-    padding: 1rem 1rem;
-  }
 }
 
 .section-1-wrapper .content::after {
@@ -2449,12 +2411,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .section-1-wrapper .content-title {
-    font-size: 24px;
-  }
-}
-
 .section-1-wrapper .content-context {
   font-family: Open Sans;
   font-style: normal;
@@ -2462,6 +2418,74 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 15px;
   line-height: 107.5%;
   color: #333366;
+}
+
+@media only screen and (max-width: 80em) {
+  .section-1-wrapper {
+    padding: 0 100px;
+  }
+  .section-1-wrapper .man-image {
+    transform: translate(-38%, 12%) scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 61.9em) {
+  .section-1-wrapper .text-h1 {
+    font-size: 55px;
+    margin-top: 1rem;
+  }
+  .section-1-wrapper .content-title {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
+  .section-1-wrapper {
+    padding: 0 80px;
+  }
+  .section-1-wrapper .text-h1 {
+    font-size: 45px;
+  }
+  .section-1-wrapper .content-title {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-1-wrapper {
+    padding: 0 50px;
+  }
+  .section-1-wrapper .text-h1 {
+    font-size: 35px;
+  }
+  .section-1-wrapper .content-title {
+    font-size: 30px;
+  }
+  .section-1-wrapper .content-title {
+    font-size: 24px;
+  }
+  .section-1-wrapper .content {
+    margin: 0;
+    padding: 1rem 1rem;
+  }
+  .section-1-wrapper .man-image {
+    transform: translate(-38%, 12%) scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .section-1-wrapper .content::after {
+    width: 230px;
+    height: 200px;
+  }
+  .section-1-wrapper .content::before {
+    width: 230px;
+    height: 200px;
+  }
+  .section-1-wrapper .man-image {
+    transform: translate(-30%, 22%) scale(0.9);
+    margin-bottom: 10%;
+  }
 }
 
 .section-2-wrapper {

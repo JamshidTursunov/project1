@@ -5,7 +5,9 @@
       and get paid to teach Greatsoft Academy’s students and expand your
       knowledge
     </p>
-    <nuxt-link class="header__instructor__link" to="/">Apply Now</nuxt-link>
+    <nuxt-link class="header__instructor__link" to="/instructor-application"
+      >Apply Now</nuxt-link
+    >
   </div>
 </template>
 
