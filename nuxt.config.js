@@ -27,7 +27,11 @@ export default {
 
   css: ['~assets/css/sass/main.css'],
 
-  plugins: [{ src: '~/plugins/yMap', mode: 'client' }, '~/plugins/clickaway'],
+  plugins: [
+    { src: '~/plugins/yMap', mode: 'client' },
+    '~/plugins/clickaway',
+    // { src: '~/plugins/persistedState.client.js' },
+  ],
 
   components: true,
 
@@ -66,15 +70,36 @@ export default {
       },
     ],
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
     'nuxt-gmaps',
     '@nuxtjs/svg',
     ['nuxt-i18n', I18N],
     '@nuxtjs/style-resources',
   ],
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+        },
+        user: {
+          property: 'user',
+        },
+        endpoints: {
+          login: { url: '/login', method: 'post' },
+          logout: { url: '/api/auth/logout', method: 'post' },
+          user: { url: '/api/auth/user', method: 'get' },
+        },
+      },
+    },
+  },
   bootstrapVue: {
     icons: true,
   },
-  axios: {},
+  axios: {
+    // baseURL: 'http://localhost:3000/api',
+  },
 
   build: {},
+  router: {},
 }

@@ -30,19 +30,19 @@
         ><b-nav-item> {{ $t('navbar.ContactUs') }}</b-nav-item>
       </b-navbar-nav>
 
-      <b-navbar-nav v-if="isAuthenticated === false" class="ml-auto">
+      <b-navbar-nav v-if="$auth.loggedIn" class="ml-auto">
+        <language-switcher style="z-index: 9999" />
+        <b-nav-item :to="localePath('/')">{{ $auth.user.name }}</b-nav-item>
+        <b-nav-item> user profile</b-nav-item>
+        <b-nav-item @click="$auth.logout()">logout</b-nav-item>
+      </b-navbar-nav>
+
+      <b-navbar-nav v-else class="ml-auto">
         <language-switcher />
         <b-nav-item :to="localePath('/sign')">
           {{ $t('navbar.logIn') }}</b-nav-item
         >
         <b-nav-item> {{ $t('navbar.signUp') }}</b-nav-item>
-      </b-navbar-nav>
-
-      <b-navbar-nav v-else-if="isAuthenticated === true" class="ml-auto">
-        <language-switcher style="z-index: 9999" />
-        <b-nav-item :to="localePath('/')"> korzinka</b-nav-item>
-        <b-nav-item> user profile</b-nav-item>
-        <b-nav-item @click="logout" to="/">logout</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -51,19 +51,16 @@
 <script>
 export default {
   data() {
-    return {
-      isAuthenticated: false,
-    }
+    return {}
   },
   methods: {
     logout() {
-      this.$store.dispatch('auth/logout')
       console.log('logout')
+      this.$store.dispatch('auth/logout')
     },
   },
   computed: {
-    isAuthenticated() {
-      console.log('is authorized', this.$store.getters['auth/isAuthorized'])
+    isAuthorized() {
       return this.$store.getters['auth/isAuthorized']
     },
   },

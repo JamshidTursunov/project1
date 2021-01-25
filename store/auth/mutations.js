@@ -1,7 +1,7 @@
 export function setIsAuthorized(state, isAuthorized) {
-  state.setIsAuthorized = isAuthorized
+  state.isAuthorized = isAuthorized
 }
 
 export function setUser(state, user) {
-  state.defaultUser = user
+  state.user = user
 }

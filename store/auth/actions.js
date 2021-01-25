@@ -1,11 +1,6 @@
-export function register({ commit }, { email, name, password }) {
+export function register({ commit }, user) {
   try {
     commit('setIsAuthorized', true)
-    const user = {
-      email,
-      name,
-      password,
-    }
     commit('setUser', user)
     localStorage.setItem('credentials', JSON.stringify(user))
   } catch {
@@ -25,5 +20,6 @@ export function login({ commit }) {
 }
 
 export function logout({ commit }) {
+  localStorage.removeItem('credentials')
   commit('setIsAuthorized', false)
 }

@@ -44,17 +44,22 @@
         </div>
       </div>
       <form>
-        <Input inputPlaceholder="First Name" />
-        <Input inputPlaceholder="Last Name" />
-        <Input type="email" inputPlaceholder="Email Address" />
-        <Input type="password" inputPlaceholder="Password" />
+        <Input inputPlaceholder="First Name" v-model="firstName" />
+        <Input inputPlaceholder="Last Name" v-model="lastName" />
+        <Input type="email" inputPlaceholder="Email Address" v-model="email" />
+        <Input type="password" inputPlaceholder="Password" v-model="password" />
         <Input type="password" inputPlaceholder="Confirm your password" />
         <div class="form__button">
           <p class="form__content__p">
             By clicking Sign Up, you agree to our Terms of Use and our Privacy
             Policy.
           </p>
-          <Button type="submit" btnStyle="controlButtonSubmit">Sign in</Button>
+          <Button
+            type="submit"
+            @click="submitSignUp"
+            btnStyle="controlButtonSubmit"
+            >Sign in</Button
+          >
         </div>
       </form>
     </div>
@@ -69,11 +74,27 @@ export default {
     },
   },
   data() {
-    return {}
+    return {
+      firstName: '',
+      lastName: '',
+      password: '',
+      email: '',
+    }
   },
   methods: {
     handleSignToggler() {
       this.$emit('showSignUp')
+    },
+    async submitSignUp() {
+      const user = {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        password: this.password,
+      }
+      await this.$store.dispatch('auth/register', user)
+      console.log('user has registered succesfully')
+      this.$router.push('/')
     },
   },
 }

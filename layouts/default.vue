@@ -3,7 +3,7 @@
     <div v-if="timerBool" class="grid justify-items-center w-full">
       <spinner class="mt-5" />
     </div>
-    <div v-else>
+    <div>
       <app-navbar-1 />
       <Nuxt />
       <app-footer />

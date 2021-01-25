@@ -1,6 +1,6 @@
 <template>
   <div class="form-bootstrap">
-    <b-form @submit="onSubmit">
+    <b-form @submit="SubmitForm(form)">
       <h1 class="text-h1 mb-3">Sign Up form</h1>
       <b-form-group id="input-group-1" label-for="input-1">
         <b-form-input
@@ -36,15 +36,16 @@
       <b-form-group id="input-group-2" label-for="input-2">
         <b-form-input
           id="input-2"
-          v-model="form.name"
+          type="password"
+          v-model="form.password"
           class="bg-transparent input-field"
-          placeholder="Enter name"
+          placeholder="Password"
           required
         ></b-form-input>
       </b-form-group>
 
       <b-button type="submit" class="button-submit">
-        Start learning now
+        Start learning now {{ buttonText }}
       </b-button>
     </b-form>
     <div class="container-fluid">
@@ -69,7 +70,7 @@
           </button>
           <button class="btn flex btn-outline-dark align-items-center px-9">
             <img
-              src="~assets/images/facebook.png"
+              src="~assets/svgs/facebook.svg"
               class="w-8 h-8 mr-2"
               alt="facebook image"
             />
@@ -83,20 +84,16 @@
 
 <script>
 export default {
+  props: ['buttonText', 'SubmitForm'],
   data() {
     return {
       form: {
         firstname: '',
         lastname: '',
         email: null,
+        password: '',
       },
     }
-  },
-  methods: {
-    onSubmit(event) {
-      event.preventDefault()
-      alert(JSON.stringify(this.form))
-    },
   },
 }
 </script>

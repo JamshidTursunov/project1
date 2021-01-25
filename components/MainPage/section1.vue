@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="col-md-12 col-lg-6">
-        <form-1 />
+        <form-1 buttonText="Login" :SubmitForm="loginUser" />
       </div>
     </div>
     <div class="row flex justify-center mt-8">
@@ -58,7 +58,20 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    async loginUser(infoUser) {
+      try {
+        let response = await this.$auth.loginWith('local', { data: infoUser })
+        console.log('my response', response)
+      } catch (err) {
+        console.log(err)
+      }
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .section-1-wrapper {

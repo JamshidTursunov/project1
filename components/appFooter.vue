@@ -53,7 +53,6 @@
                 :coords="[41.339118, 69.335715]"
                 hint-content="GreatSoft Software Development Company"
                 :balloon="{ header: 'GreatSoft' }"
-                :icon="markerIcon"
                 cluster-name="1"
               ></ymap-marker>
             </yandex-map>
@@ -176,7 +175,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center !important;
-    /* align-items: center !important; */
   }
   .bottom-row {
     flex-direction: column !important;
