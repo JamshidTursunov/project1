@@ -6,7 +6,7 @@
       :slide-ratio="ratio"
       :dragging-distance="70"
     >
-      <vueper-slide class="cart-self" v-for="i in slides" :key="i">
+      <vueper-slide class="cart-self" v-for="(i, index) in slides" :key="index">
         <template v-slot:content>
           <div class="cart-block">
             <img class="cart-image" :src="i.image" alt="..." />

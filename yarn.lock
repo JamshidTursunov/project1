@@ -851,14 +851,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@dongido/vue-viaudio@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@dongido/vue-viaudio/-/vue-viaudio-0.3.5.tgz#041b3d0d82028c55381e27df33cbe0b5ec95eb4f"
-  integrity sha512-VAjt2UTTQfdl48N5vEuADUvo+ydRbbp9RvTHpgo8XhTCKeNmZxX6f1V/7pn8La4TiPAGLtKhv2iQ/MXbjF6lag==
-  dependencies:
-    core-js "^2.6.5"
-    vue "^2.6.10"
-
 "@fortawesome/fontawesome-common-types@^0.2.34":
   version "0.2.34"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.34.tgz#0a8c348bb23b7b760030f5b1d912e582be4ec915"
@@ -3680,11 +3672,6 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-es6-promise@^4.0.5:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
-  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
-
 escalade@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
@@ -4361,13 +4348,6 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.10"
     minimatch "~3.0.2"
-
-google-maps-api-loader@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/google-maps-api-loader/-/google-maps-api-loader-1.1.1.tgz#b600602451300521ba1b5d7493e7071d7931ac00"
-  integrity sha512-+bxumYl6WCxKDjygLFF2FxrNyKIB0QgWKFb+EZ6F5wt/MoU2cm/8se9uQ0o1nY7389F2qe6ocdpSFn1bKQAD5w==
-  dependencies:
-    es6-promise "^4.0.5"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2, graceful-fs@^4.2.3:
   version "4.2.4"
@@ -5998,11 +5978,6 @@ node-html-parser@^2.0.0:
   dependencies:
     he "1.2.0"
 
-node-js-marker-clusterer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/node-js-marker-clusterer/-/node-js-marker-clusterer-1.0.0.tgz#d09a1e963ebc5f6c162ece8510e9e680bba097a9"
-  integrity sha1-0Joelj68X2wWLs6FEOnmgLugl6k=
-
 node-libs-browser@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/node-libs-browser/-/node-libs-browser-2.2.1.tgz#b64f513d18338625f90346d27b0d235e631f6425"
@@ -6162,14 +6137,6 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
-
-nuxt-gmaps@^1.2.10:
-  version "1.2.10"
-  resolved "https://registry.yarnpkg.com/nuxt-gmaps/-/nuxt-gmaps-1.2.10.tgz#c32aca891e63eb227835e9f1c2edfa3bf86c0ca6"
-  integrity sha512-IeYXeR6cJpVfSDa0+IYht7r7IZNCL5uK6oWH8e1JY95+NbJBBH6Nas9BmR+9ZIkCw6aFrUwXEkOFgg8RefjlJw==
-  dependencies:
-    google-maps-api-loader "^1.1.1"
-    node-js-marker-clusterer "^1.0.0"
 
 nuxt-i18n@^6.17.0:
   version "6.17.0"
@@ -8182,11 +8149,6 @@ shell-quote@^1.6.1:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
-shvl@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/shvl/-/shvl-2.0.2.tgz#eca7decb9bbd4e8dd93f06ea9ab94036319cd351"
-  integrity sha512-G3KkIXPza3dgkt6Bo8zIl5K/KvAAhbG6o9KfAjhPvrIIzzAhnfc2ztv1i+iPTbNNM43MaBUqIaZwqVjkSgY/rw==
-
 signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
@@ -9331,14 +9293,6 @@ vueperslides@^2.12.1:
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/vueperslides/-/vueperslides-2.12.1.tgz#5dcb0e7b68ea1a2b997bfcf9beb29744963db5b0"
   integrity sha512-XStW/eBRnjDEtNHj+47vcQ1gwDAjzKldnmQw1hegJPpeY2rd1OQsE6g2SG+2TsUBV+WfEklOXWJ+fPU8eLTemw==
-
-vuex-persistedstate@^4.0.0-beta.3:
-  version "4.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/vuex-persistedstate/-/vuex-persistedstate-4.0.0-beta.3.tgz#89dd712de72d28e85cc95467d066002c1405f277"
-  integrity sha512-T4IRD27qoUWh+8qr6T6zVp15xO7x/nPgnU13OD0C2uUwA7U9PhGozrj6lvVmMYDyRgc36J0msMXn3GvwHjkIhA==
-  dependencies:
-    deepmerge "^4.2.2"
-    shvl "^2.0.2"
 
 vuex@^3.6.0:
   version "3.6.0"

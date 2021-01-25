@@ -6,6 +6,6 @@ const settings = {
   lang: 'ru_RU',
   coordorder: 'latlong',
   version: '2.1',
-} // настройки плагина
+}
 
 Vue.use(YmapPlugin, settings)

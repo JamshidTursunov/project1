@@ -69,7 +69,7 @@
           </button>
           <button class="btn flex btn-outline-dark align-items-center px-9">
             <img
-              src="~assets/images/facebook.png"
+              src="~assets/svgs/facebook.svg"
               class="w-8 h-8 mr-2"
               alt="facebook image"
             />

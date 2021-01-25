@@ -66,7 +66,6 @@ export default {
       },
     ],
     '@nuxtjs/axios',
-    'nuxt-gmaps',
     '@nuxtjs/svg',
     ['nuxt-i18n', I18N],
     '@nuxtjs/style-resources',
