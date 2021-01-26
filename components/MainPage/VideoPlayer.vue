@@ -3,7 +3,7 @@
     class="video-js"
     data-setup="{}"
     controls
-    poster=""
+    :poster="postImage"
     style="height: 350px; border: none"
   >
     <source src="~assets/video/dog.mp4" type="video/mp4" />
@@ -12,7 +12,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      postImage: require('~/assets/images/videoImage.jpg'),
+    }
+  },
+}
 </script>
 
 <style scoped>

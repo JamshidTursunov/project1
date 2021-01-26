@@ -32,10 +32,10 @@
 
       <b-navbar-nav class="ml-auto" v-if="loggedIn">
         <language-switcher />
-        <b-nav-item :to="localePath('/sign')">
+        <b-nav-item class="btn-login" :to="localePath('/sign')">
           {{ $t('navbar.logIn') }}</b-nav-item
         >
-        <b-nav-item :to="localePath('/sign')">
+        <b-nav-item class="btn-sign-up" :to="localePath('/sign')">
           {{ $t('navbar.signUp') }}</b-nav-item
         >
       </b-navbar-nav>
@@ -62,17 +62,13 @@ export default {
       this.$store.dispatch('auth/logout')
       console.log('logout')
     },
-    handleGoToSignIn() {},
   },
-  computed: {},
 }
 </script>
 
 <style scoped>
-.app-navbar {
-  padding: 0 110px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-}
+
+
 @media only screen and (max-width: 900px) {
   .ul-list {
     flex-direction: column;
