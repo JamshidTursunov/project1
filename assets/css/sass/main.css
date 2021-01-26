@@ -1424,6 +1424,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
   transform: translateY(-0.1rem);
 }
 
+.promo__short__video {
+  position: relative;
+  z-index: 20;
+}
+
+.promo__short__video .video-js {
+  border-radius: 160px 8px 8px 8px;
+  position: absolute;
+  top: 8rem;
+  left: -5rem;
+  object-fit: cover;
+}
+
 .promo__heading__primary {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
@@ -1451,12 +1464,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 13rem 9rem;
 }
 
-.promo__box__promo {
-  padding: 0;
-  background-color: transparent;
-  position: relative;
-}
-
 .promo__img {
   position: absolute;
   top: 0;
@@ -1466,22 +1473,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .promo__content {
   position: relative;
-  z-index: 10;
-}
-
-.promo__video__box {
-  height: 27.5rem;
-  width: 38rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: contain;
-  position: absolute;
-  left: -5rem;
-  top: 2rem;
-}
-
-.promo__video__box .video-js {
-  border-radius: 160px 8px 8px 8px;
+  z-index: 20;
 }
 
 .contact {
@@ -2403,6 +2395,74 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-right: 0.4rem;
 }
 
+@media only screen and (max-width: 62em) {
+  .about .promo__box {
+    background-color: transparent;
+    padding: 3rem 5rem;
+    text-align: center;
+  }
+  .about .promo__heading__primary {
+    font-size: 2.5rem;
+    color: #5d30db;
+  }
+  .about .promo__paragraph {
+    color: #5d30db;
+    font-size: 1.3rem;
+  }
+  .about .promo__short__video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 2rem;
+  }
+  .about .promo__short__video .video-js {
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about .promo__box {
+    background-color: transparent;
+    padding: 3rem 4rem;
+    text-align: center;
+  }
+  .about .promo__heading__primary {
+    font-size: 2rem;
+    color: #5d30db;
+  }
+  .about .promo__paragraph {
+    color: #5d30db;
+    font-size: 1.2rem;
+  }
+  .about .promo__short__video .video-js {
+    height: 280px !important;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .about .promo__box {
+    padding: 3rem 2rem;
+  }
+  .about .promo__heading__primary {
+    font-size: 1.6rem;
+    color: #5d30db;
+  }
+  .about .promo__paragraph {
+    color: #5d30db;
+    font-size: 1rem;
+  }
+  .about .promo__short__video .video-js {
+    height: 250px !important;
+  }
+}
+
 .section-1-wrapper {
   position: relative;
   padding: 0 137px;
@@ -2823,8 +2883,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   left: 0;
   position: absolute;
   border-top: 8px dotted white;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
 
 @media only screen and (max-width: 900px) {
@@ -2837,8 +2896,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 0;
     position: absolute;
     border-top: 6px dotted white;
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
+    transform: rotate(-35deg);
   }
 }
 
@@ -3488,7 +3546,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .page-leave-active,
 .page-enter-active {
-  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
