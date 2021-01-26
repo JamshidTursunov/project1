@@ -137,19 +137,23 @@ export default {
       this.window.width = window.innerWidth
       this.window.height = window.innerHeight
       console.log('window width', this.window.width)
-      if (this.window.width < 1296) {
+      if (this.window.width < 1296 && this.window.width > 1123) {
         this.visibleSlides = 3
         this.ratio = 3 / 8
-      } else if (this.window.width < 1122) {
+        console.log('Iam working 3')
+      } else if (this.window.width < 1122 && this.window.width > 1084) {
         this.visibleSlides = 2
         this.ratio = 3 / 6
-      } else if (this.window.width < 1083) {
+        console.log('Iam working 2')
+      } else if (this.window.width < 1083 && this.window.width > 713) {
         this.visibleSlides = 2
         this.ratio = 3 / 6
-      } else if (this.window.width < 712) {
+        console.log('Iam working 2')
+      } else if (this.window.width < 712 && this.window.width > 536) {
         this.visibleSlides = 1
         this.ratio = 3 / 4
-      } else if (this.window.width < 535) {
+        console.log('Iam working 1')
+      } else if (this.window.width < 535 && this.window.width > 1) {
         this.visibleSlides = 1
         this.ratio = 4 / 3.5
       }

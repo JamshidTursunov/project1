@@ -1,6 +1,6 @@
 <template>
   <div class="promo__container">
-    <div class="container promo__column__margin">
+    <div class="container">
       <div class="row">
         <div class="col-md-6 promo__column__margin">
           <div class="promo__box">
