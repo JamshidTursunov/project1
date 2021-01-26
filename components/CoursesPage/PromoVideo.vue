@@ -1,7 +1,9 @@
 <template>
   <div class="video__container">
     <div class="video__wrapper">
-      <div class="video__promo"></div>
+      <div class="video__promo">
+        <VideoPlayer />
+      </div>
       <div class="video__price">
         <h1>$19.99</h1>
         <nuxt-link class="video__button video__button1" to="/"
