@@ -2766,8 +2766,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   left: 0;
   position: absolute;
   border-top: 8px dotted white;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
 
 @media only screen and (max-width: 900px) {
@@ -2780,8 +2779,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 0;
     position: absolute;
     border-top: 6px dotted white;
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
+    transform: rotate(-35deg);
   }
 }
 
