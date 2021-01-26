@@ -2195,14 +2195,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .instructors {
-  padding: 4rem 9rem;
+  padding: 2rem 9rem;
 }
 
 .instructors h1 {
   font-size: 4.5rem;
   color: #5d30db;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -2241,7 +2241,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .partners {
-  padding: 4rem 6rem 10rem;
+  padding: 2rem 6rem;
 }
 
 .partners__box {
@@ -3457,6 +3457,26 @@ Due to the split circle of progress-left and progress right, we must use the ani
     overflow: hidden;
     height: 300px !important;
   }
+  .about .instructors {
+    position: relative;
+    z-index: 20;
+    padding: 2rem 7rem;
+  }
+  .about .instructors h1 {
+    font-size: 3.5rem;
+  }
+  .about .instructors__box h1 {
+    font-size: 3.5rem;
+  }
+  .about .instructors__box p {
+    font-size: 1.5rem;
+  }
+  .about .partners {
+    padding: 1rem 4rem;
+  }
+  .about .partners h1 {
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -3476,6 +3496,24 @@ Due to the split circle of progress-left and progress right, we must use the ani
   .about .promo__short__video .video-js {
     height: 280px !important;
   }
+  .about .instructors {
+    padding: 2rem 6rem;
+  }
+  .about .instructors h1 {
+    font-size: 3rem;
+  }
+  .about .instructors__box h1 {
+    font-size: 3rem;
+  }
+  .about .instructors__box p {
+    font-size: 1.3rem;
+  }
+  .about .partners {
+    padding: 1rem 3rem;
+  }
+  .about .partners h1 {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 30em) {
@@ -3492,6 +3530,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .about .promo__short__video .video-js {
     height: 250px !important;
+  }
+  .about .instructors {
+    padding: 4rem 3.7rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .instructors h1 {
+    font-size: 2.5rem;
+  }
+  .about .instructors__box h1 {
+    font-size: 2.5rem;
+  }
+  .about .instructors__box p {
+    font-size: 1rem;
+  }
+  .about .partners {
+    padding: 1rem 1rem;
+  }
+  .about .partners h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -4690,8 +4749,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .app-navbar .dropdown-menu.show {
-  -webkit-transition: max-height 1s linear;
-  transition: max-height 1s linear;
+  -webkit-transition: max-height 0.7s ease-out;
+  transition: max-height 0.7s ease-out;
   max-height: 800px !important;
 }
 

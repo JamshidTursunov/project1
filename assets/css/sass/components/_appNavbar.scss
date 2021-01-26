@@ -52,7 +52,7 @@
       border: none;
     }
     &.show {
-      transition: max-height 1s linear;
+      transition: max-height 0.7s ease-out;
       max-height: 800px !important;
     }
   }

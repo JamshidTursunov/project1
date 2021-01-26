@@ -42,7 +42,25 @@
         <b-nav-item class="btn-sign-up" :to="localePath('/sign')">
           {{ $t('navbar.signUp') }}</b-nav-item
         >
+      </b-navbar-nav>
 
+      <b-navbar-nav class="ml-auto" v-else>
+        <language-switcher class="mt-1" />
+        <b-nav-item :to="localePath('/')"
+          ><img
+            class="w-7 h-7"
+            src="~assets/svgs/search.svg"
+            alt="notification"
+        /></b-nav-item>
+        <b-nav-item :to="localePath('/')"
+          ><img class="w-7 h-7" src="~assets/svgs/korzinka.svg" alt="korzinka"
+        /></b-nav-item>
+        <b-nav-item :to="localePath('/')"
+          ><img
+            class="w-7 h-7"
+            src="~assets/svgs/notification.svg"
+            alt="notification"
+        /></b-nav-item>
         <b-dropdown
           size="md"
           variant="link"
@@ -82,13 +100,6 @@
           <b-dropdown-item href="#">Logout</b-dropdown-item>
         </b-dropdown>
       </b-navbar-nav>
-
-      <b-navbar-nav class="ml-auto" v-else>
-        <language-switcher style="z-index: 9999" />
-        <b-nav-item :to="localePath('/')"> korzinka</b-nav-item>
-        <b-nav-item> user profile</b-nav-item>
-        <b-nav-item @click="logout" to="/">logout</b-nav-item>
-      </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
@@ -98,7 +109,6 @@ export default {
   data() {
     return {
       loggedIn: true,
-      currentLang: 'de',
     }
   },
   methods: {

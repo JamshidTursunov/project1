@@ -35,10 +35,11 @@
 
       <b-form-group id="input-group-2" label-for="input-2">
         <b-form-input
+          type="password"
           id="input-2"
           v-model="form.name"
           class="bg-transparent input-field"
-          placeholder="Enter name"
+          placeholder="Password"
           required
         ></b-form-input>
       </b-form-group>
