@@ -1,8 +1,8 @@
 <template>
   <div class="promo__container">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 promo__column__margin">
+        <div class="col-lg-6 col-md-12 promo__column__margin">
           <div class="promo__box">
             <img
               class="promo__img"
@@ -20,12 +20,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 promo__column__margin">
-          <div class="promo__box promo__box__promo">
-            <div class="promo__video__box">
-              <VideoPlayer />
-            </div>
-          </div>
+        <div
+          class="col-lg-6 col-md-12 d-flex align-items-stretch promo__short__video promo__column__margin"
+        >
+          <VideoPlayer />
         </div>
       </div>
     </div>

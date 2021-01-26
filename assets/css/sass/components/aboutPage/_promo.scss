@@ -2,6 +2,18 @@
   &__container {
   }
 
+  &__short__video {
+    position: relative;
+    z-index: 20;
+    & .video-js {
+      border-radius: 160px 8px 8px 8px;
+      position: absolute;
+      top: 8rem;
+      left: -5rem;
+      object-fit: cover;
+    }
+  }
+
   &__heading__primary {
     font-family: $sans;
     font-size: 2rem;
@@ -28,11 +40,6 @@
     align-items: center;
     padding: 13rem 9rem;
   }
-  &__box__promo {
-    padding: 0;
-    background-color: transparent;
-    position: relative;
-  }
 
   &__img {
     position: absolute;
@@ -43,21 +50,6 @@
 
   &__content {
     position: relative;
-    z-index: 10;
-  }
-
-  &__video__box {
-    height: 27.5rem;
-    width: 38rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: contain;
-    position: absolute;
-    left: -5rem;
-    top: 2rem;
-
-    & .video-js {
-      border-radius: 160px 8px 8px 8px;
-    }
+    z-index: 20;
   }
 }
