@@ -11,21 +11,20 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown :text="$t('navbar.AllCourses')" right>
-          <transition name="dropdown-fade">
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
-          </transition>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown :text="$t('navbar.PlansAndPricing')" right>
+        <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
           <b-dropdown-item href="#">EN</b-dropdown-item>
           <b-dropdown-item href="#">ES</b-dropdown-item>
           <b-dropdown-item href="#">RU</b-dropdown-item>
           <b-dropdown-item href="#">FA</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item-dropdown :text="$t('navbar.Careers')" right>
+
+        <b-nav-item-dropdown :text="$t('navbar.PlansAndPricing')" left>
+          <b-dropdown-item href="#">EN</b-dropdown-item>
+          <b-dropdown-item href="#">ES</b-dropdown-item>
+          <b-dropdown-item href="#">RU</b-dropdown-item>
+          <b-dropdown-item href="#">FA</b-dropdown-item>
+        </b-nav-item-dropdown>
+        <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
           <b-dropdown-item href="#">EN</b-dropdown-item>
           <b-dropdown-item href="#">ES</b-dropdown-item>
           <b-dropdown-item href="#">RU</b-dropdown-item>
@@ -43,6 +42,45 @@
         <b-nav-item class="btn-sign-up" :to="localePath('/sign')">
           {{ $t('navbar.signUp') }}</b-nav-item
         >
+
+        <b-dropdown
+          size="md"
+          variant="link"
+          toggle-class="text-decoration-none"
+          no-caret
+          id="dropdown-right"
+          right
+        >
+          <template #button-content>
+            <img
+              src="~assets/images/user_profile.png"
+              class="w-10 h-10"
+              alt="user-profile"
+            />
+          </template>
+          <b-dropdown-header id="dropdown-header-label">
+            <div class="flex flex-row">
+              <img
+                src="~assets/images/user_profile.png"
+                class="w-10 h-10"
+                alt="facebook"
+              />
+              <p class="user-fullname-text ml-3">
+                <span>John Doe</span>
+                <br />
+                <span class="user-email-text">johndoe_1234@mail.ru</span>
+              </p>
+            </div>
+          </b-dropdown-header>
+          <b-dropdown-divider></b-dropdown-divider>
+          <b-dropdown-item href="#">My Learning</b-dropdown-item>
+          <b-dropdown-item href="#">My Cart</b-dropdown-item>
+          <b-dropdown-item href="#">Notifications</b-dropdown-item>
+          <b-dropdown-item href="#">Messages</b-dropdown-item>
+          <b-dropdown-item href="#">Account settings</b-dropdown-item>
+          <b-dropdown-item href="#">Purchage history</b-dropdown-item>
+          <b-dropdown-item href="#">Logout</b-dropdown-item>
+        </b-dropdown>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto" v-else>
@@ -60,6 +98,7 @@ export default {
   data() {
     return {
       loggedIn: true,
+      currentLang: 'de',
     }
   },
   methods: {
@@ -72,6 +111,16 @@ export default {
 </script>
 
 <style scoped>
+.dropdown-fade-enter-active,
+.dropdown-fade-leave-active {
+  transition: all 0.1s ease-in-out;
+}
+.dropdown-fade-enter,
+.dropdown-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
 @media only screen and (max-width: 900px) {
   .ul-list {
     flex-direction: column;
