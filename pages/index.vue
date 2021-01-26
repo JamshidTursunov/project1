@@ -10,6 +10,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout: 'HomePageLayout',
+}
+</script>
+
 <style scoped>
 .wrapper {
   overflow: hidden;

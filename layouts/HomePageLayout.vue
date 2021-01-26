@@ -6,15 +6,14 @@
     <div v-else>
       <app-navbar-1 />
       <Nuxt />
-      <app-footer />
+      <navbar-bottom />
     </div>
   </div>
 </template>
 
 <script>
-import appFooter from '../components/appFooter.vue'
 export default {
-  components: { appFooter },
+  components: {},
   data() {
     return {
       timerBool: false,

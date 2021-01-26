@@ -42,7 +42,6 @@ export default {
 
     inputPlaceholder: {
       type: String,
-      required: true,
     },
 
     textPlaceholder: {

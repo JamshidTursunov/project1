@@ -11,11 +11,18 @@
       <form>
         <Input inputPlaceholder="Company Name" />
         <Input inputPlaceholder="Company work sphere " />
-        <b-form-file
-          class="mb-3 inputControl__file"
-          plain
-          required
-        ></b-form-file>
+        <div class="inputControl__box">
+          <input
+            type="file"
+            name="file"
+            id="file"
+            class="inputControl__file"
+            @change="valChange"
+          />
+          <label for="file">
+            <span>{{ label }}</span> <span>Upload file</span>
+          </label>
+        </div>
         <Input
           controlType="textarea"
           textPlaceholder="Why do you want to become partner with us? "
@@ -36,9 +43,15 @@
 export default {
   props: {},
   data() {
-    return {}
+    return {
+      label: 'Send your logo',
+    }
   },
-  methods: {},
+  methods: {
+    valChange(event) {
+      this.label = event.target.files[0].name
+    },
+  },
 }
 </script>
 

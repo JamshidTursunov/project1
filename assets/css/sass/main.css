@@ -2275,6 +2275,31 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: 0;
 }
 
+.partners__btn, .partners__btn:link, .partners__btn:visited {
+  padding: 0.5rem 1rem;
+  background-color: #5d30db;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.partners__btn:hover {
+  background-color: #4d25bb;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.partners__btn:active {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+}
+
 .promo__heading__primary {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
@@ -2408,6 +2433,31 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 1.2rem;
 }
 
+.contact__map__container {
+  width: 35rem;
+  height: 20rem;
+  margin: 2rem 0 4rem;
+}
+
+.contact__map__container .map-yandex {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.contact__map__container .footer-map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact__map__container section.ymap-container {
+  width: 100%;
+  height: 100%;
+}
+
 .contact__map__content h3 {
   display: block;
   font-weight: bold;
@@ -2498,7 +2548,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
           box-sizing: border-box;
   font-family: inherit;
   border: 2px solid #ccc;
-  padding: 0.2rem 1.2rem;
+  padding: 0.4rem 1.2rem;
   margin-bottom: 1rem;
   border-radius: 5px;
   background-color: transparent;
@@ -2510,13 +2560,43 @@ Due to the split circle of progress-left and progress right, we must use the ani
   outline: none;
 }
 
+.inputControl__box {
+  margin-bottom: 1rem;
+}
+
 .inputControl__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputControl__file + label {
+  width: 100%;
+  font-size: 1.05em;
+  font-weight: 400;
+  padding: 0.4rem 1.2rem;
+  color: #a39f9f;
   background-color: transparent;
   border: 2px solid #ccc;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 5px;
 }
 
-.inputControl__file:focus {
+.inputControl__file + label span:last-child {
+  padding-left: 0.5rem;
+  border-left: 2px solid #ccc;
+}
+
+.inputControl__file:focus + label {
   background-color: #eaeef3;
   outline: none;
 }
@@ -4330,6 +4410,87 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .app-footer .social-icons li a {
+  width: 25.2px;
+  height: 25.2px;
+  border-radius: 2.88px;
+  background: #5d30db;
+  color: white;
+  padding: 0.2rem 0.4rem;
+}
+
+.home-footer {
+  background: #f3f8ff;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .home-footer {
+    padding: 30px 30px;
+  }
+}
+
+.home-footer .map-yandex {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+@media only screen and (max-width: 990px) {
+  .home-footer .map-yandex {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 100% !important;
+            flex: 1 100% !important;
+    border-radius: 0;
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+.home-footer .footer-map {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+  left: -10%;
+}
+
+@media only screen and (max-width: 990px) {
+  .home-footer .footer-map {
+    border-radius: 0;
+    top: 0;
+    left: 0;
+  }
+}
+
+.home-footer section.ymap-container {
+  width: 100%;
+  height: 100%;
+}
+
+.home-footer .text-h1 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #333366;
+  margin: 3rem auto 2rem auto;
+}
+
+.home-footer ul li {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 102, 0.6);
+}
+
+.home-footer .social-icons li a {
   width: 25.2px;
   height: 25.2px;
   border-radius: 2.88px;

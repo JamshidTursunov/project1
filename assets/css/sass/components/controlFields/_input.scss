@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: inherit;
     border: 2px solid $dark_white;
-    padding: 0.2rem 1.2rem;
+    padding: 0.4rem 1.2rem;
     margin-bottom: 1rem;
     border-radius: 5px;
     background-color: transparent;
@@ -19,14 +19,40 @@
     outline: none;
   }
 
-  &__file {
-    background-color: transparent;
-    border: 2px solid $dark_white;
-    border-radius: 5px;
+  &__box {
+    margin-bottom: 1rem;
   }
 
-  &__file:focus {
-    background-color: $tertiary_white;
-    outline: none;
+  &__file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    & + label {
+      width: 100%;
+      font-size: 1.05em;
+      font-weight: 400;
+      padding: 0.4rem 1.2rem;
+      color: rgb(163, 159, 159);
+      background-color: transparent;
+      border: 2px solid $dark_white;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+
+      & span:last-child {
+        padding-left: 0.5rem;
+        border-left: 2px solid $dark_white;
+      }
+    }
+
+    &:focus + label {
+      background-color: $tertiary_white;
+      outline: none;
+    }
   }
 }
