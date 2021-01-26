@@ -1,6 +1,7 @@
 .app-navbar {
   padding: 0 110px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
   .navbar-brand {
     &:hover {
       transform: none;

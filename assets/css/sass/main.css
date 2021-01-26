@@ -4635,7 +4635,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .app-navbar {
   padding: 0 110px;
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  min-height: 80px;
 }
 
 .app-navbar .navbar-brand:hover {
