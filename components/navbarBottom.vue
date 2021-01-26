@@ -1,5 +1,5 @@
 <template>
-  <div class="app-footer">
+  <div class="home-footer">
     <div
       class="up-row"
       style="display: flex; justify-content: space-between; flex-flow: row wrap"
@@ -42,6 +42,9 @@
           <li>Become a mentor</li>
           <li>Become an instructor</li>
         </ul>
+      </div>
+      <div style="flex: 2">
+        <y-map />
       </div>
     </div>
     <hr class="my-4" />
@@ -88,7 +91,7 @@
 </template>
 
 <style scoped>
-.app-footer {
+.home-footer {
   padding: 50px 110px;
 }
 
@@ -105,7 +108,7 @@
   }
 }
 @media only screen and (max-width: 726px) {
-  .app-footer {
+  .home-footer {
     padding: 20px 20px;
   }
   .item {

@@ -2,19 +2,9 @@
   <div>
     <app-navbar-1 />
     <Nuxt />
-    <app-footer />
+    <navbar-bottom />
   </div>
 </template>
-
-<script>
-import appFooter from '../components/appFooter.vue'
-export default {
-  components: { appFooter },
-  data() {
-    return {}
-  },
-}
-</script>
 
 <style>
 *,
@@ -24,7 +14,6 @@ export default {
   margin: 0;
 }
 
-/* page is used by default */
 .page-leave-active,
 .page-enter-active {
   transition: opacity 0.3s;

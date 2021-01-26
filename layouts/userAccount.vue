@@ -1,12 +1,5 @@
 <template>
-  <div>
-    <div v-if="timerBool" class="grid justify-items-center w-full">
-      <spinner class="mt-5" />
-    </div>
-    <div v-else>
-      <Nuxt />
-    </div>
-  </div>
+  <Nuxt />
 </template>
 
 <script>
@@ -30,5 +23,13 @@ export default {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+.page-leave-active,
+.page-enter-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 </style>

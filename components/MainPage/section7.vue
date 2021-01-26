@@ -33,11 +33,15 @@ export default {
     }
   },
   created() {
-    window.addEventListener('resize', this.handleResize)
-    this.handleResize()
+    if (process.client) {
+      window.addEventListener('resize', this.handleResize)
+      this.handleResize()
+    }
   },
   destroyed() {
-    window.removeEventListener('resize', this.handleResize)
+    if (process.client) {
+      window.removeEventListener('resize', this.handleResize)
+    }
   },
   methods: {
     handleResize() {

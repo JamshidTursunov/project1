@@ -26,7 +26,7 @@
           <b-dropdown-item href="#">RU</b-dropdown-item>
           <b-dropdown-item href="#">FA</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item> {{ $t('navbar.AboutUs') }}</b-nav-item
+        <b-nav-item to="/about"> {{ $t('navbar.AboutUs') }}</b-nav-item
         ><b-nav-item> {{ $t('navbar.ContactUs') }}</b-nav-item>
       </b-navbar-nav>
 

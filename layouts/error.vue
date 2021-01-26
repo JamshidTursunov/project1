@@ -16,4 +16,12 @@
   line-height: 35px;
   color: #333366;
 }
+.page-leave-active,
+.page-enter-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 </style>
