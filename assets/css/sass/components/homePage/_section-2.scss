@@ -14,6 +14,56 @@
     background: #64edbf;
   }
 
+  & .video-container {
+    position: relative;
+    &::before {
+      content: '';
+      height: 30%;
+      width: 30%;
+      border: 8.09296px solid #5d30db;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 2.5rem;
+      right: -1rem;
+      z-index: 5;
+    }
+  }
+
+  & .video-wrapper {
+    border-radius: 69.3682px 6.93682px 6.93682px 6.93682px;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('~assets/images/dotes.png');
+      height: 34%;
+      width: 31%;
+      top: 2.7rem;
+      right: -1rem;
+      z-index: 10;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 30%;
+      width: 30%;
+      border: 8.09296px solid #ff9900;
+      border-radius: 69.3682px 6.93682px 6.93682px 0px;
+      top: 2.6rem;
+      left: -1.3rem;
+    }
+
+    & .video-js {
+      object-fit: cover;
+      z-index: 30;
+      position: relative;
+    }
+  }
+
   .text-h1 {
     font-family: Open Sans;
     font-style: normal;

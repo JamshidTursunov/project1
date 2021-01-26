@@ -22,7 +22,9 @@
         </div>
         <div class="col-md-6 promo__column__margin">
           <div class="promo__box promo__box__promo">
-            <div class="promo__video__box"></div>
+            <div class="promo__video__box">
+              <VideoPlayer />
+            </div>
           </div>
         </div>
       </div>

@@ -47,8 +47,6 @@
   }
 
   &__video__box {
-    border-radius: 160px 8px 8px 8px;
-    background: url('~assets/images/about/video.png');
     height: 27.5rem;
     width: 38rem;
     background-repeat: no-repeat;
@@ -57,5 +55,9 @@
     position: absolute;
     left: -5rem;
     top: 2rem;
+
+    & .video-js {
+      border-radius: 160px 8px 8px 8px;
+    }
   }
 }

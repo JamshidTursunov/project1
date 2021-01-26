@@ -6,8 +6,12 @@
       </h1>
     </div>
     <div class="row row-wrapper">
-      <div class="col-md-6 col-sm-12 flex justify-center items-center mb-6">
-        <video-player class="video-player" />
+      <div
+        class="col-md-6 col-sm-12 flex justify-center items-center mb-6 video-container"
+      >
+        <div class="video-wrapper">
+          <video-player class="video-player" />
+        </div>
       </div>
       <div class="col-md-6 col-sm-12 table mb-20 row">
         <table-2 />
