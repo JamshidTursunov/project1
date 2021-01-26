@@ -4,7 +4,7 @@
       <h1 class="mb-4">Our partners</h1>
       <div class="row mb-5">
         <div
-          class="col-lg-3 col-md-4 partners__column__margin"
+          class="col-lg-3 col-md-4 col-sm-6 col-6 partners__column__margin"
           v-for="partner in partnersNumber"
           :key="partner.id"
         >
