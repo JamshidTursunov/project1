@@ -1,13 +1,8 @@
 <template>
   <div>
-    <div v-if="timerBool" class="grid justify-items-center w-full">
-      <spinner class="mt-5" />
-    </div>
-    <div v-else>
-      <app-navbar-1 />
-      <Nuxt />
-      <app-footer />
-    </div>
+    <app-navbar-1 />
+    <Nuxt />
+    <app-footer />
   </div>
 </template>
 
@@ -16,15 +11,8 @@ import appFooter from '../components/appFooter.vue'
 export default {
   components: { appFooter },
   data() {
-    return {
-      timerBool: false,
-    }
+    return {}
   },
-  // created() {
-  //   setTimeout(() => {
-  //     this.timerBool = false
-  //   }, 200)
-  // },
 }
 </script>
 

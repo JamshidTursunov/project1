@@ -1,31 +1,10 @@
 <template>
   <div>
-    <div v-if="timerBool" class="grid justify-items-center w-full">
-      <spinner class="mt-5" />
-    </div>
-    <div v-else>
-      <app-navbar-1 />
-      <Nuxt />
-      <navbar-bottom />
-    </div>
+    <app-navbar-1 />
+    <Nuxt />
+    <navbar-bottom />
   </div>
 </template>
-
-<script>
-export default {
-  components: {},
-  data() {
-    return {
-      timerBool: false,
-    }
-  },
-  // created() {
-  //   setTimeout(() => {
-  //     this.timerBool = false
-  //   }, 200)
-  // },
-}
-</script>
 
 <style>
 *,
@@ -35,7 +14,6 @@ export default {
   margin: 0;
 }
 
-/* page is used by default */
 .page-leave-active,
 .page-enter-active {
   transition: opacity 0.3s;
