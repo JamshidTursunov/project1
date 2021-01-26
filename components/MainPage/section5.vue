@@ -13,8 +13,10 @@
             class="justify-self-center w-20 h-20 mb-4"
             alt="..."
           />
-          <h2 class="text-h2 mb-2">Frontend web development</h2>
-          <p class="text-paragraph">
+          <h2 class="text-h2 mb-2 md:text-center sm:text-center">
+            Frontend web development
+          </h2>
+          <p class="text-paragraph text-justify">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley o scrambled it to
             make a type specimen book.

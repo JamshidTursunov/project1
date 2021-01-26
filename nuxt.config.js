@@ -25,7 +25,7 @@ export default {
     ],
   },
 
-  css: ['~assets/css/sass/main.css'],
+  css: ['~assets/css/sass/main.css', '~assets/css/main.css'],
 
   plugins: [{ src: '~/plugins/yMap', mode: 'client' }, '~/plugins/clickaway'],
 

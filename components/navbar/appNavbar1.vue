@@ -71,6 +71,7 @@ export default {
 <style scoped>
 .app-navbar {
   padding: 0 110px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 900px) {
   .ul-list {
