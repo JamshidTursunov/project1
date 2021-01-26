@@ -1,7 +1,7 @@
 <template>
   <table class="table table-borderless">
     <thead>
-      <tr>
+      <tr class="table-header">
         <th class="col-md-6 col-sm-2" scope="col"></th>
         <th class="col-md-3 col-sm-1 header-title" scope="col">GreatSoft</th>
         <th class="col-md-3 col-sm-1 header-title" scope="col">Others</th>
@@ -126,7 +126,9 @@ tbody {
   font-size: 18px;
   line-height: 25px;
   color: #5d30db;
+  background: transparent;
 }
+
 .right-top {
   border-top-right-radius: 1rem;
 }
