@@ -6,9 +6,9 @@
     </h1>
     <div
       class="row py-4"
-      v-for="i in 4"
-      :key="i"
-      data-aos="fade-down"
+      v-for="(i, index) in 4"
+      :key="index"
+      :data-aos="`${index}%2 === 0 ? 'fade-down'`"
       data-aos-delay="300"
     >
       <div class="col-md-2 flex justify-center items-center">
