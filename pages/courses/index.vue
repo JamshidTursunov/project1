@@ -1,17 +1,16 @@
 <template>
   <section class="courses">
-    <div class="container">
-      <h3 class="courses__h3">Web Development > Frontend > Vue.js</h3>
+    <div class="container-fluid">
       <div class="row">
         <div
-          class="col-lg-6 courses__column__margin d-flex align-items-stretch"
+          class="col-lg-7 col-md-12 courses__column__margin d-flex align-items-stretch justify-content-center"
         >
           <div class="courses__box">
             <Introduction />
             <Description />
           </div>
         </div>
-        <div class="col-lg-6 column__margin">
+        <div class="col-lg-5 d-none d-lg-block column__margin">
           <div class="courses__box">
             <PromoVideo />
           </div>
@@ -39,23 +38,55 @@ export default {
   background-image: linear-gradient(
     to bottom,
     rgba(243, 248, 255, 1) 0,
-    rgba(243, 248, 255, 1) 58%,
-    rgba(255, 255, 255, 1) 32%
+    rgba(243, 248, 255, 1) 65%,
+    rgba(255, 255, 255, 1) 35%
   );
-  padding: 3.5rem 8.2rem 10rem;
+  padding: 3.5rem 8.2rem;
 
   &__column__margin {
     padding: 0;
     margin: 0;
   }
+}
 
-  &__h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #5d30db;
-    margin-bottom: 1.5rem;
+@media only screen and (max-width: 83.5em) {
+  .courses {
+    padding: 3.5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 77em) {
+  .courses {
+    padding: 3.5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .courses {
+    padding: 3rem 4rem;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(243, 248, 255, 1) 0,
+      rgba(243, 248, 255, 1) 78%,
+      rgba(255, 255, 255, 1) 22%
+    );
+  }
+}
+
+@media only screen and (max-width: 41.5em) {
+  .courses {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 28.5em) {
+  .courses {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(243, 248, 255, 1) 0,
+      rgba(243, 248, 255, 1) 74%,
+      rgba(255, 255, 255, 1) 36%
+    );
   }
 }
 </style>

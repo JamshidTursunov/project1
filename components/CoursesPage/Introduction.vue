@@ -1,6 +1,14 @@
 <template>
   <div class="introduction__container">
     <div class="container">
+      <h3 class="introduction__h3">Web Development > Frontend > Vue.js</h3>
+      <div class="row d-lg-none d-md-block">
+        <div class="col-lg-12">
+          <div class="introduction__responsive__promo">
+            <VideoPlayer />
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-12">
           <div class="introduction__content">
