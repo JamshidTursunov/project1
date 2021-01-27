@@ -34,7 +34,7 @@
         ><b-nav-item to="/contact-us"> {{ $t('navbar.ContactUs') }}</b-nav-item>
       </b-navbar-nav>
 
-      <b-navbar-nav class="ml-auto" v-if="loggedIn">
+      <b-navbar-nav class="ml-auto" v-if="!loggedIn">
         <language-switcher class="mt-1 mr-2" />
         <b-nav-item class="btn-login" :to="localePath('/sign')">
           {{ $t('navbar.logIn') }}</b-nav-item
@@ -91,13 +91,21 @@
             </div>
           </b-dropdown-header>
           <b-dropdown-divider></b-dropdown-divider>
-          <b-dropdown-item href="#">My Learning</b-dropdown-item>
-          <b-dropdown-item href="#">My Cart</b-dropdown-item>
-          <b-dropdown-item href="#">Notifications</b-dropdown-item>
+          <b-dropdown-item to="/useraccount/mylearning"
+            >My Learning</b-dropdown-item
+          >
+          <b-dropdown-item to="/useraccount/mycart">My Cart</b-dropdown-item>
+          <b-dropdown-item to="/useraccount/mynotifications"
+            >Notifications</b-dropdown-item
+          >
           <b-dropdown-item href="#">Messages</b-dropdown-item>
-          <b-dropdown-item href="#">Account settings</b-dropdown-item>
-          <b-dropdown-item href="#">Purchage history</b-dropdown-item>
-          <b-dropdown-item href="#">Logout</b-dropdown-item>
+          <b-dropdown-item to="/userprofile">Account settings</b-dropdown-item>
+          <b-dropdown-item href="/useraccount/mypurchase"
+            >Purchage history</b-dropdown-item
+          >
+          <b-dropdown-item href="/" @click="$auth.logout()"
+            >Logout</b-dropdown-item
+          >
         </b-dropdown>
       </b-navbar-nav>
     </b-collapse>

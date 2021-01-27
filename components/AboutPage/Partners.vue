@@ -34,7 +34,7 @@
             class="partners__btn"
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            data-aos-delay="400"
+            data-aos-delay="200"
             >Become a partner</nuxt-link
           >
         </div>

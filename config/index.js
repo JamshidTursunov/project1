@@ -27,16 +27,23 @@ export const I18N = {
   routes: {
     index: {
       en: '/',
+      // ru: '/',
+      // uz: '/',
     },
     about: {
       en: '/about',
       ru: '/about',
+      uz: '/about',
     },
     login: {
       en: '/login',
+      ru: '/login',
+      uz: '/login',
     },
     contactUs: {
       en: '/contact-us',
+      ru: '/contact-us',
+      uz: '/contact-us',
     },
   },
   vueI18n: {
