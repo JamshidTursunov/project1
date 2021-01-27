@@ -16,3 +16,12 @@
   opacity: 0;
   transform: translateY(-12px);
 }
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.2s;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}

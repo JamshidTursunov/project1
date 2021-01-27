@@ -4,7 +4,13 @@
       First, we invented the best system for learning to code.<br />
       Seven years and 45 million learners later, we've perfected it.
     </h1>
-    <div class="row py-4" v-for="i in 4" :key="i">
+    <div
+      class="row py-4"
+      v-for="i in 4"
+      :key="i"
+      data-aos="fade-down"
+      data-aos-delay="300"
+    >
       <div class="col-md-2 flex justify-center items-center">
         <div class="circle">
           <div class="inner-set">{{ i }}</div>
@@ -23,5 +29,3 @@
     </div>
   </div>
 </template>
-
-<style scoped></style>

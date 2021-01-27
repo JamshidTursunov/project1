@@ -1,13 +1,12 @@
 <template>
   <video
-    class="video-js"
+    class="video-js my-video"
     data-setup="{}"
     controls
     :poster="postImage"
     style="height: 350px; border: none"
   >
     <source src="~assets/video/dog.mp4" type="video/mp4" />
-    Your browser does not support video tag
   </video>
 </template>
 
@@ -24,5 +23,8 @@ export default {
 <style scoped>
 *:focus {
   outline: none;
+}
+.my-video {
+  position: relative !important;
 }
 </style>
