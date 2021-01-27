@@ -1430,11 +1430,68 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .promo__short__video .video-js {
-  border-radius: 160px 8px 8px 8px;
+  border-radius: 70px 7px 7px 7px;
   position: absolute;
   top: 8rem;
   left: -5rem;
   object-fit: cover;
+  z-index: 20;
+}
+
+.promo__short__video::before {
+  content: '';
+  height: 9rem;
+  width: 13rem;
+  position: absolute;
+  border: 8.09296px solid #ff9900;
+  border-radius: 69.3682px 7px 7px 0px;
+  top: 6rem;
+  left: -7rem;
+  z-index: 10;
+  box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
+}
+
+@media only screen and (max-width: 992px) {
+  .promo__short__video::before {
+    display: none;
+  }
+}
+
+.promo__short__video::after {
+  content: '';
+  height: 9rem;
+  width: 13rem;
+  position: absolute;
+  border: 8.09296px solid #5d30db;
+  border-radius: 10px;
+  top: 23.5rem;
+  left: 23.5rem;
+  z-index: 10;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  .promo__short__video::after {
+    left: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1112px) {
+  .promo__short__video::after {
+    left: 18rem;
+  }
+}
+
+@media only screen and (max-width: 1044px) {
+  .promo__short__video::after {
+    left: 16rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .promo__short__video::after {
+    display: none;
+  }
 }
 
 .promo__heading__primary {
