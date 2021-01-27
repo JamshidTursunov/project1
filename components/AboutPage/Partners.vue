@@ -1,12 +1,22 @@
 <template>
   <div class="partners">
     <div class="container partners__column__margin">
-      <h1 class="mb-4">Our partners</h1>
+      <h1
+        class="mb-4"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-delay="200"
+      >
+        Our partners
+      </h1>
       <div class="row mb-5">
         <div
           class="col-lg-3 col-md-4 col-sm-6 col-6 partners__column__margin"
           v-for="partner in partnersNumber"
           :key="partner.id"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-delay="300"
         >
           <div class="partners__box">
             <img
@@ -19,7 +29,12 @@
       </div>
       <div class="row">
         <div class="col-lg-12 flex justify-center">
-          <nuxt-link to="/partner-application" class="partners__btn"
+          <nuxt-link
+            to="/partner-application"
+            class="partners__btn"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="400"
             >Become a partner</nuxt-link
           >
         </div>

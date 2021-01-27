@@ -3795,6 +3795,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
 }
 
+.section-2-wrapper .video-wrapper .video-js::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
 .section-2-wrapper .text-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -4688,6 +4698,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   min-height: 80px;
+  z-index: 9999;
+  background: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-navbar {
+    padding: 1rem 2rem;
+  }
+  .app-navbar .ul-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .app-navbar .navbar-brand:hover {

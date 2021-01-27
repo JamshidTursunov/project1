@@ -76,7 +76,7 @@
   margin-left: auto;
   padding: 0.5rem 0.5rem;
   position: relative;
-  z-index: 9999 !important;
+  z-index: 9990;
 }
 .table::after {
   position: absolute;

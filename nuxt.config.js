@@ -1,6 +1,7 @@
 import { I18N } from './config'
 
 export default {
+  layoutTransition: 'layout',
   head: {
     title: 'GreateSoft_academy',
     meta: [
@@ -25,9 +26,13 @@ export default {
     ],
   },
 
-  css: ['~assets/css/sass/main.css', '~assets/css/main.css'],
+  css: ['~assets/css/sass/main.css', '~assets/css/transition.css'],
 
-  plugins: [{ src: '~/plugins/yMap', mode: 'client' }, '~/plugins/clickaway'],
+  plugins: [
+    { src: '~/plugins/yMap', mode: 'client' },
+    { src: '~/plugins/aos', mode: 'client' },
+    '~/plugins/clickaway',
+  ],
 
   components: true,
 
