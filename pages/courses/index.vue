@@ -49,9 +49,6 @@ export default {
     margin: 0;
   }
 
-  &__box {
-  }
-
   &__h3 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
