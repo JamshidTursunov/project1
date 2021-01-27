@@ -32,8 +32,11 @@ export const I18N = {
       en: '/about',
       ru: '/about',
     },
-    sign: {
-      en: '/sign',
+    login: {
+      en: '/login',
+    },
+    contactUs: {
+      en: '/contact-us',
     },
   },
   vueI18n: {
