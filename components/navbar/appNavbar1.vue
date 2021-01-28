@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="light" class="app-navbar" sticky>
+  <b-navbar toggleable="lg" type="light" class="app-navbar">
     <b-navbar-brand :to="localePath('index')"
       ><img
         class="logo-image w-14 h-14"
@@ -20,12 +20,14 @@
             >Machine learning with python</b-dropdown-item
           >
         </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown :text="$t('navbar.PlansAndPricing')" left>
+        <b-nav-item :to="localePath('/pricing')">
+          {{ $t('navbar.PlansAndPricing') }}</b-nav-item
+        >
+        <!-- <b-nav-item-dropdown :text="$t('navbar.PlansAndPricing')" left>
           <b-dropdown-item href="#">Basic</b-dropdown-item>
           <b-dropdown-item href="#">Pro</b-dropdown-item>
           <b-dropdown-item href="#">Premium</b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-nav-item-dropdown> -->
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
           <b-dropdown-item href="#">Become a mentor</b-dropdown-item>
           <b-dropdown-item href="#">Become an instructor</b-dropdown-item>
@@ -63,10 +65,9 @@
         /></b-nav-item>
         <b-dropdown
           size="md"
-          variant="link"
+          variant="none"
           toggle-class="text-decoration-none"
           no-caret
-          id="dropdown-right"
           right
         >
           <template #button-content>

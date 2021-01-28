@@ -4952,6 +4952,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: #fff;
 }
 
+.app-navbar *:active {
+  outline: none;
+}
+
+.app-navbar *:focus {
+  outline: none;
+}
+
+.app-navbar *:active:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 600px) {
   .app-navbar {
     padding: 1rem 2rem;
@@ -5002,8 +5014,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .app-navbar .btn-md {
   padding: 0 0 !important;
-  margin: 0 0.5rem;
   border-radius: 50%;
+}
+
+.app-navbar .btn-md:active {
+  outline-color: red !important;
+}
+
+.app-navbar .btn-md:focus {
+  outline-color: red !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-navbar .btn-md {
+    margin-left: -5px;
+  }
 }
 
 .app-navbar .dropdown-menu {

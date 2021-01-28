@@ -1,4 +1,13 @@
 .app-navbar {
+  *:active {
+    outline: none;
+  }
+  *:focus {
+    outline: none;
+  }
+  *:active:focus {
+    outline: none;
+  }
   padding: 0 110px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   min-height: 80px;
@@ -46,8 +55,16 @@
   }
   .btn-md {
     padding: 0 0 !important;
-    margin: 0 0.5rem;
     border-radius: 50%;
+    &:active {
+      outline-color: red !important;
+    }
+    &:focus {
+      outline-color: red !important;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-left: -5px;
+    }
   }
   .dropdown-menu {
     overflow: hidden;
