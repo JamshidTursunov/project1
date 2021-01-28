@@ -7,7 +7,7 @@
       </h1>
     </div>
     <div class="row">
-      <div :class="{ resMiddle: resMiddle }" class="col-md-1 flex">
+      <div class="col-md-1 flex greatsoft-typography">
         <img
           src="~assets/images/greatsoft.png"
           alt="greatsoft"
@@ -25,41 +25,19 @@
 export default {
   data() {
     return {
-      resMiddle: false,
       window: {
         width: 0,
         height: 0,
       },
     }
   },
-  created() {
-    if (process.client) {
-      window.addEventListener('resize', this.handleResize)
-      this.handleResize()
-    }
-  },
-  destroyed() {
-    if (process.client) {
-      window.removeEventListener('resize', this.handleResize)
-    }
-  },
-  methods: {
-    handleResize() {
-      this.window.width = window.innerWidth
-      this.window.height = window.innerHeight
-      console.log('window width', this.window.width)
-      if (this.window.width < 1296) {
-        this.resMiddle = true
-      }
-      if (this.window.width < 1122) {
-      }
-    },
-  },
 }
 </script>
 
 <style scoped>
-.resMiddle {
-  display: none;
+@media only screen and (max-width: 700px) {
+  .greatsoft-typography {
+    display: none;
+  }
 }
 </style>

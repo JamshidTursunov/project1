@@ -1,5 +1,5 @@
 <template>
-  <div class="table-responsive">
+  <div class="table-responsive purchase-table">
     <b-table-simple>
       <b-thead>
         <b-tr>
@@ -13,11 +13,11 @@
       </b-thead>
       <b-tbody>
         <b-tr v-for="i in 3" :key="i" class="data-row">
-          <b-th class="flex flex-row purchase-history-column">
+          <b-th class="flex md:flex-row sm:flex-col purchase-history-column">
             <img
               src="~assets/svgs/yellow_korzinka.svg"
               alt="korzinka"
-              class="w-7 h-7 mr-3 mt-2"
+              class="w-7 h-7 mr-3 mt-2 img-korzinka"
             />
             <div class="flex flex-column">
               <p class="context">1 Courses purchased</p>
@@ -36,58 +36,3 @@
     </b-table-simple>
   </div>
 </template>
-
-<style scoped>
-.purchase-history {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  color: #333366;
-}
-.header-content {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #333366;
-}
-.purchase-history-column .context {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: #333366;
-}
-.purchase-history-column .all-courses-link {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #5d30db;
-}
-.total-price {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #333366;
-}
-.custom-text {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #333366;
-}
-
-tr.data-row {
-  height: 130px;
-}
-</style>

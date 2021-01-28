@@ -2,7 +2,7 @@
   <vueper-slides
     :bullets="false"
     class="no-shadow"
-    :visible-slides="4"
+    :visible-slides="1"
     :dragging-distance="70"
   >
     <vueper-slide class="cart-self" v-for="i in 8" :key="i">

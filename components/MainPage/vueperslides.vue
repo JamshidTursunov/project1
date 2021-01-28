@@ -1,49 +1,46 @@
 <template>
-  <div>
-    <vueper-slides
-      class="no-shadow"
-      :visible-slides="visibleSlides"
-      :slide-ratio="ratio"
-      :dragging-distance="70"
-    >
-      <vueper-slide class="cart-self" v-for="(i, index) in slides" :key="index">
-        <template v-slot:content>
-          <div class="cart-block">
-            <img class="cart-image" :src="i.image" alt="..." />
-            <div class="w-full flex justify-between items-center">
-              <p class="user-name">{{ i.username }}</p>
-              <p class="user-level">{{ i.level }}</p>
-            </div>
-            <div class="w-full flex justify-between items-center my-2">
-              <div class="flex flex-wrap user-profession pb-1">
-                {{ i.profession }}
-              </div>
-              <b-form-rating
-                style="
-                  border: 1px solid red;
-                  background: transparent;
-                  width: 50%;
-                "
-                no-border
-                v-model="ratingValue"
-                variant="warning"
-                class="mb-2 ml-auto pl-4"
-                readonly
-                size="xs"
-              ></b-form-rating>
-            </div>
-            <div class="w-full flex items-center mb-3">
-              <p class="user-work-experience">Work <br />experience</p>
-              <span class="flex-grow work-line"></span>
-            </div>
-            <div class="w-full flex user-experience">
-              <p>{{ i.experience }}</p>
-            </div>
+  <vueper-slides
+    class="no-shadow"
+    :visible-slides="4"
+    slide-multiple
+    :gap="0"
+    :slide-ratio="2 / 7"
+    :dragging-distance="200"
+    :breakpoints="myBreakPoints"
+  >
+    <vueper-slide class="cart-self" v-for="(i, index) in slides" :key="index">
+      <template v-slot:content>
+        <div class="cart-block">
+          <img class="cart-image" :src="i.image" alt="..." />
+          <div class="w-full flex justify-between items-center">
+            <p class="user-name">{{ i.username }}</p>
+            <p class="user-level">{{ i.level }}</p>
           </div>
-        </template>
-      </vueper-slide>
-    </vueper-slides>
-  </div>
+          <div class="w-full flex justify-between items-center my-2">
+            <div class="flex flex-wrap user-profession pb-1">
+              {{ i.profession }}
+            </div>
+            <b-form-rating
+              style="border: 1px solid red; background: transparent; width: 50%"
+              no-border
+              v-model="ratingValue"
+              variant="warning"
+              class="mb-2 ml-auto pl-4"
+              readonly
+              size="xs"
+            ></b-form-rating>
+          </div>
+          <div class="w-full flex items-center mb-3">
+            <p class="user-work-experience">Work <br />experience</p>
+            <span class="flex-grow work-line"></span>
+          </div>
+          <div class="w-full flex user-experience">
+            <p>{{ i.experience }}</p>
+          </div>
+        </div>
+      </template>
+    </vueper-slide>
+  </vueper-slides>
 </template>
 
 <script>
@@ -54,6 +51,18 @@ export default {
   components: { VueperSlides, VueperSlide },
   data() {
     return {
+      myBreakPoints: {
+        1350: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 3 },
+        1140: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 2.5 },
+        1090: { visibleSlides: 3, slideMultiple: 2, slideRatio: 2 / 5 },
+        1025: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 5 },
+        955: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 4 },
+        800: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 3.5 },
+        610: { visibleSlides: 1, slideMultiple: 2, slideRatio: 2 / 3 },
+        510: { visibleSlides: 1, slideMultiple: 2, slideRatio: 2 / 2.4 },
+        400: { visibleSlides: 1, slideMultiple: 2, slideRatio: 2 / 2 },
+        360: { visibleSlides: 1, slideMultiple: 2, slideRatio: 2 / 1.8 },
+      },
       ratingValue: 4,
       slides: [
         {
@@ -117,47 +126,47 @@ export default {
         width: 0,
         height: 0,
       },
-      visibleSlides: 4,
-      ratio: 3 / 10,
+      // visibleSlides: 4,
+      // ratio: 3 / 10,
     }
   },
-  created() {
-    if (process.client) {
-      window.addEventListener('resize', this.handleResize)
-      this.handleResize()
-    }
-  },
-  destroyed() {
-    if (process.client) {
-      window.removeEventListener('resize', this.handleResize)
-    }
-  },
+  // created() {
+  //   if (process.client) {
+  //     window.addEventListener('resize', this.handleResize)
+  //     this.handleResize()
+  //   }
+  // },
+  // destroyed() {
+  //   if (process.client) {
+  //     window.removeEventListener('resize', this.handleResize)
+  //   }
+  // },
   methods: {
-    handleResize() {
-      this.window.width = window.innerWidth
-      this.window.height = window.innerHeight
-      console.log('window width', this.window.width)
-      if (this.window.width < 1296 && this.window.width > 1123) {
-        this.visibleSlides = 3
-        this.ratio = 3 / 8
-        console.log('Iam working 3')
-      } else if (this.window.width < 1122 && this.window.width > 1084) {
-        this.visibleSlides = 2
-        this.ratio = 3 / 6
-        console.log('Iam working 2')
-      } else if (this.window.width < 1083 && this.window.width > 713) {
-        this.visibleSlides = 2
-        this.ratio = 3 / 6
-        console.log('Iam working 2')
-      } else if (this.window.width < 712 && this.window.width > 536) {
-        this.visibleSlides = 1
-        this.ratio = 3 / 4
-        console.log('Iam working 1')
-      } else if (this.window.width < 535 && this.window.width > 1) {
-        this.visibleSlides = 1
-        this.ratio = 4 / 3.5
-      }
-    },
+    // handleResize() {
+    //   this.window.width = window.innerWidth
+    //   this.window.height = window.innerHeight
+    //   console.log('window width', this.window.width)
+    //   if (this.window.width < 1296 && this.window.width > 1123) {
+    //     this.visibleSlides = 3
+    //     this.ratio = 3 / 8
+    //     console.log('Iam working 3')
+    //   } else if (this.window.width < 1122 && this.window.width > 1084) {
+    //     this.visibleSlides = 2
+    //     this.ratio = 3 / 6
+    //     console.log('Iam working 2')
+    //   } else if (this.window.width < 1083 && this.window.width > 713) {
+    //     this.visibleSlides = 2
+    //     this.ratio = 3 / 6
+    //     console.log('Iam working 2')
+    //   } else if (this.window.width < 712 && this.window.width > 536) {
+    //     this.visibleSlides = 1
+    //     this.ratio = 3 / 4
+    //     console.log('Iam working 1')
+    //   } else if (this.window.width < 535 && this.window.width > 1) {
+    //     this.visibleSlides = 1
+    //     this.ratio = 4 / 3.5
+    //   }
+    // },
   },
 }
 </script>
