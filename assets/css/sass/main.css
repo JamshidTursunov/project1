@@ -1657,8 +1657,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .contact__map__container {
-  width: 35rem;
   height: 20rem;
+  width: 100%;
   margin: 2rem 0 4rem;
 }
 
@@ -1705,12 +1705,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact__map__copy p {
   font-weight: 600;
   font-size: 14px;
   color: #333366;
+  margin: 0 1rem 0.5rem 0;
 }
 
 .contact__map__i {
@@ -2656,6 +2658,86 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .about .partners h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .contact {
+    padding: 5rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .contact {
+    padding: 4rem 5rem;
+  }
+  .contact__us h1 {
+    font-size: 3rem;
+  }
+  .contact__us p {
+    font-size: 1.3rem;
+  }
+  .contact__map__container {
+    margin: 0rem 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact {
+    padding: 3rem 3rem;
+  }
+  .contact__btn {
+    font-size: 1rem;
+  }
+  .contact__us h1 {
+    font-size: 2.5rem;
+  }
+  .contact__us p {
+    margin-bottom: 2rem;
+  }
+  .contact__map__container {
+    height: 18rem;
+    margin: 0rem 0 2rem;
+  }
+  .contact__map__content h3 {
+    font-size: 22px;
+  }
+  .contact__map__icons h3 {
+    font-size: 22px;
+  }
+  .contact__map__copy p {
+    font-size: 14px;
+  }
+  .contact__map__i {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 26.8em) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+  .contact__us h1 {
+    font-size: 2rem;
+  }
+  .contact__us p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .contact__map__container {
+    height: 16rem;
+  }
+  .contact__map__content h3 {
+    font-size: 20px;
+  }
+  .contact__map__icons h3 {
+    font-size: 20px;
+  }
+  .contact__map__copy p {
+    font-size: 14px;
+  }
+  .contact__map__i {
+    font-size: 20px;
   }
 }
 

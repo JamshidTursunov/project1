@@ -1,7 +1,7 @@
 .contact__map {
   &__container {
-    width: 35rem;
     height: 20rem;
+    width: 100%;
     margin: 2rem 0 4rem;
     .map-yandex {
       position: relative;
@@ -48,10 +48,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     & p {
       font-weight: 600;
       font-size: 14px;
       color: $dark_blue;
+      margin: 0 1rem 0.5rem 0;
     }
   }
 

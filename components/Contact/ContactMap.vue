@@ -6,7 +6,7 @@
     <div class="contact__map__content">
       <h3 class="mb-2">+998991091320</h3>
       <div class="contact__map__icons mb-2">
-        <h3>+998991091420</h3>
+        <h3 class="mb-1">+998991091420</h3>
         <div>
           <i class="fab fa-telegram-plane contact__map__i" />
           <i class="fab fa-facebook-square contact__map__i" />
@@ -25,9 +25,4 @@
 export default {}
 </script>
 
-<style>
-.contact__map {
-  height: 30rem;
-  width: 30rem;
-}
-</style>
+<style></style>
