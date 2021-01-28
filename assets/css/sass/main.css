@@ -3713,6 +3713,97 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .notification .nav-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .notification .nav-block .content-h1 {
+    margin-bottom: 0.5rem;
+  }
+  .notification .wrapper-cart {
+    padding: 1rem 1rem !important;
+  }
+  .notification .wrapper-cart .content-h1 {
+    font-size: 22px;
+  }
+  .notification .wrapper-cart .content-p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .userprofile-container {
+    padding: 0 1rem !important;
+  }
+  .userprofile-container .showcase {
+    padding: 0 !important;
+  }
+  .userprofile-container .is-active {
+    background: #5d30db;
+    color: #fff;
+  }
+  .userprofile-container .top-header {
+    border-bottom: 1px solid rgba(51, 51, 102, 0.5);
+    min-height: 7rem;
+  }
+  .userprofile-container .top-header .content-h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 35px;
+    color: #333366;
+  }
+  .userprofile-container .top-header .content-p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333366;
+  }
+  .userprofile-container .text-h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28.4097px;
+    line-height: 39px;
+    color: #333366;
+  }
+  .userprofile-container .avatar-default {
+    background: #333366;
+  }
+  .userprofile-container .data-form {
+    width: 90% !important;
+    margin: 5% auto;
+  }
+  .userprofile-container .data-form input {
+    background: transparent;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(51, 51, 102, 0.5);
+  }
+  .userprofile-container .data-form .data-submit {
+    background: #5d30db;
+    border-radius: 4px;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
 .section-1-wrapper {
   position: relative;
   padding: 0 137px;
@@ -5086,5 +5177,148 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .purchase-table tr.data-row {
   height: 130px;
+}
+
+.notification {
+  height: 100%;
+  background: #f3f8ff;
+  padding-bottom: 2rem;
+}
+
+.notification .app-header {
+  height: 186px;
+  background: #333366;
+}
+
+.notification .app-header .content-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.userprofile-container {
+  padding: 0 137px;
+  background: #f3f8ff;
+  min-height: 75vh;
+}
+
+.userprofile-container .showcase {
+  min-height: 80vh;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.userprofile-container .showcase .left-bar {
+  border: 1px solid rgba(51, 51, 102, 0.5);
+  border-right: none;
+  padding: 0 0;
+}
+
+.userprofile-container .showcase .left-bar .list-group .list-group-item {
+  background: transparent;
+  border: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.userprofile-container .showcase .left-bar .list-group .list-group-item:hover {
+  padding-left: 1.8rem;
+}
+
+.userprofile-container .showcase .right-bar {
+  border: 1px solid rgba(51, 51, 102, 0.5);
+}
+
+.userprofile-container .is-active {
+  background: #5d30db !important;
+  color: #fff !important;
+}
+
+.userprofile-container .top-header {
+  border-bottom: 1px solid rgba(51, 51, 102, 0.5);
+  min-height: 7rem;
+}
+
+.userprofile-container .top-header .content-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  color: #333366;
+}
+
+.userprofile-container .top-header .content-p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333366;
+}
+
+.userprofile-container .text-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28.4097px;
+  line-height: 39px;
+  color: #333366;
+}
+
+.userprofile-container .avatar-default {
+  background: #333366;
+}
+
+.userprofile-container .user-profile .top-header {
+  border-bottom: 1px solid rgba(51, 51, 102, 0.5);
+  min-height: 7rem;
+}
+
+.userprofile-container .user-profile .top-header .content-h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+  color: #333366;
+}
+
+.userprofile-container .user-profile .top-header .content-p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333366;
+}
+
+.userprofile-container .user-profile .data-form {
+  width: 70%;
+  margin: 5% auto;
+}
+
+.userprofile-container .user-profile .data-form input {
+  background: transparent;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(51, 51, 102, 0.5);
+}
+
+.userprofile-container .user-profile .data-form .data-submit {
+  background: #5d30db;
+  border-radius: 4px;
+  color: white;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
 }
 /*# sourceMappingURL=main.css.map */
