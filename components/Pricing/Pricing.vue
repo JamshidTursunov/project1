@@ -1,17 +1,15 @@
 <template>
   <div class="pricing__container">
     <div class="pricing__box">
-      <h1>Find your plan</h1>
+      <h1 class="mb-6">Find your plan</h1>
       <div class="pricing__dropdown">
-        <p>Currency</p>
-        <b-dropdown split id="dropdown-1" text="UZS" variant="primary" class="">
-          <b-dropdown-item active>UZS</b-dropdown-item>
-          <b-dropdown-item>USD</b-dropdown-item>
-          <b-dropdown-item>EV</b-dropdown-item>
-        </b-dropdown>
+        <div>
+          <p>Currency</p>
+          <b-form-select v-model="selected" :options="options"></b-form-select>
+        </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row pricing__row">
         <div v-for="price in prices" :key="price.id" class="col-lg-4">
           <div
@@ -142,6 +140,13 @@ export default {
           duration: '/month',
           bonus: 'Paid annually',
         },
+      ],
+      selected: 'UZS',
+      options: [
+        { value: 'UZS', text: 'UZS' },
+        { value: 'RUB', text: 'RUB' },
+        { value: 'EU', text: 'EU' },
+        { value: 'USD', text: 'USD' },
       ],
     }
   },
