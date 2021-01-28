@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col-md-4 h-10">
-        <p class="content-p ml-4 mb-2">Current lesson</p>
+        <p class="content-p my-2">Current lesson</p>
         <h2 class="content-h2">Video: Corporate Leadership</h2>
       </div>
     </div>

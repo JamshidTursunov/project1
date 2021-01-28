@@ -7,9 +7,7 @@
 </template>
 
 <script>
-import appFooter from '../components/appFooter.vue'
 export default {
-  components: { appFooter },
   data() {
     return {}
   },

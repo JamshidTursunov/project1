@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid showcase">
+  <div class="container-fluid my-cart">
     <div class="row app-header">
       <div class="col-md-10 offset-md-1 flex flex-wrap content-end">
         <h1 class="content-h1">My Cart</h1>
-        <div class="flex w-full my-8">
+        <div class="flex flex-wrap w-full my-8 nav-box">
           <nav style="flex: 1" class="flex items-center text-white">
             <h2 class="content-h2">Courses: 8</h2>
           </nav>
@@ -71,12 +71,12 @@ export default {
 </script>
 
 <style scoped>
-.showcase {
-  height: 100vh;
+.my-cart {
+  min-height: 100vh;
   background: #f3f8ff;
 }
 .app-header {
-  height: 186px;
+  min-height: 186px;
   background: #333366;
 }
 .content-h1 {

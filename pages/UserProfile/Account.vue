@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="w-full top-header flex flex-column items-center justify-center">
+    <div
+      class="w-full top-header flex flex-column items-center justify-center px-4"
+    >
       <h1 class="content-h1">{{ itemDetails.headerTitle }}</h1>
       <p class="content-p">{{ itemDetails.description }}</p>
     </div>
@@ -67,7 +69,7 @@
               ></b-form-input>
             </b-form-group>
           </b-form>
-          <b-button class="justify-self-end data-submit" type="submit"
+          <b-button class="justify-self-end data-submit mb-4" type="submit"
             >Change password</b-button
           >
         </div>

@@ -1,9 +1,12 @@
 <template>
   <vueper-slides
-    :bullets="false"
     class="no-shadow"
     :visible-slides="4"
+    :bullets="false"
     :dragging-distance="70"
+    :gap="0"
+    :slide-ratio="1 / 3"
+    :breakpoints="myBreakPoints"
   >
     <vueper-slide class="cart-self" v-for="i in 8" :key="i">
       <template v-slot:content>
@@ -50,6 +53,28 @@ export default {
   components: { VueperSlides, VueperSlide },
   data() {
     return {
+      myBreakPoints: {
+        1510: { visibleSlides: 4, slideMultiple: 2, slideRatio: 1 / 2.8 },
+        1360: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 2.5 },
+        1140: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 2.5 },
+        1230: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 2.3 },
+        1140: { visibleSlides: 3, slideMultiple: 2, slideRatio: 2 / 4.4 },
+        1111: { visibleSlides: 3, slideMultiple: 2, slideRatio: 2 / 4 },
+        1040: { visibleSlides: 3, slideMultiple: 2, slideRatio: 2 / 3.8 },
+        990: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 3.6 },
+        900: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 3.4 },
+        850: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 3.2 },
+        820: { visibleSlides: 2, slideMultiple: 2, slideRatio: 2 / 3 },
+        780: { visibleSlides: 1, slideRatio: 2 / 3 },
+        610: { visibleSlides: 1, slideRatio: 2 / 2.8 },
+        551: { visibleSlides: 1, slideRatio: 2 / 2.4 },
+        490: { visibleSlides: 1, slideRatio: 2 / 2.2 },
+        470: { visibleSlides: 1, slideRatio: 2 / 2 },
+        440: { visibleSlides: 1, slideRatio: 2 / 1.8 },
+        390: { visibleSlides: 1, slideRatio: 2 / 1.6 },
+        360: { visibleSlides: 1, slideRatio: 2 / 1.5 },
+        334: { visibleSlides: 1, slideRatio: 2 / 1.4 },
+      },
       ratingValue: 4,
       slides: [
         {

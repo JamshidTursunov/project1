@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="user-profile">
     <div class="w-full top-header flex flex-column items-center justify-center">
       <h1 class="content-h1">{{ itemDetails.headerTitle }}</h1>
       <p class="content-p">{{ itemDetails.description }}</p>
@@ -58,49 +58,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.top-header {
-  border-bottom: 1px solid rgba(51, 51, 102, 0.5);
-  min-height: 7rem;
-}
-.top-header .content-h1 {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 35px;
-  color: #333366;
-}
-.top-header .content-p {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: #333366;
-}
-.data-form {
-  width: 70%;
-  margin: 5% auto;
-}
-.data-form input {
-  background: transparent;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
-  color: rgba(51, 51, 102, 0.5);
-}
-.data-submit {
-  background: #5d30db;
-  border-radius: 4px;
-  color: white;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-}
-</style>

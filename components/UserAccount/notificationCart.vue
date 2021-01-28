@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid wrapper-cart">
     <div class="row mb-6">
-      <div class="col-md-12 flex justify-between">
+      <div class="col-md-12 flex justify-between items-center">
         <h1 class="content-h1">Notification title</h1>
         <p class="content-date">12.01.20</p>
       </div>

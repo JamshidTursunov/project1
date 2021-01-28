@@ -30,6 +30,11 @@
 
 @import 'responsive/responsiveAboutPage';
 @import 'responsive/responsiveCoursesPage';
+@import 'responsive/responsivePurchaseHistoryPage';
+@import 'responsive/myLearning';
+@import 'responsive/myCart';
+@import 'responsive/notification';
+@import 'responsive/userProfile';
 
 @import 'components/homePage/section-1';
 @import 'components/homePage/section-2';
@@ -42,3 +47,7 @@
 @import 'components/homePage/navbar-bottom';
 @import 'components/appNavbar';
 @import 'layouts/transition';
+@import 'components/userAccount/purchaseTable';
+@import 'components/userAccount/notification';
+
+@import 'components/userProfile/profile';

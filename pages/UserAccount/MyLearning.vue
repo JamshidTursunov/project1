@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid showcase">
+  <div class="container-fluid showcase my-learning">
     <div class="row app-header">
       <div class="col-md-10 offset-md-1 flex flex-wrap content-end">
         <h1 class="content-h1">My learning</h1>
-        <div class="flex w-full my-8">
+        <div class="flex w-full my-8 flex-wrap nav-content">
           <nav style="flex: 1" class="flex items-center">
             <ul class="flex">
               <li
@@ -86,7 +86,7 @@ export default {
   height: 100vh;
 }
 .app-header {
-  height: 186px;
+  min-height: 186px;
   background: #333366;
 }
 .content-h1 {
