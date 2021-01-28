@@ -15,12 +15,15 @@ export default {
 
 <style scoped>
 .container-fluid {
-  min-height: 50vh;
+  min-height: 80vh;
   width: 100%;
 }
 .row {
   margin-top: 5%;
   font-size: 26px;
   color: grey;
+}
+h1{
+  
 }
 </style>

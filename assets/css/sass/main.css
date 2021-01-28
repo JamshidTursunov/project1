@@ -2306,12 +2306,71 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .promo__short__video .video-js {
-  border-radius: 160px 8px 8px 8px;
+  border-radius: 70px 7px 7px 7px;
   position: absolute;
   top: 8rem;
   left: -5rem;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 20;
+}
+
+.promo__short__video::before {
+  content: '';
+  height: 9rem;
+  width: 13rem;
+  position: absolute;
+  border: 8.09296px solid #ff9900;
+  border-radius: 69.3682px 7px 7px 0px;
+  top: 6rem;
+  left: -7rem;
+  z-index: 10;
+  -webkit-box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
+          box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
+}
+
+@media only screen and (max-width: 992px) {
+  .promo__short__video::before {
+    display: none;
+  }
+}
+
+.promo__short__video::after {
+  content: '';
+  height: 9rem;
+  width: 13rem;
+  position: absolute;
+  border: 8.09296px solid #5d30db;
+  border-radius: 10px;
+  top: 23.5rem;
+  left: 23.5rem;
+  z-index: 10;
+  -webkit-box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1200px) {
+  .promo__short__video::after {
+    left: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1112px) {
+  .promo__short__video::after {
+    left: 18rem;
+  }
+}
+
+@media only screen and (max-width: 1044px) {
+  .promo__short__video::after {
+    left: 16rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .promo__short__video::after {
+    display: none;
+  }
 }
 
 .promo__heading__primary {
@@ -2357,6 +2416,63 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .promo__content {
   position: relative;
   z-index: 20;
+}
+
+.chart {
+  background-color: #f3f8ff;
+  padding: 1.875rem 3.125rem;
+}
+
+.chart__filter {
+  display: inline-block;
+  background-color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+}
+
+.chart__filter input:focus {
+  outline: none;
+}
+
+.chart__bar {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  height: 20.25rem;
+}
+
+.chart__line {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  height: 20.25rem;
+}
+
+.chart__card {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.chart__card h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2c3241;
+  margin-bottom: 1rem;
+}
+
+.chart__card h1 {
+  font-size: 42px;
+  color: #5d30db;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .contact {
@@ -5017,20 +5133,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 50%;
 }
 
-.app-navbar .btn-md:active {
-  outline-color: red !important;
-}
-
-.app-navbar .btn-md:focus {
-  outline-color: red !important;
-}
-
-@media only screen and (max-width: 600px) {
-  .app-navbar .btn-md {
-    margin-left: -5px;
-  }
-}
-
 .app-navbar .dropdown-menu {
   overflow: hidden;
   display: block !important;
@@ -5132,6 +5234,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   .app-navbar .btn-login {
     width: 30%;
     margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-md {
+    margin-left: -5px;
+  }
+  .btn-md:focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
 }
 

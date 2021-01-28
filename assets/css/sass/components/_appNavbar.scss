@@ -56,16 +56,8 @@
   .btn-md {
     padding: 0 0 !important;
     border-radius: 50%;
-    &:active {
-      outline-color: red !important;
-    }
-    &:focus {
-      outline-color: red !important;
-    }
-    @media only screen and (max-width: 600px) {
-      margin-left: -5px;
-    }
   }
+
   .dropdown-menu {
     overflow: hidden;
     display: block !important;
@@ -141,6 +133,15 @@
     @media only screen and (max-width: 600px) {
       width: 30%;
       margin-top: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-md {
+    margin-left: -5px;
+    &:focus {
+      box-shadow: none !important;
     }
   }
 }

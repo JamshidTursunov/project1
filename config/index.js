@@ -50,6 +50,16 @@ export const I18N = {
       ru: '/pricing',
       uz: '/pricing',
     },
+    instructors: {
+      en: '/instructors',
+      ru: '/instructors',
+      uz: '/instructors',
+    },
+    courses: {
+      en: '/courses',
+      ru: '/courses',
+      uz: '/courses',
+    },
   },
   vueI18n: {
     fallbackLocale: 'en',
