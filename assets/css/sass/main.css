@@ -1434,8 +1434,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: absolute;
   top: 8rem;
   left: -5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 20;
 }
 
@@ -1449,8 +1448,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 6rem;
   left: -7rem;
   z-index: 10;
-  -webkit-box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
-          box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
+  box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
 }
 
 @media only screen and (max-width: 992px) {
@@ -1469,8 +1467,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 23.5rem;
   left: 23.5rem;
   z-index: 10;
-  -webkit-box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1554,8 +1551,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .chart__bar {
   background-color: white;
-  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
   border-radius: 14px;
   padding: 1rem 1.5rem;
   height: 20.25rem;
@@ -1563,8 +1559,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .chart__line {
   background-color: white;
-  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
   border-radius: 14px;
   padding: 1rem 1.5rem;
   height: 20.25rem;
@@ -4205,8 +4200,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-left: -5px;
   }
   .btn-md:focus {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 
