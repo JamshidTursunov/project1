@@ -1533,6 +1533,61 @@ Due to the split circle of progress-left and progress right, we must use the ani
   z-index: 20;
 }
 
+.chart {
+  background-color: #f3f8ff;
+  padding: 1.875rem 3.125rem;
+}
+
+.chart__filter {
+  display: inline-block;
+  background-color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+}
+
+.chart__filter input:focus {
+  outline: none;
+}
+
+.chart__bar {
+  background-color: white;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  height: 20.25rem;
+}
+
+.chart__line {
+  background-color: white;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  height: 20.25rem;
+}
+
+.chart__card {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.chart__card h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2c3241;
+  margin-bottom: 1rem;
+}
+
+.chart__card h1 {
+  font-size: 42px;
+  color: #5d30db;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .contact {
   padding: 5rem 9rem;
   background-image: url("~assets/images/contact/bitmap.png");
