@@ -27,8 +27,8 @@ export const I18N = {
   routes: {
     index: {
       en: '/',
-      // ru: '/',
-      // uz: '/',
+      ru: '/',
+      uz: '/',
     },
     about: {
       en: '/about',
@@ -44,6 +44,21 @@ export const I18N = {
       en: '/contact-us',
       ru: '/contact-us',
       uz: '/contact-us',
+    },
+    pricing: {
+      en: '/pricing',
+      ru: '/pricing',
+      uz: '/pricing',
+    },
+    instructors: {
+      en: '/instructors',
+      ru: '/instructors',
+      uz: '/instructors',
+    },
+    courses: {
+      en: '/courses',
+      ru: '/courses',
+      uz: '/courses',
     },
   },
   vueI18n: {
