@@ -21,6 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 .instructorsPage {
-  padding: 0 0 6rem;
+  padding: 0;
 }
 </style>

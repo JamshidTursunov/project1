@@ -2348,6 +2348,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 18px;
   color: #333366;
   margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .process__box span {
@@ -2724,6 +2726,110 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .courses .description__container ul li {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .instructorsPage .header__instructor__container {
+    padding: 7.9rem 4rem 12.2rem;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 4rem 6.75rem;
+  }
+  .instructorsPage .process__container {
+    padding: 0 4rem 6.75rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .instructorsPage .header__instructor__container {
+    padding: 8rem;
+    background-image: none;
+    background-color: #f3f8ff;
+  }
+  .instructorsPage .header__instructor__container h1 {
+    margin: 0;
+  }
+  .instructorsPage .header__instructor__container p {
+    margin: 0;
+  }
+  .instructorsPage .header__instructor__link {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 8rem 5.75rem;
+  }
+  .instructorsPage .process__container {
+    padding: 0 8rem 6.75rem;
+  }
+  .instructorsPage .process__dotes {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .instructorsPage .header__instructor__container {
+    padding: 6rem 4rem;
+  }
+  .instructorsPage .header__instructor__container h1 {
+    font-size: 27px;
+  }
+  .instructorsPage .header__instructor__container p {
+    font-size: 20px;
+  }
+  .instructorsPage .header__instructor__link {
+    font-size: 16px;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 4rem 3.75rem;
+  }
+  .instructorsPage .instructors__content h2 {
+    font-size: 24px;
+  }
+  .instructorsPage .instructors__content li {
+    font-size: 16px;
+  }
+  .instructorsPage .process__container {
+    padding: 0 4rem 4.75rem;
+  }
+  .instructorsPage .process__wrapper h1 {
+    font-size: 30px;
+    margin-bottom: 3.2rem;
+  }
+  .instructorsPage .process__box span {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 26.8em) {
+  .instructorsPage .header__instructor__container {
+    padding: 4rem 2rem;
+  }
+  .instructorsPage .header__instructor__container h1 {
+    font-size: 24px;
+  }
+  .instructorsPage .header__instructor__container p {
+    font-size: 18px;
+  }
+  .instructorsPage .header__instructor__container li {
+    font-size: 14px;
+  }
+  .instructorsPage .header__instructor__link {
+    font-size: 14px;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 2rem 1.75rem;
+  }
+  .instructorsPage .instructors__content h2 {
+    font-size: 22px;
+  }
+  .instructorsPage .process__container {
+    padding: 0 0rem 2.75rem;
+  }
+  .instructorsPage .process__wrapper h1 {
+    font-size: 28px;
+    margin-bottom: 2.2rem;
   }
 }
 

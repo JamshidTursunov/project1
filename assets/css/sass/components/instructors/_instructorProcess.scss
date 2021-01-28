@@ -5,9 +5,6 @@
     padding: 0 8.2rem 6.75rem;
   }
 
-  &__span {
-  }
-
   &__wrapper {
     position: relative;
     & h1 {
@@ -30,9 +27,6 @@
     z-index: 5;
   }
 
-  &__row {
-  }
-
   &__box {
     display: flex;
     flex-direction: column;
@@ -46,6 +40,8 @@
       font-size: 18px;
       color: $dark_blue;
       margin-bottom: 2rem;
+      font-weight: 600;
+      text-align: center;
     }
 
     & span {
