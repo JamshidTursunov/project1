@@ -4420,8 +4420,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google > div:nth-child(1)::after {
   content: '';
   position: absolute;
-  top: -72px;
-  left: 50%;
+  top: -58px;
+  left: 46%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -4464,8 +4464,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google div:nth-child(2)::after {
   content: '';
   position: absolute;
-  top: -66px;
-  left: 42%;
+  top: -60px;
+  left: 46%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -4508,7 +4508,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google div:nth-child(3)::after {
   content: '';
   position: absolute;
-  top: -64px;
+  top: -66px;
   left: 43%;
   width: 15px;
   height: 15px;
@@ -4554,7 +4554,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google div:nth-child(4)::after {
   content: '';
   position: absolute;
-  top: -65px;
+  top: -73px;
   left: 30%;
   width: 15px;
   height: 15px;
@@ -4564,8 +4564,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(4)::after {
-    top: -75px;
-    left: 37%;
+    top: -78px;
+    left: 35%;
   }
 }
 
@@ -5457,5 +5457,57 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
+}
+
+@media only screen and (max-width: 1610px) {
+  .section-4 .progress-google {
+    position: relative;
+  }
+  .section-4 .progress-google::before {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+}
+
+@media only screen and (max-width: 1495px) {
+  .section-4 .progress-google {
+    position: relative;
+  }
+  .section-4 .progress-google::before {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .section-4 .progress-google {
+    position: relative;
+  }
+  .section-4 .progress-google::before {
+    -webkit-transform: rotate(-27.5deg);
+            transform: rotate(-27.5deg);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-4 .progress-google {
+    position: relative;
+  }
+  .section-4 .progress-google::before {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .section-4 .progress-google {
+    position: relative;
+  }
+  .section-4 .progress-google::before {
+    -webkit-transform: rotate(-34deg);
+            transform: rotate(-34deg);
+    top: 42%;
+    left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -41,8 +41,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -72px;
-      left: 50%;
+      top: -58px;
+      left: 46%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -76,8 +76,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -66px;
-      left: 42%;
+      top: -60px;
+      left: 46%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -111,7 +111,7 @@
     &::after {
       content: '';
       position: absolute;
-      top: -64px;
+      top: -66px;
       left: 43%;
       width: 15px;
       height: 15px;
@@ -148,15 +148,15 @@
     &::after {
       content: '';
       position: absolute;
-      top: -65px;
+      top: -73px;
       left: 30%;
       width: 15px;
       height: 15px;
       background: orange;
       border-radius: 50%;
       @media only screen and (max-width: 900px) {
-        top: -75px;
-        left: 37%;
+        top: -78px;
+        left: 35%;
       }
     }
     &::before {

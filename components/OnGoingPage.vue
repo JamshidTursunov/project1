@@ -23,7 +23,7 @@ export default {
   font-size: 26px;
   color: grey;
 }
-h1{
-  
+h1 {
+  font-size: 38px;
 }
 </style>

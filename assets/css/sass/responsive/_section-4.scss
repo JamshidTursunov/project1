@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1610px) {
+  .section-4 {
+    .progress-google {
+      position: relative;
+      &::before {
+        transform: rotate(-22deg);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1495px) {
+  .section-4 {
+    .progress-google {
+      position: relative;
+      &::before {
+        transform: rotate(-25deg);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .section-4 {
+    .progress-google {
+      position: relative;
+      &::before {
+        transform: rotate(-27.5deg);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .section-4 {
+    .progress-google {
+      position: relative;
+      &::before {
+        transform: rotate(-30deg);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+    .section-4 {
+      .progress-google {
+        position: relative;
+        &::before {
+          transform: rotate(-34deg);
+          top: 42%;
+          left: 0;
+        }
+      }
+    }
+  }
