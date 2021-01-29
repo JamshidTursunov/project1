@@ -1,7 +1,7 @@
 <template>
   <div class="form__container">
     <div class="form__wrapper">
-      <div class="form__content mt-5">
+      <div class="form__content">
         <h1>Partner application</h1>
         <p class="form__content__p">
           Build skills for today, tomorrow and beyond. Education allows to

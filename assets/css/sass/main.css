@@ -2085,6 +2085,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-bottom: none;
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
   color: rgba(0, 0, 0, 0.5);
   background-color: #eaeef3;
   display: flex;
@@ -2094,7 +2095,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .form__search {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
@@ -2104,7 +2105,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .form__search button {
   background-color: #ffffff;
   padding: 0.6rem 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2206,6 +2207,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-style: normal;
   color: #111111;
   border: 2px solid #ccc;
+  position: relative;
+  z-index: 100;
 }
 
 .form__content {
@@ -2217,6 +2220,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__content h1 {
+  text-align: center;
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 1rem;
@@ -2738,6 +2742,58 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .contact__map__i {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 28.75em) {
+  .instructor__application .form__wrapper {
+    padding: 1.5rem 0.5rem;
+  }
+  .instructor__application .form__content {
+    margin-bottom: 1.8rem;
+  }
+  .instructor__application .form__content h1 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+  }
+  .instructor__application .form__p {
+    font-size: 16px;
+  }
+  .instructor__application .form__button p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .signInPage .form__wrapper {
+    padding: 1.5rem 0.5rem;
+  }
+  .signInPage .form__switch__box {
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
+  .signInPage .form__content {
+    margin-bottom: 1.8rem;
+  }
+  .signInPage .form__content h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  .signInPage .form__content__p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .signInPage .form__search {
+    margin-top: 1rem;
+  }
+  .signInPage .form__search button {
+    font-size: 14px;
+  }
+  .signInPage .form__button h4 {
+    font-size: 16px;
+    margin: 1rem 0;
+  }
+  .signInPage .form__button .form__content__p {
+    font-size: 14px !important;
   }
 }
 
