@@ -71,6 +71,7 @@ export default {
       },
     ],
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
     '@nuxtjs/svg',
     ['nuxt-i18n', I18N],
     '@nuxtjs/style-resources',
@@ -78,7 +79,9 @@ export default {
   bootstrapVue: {
     icons: true,
   },
-  axios: {},
+  axios: {
+    baseUrl: 'damp-falls-69005.herokuapp.com/api',
+  },
 
   build: {},
 }

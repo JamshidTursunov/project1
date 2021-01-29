@@ -12,6 +12,7 @@
     border-bottom: none;
     font-weight: 600;
     font-size: 18px;
+    text-align: center;
     color: rgba(0, 0, 0, 0.5);
     background-color: $tertiary_white;
     display: flex;
@@ -21,7 +22,7 @@
 
   &__search {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
@@ -31,7 +32,7 @@
   &__search button {
     background-color: $white;
     padding: 0.6rem 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

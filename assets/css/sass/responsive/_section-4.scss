@@ -3,7 +3,7 @@
     .progress-google {
       position: relative;
       &::before {
-        transform: rotate(-22deg);
+        // transform: rotate(-22deg);
       }
     }
   }
@@ -41,14 +41,14 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .section-4 {
-      .progress-google {
-        position: relative;
-        &::before {
-          transform: rotate(-34deg);
-          top: 42%;
-          left: 0;
-        }
+  .section-4 {
+    .progress-google {
+      position: relative;
+      &::before {
+        transform: rotate(-34deg);
+        top: 42%;
+        left: 0;
       }
     }
   }
+}

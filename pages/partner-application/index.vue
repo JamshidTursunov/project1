@@ -53,7 +53,21 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-
+  @media only screen and (max-width: 82em) {
+    padding: 3.2rem 20rem 6rem;
+  }
+  @media only screen and (max-width: 75em) {
+    padding: 3.2rem 15rem 6rem;
+  }
+  @media only screen and (max-width: 62em) {
+    padding: 3.2rem 10rem 5rem;
+  }
+  @media only screen and (max-width: 50em) {
+    padding: 3.2rem 4rem 4rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    padding: 3.2rem 1rem 3rem;
+  }
   &__circle1 {
     position: absolute;
     top: 15rem;

@@ -2544,8 +2544,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .contact__map__container {
-  width: 35rem;
   height: 20rem;
+  width: 100%;
   margin: 2rem 0 4rem;
 }
 
@@ -2605,12 +2605,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact__map__copy p {
   font-weight: 600;
   font-size: 14px;
   color: #333366;
+  margin: 0 1rem 0.5rem 0;
 }
 
 .contact__map__i {
@@ -3017,6 +3020,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-bottom: none;
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
   color: rgba(0, 0, 0, 0.5);
   background-color: #eaeef3;
   display: -webkit-box;
@@ -3034,9 +3038,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3049,7 +3053,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .form__search button {
   background-color: #ffffff;
   padding: 0.6rem 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3175,6 +3179,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-style: normal;
   color: #111111;
   border: 2px solid #ccc;
+  position: relative;
+  z-index: 100;
 }
 
 .form__content {
@@ -3195,6 +3201,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .form__content h1 {
+  text-align: center;
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 1rem;
@@ -3341,6 +3348,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 18px;
   color: #333366;
   margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .process__box span {
@@ -3376,6 +3385,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 8rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pricing__box h1 {
@@ -3531,7 +3542,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .pricing__details__box h3 {
@@ -3695,6 +3706,138 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
 }
 
+@media only screen and (max-width: 75em) {
+  .contact {
+    padding: 5rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .contact {
+    padding: 4rem 5rem;
+  }
+  .contact__us h1 {
+    font-size: 3rem;
+  }
+  .contact__us p {
+    font-size: 1.3rem;
+  }
+  .contact__map__container {
+    margin: 0rem 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact {
+    padding: 3rem 3rem;
+  }
+  .contact__btn {
+    font-size: 1rem;
+  }
+  .contact__us h1 {
+    font-size: 2.5rem;
+  }
+  .contact__us p {
+    margin-bottom: 2rem;
+  }
+  .contact__map__container {
+    height: 18rem;
+    margin: 0rem 0 2rem;
+  }
+  .contact__map__content h3 {
+    font-size: 22px;
+  }
+  .contact__map__icons h3 {
+    font-size: 22px;
+  }
+  .contact__map__copy p {
+    font-size: 14px;
+  }
+  .contact__map__i {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 26.8em) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+  .contact__us h1 {
+    font-size: 2rem;
+  }
+  .contact__us p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .contact__map__container {
+    height: 16rem;
+  }
+  .contact__map__content h3 {
+    font-size: 20px;
+  }
+  .contact__map__icons h3 {
+    font-size: 20px;
+  }
+  .contact__map__copy p {
+    font-size: 14px;
+  }
+  .contact__map__i {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 28.75em) {
+  .instructor__application .form__wrapper {
+    padding: 1.5rem 0.5rem;
+  }
+  .instructor__application .form__content {
+    margin-bottom: 1.8rem;
+  }
+  .instructor__application .form__content h1 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+  }
+  .instructor__application .form__p {
+    font-size: 16px;
+  }
+  .instructor__application .form__button p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .signInPage .form__wrapper {
+    padding: 1.5rem 0.5rem;
+  }
+  .signInPage .form__switch__box {
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
+  .signInPage .form__content {
+    margin-bottom: 1.8rem;
+  }
+  .signInPage .form__content h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  .signInPage .form__content__p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .signInPage .form__search {
+    margin-top: 1rem;
+  }
+  .signInPage .form__search button {
+    font-size: 14px;
+  }
+  .signInPage .form__button h4 {
+    font-size: 16px;
+    margin: 1rem 0;
+  }
+  .signInPage .form__button .form__content__p {
+    font-size: 14px !important;
+  }
+}
+
 @media only screen and (max-width: 62em) {
   .courses .introduction__container {
     padding: 0 0 1rem;
@@ -3762,6 +3905,187 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .courses .description__container ul li {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .instructorsPage .header__instructor__container {
+    padding: 7.9rem 4rem 12.2rem;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 4rem 6.75rem;
+  }
+  .instructorsPage .process__container {
+    padding: 0 4rem 6.75rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .instructorsPage .header__instructor__container {
+    padding: 8rem;
+    background-image: none;
+    background-color: #f3f8ff;
+  }
+  .instructorsPage .header__instructor__container h1 {
+    margin: 0;
+  }
+  .instructorsPage .header__instructor__container p {
+    margin: 0;
+  }
+  .instructorsPage .header__instructor__link {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 8rem 5.75rem;
+  }
+  .instructorsPage .process__container {
+    padding: 0 8rem 6.75rem;
+  }
+  .instructorsPage .process__dotes {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .instructorsPage .header__instructor__container {
+    padding: 6rem 4rem;
+  }
+  .instructorsPage .header__instructor__container h1 {
+    font-size: 27px;
+  }
+  .instructorsPage .header__instructor__container p {
+    font-size: 20px;
+  }
+  .instructorsPage .header__instructor__link {
+    font-size: 16px;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 4rem 3.75rem;
+  }
+  .instructorsPage .instructors__content h2 {
+    font-size: 24px;
+  }
+  .instructorsPage .instructors__content li {
+    font-size: 16px;
+  }
+  .instructorsPage .process__container {
+    padding: 0 4rem 4.75rem;
+  }
+  .instructorsPage .process__wrapper h1 {
+    font-size: 30px;
+    margin-bottom: 3.2rem;
+  }
+  .instructorsPage .process__box span {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 26.8em) {
+  .instructorsPage .header__instructor__container {
+    padding: 4rem 2rem;
+  }
+  .instructorsPage .header__instructor__container h1 {
+    font-size: 24px;
+  }
+  .instructorsPage .header__instructor__container p {
+    font-size: 18px;
+  }
+  .instructorsPage .header__instructor__container li {
+    font-size: 14px;
+  }
+  .instructorsPage .header__instructor__link {
+    font-size: 14px;
+  }
+  .instructorsPage .instructors__content {
+    padding: 3rem 2rem 1.75rem;
+  }
+  .instructorsPage .instructors__content h2 {
+    font-size: 22px;
+  }
+  .instructorsPage .process__container {
+    padding: 0 0rem 2.75rem;
+  }
+  .instructorsPage .process__wrapper h1 {
+    font-size: 28px;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .pricing__content {
+    padding: 1.25rem 1.5rem;
+  }
+  .pricing__price {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .pricing__row {
+    margin-bottom: 1rem;
+  }
+  .pricing__box {
+    margin-bottom: 4rem;
+  }
+  .pricing__active__card {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .pricing__content {
+    font-size: 22.9687px;
+    padding: 1.25rem 3.875rem;
+  }
+  .pricing__price {
+    font-size: 21px;
+    padding: 1.25rem 3.875rem;
+  }
+  .pricing__price span:nth-child(1) {
+    position: absolute;
+    top: 16%;
+    left: 26%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pricing__box {
+    padding: 0 1rem;
+  }
+  .pricing__box h1 {
+    font-size: 2.5rem;
+  }
+  .pricing__content {
+    font-size: 22.9687px;
+    padding: 1.25rem 2rem;
+  }
+  .pricing__price {
+    font-size: 21px;
+    padding: 1.25rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .pricing__tarif {
+    font-size: 1.3rem;
+  }
+  .pricing__content {
+    font-size: 1.2rem;
+    padding: 0.25rem 1rem;
+  }
+  .pricing__price {
+    font-size: 1.2rem;
+    padding: 0.25rem 1rem;
+  }
+  .pricing__price span:nth-child(1) {
+    top: 10%;
+    left: 17%;
+  }
+  .pricing__price span:nth-child(2) {
+    font-size: 60px;
+  }
+  .pricing__button, .pricing__button:link, .pricing__button:visited {
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -4391,8 +4715,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   left: 0;
   position: absolute;
   border-top: 8px dotted white;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  -webkit-transform: rotate(-24deg);
+          transform: rotate(-24deg);
 }
 
 @media only screen and (max-width: 900px) {
@@ -4420,8 +4744,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google > div:nth-child(1)::after {
   content: '';
   position: absolute;
-  top: -58px;
-  left: 46%;
+  top: -54px;
+  left: 42%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -4465,7 +4789,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   content: '';
   position: absolute;
   top: -60px;
-  left: 46%;
+  left: 44%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -4509,7 +4833,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   content: '';
   position: absolute;
   top: -66px;
-  left: 43%;
+  left: 42%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -4554,8 +4878,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google div:nth-child(4)::after {
   content: '';
   position: absolute;
-  top: -73px;
-  left: 30%;
+  top: -74px;
+  left: 27%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -5462,10 +5786,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
 @media only screen and (max-width: 1610px) {
   .section-4 .progress-google {
     position: relative;
-  }
-  .section-4 .progress-google::before {
-    -webkit-transform: rotate(-22deg);
-            transform: rotate(-22deg);
   }
 }
 

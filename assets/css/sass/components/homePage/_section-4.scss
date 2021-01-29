@@ -16,7 +16,7 @@
       left: 0;
       position: absolute;
       border-top: 8px dotted white;
-      transform: rotate(-20deg);
+      transform: rotate(-24deg);
     }
     @media only screen and (max-width: 900px) {
       &::before {
@@ -41,8 +41,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -58px;
-      left: 46%;
+      top: -54px;
+      left: 42%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -77,7 +77,7 @@
       content: '';
       position: absolute;
       top: -60px;
-      left: 46%;
+      left: 44%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -112,7 +112,7 @@
       content: '';
       position: absolute;
       top: -66px;
-      left: 43%;
+      left: 42%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -148,8 +148,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -73px;
-      left: 30%;
+      top: -74px;
+      left: 27%;
       width: 15px;
       height: 15px;
       background: orange;
