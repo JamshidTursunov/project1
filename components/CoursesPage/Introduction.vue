@@ -68,6 +68,11 @@ export default {
       ],
     }
   },
+
+  mounted() {
+    console.log(this.$store.state['course/data'])
+    // this.$store.dispatch("course/smth", param)
+  },
 }
 </script>
 

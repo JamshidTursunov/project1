@@ -12,10 +12,16 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
-          <b-dropdown-item to="/courses">Frontend development</b-dropdown-item>
-          <b-dropdown-item to="/courses">Backend development</b-dropdown-item>
-          <b-dropdown-item to="/courses">Mobile development</b-dropdown-item>
-          <b-dropdown-item to="/courses"
+          <b-dropdown-item :to="localePath('/courses')"
+            >Frontend development</b-dropdown-item
+          >
+          <b-dropdown-item :to="localePath('/courses')"
+            >Backend development</b-dropdown-item
+          >
+          <b-dropdown-item :to="localePath('/courses')"
+            >Mobile development</b-dropdown-item
+          >
+          <b-dropdown-item :to="localePath('/courses')"
             >Data science with python</b-dropdown-item
           >
           <b-dropdown-item to="/courses"
@@ -27,13 +33,18 @@
         >
 
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
-          <b-dropdown-item to="/inProcess">Become a mentor</b-dropdown-item>
-          <b-dropdown-item to="/instructors"
+          <b-dropdown-item :to="localePath('/inProcess')"
+            >Become a mentor</b-dropdown-item
+          >
+          <b-dropdown-item :to="localePath('/instructors')"
             >Become an instructor</b-dropdown-item
           >
         </b-nav-item-dropdown>
-        <b-nav-item to="/about"> {{ $t('navbar.AboutUs') }}</b-nav-item
-        ><b-nav-item to="/contact-us"> {{ $t('navbar.ContactUs') }}</b-nav-item>
+        <b-nav-item :to="localePath('/about')">
+          {{ $t('navbar.AboutUs') }}</b-nav-item
+        ><b-nav-item :to="localePath('/contact-us')">
+          {{ $t('navbar.ContactUs') }}</b-nav-item
+        >
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto" v-if="!loggedIn">
