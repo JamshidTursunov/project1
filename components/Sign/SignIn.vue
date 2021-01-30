@@ -38,13 +38,21 @@
           <span></span>
         </div>
       </div>
-      <form @submit.prevent="submitSignIn">
-        <Input type="email" inputPlaceholder="Email Address" v-model="email" />
-        <Input type="password" inputPlaceholder="Password" v-model="password" />
+      <form @submit.prevent="userLogin">
+        <Input
+          type="email"
+          inputPlaceholder="Email Address"
+          v-model="userInfo.email"
+        />
+        <Input
+          type="password"
+          inputPlaceholder="Password"
+          v-model="userInfo.password"
+        />
         <div class="form__button">
           <Button
             type="submit"
-            @click="submitSignIn"
+            @click="userLogin"
             btnStyle="controlButtonSubmit"
             >Sign in</Button
           >
@@ -55,7 +63,7 @@
             <span></span>
           </div>
           <h4>Sign in with your organization</h4>
-          <nuxt-link to="/sign/signUp" class="form__link"
+          <nuxt-link to="/auth/signUp" class="form__link"
             >Not a member yet! Sign up for free</nuxt-link
           >
         </div>
@@ -69,22 +77,21 @@ export default {
   props: {},
   data() {
     return {
-      email: '',
-      password: null,
+      userInfo: {
+        email: '',
+        password: null,
+      },
     }
   },
   methods: {
-    async submitSignIn() {
-      const loggedUser = await this.$store.getters['auth/loggedUser']
-      if (
-        this.email === loggedUser.email &&
-        this.password === loggedUser.password
-      ) {
-        await this.$store.dispatch('auth/login')
-        console.log('user has logged in succesfully')
-        this.$router.replace('/')
-      } else {
-        console.log('login is failed')
+    async userLogin() {
+      try {
+        let response = await this.$auth.loginWith('local', {
+          data: this.userInfo,
+        })
+        console.warn(response)
+      } catch (err) {
+        console.warn(err)
       }
     },
   },

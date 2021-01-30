@@ -71,7 +71,7 @@ export default {
       },
     ],
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next',
+    '@nuxtjs/auth',
     '@nuxtjs/svg',
     ['nuxt-i18n', I18N],
     '@nuxtjs/style-resources',
@@ -80,8 +80,18 @@ export default {
     icons: true,
   },
   axios: {
-    baseUrl: 'damp-falls-69005.herokuapp.com/api',
+    baseURL: 'https://damp-falls-69005.herokuapp.com/api/',
   },
-
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'token/', method: 'post', propertyName: 'access' },
+          user: { url: 'user/', method: 'get', propertyName: false },
+          logout: false,
+        },
+      },
+    },
+  },
   build: {},
 }
