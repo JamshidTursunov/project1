@@ -71,6 +71,7 @@ export default {
       },
     ],
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
     '@nuxtjs/svg',
     ['nuxt-i18n', I18N],
     '@nuxtjs/style-resources',
@@ -81,4 +82,7 @@ export default {
   axios: {},
 
   build: {},
+  loading: {
+    color: '#5d30db',
+  },
 }
