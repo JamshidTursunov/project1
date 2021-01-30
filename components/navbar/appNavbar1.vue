@@ -38,10 +38,10 @@
 
       <b-navbar-nav class="ml-auto" v-if="!loggedIn">
         <language-switcher class="mt-1 mr-2" />
-        <b-nav-item class="btn-login" :to="localePath('/sign')">
+        <b-nav-item class="btn-login" :to="localePath('/auth/login')">
           {{ $t('navbar.logIn') }}</b-nav-item
         >
-        <b-nav-item class="btn-sign-up" :to="localePath('/sign')">
+        <b-nav-item class="btn-sign-up" :to="localePath('/auth/signUp')">
           {{ $t('navbar.signUp') }}</b-nav-item
         >
       </b-navbar-nav>
@@ -117,7 +117,7 @@
 export default {
   data() {
     return {
-      loggedIn: true,
+      loggedIn: false,
     }
   },
   methods: {

@@ -16,7 +16,7 @@
       left: 0;
       position: absolute;
       border-top: 8px dotted white;
-      transform: rotate(-20deg);
+      transform: rotate(-24deg);
     }
     @media only screen and (max-width: 900px) {
       &::before {
@@ -41,8 +41,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -72px;
-      left: 50%;
+      top: -54px;
+      left: 42%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -76,8 +76,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -66px;
-      left: 42%;
+      top: -60px;
+      left: 44%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -111,8 +111,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -64px;
-      left: 43%;
+      top: -66px;
+      left: 42%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -148,15 +148,15 @@
     &::after {
       content: '';
       position: absolute;
-      top: -65px;
-      left: 30%;
+      top: -74px;
+      left: 27%;
       width: 15px;
       height: 15px;
       background: orange;
       border-radius: 50%;
       @media only screen and (max-width: 900px) {
-        top: -75px;
-        left: 37%;
+        top: -78px;
+        left: 35%;
       }
     }
     &::before {

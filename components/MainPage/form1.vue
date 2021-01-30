@@ -37,7 +37,7 @@
         <b-form-input
           type="password"
           id="input-2"
-          v-model="form.name"
+          v-model="form.password"
           class="bg-transparent input-field"
           placeholder="Password"
           required
@@ -89,14 +89,14 @@ export default {
       form: {
         firstname: '',
         lastname: '',
-        email: null,
+        email: '',
+        password: null,
       },
     }
   },
   methods: {
     onSubmit(event) {
       event.preventDefault()
-      alert(JSON.stringify(this.form))
     },
   },
 }
