@@ -40,9 +40,9 @@
       </div>
       <form @submit.prevent="userLogin">
         <Input
-          type="email"
-          inputPlaceholder="Email Address"
-          v-model="userInfo.email"
+          type="text"
+          inputPlaceholder="Phone number"
+          v-model="userInfo.phone_number"
         />
         <Input
           type="password"
@@ -78,21 +78,22 @@ export default {
   data() {
     return {
       userInfo: {
-        email: '',
-        password: null,
+        phone_number: '',
+        password: '',
       },
     }
   },
   methods: {
     async userLogin() {
-      try {
-        let response = await this.$auth.loginWith('local', {
-          data: this.userInfo,
-        })
-        console.warn(response)
-      } catch (err) {
-        console.warn(err)
-      }
+      await this.$axios
+        .post('token/', this.userInfo)
+        .then((res) => console.log('[RES]', res))
+        .catch((err) => console.log('[ERROR]', err))
+
+      await this.$auth.loginWith('local', {
+        data: this.userInfo,
+      })
+      console.log('[LOGIN]', response)
     },
   },
 }

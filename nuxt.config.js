@@ -87,9 +87,10 @@ export default {
       local: {
         endpoints: {
           login: { url: 'token/', method: 'post', propertyName: 'access' },
-          user: { url: 'user/', method: 'get', propertyName: false },
+          user: { url: 'user/profile', method: 'get', propertyName: false },
           logout: false,
         },
+        tokenType: '',
       },
     },
   },

@@ -32,21 +32,12 @@
             >Become an instructor</b-dropdown-item
           >
         </b-nav-item-dropdown>
-        <b-nav-item to="/about"> {{ $t('navbar.AboutUs') }}</b-nav-item
+        <b-nav-item :to="localePath('about')">
+          {{ $t('navbar.AboutUs') }}</b-nav-item
         ><b-nav-item to="/contact-us"> {{ $t('navbar.ContactUs') }}</b-nav-item>
       </b-navbar-nav>
 
-      <b-navbar-nav class="ml-auto" v-if="!loggedIn">
-        <language-switcher class="mt-1 mr-2" />
-        <b-nav-item class="btn-login" :to="localePath('/auth/login')">
-          {{ $t('navbar.logIn') }}</b-nav-item
-        >
-        <b-nav-item class="btn-sign-up" :to="localePath('/auth/signUp')">
-          {{ $t('navbar.signUp') }}</b-nav-item
-        >
-      </b-navbar-nav>
-
-      <b-navbar-nav class="ml-auto" v-else>
+      <b-navbar-nav class="ml-auto" v-if="$auth.loggedIn">
         <language-switcher class="mt-1" />
         <b-nav-item :to="localePath('/')"
           ><img
@@ -108,6 +99,16 @@
             >Logout</b-dropdown-item
           >
         </b-dropdown>
+      </b-navbar-nav>
+
+      <b-navbar-nav class="ml-auto" v-else>
+        <language-switcher class="mt-1 mr-2" />
+        <b-nav-item class="btn-login" :to="localePath('/auth/login')">
+          {{ $t('navbar.logIn') }}</b-nav-item
+        >
+        <b-nav-item class="btn-sign-up" :to="localePath('/auth/signUp')">
+          {{ $t('navbar.signUp') }}</b-nav-item
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
