@@ -101,23 +101,25 @@ export default {
         })
         .catch((err) => console.log(err))
 
+      if (this.form.token != '' && this.form.token != null) {
+        await this.$axios
+          .post('user/', this.form)
+          .then((res) => console.log(res))
+          .catch((err) => console.log('[USER ERROR]', err))
+        this.form = {
+          first_name: '',
+          last_name: '',
+          phone_number: '',
+          password: '',
+          token: '',
+        }
+        this.$router.push('/')
+      }
+
       this.$nextTick(() => {
         this.$bvModal.hide('modal-check-code')
       })
-
-      await this.$axios
-        .post('user/', this.form)
-        .then((res) => {
-          console.log('[RES]', res)
-          this.$router.push('/')
-          this.form = {}
-        })
-        .catch((err) => {
-          console.log('[ERR]', err)
-        })
     },
   },
 }
 </script>
-
-<style></style>

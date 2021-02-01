@@ -85,18 +85,15 @@ export default {
   },
   methods: {
     async userLogin() {
-      await this.$axios
-        .post('token/', this.userInfo)
-        .then((res) => console.log('[RES]', res))
-        .catch((err) => console.log('[ERROR]', err))
-
-      await this.$auth.loginWith('local', {
-        data: this.userInfo,
-      })
-      console.log('[LOGIN]', response)
+      try {
+        let res = await this.$auth.loginWith('local', {
+          data: this.userInfo,
+        })
+        console.log('[LOGIN RES]', res)
+      } catch (err) {
+        console.log(err)
+      }
     },
   },
 }
 </script>
-
-<style></style>

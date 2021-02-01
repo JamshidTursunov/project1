@@ -90,7 +90,6 @@ export default {
           user: { url: 'user/profile', method: 'get', propertyName: false },
           logout: false,
         },
-        tokenType: '',
       },
     },
   },
