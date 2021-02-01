@@ -49,6 +49,7 @@
         </div>
       </div>
     </div>
+    <button @click="sendCourseData">Click me</button>
   </div>
 </template>
 
@@ -75,6 +76,30 @@ export default {
     getData() {
       console.log(this.$store.state.course.list)
       // this.$store.commit('course/smth', e.target.value)
+    },
+    async sendCourseData() {
+      try {
+        await this.$axios
+          .post('course/', {
+            id: 1,
+            yonalish: 'front-end',
+            course_name_uz: 'front-end',
+            course_name_ru: 'front-end',
+            course_name_en: 'front-end',
+            descriotion_uz: 'front-end',
+            descriotion_ru: 'front-end',
+            descriotion_en: 'front-end',
+            requirement_uz: 'front-end',
+            requirement_ru: 'front-end',
+            requirement_en: 'front-end',
+            instructor: 'Jahongir Tursunaliev',
+          })
+          .then((res) => {
+            console.log(res.data)
+          })
+      } catch (err) {
+        console.log(err)
+      }
     },
   },
 }
