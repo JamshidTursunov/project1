@@ -31,18 +31,27 @@
           <span></span>
         </div>
       </div>
-      <form>
-        <Input inputPlaceholder="First Name" />
-        <Input inputPlaceholder="Last Name" />
-        <Input type="email" inputPlaceholder="Email Address" />
-        <Input type="password" inputPlaceholder="Password" />
-        <Input type="password" inputPlaceholder="Confirm your password" />
+      <form @submit.prevent="getCode">
+        <Input inputPlaceholder="First Name" v-model="form.first_name" />
+        <Input inputPlaceholder="Last Name" v-model="form.last_name" />
+        <!-- <Input type="email" inputPlaceholder="Email Address" /> -->
+        <Input inputPlaceholder="Phone_nmber" v-model="form.phone_number" />
+        <Input
+          type="password"
+          inputPlaceholder="Password"
+          v-model="form.password"
+        />
+
+        <!-- <Input type="password" inputPlaceholder="Confirm your password" /> -->
         <div class="form__button">
           <p class="form__content__p">
             By clicking Sign Up, you agree to GreatSoft Academy's Terms of
             Service & Privacy Policy.
           </p>
-          <Button type="submit" btnStyle="controlButtonSubmit">Sign up</Button>
+          <Button type="submit" @click="getCode" btnStyle="controlButtonSubmit"
+            >Sign up</Button
+          >
+          <check-code @codeTransfer="checkCode" />
         </div>
       </form>
     </div>
@@ -53,9 +62,61 @@
 export default {
   props: {},
   data() {
-    return {}
+    return {
+      form: {
+        first_name: '',
+        last_name: '',
+        phone_number: '',
+        password: '',
+        token: '',
+      },
+      code: null,
+    }
   },
-  methods: {},
+
+  methods: {
+    async getCode() {
+      await this.$axios
+        .post('user/send/code/', {
+          phone_number: this.form.phone_number,
+        })
+        .then((res) => {
+          console.log('[Sent code]', res.data.code)
+          this.$nextTick(() => {
+            this.$bvModal.show('modal-check-code')
+          })
+        })
+        .catch((err) => {
+          console.log('[GET CODE ERROR]', err)
+        })
+    },
+    async checkCode(payload) {
+      await this.$axios
+        .post('user/check/code/', {
+          phone_number: this.form.phone_number,
+          code: payload,
+        })
+        .then((res) => {
+          this.form.token = res.data.token
+        })
+        .catch((err) => console.log(err))
+
+      this.$nextTick(() => {
+        this.$bvModal.hide('modal-check-code')
+      })
+
+      await this.$axios
+        .post('user/', this.form)
+        .then((res) => {
+          console.log('[RES]', res)
+          this.$router.push('/')
+          this.form = {}
+        })
+        .catch((err) => {
+          console.log('[ERR]', err)
+        })
+    },
+  },
 }
 </script>
 
