@@ -69,9 +69,13 @@ export default {
     }
   },
 
-  mounted() {
-    console.log(this.$store.state['course/data'])
-    // this.$store.dispatch("course/smth", param)
+  created() {},
+
+  methods: {
+    getData() {
+      console.log(this.$store.state.course.list)
+      // this.$store.commit('course/smth', e.target.value)
+    },
   },
 }
 </script>

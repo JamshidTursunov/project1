@@ -1,13 +1,13 @@
 <template>
   <div class="instructors__content">
-    <h2>What are the responsibilities of a GreatSoft Academy’s instructor?</h2>
+    <h2>{{ $t('instructors.ResponsibilitiesList') }}</h2>
     <ul>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li
+        v-for="(li, index) in $t('instructors.ResponsibilitiesItems')"
+        :key="index"
+      >
+        <i18n :path="li"> </i18n>
+      </li>
     </ul>
   </div>
 </template>

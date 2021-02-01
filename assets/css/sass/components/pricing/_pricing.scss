@@ -96,13 +96,14 @@
   }
 
   &__button__box {
-    text-align: center;
+    padding: 0 4rem;
   }
 
   &__button,
   &__button:link,
   &__button:visited {
-    display: inline-block;
+    display: block;
+    text-align: center;
     margin: 2rem 0 5rem;
     color: $light_blue;
     text-decoration: none;
@@ -110,7 +111,7 @@
     text-transform: uppercase;
     font-weight: 600;
     border: 2px solid $light_blue;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 0.4rem;
     border-radius: 6px;
     transition: all 0.2s;
   }

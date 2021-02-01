@@ -1,14 +1,13 @@
 <template>
   <div class="header__instructor__container">
-    <h1>Become a Greatsoft Academy’s Instructor</h1>
+    <h1>{{ $t('instructors.Title') }}</h1>
     <p>
-      and get paid to teach Greatsoft Academy’s students and expand your
-      knowledge
+      {{ $t('instructors.SubTitle') }}
     </p>
 
-    <nuxt-link class="header__instructor__link" to="/instructor-application"
-      >Apply Now</nuxt-link
-    >
+    <nuxt-link class="header__instructor__link" to="/instructor-application">{{
+      $t('instructors.Button')
+    }}</nuxt-link>
   </div>
 </template>
 

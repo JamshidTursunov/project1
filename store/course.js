@@ -1,9 +1,5 @@
-export default {
-  namespaced: true,
-  state: {
-    data: 1,
-  },
-  getters: {},
-  mutations: {},
-  actions: {},
-}
+export const state = () => ({
+  list: 1,
+})
+
+export const mutations = {}
