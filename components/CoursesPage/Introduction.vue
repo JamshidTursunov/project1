@@ -12,13 +12,12 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="introduction__content">
-            <h1>{{ courseData.course_name_en }}</h1>
+            <h1></h1>
             <p>
-              {{ courseData.descriotion_en }}
               Follow short videos led by expert instructors and then practice
               what you’ve learned with interactive exercises in your browser.
             </p>
-            <p>Created by {{ courseData.name_en }}</p>
+            <p>Created by</p>
           </div>
         </div>
       </div>
@@ -55,11 +54,7 @@
 
 <script>
 export default {
-  props: {
-    courseData: {
-      type: Object,
-    },
-  },
+  props: {},
 
   data() {
     return {

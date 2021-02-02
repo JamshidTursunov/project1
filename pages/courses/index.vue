@@ -13,6 +13,9 @@
 
 <script>
 export default {
+  data() {
+    return {}
+  },
   computed: {
     allCourseData() {
       return this.$store.getters['course/getAllCourseData']

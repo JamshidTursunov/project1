@@ -6,13 +6,14 @@
           class="col-lg-7 col-md-12 courses__column__margin d-flex align-items-stretch justify-content-center"
         >
           <div class="courses__box">
-            <Introduction :courseData="singleCourseData" />
-            <Description :courseData="singleCourseData" />
+            <Introduction />
+            <Description />
+            {{ allData }}
           </div>
         </div>
         <div class="col-lg-5 d-none d-lg-block column__margin">
           <div class="courses__box">
-            <PromoVideo :courseData="singleCourseData" />
+            <PromoVideo />
           </div>
         </div>
       </div>
@@ -22,17 +23,16 @@
 
 <script>
 export default {
-  mounted() {
-    console.log(this.$route.params.id)
+  asyncData({ store, params }) {
+    store.dispatch('course/initSingleCourseData', params.id)
   },
 
   created() {
-    this.$store.dispatch('course/initSingleCourseData', this.$route.params.id)
     console.log(this.$store.getters['course/getCourseData'])
   },
 
   computed: {
-    singleCourseData() {
+    allData() {
       return this.$store.getters['course/getCourseData']
     },
   },
