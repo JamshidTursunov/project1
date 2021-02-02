@@ -12,12 +12,13 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="introduction__content">
-            <h1>Hands-on courses</h1>
+            <h1>{{ courseData.course_name_en }}</h1>
             <p>
+              {{ courseData.descriotion_en }}
               Follow short videos led by expert instructors and then practice
               what you’ve learned with interactive exercises in your browser.
             </p>
-            <p>Created by Jakhongir Tursunaliev</p>
+            <p>Created by {{ courseData.name_en }}</p>
           </div>
         </div>
       </div>
@@ -49,12 +50,17 @@
         </div>
       </div>
     </div>
-    <button @click="sendCourseData">Click me</button>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    courseData: {
+      type: Object,
+    },
+  },
+
   data() {
     return {
       introductionInfos: [
@@ -72,36 +78,7 @@ export default {
 
   created() {},
 
-  methods: {
-    getData() {
-      console.log(this.$store.state.course.list)
-      // this.$store.commit('course/smth', e.target.value)
-    },
-    async sendCourseData() {
-      try {
-        await this.$axios
-          .post('course/', {
-            id: 1,
-            yonalish: 'front-end',
-            course_name_uz: 'front-end',
-            course_name_ru: 'front-end',
-            course_name_en: 'front-end',
-            descriotion_uz: 'front-end',
-            descriotion_ru: 'front-end',
-            descriotion_en: 'front-end',
-            requirement_uz: 'front-end',
-            requirement_ru: 'front-end',
-            requirement_en: 'front-end',
-            instructor: 'Jahongir Tursunaliev',
-          })
-          .then((res) => {
-            console.log(res.data)
-          })
-      } catch (err) {
-        console.log(err)
-      }
-    },
-  },
+  methods: {},
 }
 </script>
 

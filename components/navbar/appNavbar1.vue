@@ -11,31 +11,26 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
-          <b-dropdown-item :to="localePath('/courses')"
-            >Frontend development</b-dropdown-item
-          >
-          <b-dropdown-item :to="localePath('/courses')"
-            >Backend development</b-dropdown-item
-          >
-          <b-dropdown-item :to="localePath('/courses')"
-            >Mobile development</b-dropdown-item
-          >
-          <b-dropdown-item :to="localePath('/courses')"
-            >Data science with python</b-dropdown-item
-          >
-          <b-dropdown-item to="/courses"
-            >Machine learning with python</b-dropdown-item
+        <b-nav-item-dropdown
+          @click="goAllCourse"
+          :text="$t('navbar.AllCourses')"
+          left
+        >
+          <b-dropdown-item
+            v-for="navItem in allData"
+            :id="navItem.id"
+            :key="navItem.id"
+            @click="goAllCourse"
+            >{{ navItem.course_name_en }}</b-dropdown-item
           >
         </b-nav-item-dropdown>
         <b-nav-item :to="localePath('/pricing')">
-          {{ $t('navbar.PlansAndPricing') }}</b-nav-item
-        >
-
+          {{ $t('navbar.PlansAndPricing') }}
+        </b-nav-item>
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
           <b-dropdown-item :to="localePath('/inProcess')"
-            >Become a mentor</b-dropdown-item
-          >
+            >Become a mentor
+          </b-dropdown-item>
           <b-dropdown-item :to="localePath('/instructors')"
             >Become an instructor</b-dropdown-item
           >
@@ -94,8 +89,8 @@
           </b-dropdown-header>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-item to="/useraccount/mylearning"
-            >My Learning</b-dropdown-item
-          >
+            >My Learning
+          </b-dropdown-item>
           <b-dropdown-item to="/useraccount/mycart">My Cart</b-dropdown-item>
           <b-dropdown-item to="/useraccount/mynotifications"
             >Notifications</b-dropdown-item
@@ -131,10 +126,25 @@ export default {
       loggedIn: false,
     }
   },
+
   methods: {
     logout() {
       this.$store.dispatch('auth/logout')
       console.log('logout')
+    },
+
+    goAllCourse() {
+      this.$router.push(this.localePath({ name: 'courses' }))
+    },
+  },
+
+  created() {
+    console.log(this.allData)
+  },
+
+  computed: {
+    allData() {
+      return this.$store.getters['course/getAllCourseData']
     },
   },
 }

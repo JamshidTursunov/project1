@@ -2,8 +2,8 @@
   <div class="description__container">
     <h1>Course modules:</h1>
     <ul class="description__list">
-      <li v-for="description in descriptions" :key="description.id">
-        {{ description.content }}
+      <li v-for="(description, i) in courseRequirement" :key="i">
+        {{ description }}
       </li>
     </ul>
   </div>
@@ -11,6 +11,18 @@
 
 <script>
 export default {
+  props: {
+    courseData: {
+      type: Object,
+    },
+  },
+
+  computed: {
+    courseRequirement() {
+      return this.courseData.requirement_en.trim().split('+')
+    },
+  },
+
   data() {
     return {
       descriptions: [
