@@ -12,11 +12,14 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
+          <b-dropdown-item :to="localePath(`/courses`)"
+            >{{ $t('navbar.AllCourses') }}
+          </b-dropdown-item>
           <b-dropdown-item
             v-for="navItem in allData"
             :id="navItem.id"
             :key="navItem.id"
-            @click="goAllCourse"
+            :to="localePath(`/courses/${navItem.id}`)"
             >{{ navItem.course_name_en }}</b-dropdown-item
           >
         </b-nav-item-dropdown>
@@ -127,10 +130,6 @@ export default {
     logout() {
       this.$store.dispatch('auth/logout')
       console.log('logout')
-    },
-
-    goAllCourse() {
-      this.$router.push(this.localePath({ name: 'courses' }))
     },
   },
 

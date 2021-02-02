@@ -17,9 +17,19 @@ export default {
     return {}
   },
 
+  created() {
+    this.allCoursePromo()
+  },
+
   computed: {
     allCourseData() {
       return this.$store.getters['course/getAllCourseData']
+    },
+  },
+
+  methods: {
+    allCoursePromo() {
+      this.$store.dispatch('course/initAllPromoVideo')
     },
   },
 }

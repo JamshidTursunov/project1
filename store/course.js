@@ -2,6 +2,7 @@ export const state = () => ({
   allCourseData: [],
   courseData: [],
   instructorName: [],
+  allPromoVideo: [],
 })
 
 export const mutations = {
@@ -13,6 +14,9 @@ export const mutations = {
   },
   setInstructorName(state, data) {
     state.instructorName = data
+  },
+  setAllPromoVideo(state, data) {
+    state.promoVideo = data
   },
 }
 
@@ -35,6 +39,18 @@ export const actions = {
       console.log(err)
     }
   },
+
+  async initAllPromoVideo({ commit }) {
+    try {
+      const { data } = await this.$axios
+        .get(`course/video/`)
+        .then((res) => console.log(res))
+      console.log(data)
+      commit('setAllPromoVideo', data)
+    } catch (err) {
+      console.log(err)
+    }
+  },
 }
 
 export const getters = {
@@ -42,7 +58,6 @@ export const getters = {
     return state.allCourseData
   },
   getCourseData(state) {
-    console.log(state.courseData)
     return state.courseData
   },
   getCourseInstructor(state) {

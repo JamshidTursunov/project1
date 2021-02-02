@@ -15,7 +15,7 @@
         </div>
         <div class="col-lg-5 d-none d-lg-block column__margin">
           <div class="courses__box">
-            <PromoVideo :courseData="courseSingleData" />
+            <PromoVideo />
           </div>
         </div>
       </div>
@@ -28,10 +28,6 @@ export default {
   data() {
     return {}
   },
-  // asyncData({ store, params }) {
-  //   store.dispatch('course/initSingleCourseData', params.id)
-  // },
-
   mounted() {
     this.callSingleCourseData()
   },
@@ -39,7 +35,7 @@ export default {
   methods: {
     callSingleCourseData() {
       this.$store.dispatch('course/initSingleCourseData', this.$route.params.id)
-      console.log(this.$route.params.id)
+      // this.$store.dispatch('course/initAllPromoVideo')
     },
   },
 

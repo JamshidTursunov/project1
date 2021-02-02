@@ -6,10 +6,9 @@ export const mutations = {}
 
 export const actions = {
   async nuxtServerInit({ commit }, context) {
-    let { data } = await context.app.$axios.get(
+    const { data } = await context.app.$axios.get(
       `https://damp-falls-69005.herokuapp.com/api/course/`
     )
-    console.log(data)
     commit('course/setAllCourseData', data)
   },
 }
