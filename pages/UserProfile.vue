@@ -4,7 +4,9 @@
       <div class="col-md-4 left-bar">
         <div class="flex items-center justify-center flex-col">
           <b-avatar size="6em" class="avatar-default my-3"></b-avatar>
-          <h1 class="text-h1">Name Surname</h1>
+          <h1 class="text-h1">
+            {{ $auth.user.user.first_name }} {{ $auth.user.user.last_name }}
+          </h1>
         </div>
         <b-list-group class="list-group mt-4">
           <b-list-group-item

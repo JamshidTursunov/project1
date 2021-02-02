@@ -52,7 +52,7 @@
           ><img
             class="w-7 h-7"
             src="~assets/svgs/notification.svg"
-            alt="notification"
+            alt="korzinka"
         /></b-nav-item>
         <b-dropdown
           size="md"
@@ -76,9 +76,15 @@
                 alt="facebook"
               />
               <p class="user-fullname-text ml-3">
-                <span>John Doe</span>
+                <span>
+                  {{ $auth.user.user.first_name }}
+                  {{ $auth.user.user.last_name }}
+                </span>
                 <br />
-                <span class="user-email-text">johndoe_1234@mail.ru</span>
+                <span class="user-email-text"
+                  >+998
+                  {{ $auth.user.user.phone_number }}
+                </span>
               </p>
             </div>
           </b-dropdown-header>
@@ -113,22 +119,6 @@
     </b-collapse>
   </b-navbar>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      loggedIn: false,
-    }
-  },
-  methods: {
-    logout() {
-      this.$store.dispatch('auth/logout')
-      console.log('logout')
-    },
-  },
-}
-</script>
 
 <style scoped>
 .dropdown-fade-enter-active,

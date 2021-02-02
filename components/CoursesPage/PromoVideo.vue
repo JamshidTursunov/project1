@@ -9,7 +9,7 @@
         <nuxt-link class="video__button video__button1" to="/"
           >Add to cart</nuxt-link
         >
-        <nuxt-link class="video__button video__button2" to="/"
+        <nuxt-link class="video__button video__button2" to="/payment/1"
           >Buy now</nuxt-link
         >
         <p>30-Day Money-Back Guarantee</p>
