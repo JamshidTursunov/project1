@@ -1,6 +1,7 @@
 export const state = () => ({
   allCourseData: [],
-  courseData: null,
+  courseData: [],
+  instructorName: [],
 })
 
 export const mutations = {
@@ -10,24 +11,26 @@ export const mutations = {
   setCourseData(state, data) {
     state.courseData = data
   },
+  setInstructorName(state, data) {
+    state.instructorName = data
+  },
 }
 
 export const actions = {
-  async initSingleCourseData({ commit }, payload) {
+  async initSingleCourseData({ commit, dispatch }, payload) {
     try {
-      let allSingleData
-      const res = await this.$axios.get(`course/${payload}/`)
-      const instructor = res.data.instructor
-      const resInstructor = await this.$axios.get(
-        `course/instructor/${instructor}/`
-      )
-      allSingleData = {
-        ...res.data,
-        name_uz: resInstructor.data.name_uz,
-        name_ru: resInstructor.data.name_ru,
-        name_en: resInstructor.data.name_en,
-      }
-      commit('setCourseData', allSingleData)
+      const { data } = await this.$axios.get(`course/${payload}/`)
+      commit('setCourseData', data)
+      dispatch('initIntructorName', data.instructor)
+    } catch (err) {
+      console.log(err)
+    }
+  },
+
+  async initIntructorName({ commit }, payload) {
+    try {
+      const { data } = await this.$axios.get(`course/instructor/${payload}/`)
+      commit('setInstructorName', data)
     } catch (err) {
       console.log(err)
     }
@@ -39,6 +42,10 @@ export const getters = {
     return state.allCourseData
   },
   getCourseData(state) {
+    console.log(state.courseData)
     return state.courseData
+  },
+  getCourseInstructor(state) {
+    return state.instructorName
   },
 }

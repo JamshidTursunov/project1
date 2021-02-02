@@ -11,11 +11,7 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown
-          @click="goAllCourse"
-          :text="$t('navbar.AllCourses')"
-          left
-        >
+        <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
           <b-dropdown-item
             v-for="navItem in allData"
             :id="navItem.id"
@@ -136,10 +132,6 @@ export default {
     goAllCourse() {
       this.$router.push(this.localePath({ name: 'courses' }))
     },
-  },
-
-  created() {
-    console.log(this.allData)
   },
 
   computed: {

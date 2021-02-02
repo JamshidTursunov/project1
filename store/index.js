@@ -9,6 +9,7 @@ export const actions = {
     let { data } = await context.app.$axios.get(
       `https://damp-falls-69005.herokuapp.com/api/course/`
     )
+    console.log(data)
     commit('course/setAllCourseData', data)
   },
 }

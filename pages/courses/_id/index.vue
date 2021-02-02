@@ -6,14 +6,16 @@
           class="col-lg-7 col-md-12 courses__column__margin d-flex align-items-stretch justify-content-center"
         >
           <div class="courses__box">
-            <Introduction />
-            <Description />
-            {{ allData }}
+            <Introduction
+              :courseData="courseSingleData"
+              :courseInstructor="courseInstructorData"
+            />
+            <Description :courseData="courseSingleData" />
           </div>
         </div>
         <div class="col-lg-5 d-none d-lg-block column__margin">
           <div class="courses__box">
-            <PromoVideo />
+            <PromoVideo :courseData="courseSingleData" />
           </div>
         </div>
       </div>
@@ -23,17 +25,31 @@
 
 <script>
 export default {
-  asyncData({ store, params }) {
-    store.dispatch('course/initSingleCourseData', params.id)
+  data() {
+    return {}
+  },
+  // asyncData({ store, params }) {
+  //   store.dispatch('course/initSingleCourseData', params.id)
+  // },
+
+  mounted() {
+    this.callSingleCourseData()
   },
 
-  created() {
-    console.log(this.$store.getters['course/getCourseData'])
+  methods: {
+    callSingleCourseData() {
+      this.$store.dispatch('course/initSingleCourseData', this.$route.params.id)
+      console.log(this.$route.params.id)
+    },
   },
 
   computed: {
-    allData() {
+    courseSingleData() {
       return this.$store.getters['course/getCourseData']
+    },
+
+    courseInstructorData() {
+      return this.$store.getters['course/getCourseInstructor']
     },
   },
 }

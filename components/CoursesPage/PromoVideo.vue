@@ -5,7 +5,6 @@
         <VideoPlayer />
       </div>
       <div class="video__price">
-        <h1>$19.99</h1>
         <nuxt-link class="video__button video__button1" to="/"
           >Add to cart</nuxt-link
         >
@@ -46,6 +45,10 @@ export default {
       ],
     }
   },
+
+  created() {},
+
+  methods: {},
 }
 </script>
 
