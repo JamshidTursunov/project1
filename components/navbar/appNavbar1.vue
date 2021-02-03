@@ -27,14 +27,16 @@
         >
 
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
-          <b-dropdown-item to="/inProcess">Become a mentor</b-dropdown-item>
+          <b-dropdown-item to="/mentor">Become a mentor</b-dropdown-item>
           <b-dropdown-item to="/instructors"
             >Become an instructor</b-dropdown-item
           >
         </b-nav-item-dropdown>
         <b-nav-item :to="localePath('about')">
           {{ $t('navbar.AboutUs') }}</b-nav-item
-        ><b-nav-item to="/contact-us"> {{ $t('navbar.ContactUs') }}</b-nav-item>
+        ><b-nav-item :to="localePath('/contact-us')">
+          {{ $t('navbar.ContactUs') }}</b-nav-item
+        >
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto" v-if="$auth.loggedIn">

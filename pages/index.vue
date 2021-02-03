@@ -13,6 +13,10 @@
 <script>
 export default {
   layout: 'HomePageLayout',
+  created() {
+    console.log('index created()')
+    this.$store.dispatch('userModule/GET_USER')
+  },
 }
 </script>
 

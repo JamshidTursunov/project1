@@ -20,6 +20,14 @@ export const actions = {
       })
       .catch((err) => console.log(err))
   },
+  async GET_USER({ commit }) {
+    await this.$axios
+      .get('user/profile/')
+      .then((res) => {
+        console.log('[GET USER INFO:] ', res)
+      })
+      .catch((err) => console.log(err))
+  },
 }
 export const getters = {
   isAuthenticated(state) {
