@@ -90,9 +90,6 @@ export default {
           this.payload.code = ''
         })
         .catch((err) => {
-          this.dismissCountDownTimer = 5
-          this.variantColor = 'warning'
-          this.alertMessage = 'Oops, there is something wrong with your code'
           console.log(err)
         })
     },

@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid payment-container">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <b-button @click="changeComponent('componentA')"
+      <div class="col-md-6 offset-md-3 form-container">
+        <b-button @click="changeComponent('click')"
           ><img src="~assets/svgs/click.svg" alt="click"
         /></b-button>
-        <b-button @click="changeComponent('componentB')">
+        <b-button @click="changeComponent('payme')">
           <img src="~assets/svgs/payme.svg" alt="click" />
         </b-button>
         <transition name="fade">
@@ -17,19 +17,19 @@
 </template>
 
 <script>
-import componentA from '@/components/Payment/click'
-import componentB from '@/components/Payment/payme'
+import click from '@/components/Payment/click'
+import payme from '@/components/Payment/payme'
 
 export default {
   name: 'payment',
   components: {
-    componentA,
-    componentB,
+    click,
+    payme,
   },
 
   data() {
     return {
-      currentComponent: componentA,
+      currentComponent: click,
     }
   },
   methods: {
@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 .payment-container {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem 1rem;
   background: #f3f8ff;
 }
