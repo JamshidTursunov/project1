@@ -20,7 +20,7 @@
             :id="navItem.id"
             :key="navItem.id"
             :to="localePath(`/courses/${navItem.id}`)"
-            >{{ navItem.course_name_en }}</b-dropdown-item
+            >{{ navItem.courseName }}</b-dropdown-item
           >
         </b-nav-item-dropdown>
         <b-nav-item :to="localePath('/pricing')">
@@ -135,7 +135,20 @@ export default {
 
   computed: {
     allData() {
-      return this.$store.getters['course/getAllCourseData']
+      const courseNames = this.$store.getters['course/getAllCourseData']
+      if (this.$i18n.locale == 'en') {
+        return courseNames.map((item) => {
+          return { courseName: item.course_name_en, id: item.id }
+        })
+      } else if (this.$i18n.locale == 'ru') {
+        return courseNames.map((item) => {
+          return { courseName: item.course_name_ru, id: item.id }
+        })
+      } else {
+        return courseNames.map((item) => {
+          return { courseName: item.course_name_uz, id: item.id }
+        })
+      }
     },
   },
 }

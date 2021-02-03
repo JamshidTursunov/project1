@@ -42,9 +42,7 @@ export const actions = {
 
   async initAllPromoVideo({ commit }) {
     try {
-      const { data } = await this.$axios
-        .get(`course/video/`)
-        .then((res) => console.log(res))
+      const { data } = await this.$axios.get(`course/video/`)
       console.log(data)
       commit('setAllPromoVideo', data)
     } catch (err) {

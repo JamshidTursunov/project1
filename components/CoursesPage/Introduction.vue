@@ -12,11 +12,34 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="introduction__content">
-            <h1>{{ courseData.course_name_en }}</h1>
+            <h1>
+              {{
+                this.$i18n.locale == 'en'
+                  ? courseData.course_name_en
+                  : this.$i18n.locale == 'ru'
+                  ? courseData.course_name_ru
+                  : courseData.course_name_uz
+              }}
+            </h1>
             <p>
-              {{ courseData.descriotion_en }}
+              {{
+                this.$i18n.locale == 'en'
+                  ? courseData.descriotion_en
+                  : this.$i18n.locale == 'ru'
+                  ? courseData.descriotion_ru
+                  : courseData.descriotion_uz
+              }}
             </p>
-            <p>Created by {{ courseInstructor.name_en }}</p>
+            <p>
+              Created by
+              {{
+                this.$i18n.locale == 'en'
+                  ? courseInstructor.name_en
+                  : this.$i18n.locale == 'ru'
+                  ? courseInstructor.name_ru
+                  : courseInstructor.name_uz
+              }}
+            </p>
           </div>
         </div>
       </div>
