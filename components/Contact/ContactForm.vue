@@ -27,8 +27,9 @@
           class="contact__form__input"
           type="email"
           name="email"
-          placeholder="Your email (optional)"
+          placeholder="Your email"
           v-model="form.email"
+          required
         />
       </div>
       <div class="contact__input__group">
@@ -57,20 +58,36 @@ export default {
     return {
       form: {
         name: '',
-        phone_number: '',
         email: '',
         message: '',
+        phone_number: '',
       },
     }
   },
   methods: {
-    sendMessage() {
-      this.$store.dispatch('ContactUs/sendMessage', this.form)
-      this.form.name = ''
-      this.form.phone_number = ''
-      this.form.email = ''
+    async sendMessage() {
+      await this.$store.dispatch('ContactUs/sendMessage', this.form)
+      const alertNotif = {
+        dismissCountDownTimer: 5,
+        variantColor: 'success',
+        alertMessage: 'your message has been sent successfully',
+      }
+      this.$emit('showAlertMessage', alertNotif)
+      if (!this.$auth.loggedIn) {
+        this.form.message = ''
+        this.form.name = ''
+        this.form.email = ''
+        this.form.phone_number = ''
+      }
       this.form.message = ''
+      console.log(this.form)
     },
+  },
+  created() {
+    if (this.$auth.loggedIn) {
+      this.form.name = ` ${this.$auth.user.user.first_name} ${this.$auth.user.user.last_name}`
+      this.form.phone_number = this.$auth.user.user.phone_number
+    }
   },
 }
 </script>

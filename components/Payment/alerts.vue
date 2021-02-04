@@ -1,12 +1,13 @@
 <template>
   <b-alert
+    class="alert-notification"
     :show="dismissCountDown"
     dismissible
     :variant="alertVariant"
     @dismissed="dismissCountDown = 0"
     @dismiss-count-down="countDownChanged"
   >
-    <p>{{ msg }}</p>
+    {{ msg }}
   </b-alert>
 </template>
 
@@ -28,3 +29,13 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.alert-notification {
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 12%;
+  width: 30%;
+}
+</style>
