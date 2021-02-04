@@ -24,9 +24,9 @@
           {{ $t('navbar.PlansAndPricing') }}
         </b-nav-item>
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
-          <b-dropdown-item :to="localePath('/inProcess')"
+          <!-- <b-dropdown-item :to="localePath('/inProcess')"
             >Become a mentor
-          </b-dropdown-item>
+          </b-dropdown-item> -->
           <b-dropdown-item :to="localePath('/instructors')"
             >Become an instructor</b-dropdown-item
           >
@@ -102,7 +102,7 @@
           <b-dropdown-item href="/useraccount/mypurchase"
             >Purchage history</b-dropdown-item
           >
-          <b-dropdown-item href="/" @click="$auth.logout()"
+          <b-dropdown-item href="/" @click.prevent="$auth.logout()"
             >Logout</b-dropdown-item
           >
         </b-dropdown>
@@ -121,7 +121,8 @@
   </b-navbar>
 </template>
 
-<<<<<<< HEAD
+<<<<<<< HEAD <<<<<<< HEAD ======= <<<<<<< HEAD ======= >>>>>>>
+ca1e03bdf182ad7cd3079373990bb32668bdfaa7
 <script>
 export default {
   data() {
@@ -158,7 +159,9 @@ export default {
 }
 </script>
 
-======= >>>>>>> 47debe607b67d12734f803cf3bf07e985a0784aa
+<<<<<<< HEAD ======= >>>>>>> 47debe607b67d12734f803cf3bf07e985a0784aa =======
+>>>>>>> 3ac88574e3824c4f8e6e4ccc1eb82750752b8ac2 >>>>>>>
+ca1e03bdf182ad7cd3079373990bb32668bdfaa7
 <style scoped>
 .dropdown-fade-enter-active,
 .dropdown-fade-leave-active {

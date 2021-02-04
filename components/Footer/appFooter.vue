@@ -44,7 +44,7 @@
         </ul>
       </div>
     </div>
-    <hr class="my-4" />
+    <hr />
     <div class="bottom-row">
       <p class="my-1">2020 GreatSoft Academy |</p>
       <p class="my-1">All rights reserved</p>

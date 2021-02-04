@@ -33,10 +33,10 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group id="input-group-2" label-for="input-2">
+      <b-form-group id="input-group-4" label-for="input-4">
         <b-form-input
           type="password"
-          id="input-2"
+          id="input-4"
           v-model="form.password"
           class="bg-transparent input-field"
           placeholder="Password"

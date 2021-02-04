@@ -45,7 +45,7 @@ export default {
         imports: [
           {
             set: '@fortawesome/free-solid-svg-icons',
-            icons: ['faTools'],
+            icons: ['faTools', 'faAngleUp'],
           },
           {
             set: '@fortawesome/free-brands-svg-icons',
