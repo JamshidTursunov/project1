@@ -10,7 +10,7 @@
         style="width: 230px; height: 230px"
         class="logo-image"
       />
-      <div class="item" style="flex: 1">
+      <div class="item">
         <h1 class="text-h1">About us</h1>
         <ul>
           <li>Information</li>
@@ -18,7 +18,7 @@
           <li>Careers</li>
         </ul>
       </div>
-      <div class="item" style="flex: 1">
+      <div class="item">
         <h1 class="text-h1">All courses</h1>
         <ul>
           <li>Frontend development</li>
@@ -28,7 +28,7 @@
           <li>Machine learning with python</li>
         </ul>
       </div>
-      <div class="item" style="flex: 1">
+      <div class="item">
         <h1 class="text-h1">Plans & pricing</h1>
         <ul>
           <li>Basic</li>
@@ -43,11 +43,11 @@
           <li>Become an instructor</li>
         </ul>
       </div>
-      <div style="flex: 2">
+      <div class="y-map">
         <y-map />
       </div>
     </div>
-    <hr class="my-4" />
+    <hr class="mb-4" />
     <div class="bottom-row">
       <p class="my-1">2020 GreatSoft Academy |</p>
       <p class="my-1">All rights reserved</p>
@@ -100,7 +100,12 @@
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
+.item {
+  flex: 1;
+}
+.y-map {
+  flex: 1;
+}
 @media only screen and (max-width: 770px) {
   .item {
     flex: 1;

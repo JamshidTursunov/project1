@@ -5,7 +5,7 @@
     <section-3 class="limit-size" />
     <section-4 class="custom-p" />
     <section-5 class="custom-p" />
-    <section-6 class="custom-p" />
+    <section-6 class="custom-p" v-if="!$auth.loggedIn" />
     <section-7 />
   </div>
 </template>

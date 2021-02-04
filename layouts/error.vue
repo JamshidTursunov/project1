@@ -1,6 +1,7 @@
 <template>
   <div class="flex justify-center items-center error-page">
     <h1 class="content-h1">Oops, there is an error somewhere:)</h1>
+    <ScrollTopArrow></ScrollTopArrow>
   </div>
 </template>
 

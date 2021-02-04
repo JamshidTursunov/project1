@@ -10,13 +10,15 @@
           Because learning to code might be the most right way to change your
           life
         </p>
-        <b-button class="btn-outline-light" variant="outline-light"
+        <b-button
+          to="/auth/signUp"
+          class="btn-outline-light"
+          variant="outline-light"
           >Get Started</b-button
         >
       </div>
     </div>
     <div class="image-ellipse"></div>
-    <!-- <img  src="~assets/images/Ellipse.png" alt="..." /> -->
   </div>
 </template>
 
