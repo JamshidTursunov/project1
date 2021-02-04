@@ -3,6 +3,7 @@ export const state = () => ({
   courseData: [],
   instructorName: [],
   allPromoVideo: [],
+  singlePromoVideo: [],
 })
 
 export const mutations = {
@@ -16,7 +17,10 @@ export const mutations = {
     state.instructorName = data
   },
   setAllPromoVideo(state, data) {
-    state.promoVideo = data
+    state.allPromoVideo = data
+  },
+  setSinglePromoVideo(state, data) {
+    state.singlePromoVideo = data
   },
 }
 
@@ -40,13 +44,12 @@ export const actions = {
     }
   },
 
-  async initAllPromoVideo({ commit }) {
-    try {
-      const { data } = await this.$axios.get(`course/video/`)
-      console.log(data)
-      commit('setAllPromoVideo', data)
-    } catch (err) {
-      console.log(err)
+  initSinglePromoVideo({ commit, state }, payload) {
+    if (state.allPromoVideo.length) {
+      const singlePromo = state.allPromoVideo.filter((item) => {
+        return item.course == payload
+      })
+      commit('setSinglePromoVideo', singlePromo)
     }
   },
 }
@@ -60,5 +63,8 @@ export const getters = {
   },
   getCourseInstructor(state) {
     return state.instructorName
+  },
+  getPromoVideo(state) {
+    return state.singlePromoVideo
   },
 }

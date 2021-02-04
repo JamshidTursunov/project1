@@ -15,7 +15,7 @@
         </div>
         <div class="col-lg-5 d-none d-lg-block column__margin">
           <div class="courses__box">
-            <PromoVideo />
+            <PromoVideo :promo="coursePromoVideo" />
           </div>
         </div>
       </div>
@@ -28,14 +28,14 @@ export default {
   data() {
     return {}
   },
-  mounted() {
+  created() {
     this.callSingleCourseData()
   },
 
   methods: {
     callSingleCourseData() {
       this.$store.dispatch('course/initSingleCourseData', this.$route.params.id)
-      // this.$store.dispatch('course/initAllPromoVideo')
+      this.$store.dispatch('course/initSinglePromoVideo', this.$route.params.id)
     },
   },
 
@@ -46,6 +46,11 @@ export default {
 
     courseInstructorData() {
       return this.$store.getters['course/getCourseInstructor']
+    },
+
+    coursePromoVideo() {
+      console.log(this.$store.getters['course/getPromoVideo'])
+      return this.$store.getters['course/getPromoVideo']
     },
   },
 }
