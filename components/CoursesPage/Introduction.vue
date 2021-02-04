@@ -12,12 +12,34 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="introduction__content">
-            <h1>Hands-on courses</h1>
+            <h1>
+              {{
+                this.$i18n.locale == 'en'
+                  ? courseData.course_name_en
+                  : this.$i18n.locale == 'ru'
+                  ? courseData.course_name_ru
+                  : courseData.course_name_uz
+              }}
+            </h1>
             <p>
-              Follow short videos led by expert instructors and then practice
-              what you’ve learned with interactive exercises in your browser.
+              {{
+                this.$i18n.locale == 'en'
+                  ? courseData.descriotion_en
+                  : this.$i18n.locale == 'ru'
+                  ? courseData.descriotion_ru
+                  : courseData.descriotion_uz
+              }}
             </p>
-            <p>Created by Jakhongir Tursunaliev</p>
+            <p>
+              Created by
+              {{
+                this.$i18n.locale == 'en'
+                  ? courseInstructor.name_en
+                  : this.$i18n.locale == 'ru'
+                  ? courseInstructor.name_ru
+                  : courseInstructor.name_uz
+              }}
+            </p>
           </div>
         </div>
       </div>
@@ -54,6 +76,18 @@
 
 <script>
 export default {
+  props: {
+    courseData: {
+      type: [Array, Object],
+    },
+
+    courseInstructor: {
+      type: [Array, Object],
+    },
+  },
+
+  computed: {},
+
   data() {
     return {
       introductionInfos: [
@@ -68,6 +102,10 @@ export default {
       ],
     }
   },
+
+  created() {},
+
+  methods: {},
 }
 </script>
 

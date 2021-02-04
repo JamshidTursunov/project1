@@ -94,4 +94,7 @@ export default {
     },
   },
   build: {},
+  loading: {
+    color: '#5d30db',
+  },
 }

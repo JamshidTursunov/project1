@@ -1,39 +1,39 @@
 <template>
   <div class="process__container">
     <div class="container-fluid process__wrapper">
-      <h1>Application Process</h1>
+      <h1>{{ $t('instructors.ApplicationProcess') }}</h1>
       <hr class="process__dotes" />
       <div class="row">
         <div class="col-lg-4">
           <div class="process__box">
             <span>1</span>
-            <h3>Fill out application form</h3>
+            <h3>
+              {{ $t('instructors.ApplicationTitle1') }}
+            </h3>
             <p>
-              Start the process by filling the instructor application form and
-              applying to an open position under the "Instructors" tab on
-              GreatSoft Academy job portal. You will be contacted directly as
-              per your eligibility for further assessment.
+              {{ $t('instructors.ApplicationContent1') }}
             </p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="process__box">
             <span class="process__span">2</span>
-            <h3>Complete our assessment</h3>
+            <h3>
+              {{ $t('instructors.ApplicationTitle2') }}
+            </h3>
             <p>
-              Complete the situational and technical assessment to verify your
-              skills to support GreatSoft Academy's students.
+              {{ $t('instructors.ApplicationContent2') }}
             </p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="process__box">
             <span>3</span>
-            <h3>Start your job as an instructor with us</h3>
+            <h3>
+              {{ $t('instructors.ApplicationTitle3') }}
+            </h3>
             <p>
-              It's as simple as 1, 2, 3! You will be onboarded as a GreatSoft
-              Academy's instructor to begin helping students through our
-              custom-built dashboard.
+              {{ $t('instructors.ApplicationContent3') }}
             </p>
           </div>
         </div>

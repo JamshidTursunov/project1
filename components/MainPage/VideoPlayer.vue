@@ -1,21 +1,39 @@
 <template>
-  <video
-    class="video-js my-video"
-    data-setup="{}"
-    controls
-    :poster="postImage"
-    style="height: 350px; border: none"
-  >
-    <source src="~assets/video/dog.mp4" type="video/mp4" />
-  </video>
+  <div>
+    <video
+      class="video-js my-video"
+      data-setup="{}"
+      controls
+      :poster="postImage"
+      style="height: 350px; border: none"
+      :src="videoSrc"
+    ></video>
+  </div>
 </template>
 
 <script>
 export default {
+  props: {
+    videoData: {
+      type: Object,
+    },
+  },
   data() {
     return {
       postImage: require('~/assets/images/videoImage.jpg'),
+      videoSrc: '',
     }
+  },
+  created() {
+    this.changeVideo()
+  },
+
+  methods: {
+    changeVideo() {
+      if (this.videoData) {
+        this.videoSrc = this.videoData.video
+      }
+    },
   },
 }
 </script>

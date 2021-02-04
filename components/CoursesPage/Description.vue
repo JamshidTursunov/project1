@@ -2,8 +2,8 @@
   <div class="description__container">
     <h1>Course modules:</h1>
     <ul class="description__list">
-      <li v-for="description in descriptions" :key="description.id">
-        {{ description.content }}
+      <li v-for="(requirement, i) in courseRequirements" :key="i">
+        {{ requirement }}
       </li>
     </ul>
   </div>
@@ -11,32 +11,31 @@
 
 <script>
 export default {
-  data() {
-    return {
-      descriptions: [
-        {
-          content: 'Etiam laoreet gravida mi, nec accumsan dui malesuada a.',
-          id: 1,
-        },
-        {
-          content: 'Etiam laoreet gravida mi, nec accumsan dui ',
-          id: 2,
-        },
-        {
-          content: 'Etiam laoreet gravida mi, nec accumsan dui malesuada adui',
-          id: 3,
-        },
-        {
-          content: 'Gravida mi, nec accumsan dui malesuada a.',
-          id: 4,
-        },
-        {
-          content: 'Etiam laoreet gravida mi, nec accumsan dui malesuada a.',
-          id: 5,
-        },
-      ],
-    }
+  props: {
+    courseData: {
+      type: [Array, Object],
+    },
   },
+
+  data() {
+    return {}
+  },
+
+  computed: {
+    courseRequirements() {
+      if (this.courseData.requirement_en) {
+        if (this.$i18n.locale == 'en') {
+          return this.courseData.requirement_en.trim().split(',')
+        } else if (this.$i18n.locale == 'ru') {
+          return this.courseData.requirement_ru.trim().split(',')
+        } else {
+          return this.courseData.requirement_uz.trim().split(',')
+        }
+      }
+    },
+  },
+
+  methods: {},
 }
 </script>
 

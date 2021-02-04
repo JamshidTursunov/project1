@@ -12,27 +12,26 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
-          <b-dropdown-item to="/courses">Frontend development</b-dropdown-item>
-          <b-dropdown-item to="/courses">Backend development</b-dropdown-item>
-          <b-dropdown-item to="/courses">Mobile development</b-dropdown-item>
-          <b-dropdown-item to="/courses"
-            >Data science with python</b-dropdown-item
-          >
-          <b-dropdown-item to="/courses"
-            >Machine learning with python</b-dropdown-item
+          <b-dropdown-item
+            v-for="navItem in allData"
+            :id="navItem.id"
+            :key="navItem.id"
+            :to="localePath(`/courses/${navItem.id}`)"
+            >{{ navItem.courseName }}</b-dropdown-item
           >
         </b-nav-item-dropdown>
         <b-nav-item :to="localePath('/pricing')">
-          {{ $t('navbar.PlansAndPricing') }}</b-nav-item
-        >
-
+          {{ $t('navbar.PlansAndPricing') }}
+        </b-nav-item>
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
-          <b-dropdown-item to="/mentor">Become a mentor</b-dropdown-item>
-          <b-dropdown-item to="/instructors"
+          <b-dropdown-item :to="localePath('/inProcess')"
+            >Become a mentor
+          </b-dropdown-item>
+          <b-dropdown-item :to="localePath('/instructors')"
             >Become an instructor</b-dropdown-item
           >
         </b-nav-item-dropdown>
-        <b-nav-item :to="localePath('about')">
+        <b-nav-item :to="localePath('/about')">
           {{ $t('navbar.AboutUs') }}</b-nav-item
         ><b-nav-item :to="localePath('/contact-us')">
           {{ $t('navbar.ContactUs') }}</b-nav-item
@@ -92,8 +91,8 @@
           </b-dropdown-header>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-item to="/useraccount/mylearning"
-            >My Learning</b-dropdown-item
-          >
+            >My Learning
+          </b-dropdown-item>
           <b-dropdown-item to="/useraccount/mycart">My Cart</b-dropdown-item>
           <b-dropdown-item to="/useraccount/mynotifications"
             >Notifications</b-dropdown-item
@@ -122,6 +121,45 @@
   </b-navbar>
 </template>
 
+<<<<<<< HEAD
+=======
+<script>
+export default {
+  data() {
+    return {
+      loggedIn: false,
+    }
+  },
+
+  methods: {
+    logout() {
+      this.$store.dispatch('auth/logout')
+      console.log('logout')
+    },
+  },
+
+  computed: {
+    allData() {
+      const courseNames = this.$store.getters['course/getAllCourseData']
+      if (this.$i18n.locale == 'en') {
+        return courseNames.map((item) => {
+          return { courseName: item.course_name_en, id: item.id }
+        })
+      } else if (this.$i18n.locale == 'ru') {
+        return courseNames.map((item) => {
+          return { courseName: item.course_name_ru, id: item.id }
+        })
+      } else {
+        return courseNames.map((item) => {
+          return { courseName: item.course_name_uz, id: item.id }
+        })
+      }
+    },
+  },
+}
+</script>
+
+>>>>>>> 3ac88574e3824c4f8e6e4ccc1eb82750752b8ac2
 <style scoped>
 .dropdown-fade-enter-active,
 .dropdown-fade-leave-active {
