@@ -4248,6 +4248,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-1-wrapper {
   position: relative;
   padding: 0 137px;
+  background: #f3f8ff;
 }
 
 .section-1-wrapper::before {
@@ -4421,6 +4422,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
   overflow: hidden;
   padding: 0 137px;
+  background: #f3f8ff;
 }
 
 .section-2-wrapper::after {
@@ -4564,6 +4566,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
   padding: 0 137px;
   padding-bottom: 2rem;
+  background: #f3f8ff;
 }
 
 .section-3 .image {
@@ -4654,6 +4657,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-3 .circle::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  border-left: 4px solid #ffffff;
+  width: 1px;
+  height: 400px;
+  z-index: -1 !important;
+}
+
+.section-3 .circle:not(:last-child) {
+  border: 1px solid red;
 }
 
 .section-3 .inner-set {

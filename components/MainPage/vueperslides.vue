@@ -122,51 +122,7 @@ export default {
           image: require('@/assets/images/cart-image-3.png'),
         },
       ],
-      window: {
-        width: 0,
-        height: 0,
-      },
-      // visibleSlides: 4,
-      // ratio: 3 / 10,
     }
-  },
-  // created() {
-  //   if (process.client) {
-  //     window.addEventListener('resize', this.handleResize)
-  //     this.handleResize()
-  //   }
-  // },
-  // destroyed() {
-  //   if (process.client) {
-  //     window.removeEventListener('resize', this.handleResize)
-  //   }
-  // },
-  methods: {
-    // handleResize() {
-    //   this.window.width = window.innerWidth
-    //   this.window.height = window.innerHeight
-    //   console.log('window width', this.window.width)
-    //   if (this.window.width < 1296 && this.window.width > 1123) {
-    //     this.visibleSlides = 3
-    //     this.ratio = 3 / 8
-    //     console.log('Iam working 3')
-    //   } else if (this.window.width < 1122 && this.window.width > 1084) {
-    //     this.visibleSlides = 2
-    //     this.ratio = 3 / 6
-    //     console.log('Iam working 2')
-    //   } else if (this.window.width < 1083 && this.window.width > 713) {
-    //     this.visibleSlides = 2
-    //     this.ratio = 3 / 6
-    //     console.log('Iam working 2')
-    //   } else if (this.window.width < 712 && this.window.width > 536) {
-    //     this.visibleSlides = 1
-    //     this.ratio = 3 / 4
-    //     console.log('Iam working 1')
-    //   } else if (this.window.width < 535 && this.window.width > 1) {
-    //     this.visibleSlides = 1
-    //     this.ratio = 4 / 3.5
-    //   }
-    // },
   },
 }
 </script>

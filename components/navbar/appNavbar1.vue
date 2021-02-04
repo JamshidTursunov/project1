@@ -24,9 +24,9 @@
           {{ $t('navbar.PlansAndPricing') }}
         </b-nav-item>
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
-          <b-dropdown-item :to="localePath('/inProcess')"
+          <!-- <b-dropdown-item :to="localePath('/inProcess')"
             >Become a mentor
-          </b-dropdown-item>
+          </b-dropdown-item> -->
           <b-dropdown-item :to="localePath('/instructors')"
             >Become an instructor</b-dropdown-item
           >

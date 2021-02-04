@@ -1,6 +1,7 @@
 .section-1-wrapper {
   position: relative;
   padding: $custom-size;
+  background: #f3f8ff;
   &::before {
     position: absolute;
     content: '';
