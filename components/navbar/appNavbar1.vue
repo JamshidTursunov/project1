@@ -53,7 +53,7 @@
           ><img
             class="w-7 h-7"
             src="~assets/svgs/notification.svg"
-            alt="notification"
+            alt="korzinka"
         /></b-nav-item>
         <b-dropdown
           size="md"
@@ -77,9 +77,15 @@
                 alt="facebook"
               />
               <p class="user-fullname-text ml-3">
-                <span>John Doe</span>
+                <span>
+                  {{ $auth.user.user.first_name }}
+                  {{ $auth.user.user.last_name }}
+                </span>
                 <br />
-                <span class="user-email-text">johndoe_1234@mail.ru</span>
+                <span class="user-email-text"
+                  >+998
+                  {{ $auth.user.user.phone_number }}
+                </span>
               </p>
             </div>
           </b-dropdown-header>
@@ -115,6 +121,7 @@
   </b-navbar>
 </template>
 
+<<<<<<< HEAD
 <script>
 export default {
   data() {
@@ -151,6 +158,7 @@ export default {
 }
 </script>
 
+======= >>>>>>> 47debe607b67d12734f803cf3bf07e985a0784aa
 <style scoped>
 .dropdown-fade-enter-active,
 .dropdown-fade-leave-active {

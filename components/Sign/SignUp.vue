@@ -45,8 +45,6 @@
           inputPlaceholder="Password"
           v-model="form.password"
         />
-
-        <!-- <Input type="password" inputPlaceholder="Confirm your password" /> -->
         <div class="form__button">
           <p class="form__content__p">
             By clicking Sign Up, you agree to GreatSoft Academy's Terms of
@@ -108,7 +106,10 @@ export default {
       if (this.form.token != '' && this.form.token != null) {
         await this.$axios
           .post('user/', this.form)
-          .then((res) => console.log(res))
+          .then((res) => {
+            console.log('Final user/: ', res)
+            this.$auth.loginWith('local', { data: this.form })
+          })
           .catch((err) => console.log('[USER ERROR]', err))
         this.form = {
           first_name: '',

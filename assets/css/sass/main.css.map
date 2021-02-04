@@ -48,7 +48,8 @@
         "components/userAccount/_purchaseTable.scss",
         "components/userAccount/_notification.scss",
         "components/userProfile/_profile.scss",
-        "responsive/_section-4.scss"
+        "responsive/_section-4.scss",
+        "layouts/_payment.scss"
     ],
     "names": [],
     "file": "main.css"
