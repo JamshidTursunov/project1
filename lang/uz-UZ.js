@@ -47,7 +47,7 @@ export default {
       {
         tarif: 'BASIC',
         content: 'All the essentials to grow your data skills',
-        sign: '$',
+        sign: 'UZS',
         mainPrice: '12',
         subPrice: '.42',
         duration: '/month',
@@ -56,7 +56,7 @@ export default {
       {
         tarif: 'PREMIUM',
         content: 'All the essentials to grow your data skills',
-        sign: '$',
+        sign: 'UZS',
         mainPrice: '42',
         subPrice: '.35',
         duration: '/month',
@@ -65,7 +65,7 @@ export default {
       {
         tarif: 'PRO',
         content: 'All the essentials to grow your data skills',
-        sign: '$',
+        sign: 'UZS',
         mainPrice: '25',
         subPrice: '.00',
         duration: '/month',

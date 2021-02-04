@@ -2,12 +2,6 @@
   <div class="pricing__container">
     <div class="pricing__box">
       <h1 class="mb-6">{{ $t('plans.Heading') }}</h1>
-      <div class="pricing__dropdown">
-        <div>
-          <p>{{ $t('plans.Currency') }}</p>
-          <b-form-select v-model="selected" :options="options"></b-form-select>
-        </div>
-      </div>
     </div>
     <div class="container-fluid">
       <div class="row pricing__row">
@@ -81,13 +75,7 @@
 export default {
   components: {},
   data() {
-    return {
-      selected: 'UZS',
-      options: [
-        { value: 'UZS', text: 'UZS' },
-        { value: 'USD', text: 'USD' },
-      ],
-    }
+    return {}
   },
 }
 </script>

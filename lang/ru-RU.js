@@ -50,7 +50,7 @@ export default {
       {
         tarif: 'BASIC',
         content: 'Все необходимое для развития ваших навыков работы с данными',
-        sign: '$',
+        sign: 'UZS',
         mainPrice: '12',
         subPrice: '.42',
         duration: '/месяц',
@@ -59,7 +59,7 @@ export default {
       {
         tarif: 'PREMIUM',
         content: 'Все необходимое для развития ваших навыков работы с данными',
-        sign: '$',
+        sign: 'UZS',
         mainPrice: '42',
         subPrice: '.35',
         duration: '/месяц',
@@ -68,7 +68,7 @@ export default {
       {
         tarif: 'PRO',
         content: 'Все необходимое для развития ваших навыков работы с данными',
-        sign: '$',
+        sign: 'UZS',
         mainPrice: '25',
         subPrice: '.00',
         duration: '/месяц',

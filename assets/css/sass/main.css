@@ -2986,7 +2986,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-bottom: 1rem;
   }
   .pricing__box {
-    margin-bottom: 4rem;
+    justify-content: center;
+    margin-bottom: 3rem;
   }
   .pricing__active__card {
     transform: scale(1);
@@ -3009,6 +3010,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 @media only screen and (max-width: 37.5em) {
   .pricing__box {
     padding: 0 1rem;
+    margin-bottom: 1rem;
   }
   .pricing__box h1 {
     font-size: 2.5rem;

@@ -35,7 +35,11 @@
         <Input inputPlaceholder="First Name" v-model="form.first_name" />
         <Input inputPlaceholder="Last Name" v-model="form.last_name" />
         <!-- <Input type="email" inputPlaceholder="Email Address" /> -->
-        <Input inputPlaceholder="Phone_nmber" v-model="form.phone_number" />
+        <Input
+          type="tel"
+          inputPlaceholder="Phone_nmber"
+          v-model="form.phone_number"
+        />
         <Input
           type="password"
           inputPlaceholder="Password"

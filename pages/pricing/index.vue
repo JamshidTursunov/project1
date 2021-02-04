@@ -17,24 +17,24 @@ export default {
 .pricing {
   padding: 5rem 8.125rem;
   background-color: #f3f8ff;
-  background: url('~assets/images/pricing/pricing.png');
+  background-image: url('~assets/images/pricing/pricing.png');
   background-size: contain;
   background-position: 0 0;
   background-repeat: no-repeat;
   @media only screen and (max-width: 75em) {
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 1rem;
   }
   @media only screen and (max-width: 62em) {
-    padding: 5rem 11rem;
+    padding: 6rem 11rem 1rem;
   }
   @media only screen and (max-width: 46.25em) {
-    padding: 5rem 7rem;
+    padding: 5rem 7rem 1rem;
   }
   @media only screen and (max-width: 37.5em) {
-    padding: 5rem 1rem;
+    padding: 2rem 1rem 1rem;
+    background-image: none;
   }
   @media only screen and (max-width: 25em) {
-    padding: 5rem 1rem;
   }
 }
 </style>
