@@ -102,7 +102,7 @@
           <b-dropdown-item href="/useraccount/mypurchase"
             >Purchage history</b-dropdown-item
           >
-          <b-dropdown-item href="/" @click="$auth.logout()"
+          <b-dropdown-item href="/" @click.prevent="$auth.logout()"
             >Logout</b-dropdown-item
           >
         </b-dropdown>
@@ -121,8 +121,7 @@
   </b-navbar>
 </template>
 
-<<<<<<< HEAD
-=======
+<<<<<<< HEAD =======
 <script>
 export default {
   data() {
