@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-8 col-sm-12 row m-0">
         <div class="col-md-12 text-start text-white mt-5">
-          25 tests are reaydy to<br />
+          25 tests are ready to<br />
           check your skills
         </div>
 
@@ -26,11 +26,12 @@
             class="google-image mt-16 flex-shrink"
           />
           <div class="progress-google flex flex-grow flex-shrink items-end">
-            <div class="flex-grow"></div>
-            <div class="flex-grow"></div>
-            <div class="flex-grow"></div>
-            <div class="flex-grow"></div>
-            <div class="flex-grow"></div>
+            <div
+              class="flex-grow"
+              :class="{ 'is-active': i === isActive }"
+              v-for="i in 5"
+              :key="i"
+            ></div>
           </div>
         </div>
       </div>
@@ -38,4 +39,12 @@
   </div>
 </template>
 
-<style scoped></style>
+<script>
+export default {
+  data() {
+    return {
+      isActive: 3,
+    }
+  },
+}
+</script>

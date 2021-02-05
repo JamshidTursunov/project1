@@ -4574,6 +4574,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: auto;
 }
 
+.section-3 .row:last-child .circle::before {
+  display: none;
+}
+
 .section-3::after {
   position: absolute;
   content: '';
@@ -4672,10 +4676,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   z-index: -1 !important;
 }
 
-.section-3 .circle:not(:last-child) {
-  border: 1px solid red;
-}
-
 .section-3 .inner-set {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4703,6 +4703,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
 }
 
+@media only screen and (max-width: 1000px) {
+  .section-3 .circle::before {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .section-3 {
     padding: 1rem 1rem;
@@ -4712,6 +4718,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .section-3 .header-title::before {
     top: 70%;
+  }
+  .section-3 .circle::before {
+    display: none;
   }
 }
 
@@ -4740,6 +4749,41 @@ Due to the split circle of progress-left and progress right, we must use the ani
           transform: rotate(-24deg);
 }
 
+.section-4 .progress-google .flex-grow.is-active::after {
+  -webkit-animation: showUp 1s ease-in-out alternate infinite;
+          animation: showUp 1s ease-in-out alternate infinite;
+}
+
+.section-4 .progress-google .flex-grow.is-active::before {
+  -webkit-animation: showUp 1s ease-in-out alternate infinite;
+          animation: showUp 1s ease-in-out alternate infinite;
+  text-shadow: 0.1rem 0.2rem 0.2rem orange;
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: orange;
+}
+
+@-webkit-keyframes showUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes showUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google::before {
     content: '';
@@ -4766,7 +4810,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   content: '';
   position: absolute;
   top: -58px;
-  left: 42%;
+  left: 41%;
   width: 15px;
   height: 15px;
   background: orange;

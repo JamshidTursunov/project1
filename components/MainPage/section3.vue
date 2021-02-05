@@ -4,7 +4,7 @@
       First, we invented the best system for learning to code.<br />
       Seven years and 45 million learners later, we've perfected it.
     </h1>
-    <div class="row py-4" data-aos="fade-down" data-aos-delay="300">
+    <div class="row py-4" data-aos="fade-down" data-aos-delay="100">
       <div class="col-md-2 flex justify-center items-center">
         <div class="circle">
           <div class="inner-set">1</div>
@@ -21,7 +21,7 @@
         </p>
       </div>
     </div>
-    <div class="row py-4" data-aos="fade-down" data-aos-delay="300">
+    <div class="row py-4" data-aos="fade-down" data-aos-delay="100">
       <div class="col-md-2 flex justify-center items-center">
         <div class="circle">
           <div class="inner-set">2</div>
@@ -38,7 +38,7 @@
         </p>
       </div>
     </div>
-    <div class="row py-4" data-aos="fade-down" data-aos-delay="300">
+    <div class="row py-4" data-aos="fade-down" data-aos-delay="100">
       <div class="col-md-2 flex justify-center items-center">
         <div class="circle">
           <div class="inner-set">3</div>
@@ -55,7 +55,7 @@
         </p>
       </div>
     </div>
-    <div class="row py-4" data-aos="fade-down" data-aos-delay="300">
+    <div class="row py-4" data-aos="fade-down" data-aos-delay="100">
       <div class="col-md-2 flex justify-center items-center">
         <div class="circle">
           <div class="inner-set">4</div>
