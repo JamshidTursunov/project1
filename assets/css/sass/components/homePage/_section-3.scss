@@ -8,7 +8,9 @@
     width: 80%;
     margin: auto;
   }
-
+  &:last-child {
+    border: 1px solid red;
+  }
   &::after {
     position: absolute;
     content: '';
