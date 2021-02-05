@@ -102,7 +102,9 @@
           <b-dropdown-item href="/useraccount/mypurchase"
             >Purchage history</b-dropdown-item
           >
-          <b-dropdown-item href="/" @click.prevent="$auth.logout()"
+          <b-dropdown-item
+            href="/"
+            @click.prevent="$auth.logout(), showLogOutInfo()"
             >Logout</b-dropdown-item
           >
         </b-dropdown>
@@ -124,6 +126,7 @@
 <<<<<<< HEAD <<<<<<< HEAD ======= <<<<<<< HEAD ======= >>>>>>>
 ca1e03bdf182ad7cd3079373990bb32668bdfaa7
 <script>
+import Toast from '~/utils/toast.js'
 export default {
   data() {
     return {
@@ -131,10 +134,20 @@ export default {
     }
   },
 
+  created() {},
+  mixins: [Toast],
   methods: {
     logout() {
       this.$store.dispatch('auth/logout')
       console.log('logout')
+    },
+
+    showLogOutInfo() {
+      this.showToast(
+        'info',
+        'Xabar',
+        'Akkountdan chiqish muvafaqiyatli yakunlandi'
+      )
     },
   },
 

@@ -73,8 +73,10 @@
 </template>
 
 <script>
+import Toast from '~/utils/toast.js'
 export default {
   props: {},
+  mixins: [Toast],
   data() {
     return {
       userInfo: {
@@ -89,9 +91,19 @@ export default {
         let res = await this.$auth.loginWith('local', {
           data: this.userInfo,
         })
+        this.showToast(
+          'success',
+          'Muvafaqiyatli',
+          'Akkountga kirish muvafaqiyatli yakunlandi'
+        )
         console.log('[LOGIN RES]', res)
       } catch (err) {
         console.log(err)
+        this.showToast(
+          'danger',
+          'Xatolik',
+          'Akkountga kirishda xatolik bor. Raqam yoki parol xato kiritilgan.'
+        )
       }
     },
   },

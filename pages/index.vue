@@ -19,15 +19,12 @@ export default {
     console.log('index created()')
     this.$store.dispatch('userModule/GET_USER')
     this.createToast()
-    this.$axios.get('instructor/1/').then((res) => console.log(res.data))
   },
   methods: {
     createToast() {
       if (this.$store.getters['course/getToastShow']) {
         this.showToast(
           'success',
-          'b-toaster-bottom-right',
-          '3000',
           'Muvafaqiyatli',
           "Muvafaqiyatli ro'yxatdan o'tdingiz"
         )
