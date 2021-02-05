@@ -11,11 +11,29 @@
 </template>
 
 <script>
+import Toast from '~/utils/toast.js'
 export default {
   layout: 'HomePageLayout',
+  mixins: [Toast],
   created() {
     console.log('index created()')
     this.$store.dispatch('userModule/GET_USER')
+    this.createToast()
+    this.$axios.get('instructor/1/').then((res) => console.log(res.data))
+  },
+  methods: {
+    createToast() {
+      if (this.$store.getters['course/getToastShow']) {
+        this.showToast(
+          'success',
+          'b-toaster-bottom-right',
+          '3000',
+          'Muvafaqiyatli',
+          "Muvafaqiyatli ro'yxatdan o'tdingiz"
+        )
+      }
+      this.$store.dispatch('course/initToastShow', false)
+    },
   },
 }
 </script>

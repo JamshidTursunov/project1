@@ -62,9 +62,11 @@
 
 <script>
 import Button from '../ControlFields/Button.vue'
+import Toast from '~/utils/toast.js'
 export default {
   components: { Button },
   props: {},
+  mixins: [Toast],
   data() {
     return {
       form: {
@@ -77,6 +79,8 @@ export default {
       code: null,
     }
   },
+
+  created() {},
 
   methods: {
     async getCode() {
@@ -96,8 +100,8 @@ export default {
             'danger',
             'b-toaster-bottom-right',
             '2000',
-            'xatolik',
-            'Telefon raqam yoki parol xato terilgan'
+            'Xatolik',
+            "Anketa to'gri to'ldirilmagan"
           )
         })
     },
@@ -112,6 +116,13 @@ export default {
         })
         .catch((err) => {
           console.log(err)
+          this.showToast(
+            'danger',
+            'b-toaster-bottom-right',
+            '2000',
+            'Xatolik',
+            'Kod xato terilgan'
+          )
         })
 
       if (this.form.token != '' && this.form.token != null) {
@@ -120,9 +131,8 @@ export default {
           .then((res) => {
             console.log('Final user/: ', res)
             this.$auth.loginWith('local', { data: this.form })
-            this.$nextTick(() => {
-              this.showToast('success', 'b-toaster-bottom-right', '2000')
-            })
+            this.$router.push('/')
+            this.$store.dispatch('course/initToastShow', true)
           })
           .catch((err) => console.log('[USER ERROR]', err))
         this.form = {
@@ -132,36 +142,9 @@ export default {
           password: '',
           token: '',
         }
-        this.$router.push('/about')
-        // this.showToast('success', 'b-toaster-bottom-right', '2000')
       }
       this.$nextTick(() => {
         this.$bvModal.hide('modal-check-code')
-      })
-    },
-
-    showToast(variant, toaster, autoHideDelay, title, message) {
-      // Use a shorter name for this.$createElement
-      const h = this.$createElement
-      // Create the message
-      const vNodesMsg = h('p', { class: ['text-center', 'mb-0'] }, [
-        h('b-spinner', { props: { type: 'grow', small: true } }),
-        message,
-        h('b-spinner', { props: { type: 'grow', small: true } }),
-      ])
-      // Create the title
-      const vNodesTitle = h(
-        'div',
-        { class: ['d-flex', 'flex-grow-1', 'align-items-baseline', 'mr-2'] },
-        [h('strong', { class: 'mr-2' }, title)]
-      )
-      // Pass the VNodes as an array for message and title
-      this.$bvToast.toast([vNodesMsg], {
-        title: [vNodesTitle],
-        solid: true,
-        variant: variant,
-        toaster: toaster,
-        autoHideDelay: autoHideDelay,
       })
     },
   },

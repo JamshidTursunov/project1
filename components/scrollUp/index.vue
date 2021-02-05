@@ -1,7 +1,9 @@
 <template>
-  <a @click="scrollTop" v-show="visible" class="up-btn">
-    <fa size="2x" :icon="['fas', 'angle-up']" />
-  </a>
+  <transition name="scroll">
+    <a @click="scrollTop" v-show="visible" class="up-btn">
+      <fa size="2x" :icon="['fas', 'angle-up']" />
+    </a>
+  </transition>
 </template>
 
 <script>
@@ -34,16 +36,41 @@ export default {
 </script>
 
 <style scoped>
+.scroll-enter-active,
+.scroll-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.scroll-enter,
+.scroll-leave-to {
+  opacity: 0;
+}
+
 .up-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
-  color: orange;
+  color: white;
   cursor: pointer;
   border-radius: 50%;
-  background-color: white;
-  padding: 0.4rem 0.8rem;
+  padding: 0.6rem 1rem;
   z-index: 9999;
   border: 1px solid #ccc;
+  background-color: #5d30db;
+  animation: leap 0.8s linear infinite alternate;
+  transition: all 0.2s;
+}
+
+.up-btn:hover {
+  box-shadow: 0 0 10px 6px rgba(93, 48, 219, 0.4);
+}
+
+@keyframes leap {
+  from {
+    transform: translateY(1rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 </style>
