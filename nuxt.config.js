@@ -80,7 +80,7 @@ export default {
     icons: true,
   },
   axios: {
-    baseURL: 'https://damp-falls-69005.herokuapp.com/api/',
+    baseURL: 'https://greatsoft-academy.herokuapp.com/api/',
   },
   auth: {
     strategies: {
