@@ -8,17 +8,19 @@
     :dragging-distance="200"
     :breakpoints="myBreakPoints"
   >
-    <vueper-slide class="cart-self" v-for="(i, index) in slides" :key="index">
+    <vueper-slide class="cart-self" v-for="mentor in mentors" :key="mentor.id">
       <template v-slot:content>
         <div class="cart-block">
-          <img class="cart-image" :src="i.image" alt="..." />
+          <img class="cart-image" :src="mentor.image" alt="..." />
           <div class="w-full flex justify-between items-center">
-            <p class="user-name">{{ i.username }}</p>
-            <p class="user-level">{{ i.level }}</p>
+            <p class="user-name">{{ mentor.user }}</p>
+            <!-- <p class="user-level">{{ i.level }}</p> -->
           </div>
           <div class="w-full flex justify-between items-center my-2">
             <div class="flex flex-wrap user-profession pb-1">
-              {{ i.profession }}
+              <p v-for="prof in mentor.services" :key="prof">
+                {{ prof }}
+              </p>
             </div>
             <b-form-rating
               style="border: 1px solid red; background: transparent; width: 50%"
@@ -35,7 +37,8 @@
             <span class="flex-grow work-line"></span>
           </div>
           <div class="w-full flex user-experience">
-            <p>{{ i.experience }}</p>
+            <p>{{ mentor.description }}</p>
+            {{ mentor.image }}
           </div>
         </div>
       </template>
@@ -48,6 +51,7 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
 export default {
+  props: ['mentors'],
   components: { VueperSlides, VueperSlide },
   data() {
     return {

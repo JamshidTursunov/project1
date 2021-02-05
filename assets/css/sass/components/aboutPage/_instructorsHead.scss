@@ -34,3 +34,16 @@
     font-family: $sans;
   }
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5d30db;
+  border-radius: 5px;
+}

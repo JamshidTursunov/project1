@@ -2240,6 +2240,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 2.5px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5d30db;
+  border-radius: 5px;
+}
+
 .partners {
   padding: 2rem 6rem;
 }
@@ -4027,7 +4041,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-bottom: 1rem;
   }
   .pricing__box {
-    margin-bottom: 4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 3rem;
   }
   .pricing__active__card {
     -webkit-transform: scale(1);
@@ -4051,6 +4068,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 @media only screen and (max-width: 37.5em) {
   .pricing__box {
     padding: 0 1rem;
+    margin-bottom: 1rem;
   }
   .pricing__box h1 {
     font-size: 2.5rem;
@@ -4242,6 +4260,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
+  }
+}
+
+.greatsoft-typography img {
+  height: 70%;
+  width: 75%;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .greatsoft-typography {
+    display: none;
   }
 }
 

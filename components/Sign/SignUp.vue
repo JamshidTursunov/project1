@@ -34,7 +34,12 @@
       <form @submit.prevent="getCode">
         <Input inputPlaceholder="First Name" v-model="form.first_name" />
         <Input inputPlaceholder="Last Name" v-model="form.last_name" />
-        <Input inputPlaceholder="Phone_nmber" v-model="form.phone_number" />
+        <!-- <Input type="email" inputPlaceholder="Email Address" /> -->
+        <Input
+          type="tel"
+          inputPlaceholder="Phone number"
+          v-model="form.phone_number"
+        />
         <Input
           type="password"
           inputPlaceholder="Password"
@@ -46,7 +51,7 @@
             Service & Privacy Policy.
           </p>
           <Button type="submit" @click="getCode" btnStyle="controlButtonSubmit"
-            >Sign up</Button
+            >Continue</Button
           >
           <check-code @codeTransfer="checkCode" />
         </div>
@@ -56,8 +61,12 @@
 </template>
 
 <script>
+import Button from '../ControlFields/Button.vue'
+import Toast from '~/utils/toast.js'
 export default {
+  components: { Button },
   props: {},
+  mixins: [Toast],
   data() {
     return {
       form: {
@@ -70,6 +79,8 @@ export default {
       code: null,
     }
   },
+
+  created() {},
 
   methods: {
     async getCode() {
@@ -85,6 +96,13 @@ export default {
         })
         .catch((err) => {
           console.log('[GET CODE ERROR]', err)
+          this.showToast(
+            'danger',
+            'b-toaster-bottom-right',
+            '2000',
+            'Xatolik',
+            "Anketa to'gri to'ldirilmagan"
+          )
         })
     },
     async checkCode(payload) {
@@ -96,7 +114,16 @@ export default {
         .then((res) => {
           this.form.token = res.data.token
         })
-        .catch((err) => console.log(err))
+        .catch((err) => {
+          console.log(err)
+          this.showToast(
+            'danger',
+            'b-toaster-bottom-right',
+            '2000',
+            'Xatolik',
+            'Kod xato terilgan'
+          )
+        })
 
       if (this.form.token != '' && this.form.token != null) {
         await this.$axios
@@ -104,6 +131,8 @@ export default {
           .then((res) => {
             console.log('Final user/: ', res)
             this.$auth.loginWith('local', { data: this.form })
+            this.$router.push('/')
+            this.$store.dispatch('course/initToastShow', true)
           })
           .catch((err) => console.log('[USER ERROR]', err))
         this.form = {
@@ -113,9 +142,7 @@ export default {
           password: '',
           token: '',
         }
-        this.$router.push('/')
       }
-
       this.$nextTick(() => {
         this.$bvModal.hide('modal-check-code')
       })
