@@ -5,10 +5,11 @@ export const getters = {}
 export const mutations = {}
 
 export const actions = {
-  async nuxtServerInit({ commit, dispatch }, context) {
+  async nuxtServerInit({ commit }, context) {
     const { data } = await context.app.$axios.get(
       `https://greatsoft-academy.herokuapp.com/api/course/`
     )
+    console.log(data)
     const resPromoVideos = await context.app.$axios.get(
       `https://greatsoft-academy.herokuapp.com/api/course/video/`
     )
