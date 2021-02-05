@@ -9,7 +9,6 @@ export const actions = {
     const { data } = await context.app.$axios.get(
       `https://greatsoft-academy.herokuapp.com/api/course/`
     )
-    console.log(data)
     const resPromoVideos = await context.app.$axios.get(
       `https://greatsoft-academy.herokuapp.com/api/course/video/`
     )

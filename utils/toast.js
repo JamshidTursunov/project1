@@ -22,7 +22,7 @@ export default {
         title: [vNodesTitle],
         solid: true,
         variant: variant,
-        toaster: 'b-toaster-bottom-right',
+        toaster: 'b-toaster-bottom-left',
         autoHideDelay: 3000,
       })
     },

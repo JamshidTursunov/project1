@@ -143,11 +143,7 @@ export default {
     },
 
     showLogOutInfo() {
-      this.showToast(
-        'info',
-        'Xabar',
-        'Akkountdan chiqish muvafaqiyatli yakunlandi'
-      )
+      this.showToast('info', 'Xabar', 'Akkountdan chiqildi')
     },
   },
 
