@@ -48,7 +48,7 @@ export default {
 .up-btn {
   position: fixed;
   bottom: 30px;
-  right: 20px;
+  left: 20px;
   color: white;
   cursor: pointer;
   border-radius: 50%;

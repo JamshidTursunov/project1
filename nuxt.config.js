@@ -23,6 +23,10 @@ export default {
         src: 'https://kit.fontawesome.com/fe43db86c1.js',
         crossorigin: 'anonymous',
       },
+
+      {
+        src: '//code.jivosite.com/widget/TuzHwIPOp0',
+      },
     ],
   },
 
