@@ -4,7 +4,7 @@ export default {
       // Use a shorter name for this.$createElement
       const h = this.$createElement
       // Create the message
-      const vNodesMsg = h('p', { class: ['text-center', 'mb-0'] }, [
+      const vNodesMsg = h('p', { class: ['text-center', 'mb-2'] }, [
         h('b-spinner', { props: { type: 'grow', small: true } }),
         message,
         h('b-spinner', { props: { type: 'grow', small: true } }),

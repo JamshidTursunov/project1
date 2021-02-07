@@ -16,10 +16,11 @@ export default {
   layout: 'HomePageLayout',
   mixins: [Toast],
   created() {
-    console.log('index created()')
     this.$store.dispatch('userModule/GET_USER')
     this.createToast()
   },
+
+  updated() {},
   methods: {
     createToast() {
       if (this.$store.getters['course/getToastShow']) {

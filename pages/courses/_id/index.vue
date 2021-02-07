@@ -49,7 +49,6 @@ export default {
     },
 
     coursePromoVideo() {
-      console.log(this.$store.getters['course/getPromoVideo'])
       return this.$store.getters['course/getPromoVideo']
     },
   },

@@ -1821,6 +1821,95 @@ Due to the split circle of progress-left and progress right, we must use the ani
   outline: none;
 }
 
+.allCourses {
+  padding: 5rem 8rem;
+  background-color: #f3f8ff;
+}
+
+.allCourses__container {
+  width: 100%;
+}
+
+.allCourses__container h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  color: #333366;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.allCourses__link, .allCourses__link:link, .allCourses__link:visited {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.allCourses__link:hover {
+  text-decoration: none;
+  transform: translateY(-0.2rem) scale(1.03);
+  box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.allCourses__photo {
+  height: 10rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.allCourses__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.allCourses__content {
+  padding: 0.5rem 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.allCourses__content h2 {
+  color: black;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.allCourses__content h3 {
+  color: black;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.allCourses__content p {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.allCourses__content ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.allCourses__content ul li {
+  margin-bottom: 0.1rem;
+  color: black;
+}
+
 .description__container {
   padding: 3rem 1rem 2rem;
   font-family: "Open Sans", sans-serif;
