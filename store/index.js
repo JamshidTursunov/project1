@@ -12,7 +12,7 @@ export const actions = {
     const resPromoVideos = await context.app.$axios.get(
       `https://greatsoft-academy.herokuapp.com/api/course/video/`
     )
-    // commit('course/setAllCourseData', data)
+    commit('course/setAllCourseData', data)
     commit('course/setAllPromoVideo', resPromoVideos.data)
   },
 }
