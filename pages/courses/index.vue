@@ -39,10 +39,10 @@
                     <p>
                       {{
                         description == 'en'
-                          ? item.descriotion_en
+                          ? item.description_en
                           : description == 'ru'
-                          ? item.descriotion_ru
-                          : item.descriotion_uz
+                          ? item.description_ru
+                          : item.description_uz
                       }}
                     </p>
                     <h3>Prices:</h3>

@@ -16,7 +16,6 @@ export const mutations = {
     state.courseData = data
   },
   setInstructorName(state, data) {
-    console.log(data)
     state.instructorName = data
   },
   setAllPromoVideo(state, data) {

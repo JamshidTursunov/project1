@@ -36,6 +36,7 @@ export default {
     { src: '~/plugins/yMap', mode: 'client' },
     { src: '~/plugins/aos', mode: 'client' },
     '~/plugins/clickaway',
+    { src: '~/plugins/localStorage.js', ssr: false },
   ],
 
   components: true,

@@ -2344,6 +2344,444 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
 }
 
+.instructorPage__nav {
+  background-color: #333366;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 4.4rem 9.3rem 2rem;
+  border-bottom: 3px solid #ff9900;
+}
+
+.instructorPage__nav h1 {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 1.9rem;
+}
+
+.instructorPage__list {
+  display: flex;
+}
+
+.instructorPage__item {
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  position: relative;
+}
+
+.instructorPage__item::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  background-color: #ff9900;
+  transition: all 0.3s;
+}
+
+.instructorPage__item:hover::after {
+  width: 100%;
+}
+
+.instructorPage__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.instructorPage__link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.instructorPage__link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.courses__container {
+  background-color: #f3f8ff;
+  padding: 3rem 9.3rem 25rem;
+}
+
+.courses__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.courses__header h1 {
+  color: #333366;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.courses__header button {
+  color: white;
+  background-color: #333366;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.courses__header button:hover {
+  transform: translateY(-0.2rem);
+}
+
+.courses__header button:active {
+  transform: translateY(-0.1rem);
+}
+
+.courses__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0.5rem);
+  transition: all 0.2s ease-in;
+}
+
+.courses__form {
+  background-image: linear-gradient(to right, rgba(51, 51, 102, 0.9), rgba(93, 48, 219, 0.9));
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  padding: 2rem 6rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.courses__form h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.courses__form .form__group {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.courses__form .form__group label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.courses__form .form__group input {
+  background-color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #333366;
+  font-weight: 600;
+}
+
+.courses__form .form__group input:focus {
+  outline: none;
+  background-color: #ebfeff;
+}
+
+.courses__form .form__close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.courses__form button {
+  background-color: #ff9900;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  box-shadow: 0 0.1rem 2rem rgba(255, 153, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.courses__form button:hover {
+  transform: translateY(-0.2rem);
+}
+
+.courses__form button:active {
+  transform: translateY(-0.1rem);
+}
+
+.courses__edit {
+  background-color: #f4f4f4;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  padding: 0.3rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.courses__edit__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses__edit img {
+  height: 10rem;
+}
+
+.courses__edit div {
+  padding: 1rem;
+}
+
+.courses__edit div h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #333366;
+  margin-bottom: 0.6rem;
+}
+
+.courses__edit div p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333366;
+}
+
+.courses__edit__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.3rem 1.5rem;
+  background-color: #333366;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.courses__edit__link:hover {
+  transform: translateY(-0.2rem);
+  text-decoration: none;
+  color: white;
+}
+
+.courses__edit__link:active {
+  transform: translateY(-0.1rem);
+}
+
+.courses__edit__delete {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.3rem 1.5rem;
+  background-color: #a73535;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.courses__edit__delete:hover {
+  transform: translateY(-0.2rem);
+}
+
+.courses__edit__delete:active {
+  transform: translateY(-0.1rem);
+}
+
+.coursesSingle .sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #333366;
+  padding: 3rem 3rem 25rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.coursesSingle .sidebar h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.coursesSingle .sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.coursesSingle .sidebar ul li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.coursesSingle .sidebar button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff9900;
+  margin-top: 1.5rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+  box-shadow: 0 0.1rem 2rem rgba(255, 153, 0, 0.2);
+}
+
+.coursesSingle .sidebar button:hover {
+  transform: translateY(-0.25rem);
+}
+
+.coursesSingle .sidebar button:active {
+  transform: translateY(-0.1rem);
+}
+
+.coursesSingle .coursesField {
+  height: 100%;
+  padding: 3rem;
+  background-color: #f3f8ff;
+}
+
+.coursesSingle .coursesField button {
+  background-color: #03506f;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.coursesSingle .coursesField button:hover {
+  transform: translateY(-0.25rem);
+}
+
+.coursesSingle .coursesField button:active {
+  transform: translateY(-0.1rem);
+}
+
+.coursesSingle .coursesField__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.coursesSingle .coursesField__buttons .save {
+  background-color: #ff9900;
+}
+
+.coursesSingle .coursesField__section {
+  background-color: #dae6eb;
+  border-radius: 3px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.coursesSingle .coursesField__section .lecture {
+  margin-bottom: 1rem;
+  background-color: #007965;
+  font-size: 1rem;
+}
+
+.coursesSingle .coursesField__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.coursesSingle .coursesField__group label {
+  font-size: 1.1rem;
+  color: #333366;
+  font-weight: 600;
+}
+
+.coursesSingle .coursesField__group input {
+  padding: 0.5rem 1rem;
+  color: #333366;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.coursesSingle .coursesField__group input:focus {
+  outline: none;
+  background-color: #ebfeff;
+}
+
+.coursesSingle .coursesField__group h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333366;
+  margin-bottom: 0.5rem;
+}
+
+.coursesSingle .coursesField__lecture {
+  padding: 0.4rem 2rem;
+  border-radius: 3px;
+  background-color: #c3d9db;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coursesSingle .coursesField__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.coursesSingle .coursesField__file + label {
+  width: 100%;
+  font-size: 1.05em;
+  font-weight: 400;
+  padding: 0.5rem 1.2rem;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-between;
+  border-radius: 3px;
+}
+
+.coursesSingle .coursesField__file + label span:first-child {
+  color: #a4a1a1;
+}
+
+.coursesSingle .coursesField__file + label span:last-child {
+  font-weight: 600;
+  padding-left: 0.5rem;
+  margin-left: 3rem;
+  border-left: 2px solid #333366;
+  color: #333366;
+}
+
+.coursesSingle .coursesField__file:focus + label {
+  background-color: #ebfeff;
+  outline: none;
+}
+
 .instructors__content {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
