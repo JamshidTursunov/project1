@@ -31,7 +31,7 @@
           top: 0.15rem;
           left: -0.5rem;
           height: 90%;
-          width: 4px;
+          width: 3px;
           background-color: $orange;
         }
       }
@@ -68,6 +68,17 @@
     padding: 3rem;
     background-color: $background;
 
+    & .icon {
+      color: $dark_blue;
+      font-size: 0.9rem;
+      margin-left: 1.2rem;
+      cursor: pointer;
+    }
+
+    & .icon:last-child {
+      margin-left: 0.7rem;
+    }
+
     &__data {
       margin-bottom: 2rem;
       font-family: 'Open sans', sans-serif;
@@ -81,6 +92,10 @@
 
       & li {
         font-size: 1.1rem;
+        background-color: white;
+        border-radius: 3px;
+        padding: 0.3rem 0.7rem;
+        margin-bottom: 0.3rem;
       }
     }
 
@@ -116,6 +131,7 @@
       border-radius: 3px;
       padding: 1rem 2rem;
       margin-bottom: 2rem;
+      border: 1px solid #b6c2c7;
 
       & .lecture {
         margin-bottom: 1rem;
@@ -148,6 +164,10 @@
         }
       }
 
+      .coursesField__input__edit {
+        background-color: #e7e7e7;
+      }
+
       & h3 {
         font-size: 1.1rem;
         font-weight: 600;
@@ -161,15 +181,18 @@
       border-radius: 3px;
       background-color: #c3d9db;
       margin-bottom: 2rem;
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: center;
     }
 
     &__form {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      &__edit {
+        border: 1px solid $dark_blue;
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
     }
 
     &__file {

@@ -2,7 +2,7 @@
   <div class="courses__container">
     <div class="courses__header">
       <h1>All Courses</h1>
-      <button @click="addCourse">+ New course</button>
+      <button @click="addCourse">+New course</button>
     </div>
     <div
       v-if="modalToggle"
