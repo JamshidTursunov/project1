@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center mb-3 d-flex justify-content-between">
+  <div class="isLoading">
     <b-spinner variant="warning"></b-spinner>
   </div>
 </template>
@@ -10,4 +10,12 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.isLoading {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5rem;
+}
+</style>

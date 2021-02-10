@@ -1,11 +1,10 @@
 <template>
-  <div></div>
+  <nuxt-child />
 </template>
 
 <script>
 export default {
-  name: 'default',
-  middleware: 'routeRedirect',
+  name: 'quizPage',
 }
 </script>
 

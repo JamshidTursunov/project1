@@ -8,36 +8,37 @@
     </div>
     <div class="row">
       <div class="col-md-1 flex greatsoft-typography">
-        <img
-          src="~assets/images/greatsoft.png"
-          alt="greatsoft"
-          style="height: 70%; width: 75%; margin-top: 0"
-        />
+        <img src="~assets/images/greatsoft.png" alt="greatsoft" />
       </div>
       <div class="col-md-10">
-        <vueperslides />
+        <vueperslides :mentors="mentorDetails" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   data() {
-    return {
-      window: {
-        width: 0,
-        height: 0,
-      },
-    }
+    return {}
+  },
+  computed: {
+    ...mapGetters({
+      mentors: 'mentorModule/getMentors',
+    }),
+    mentorDetails() {
+      const api = 'https://greatsoft-academy.herokuapp.com'
+      const mentorDetail = this.mentors.map((mentor) => ({
+        ...mentor,
+        mentorImg: api + mentor.image,
+      }))
+      return mentorDetail
+    },
+  },
+  async created() {
+    await this.$store.dispatch('mentorModule/getMentors')
   },
 }
 </script>
-
-<style scoped>
-@media only screen and (max-width: 700px) {
-  .greatsoft-typography {
-    display: none;
-  }
-}
-</style>

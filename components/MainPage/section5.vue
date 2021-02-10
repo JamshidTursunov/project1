@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4" v-for="i in 6" :key="i">
+      <div class="col-md-4" v-for="course in courses" :key="course.id">
         <div class="cart grid hover:shadow-lg">
           <img
             src="~assets/images/ux-design.png"
@@ -14,12 +14,16 @@
             alt="..."
           />
           <h2 class="text-h2 mb-2 md:text-center sm:text-center">
-            Frontend web development
+            <!-- {{ course.course_name_uz }} -->
+            Lorem ipsum
           </h2>
+
           <p class="text-paragraph text-justify">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley o scrambled it to
-            make a type specimen book.
+            <!-- {{ course.description }} -->
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id
+            incidunt expedita, illo tempora labore esse optio eos voluptatibus
+            quisquam impedit veritatis quae pariatur accusantium, iste
+            blanditiis, harum adipisci beatae!
           </p>
         </div>
       </div>
@@ -38,3 +42,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['courses'],
+  created() {
+    console.log('my courses', this.courses)
+  },
+}
+</script>
