@@ -22,6 +22,22 @@
       & li {
         margin-bottom: 1.5rem;
         font-size: 1.1rem;
+        transition: all 0.5s;
+        position: relative;
+        cursor: pointer;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0.15rem;
+          left: -0.5rem;
+          height: 90%;
+          width: 4px;
+          background-color: $orange;
+        }
+      }
+
+      & li:hover {
+        margin-left: 0.4rem;
       }
     }
 
@@ -52,9 +68,25 @@
     padding: 3rem;
     background-color: $background;
 
+    &__data {
+      margin-bottom: 2rem;
+      font-family: 'Open sans', sans-serif;
+      font-weight: 600;
+      color: $dark_blue;
+
+      & h3 {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+
+      & li {
+        font-size: 1.1rem;
+      }
+    }
+
     & button {
       background-color: #03506f;
-      padding: 0.5rem 1rem;
+      padding: 0 0.5rem;
       color: white;
       font-weight: 600;
       font-family: 'Open Sans', sans-serif;
@@ -64,7 +96,7 @@
       transition: all 0.2s;
 
       &:hover {
-        transform: translateY(-0.25rem);
+        transform: translateY(-0.15rem);
       }
 
       &:active {
@@ -77,20 +109,17 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 2rem;
-
-      & .save {
-        background-color: $orange;
-      }
     }
 
     &__section {
       background-color: #dae6eb;
       border-radius: 3px;
-      padding: 2rem;
+      padding: 1rem 2rem;
       margin-bottom: 2rem;
 
       & .lecture {
         margin-bottom: 1rem;
+        margin-top: 1rem;
         background-color: #007965;
         font-size: 1rem;
       }
@@ -100,7 +129,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.5rem;
 
       & label {
         font-size: 1.1rem;
@@ -132,6 +161,12 @@
       border-radius: 3px;
       background-color: #c3d9db;
       margin-bottom: 2rem;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+    }
+
+    &__form {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -173,6 +208,12 @@
         background-color: #ebfeff;
         outline: none;
       }
+    }
+
+    & .save {
+      background-color: $orange;
+      padding: 0.1rem 0.5rem;
+      font-size: 1rem;
     }
   }
 }
