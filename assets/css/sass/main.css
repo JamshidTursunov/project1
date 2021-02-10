@@ -2505,15 +2505,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .courses__form button {
-  background-color: #ff9900;
+  background-color: #e12e2e;
+  box-shadow: 0 0.1rem 2rem rgba(225, 46, 46, 0.2);
   border-radius: 5px;
   padding: 0.3rem 0.5rem;
   color: white;
   font-weight: 600;
   margin-top: 0.8rem;
   font-size: 1.5rem;
-  box-shadow: 0 0.1rem 2rem rgba(255, 153, 0, 0.2);
   transition: all 0.2s;
+}
+
+.courses__form button:last-child {
+  background-color: #35973d;
+  box-shadow: 0 0.1rem 2rem rgba(53, 151, 61, 0.2);
 }
 
 .courses__form button:hover {
