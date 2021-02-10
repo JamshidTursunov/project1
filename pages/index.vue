@@ -6,7 +6,7 @@
       <section-2 class="limit-size" />
       <section-3 class="limit-size" />
       <section-4 class="custom-p" />
-      <section-5 class="custom-p" />
+      <section-5 class="custom-p" :courses="allCourses" />
       <section-6 class="custom-p" v-if="!$auth.loggedIn" />
       <section-7 />
     </div>
@@ -25,11 +25,16 @@ export default {
       isLoading: true,
     }
   },
+  computed: {
+    allCourses() {
+      return this.$store.getters['course/getAllCourseData']
+    },
+  },
   async created() {
     await this.$store.dispatch('userModule/GET_USER')
     await this.createToast()
-
-    // this.isLoading = false
+    await this.$store.dispatch('course/allCourses')
+    this.isLoading = false
   },
   methods: {
     createToast() {

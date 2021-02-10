@@ -36,36 +36,8 @@
 export default {
   name: 'myCart',
   layout: 'userAccount',
-  middleware: 'routeRedirect',
   data() {
-    return {
-      selectedLink: null,
-      toggleLinks: [
-        {
-          id: 1,
-          name: 'Category',
-          toUrl: '/useraccount/mylearning/category',
-        },
-        {
-          id: 2,
-          name: 'Progress',
-          toUrl: '/useraccount/mylearning/progress',
-        },
-        {
-          id: 3,
-          name: 'Instructor',
-          toUrl: '/useraccount/mylearning/instructor',
-        },
-      ],
-    }
-  },
-  created() {
-    this.selectedLink = this.toggleLinks[0].id
-  },
-  methods: {
-    selectLink(id) {
-      this.selectedLink = id
-    },
+    return {}
   },
 }
 </script>

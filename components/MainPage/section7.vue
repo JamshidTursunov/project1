@@ -11,7 +11,7 @@
         <img src="~assets/images/greatsoft.png" alt="greatsoft" />
       </div>
       <div class="col-md-10">
-        <vueperslides :mentors="mentors" />
+        <vueperslides :mentors="mentorDetails" />
       </div>
     </div>
   </div>
@@ -28,6 +28,14 @@ export default {
     ...mapGetters({
       mentors: 'mentorModule/getMentors',
     }),
+    mentorDetails() {
+      const api = 'https://greatsoft-academy.herokuapp.com'
+      const mentorDetail = this.mentors.map((mentor) => ({
+        ...mentor,
+        mentorImg: api + mentor.image,
+      }))
+      return mentorDetail
+    },
   },
   async created() {
     await this.$store.dispatch('mentorModule/getMentors')

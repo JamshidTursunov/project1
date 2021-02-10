@@ -31,6 +31,18 @@ export const mutations = {
 }
 
 export const actions = {
+  async allCourses({ commit }) {
+    try {
+      const { data } = await this.$axios.get(
+        `course/?lang=${this.$i18n.locale}`
+      )
+
+      commit('setAllCourseData', data)
+    } catch (err) {
+      console.log(err)
+    }
+  },
+
   async initSingleCourseData({ commit, dispatch }, payload) {
     try {
       const { data } = await this.$axios.get(`course/${payload}/`)
@@ -70,6 +82,7 @@ export const getters = {
   getAllCourseData(state) {
     return state.allCourseData
   },
+
   getCourseData(state) {
     return state.courseData
   },

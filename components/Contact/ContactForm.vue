@@ -67,12 +67,7 @@ export default {
   methods: {
     async sendMessage() {
       await this.$store.dispatch('ContactUs/sendMessage', this.form)
-      const alertNotif = {
-        dismissCountDownTimer: 5,
-        variantColor: 'success',
-        alertMessage: 'your message has been sent successfully',
-      }
-      this.$emit('showAlertMessage', alertNotif)
+
       if (!this.$auth.loggedIn) {
         this.form.message = ''
         this.form.name = ''

@@ -121,8 +121,6 @@
   </b-navbar>
 </template>
 
-<<<<<<< HEAD <<<<<<< HEAD ======= <<<<<<< HEAD ======= >>>>>>>
-ca1e03bdf182ad7cd3079373990bb32668bdfaa7
 <script>
 export default {
   data() {

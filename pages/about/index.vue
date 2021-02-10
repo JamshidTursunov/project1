@@ -1,9 +1,12 @@
 <template>
-  <section class="about">
-    <Promo />
-    <Instructors />
-    <Partners />
-  </section>
+  <div>
+    <spinner v-if="isLoading" />
+    <section v-else class="about">
+      <Promo />
+      <Instructors />
+      <Partners />
+    </section>
+  </div>
 </template>
 
 <script>
@@ -15,6 +18,14 @@ export default {
     Partners,
     Promo,
     Instructors,
+  },
+  data() {
+    return {
+      isLoading: true,
+    }
+  },
+  created() {
+    this.isLoading = false
   },
 }
 </script>

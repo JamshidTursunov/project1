@@ -23,9 +23,7 @@ export const actions = {
   async GET_USER({ commit }) {
     await this.$axios
       .get('user/profile/')
-      .then((res) => {
-        console.log('[GET USER INFO:] ', res)
-      })
+      .then((res) => console.log(res))
       .catch((err) => console.log(err))
   },
 }

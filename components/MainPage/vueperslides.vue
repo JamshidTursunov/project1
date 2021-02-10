@@ -11,26 +11,37 @@
     <vueper-slide class="cart-self" v-for="mentor in mentors" :key="mentor.id">
       <template v-slot:content>
         <div class="cart-block">
-          <img class="cart-image" :src="mentor.image" alt="..." />
+          <img class="cart-image" :src="mentor.mentorImg" alt="..." />
           <div class="w-full flex justify-between items-center">
             <p class="user-name">{{ mentor.user }}</p>
-            <!-- <p class="user-level">{{ i.level }}</p> -->
           </div>
           <div class="w-full flex justify-between items-center my-2">
             <div class="flex flex-wrap user-profession pb-1">
-              <p v-for="prof in mentor.services" :key="prof">
-                {{ prof }}
+              <p v-for="(prof, index) in mentor.services" :key="index">
+                {{ prof
+                }}<span
+                  v-if="
+                    mentor.services.length > 1 &&
+                    mentor.services.length - 1 != index
+                  "
+                  >, &nbsp;
+                </span>
               </p>
             </div>
             <b-form-rating
-              style="border: 1px solid red; background: transparent; width: 50%"
               no-border
               v-model="ratingValue"
               variant="warning"
-              class="mb-2 ml-auto pl-4"
+              class="form-rating"
               readonly
               size="xs"
             ></b-form-rating>
+          </div>
+          <div class="w-full flex justify-between items-center my-2">
+            <div class="flex flex-wrap user-profession pb-1">
+              <p>Current work</p>
+            </div>
+            <p class="user-level">{{ mentor.current_work }}</p>
           </div>
           <div class="w-full flex items-center mb-3">
             <p class="user-work-experience">Work <br />experience</p>
@@ -38,7 +49,6 @@
           </div>
           <div class="w-full flex user-experience">
             <p>{{ mentor.description }}</p>
-            {{ mentor.image }}
           </div>
         </div>
       </template>
@@ -68,64 +78,6 @@ export default {
         360: { visibleSlides: 1, slideMultiple: 2, slideRatio: 2 / 1.8 },
       },
       ratingValue: 4,
-      slides: [
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur  ',
-          image: require('@/assets/images/cart-image-1.png'),
-        },
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus ipsum, dolor sit amet ',
-          image: require('@/assets/images/cart-image-2.png'),
-        },
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariatur ',
-          image: require('@/assets/images/cart-image-3.png'),
-        },
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde necessitatibus, Lorem ipsum, dolor sit amet o unde ',
-          image: require('@/assets/images/cart-image-4.png'),
-        },
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero  ',
-          image: require('@/assets/images/cart-image-1.png'),
-        },
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, ipisicing elit. Explicabo debitis hic libero unde necessitatibus,pariaturComdolor sit amet conss hic libero unde ',
-          image: require('@/assets/images/cart-image-2.png'),
-        },
-        {
-          username: 'Sarvar Erkinjonov',
-          level: 'senior',
-          profession: 'Graphics & UX/UI designer',
-          experience:
-            'Complex content with Vue.js Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo debitis hic libero unde  ',
-          image: require('@/assets/images/cart-image-3.png'),
-        },
-      ],
     }
   },
 }
@@ -191,10 +143,16 @@ export default {
   overflow: hidden;
 }
 .work-line {
-  height: 2px;
+  height: 1px;
   background: rgba(51, 51, 102, 0.2);
 }
 .vueperslides__arrow {
   color: yellow;
+}
+.form-rating {
+  background: transparent;
+  width: 50%;
+  padding: 0 0;
+  margin: 0 0;
 }
 </style>

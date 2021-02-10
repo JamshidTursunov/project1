@@ -11,7 +11,9 @@
           No need to worry, we’ll help you<br />
           make sense of it all.
         </p>
-        <button class="btn-quiz px-2">Take Our 5 minute Quiz</button>
+        <button class="btn-quiz px-2" @click="$router.push('/quiz/subject/')">
+          Take Our 5 minute Quiz
+        </button>
       </div>
       <div class="col-md-8 col-sm-12 row m-0">
         <div class="col-md-12 text-start text-white mt-5">
