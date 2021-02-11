@@ -8,6 +8,7 @@
 <script>
 export default {
   name: 'subject-id',
+
   asyncData: async ({ $axios, route }) => {
     const subjectId = route.params.id
     const subject = (await $axios.get(`quiz/subject/${subjectId}`)).data

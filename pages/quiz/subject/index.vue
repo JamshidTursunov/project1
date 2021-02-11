@@ -1,28 +1,26 @@
 <template>
-  <div>
-    <spinner v-if="isLoading" />
-    <div v-else class="container-fluid quiz-page">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <h1 class="text-center my-2 heading">
-            select subject you want to pass quiz
-          </h1>
-          <div class="cards">
-            <b-card
-              v-for="subject in subjects"
-              :key="subject.id"
-              img-src="https://picsum.photos/900/250/?image=3"
-              img-alt="Card image"
-              img-top
-            >
-              <b-card-text>
-                <p class="mb-2 course-title">{{ subject.title }}</p>
-                <nuxt-link :to="`/quiz/subject/${subject.id}`"
-                  >start quiz now</nuxt-link
-                >
-              </b-card-text>
-            </b-card>
-          </div>
+  <spinner v-if="isLoading" />
+  <div v-else class="container-fluid quiz-page">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center my-2 heading">
+          select subject you want to pass quiz
+        </h1>
+        <div class="cards">
+          <b-card
+            v-for="subject in subjects"
+            :key="subject.id"
+            img-src="https://picsum.photos/900/250/?image=3"
+            img-alt="Card image"
+            img-top
+          >
+            <b-card-text>
+              <p class="mb-2 course-title">{{ subject.title }}</p>
+              <nuxt-link :to="`/quiz/subject/${subject.id}`"
+                >start quiz now</nuxt-link
+              >
+            </b-card-text>
+          </b-card>
         </div>
       </div>
     </div>
