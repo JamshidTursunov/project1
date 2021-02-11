@@ -9,10 +9,9 @@
         v-show="index === currentIndex"
       >
         <h1 class="question-text">{{ question }}</h1>
-        <b-form-group :label="question.question" v-slot="{ ariaDescribedby }">
+        <b-form-group :label="question.question">
           <b-form-radio
             v-model="answer[index]"
-            :aria-describedby="ariaDescribedby"
             name="some-radios"
             value="A"
             @change="check()"
@@ -20,7 +19,6 @@
           >
           <b-form-radio
             v-model="answer[index]"
-            :aria-describedby="ariaDescribedby"
             name="some-radios"
             value="B"
             @change="check()"
@@ -28,7 +26,6 @@
           >
           <b-form-radio
             v-model="answer[index]"
-            :aria-describedby="ariaDescribedby"
             name="some-radios"
             value="C"
             @change="check()"
@@ -36,7 +33,6 @@
           >
           <b-form-radio
             v-model="answer[index]"
-            :aria-describedby="ariaDescribedby"
             name="some-radios"
             value="D"
             @change="check()"
