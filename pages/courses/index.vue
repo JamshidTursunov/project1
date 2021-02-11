@@ -1,10 +1,91 @@
 <template>
-  <section class="allCourses"></section>
+  <section class="allCourses">
+    <div class="container-fluid">
+      <div
+        v-for="(direction, i) in getAllCoursesData"
+        :key="i"
+        class="row mb-6"
+      >
+        <div class="allCourses__container">
+          <h1>{{ direction[0].yonalish }}</h1>
+          <div class="row">
+            <div
+              v-for="(item, i) in direction"
+              :key="i"
+              class="col-lg-3 col-md-4 col-sm-12 mb-5"
+            >
+              <nuxt-link
+                :to="localePath(`/courses/${item.id}`)"
+                class="allCourses__link"
+              >
+                <div class="allCourses__wrapper">
+                  <div class="allCourses__photo">
+                    <img
+                      :src="item.icon"
+                      alt="course photo"
+                      class="allCourses__image"
+                    />
+                  </div>
+                  <div class="allCourses__content">
+                    <h2>
+                      {{
+                        description == 'en'
+                          ? item.course_name_en
+                          : description == 'ru'
+                          ? item.course_name_ru
+                          : item.course_name_uz
+                      }}
+                    </h2>
+                    <p>
+                      {{
+                        description == 'en'
+                          ? item.description_en
+                          : description == 'ru'
+                          ? item.description_ru
+                          : item.description_uz
+                      }}
+                    </p>
+                    <h3>Prices:</h3>
+                    <ul>
+                      <li>Basic: {{ item.price_base }} UZS</li>
+                      <li>Pro: {{ item.price_pro }} UZS</li>
+                      <li>Premium: {{ item.price_pre }} UZS</li>
+                    </ul>
+                  </div>
+                </div>
+              </nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-  middleware: 'routeRedirect',
+  created() {},
+  computed: {
+    getAllCoursesData() {
+      const courseData = []
+      const allCourseDirections = this.$store.getters[
+        'course/getAllCourseData'
+      ].map((item) => item.yonalish)
+      const allCourses = this.$store.getters['course/getAllCourseData']
+      const iniqueDirections = [...new Set(allCourseDirections)]
+      for (let i = 0; i < iniqueDirections.length; i++) {
+        const singleCourseDirection = allCourses.filter(
+          (item) => item.yonalish == iniqueDirections[i]
+        )
+        courseData.push(singleCourseDirection)
+      }
+      return courseData
+    },
+
+    description() {
+      return this.$i18n.locale
+    },
+  },
 }
 </script>
 

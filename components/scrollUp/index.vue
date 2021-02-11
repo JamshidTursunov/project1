@@ -48,15 +48,15 @@ export default {
 .up-btn {
   position: fixed;
   bottom: 30px;
-  right: 20px;
+  left: 20px;
   color: white;
   cursor: pointer;
   border-radius: 50%;
-  padding: 0.6rem 1rem;
-  z-index: 9999;
+  padding: 0.4rem 0.8rem;
+  z-index: 999;
   border: 1px solid #ccc;
   background-color: #5d30db;
-  animation: leap 0.8s linear infinite alternate;
+  animation: leap 0.6s linear infinite alternate;
   transition: all 0.2s;
 }
 
@@ -66,7 +66,7 @@ export default {
 
 @keyframes leap {
   from {
-    transform: translateY(1rem);
+    transform: translateY(0.7rem);
   }
 
   to {

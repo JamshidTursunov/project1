@@ -5,6 +5,7 @@ export const state = () => ({
   allPromoVideo: [],
   singlePromoVideo: [],
   toastShow: false,
+  logOutToast: false,
 })
 
 export const mutations = {
@@ -15,7 +16,6 @@ export const mutations = {
     state.courseData = data
   },
   setInstructorName(state, data) {
-    console.log(data)
     state.instructorName = data
   },
   setAllPromoVideo(state, data) {
@@ -27,6 +27,9 @@ export const mutations = {
 
   setToastShow(state, data) {
     state.toastShow = data
+  },
+  setLogOutToast(state, data) {
+    state.logOutToast = data
   },
 }
 
@@ -47,7 +50,6 @@ export const actions = {
     try {
       const { data } = await this.$axios.get(`course/${payload}/`)
       commit('setCourseData', data)
-      console.log(data)
       dispatch('initIntructorName', data.instructor)
     } catch (err) {
       console.log(err)
@@ -57,7 +59,6 @@ export const actions = {
   async initIntructorName({ commit }, payload) {
     try {
       const { data } = await this.$axios.get(`course/instructor/${payload}/`)
-      console.log('instructor data', data)
       commit('setInstructorName', data)
     } catch (err) {
       console.log(err)
@@ -75,6 +76,9 @@ export const actions = {
 
   initToastShow({ commit }, payload) {
     commit('setToastShow', payload)
+  },
+  initLogOutToast({ commit }, payload) {
+    commit('setLogOutToast', payload)
   },
 }
 
@@ -94,5 +98,8 @@ export const getters = {
   },
   getToastShow(state) {
     return state.toastShow
+  },
+  getLogOutToast(state) {
+    return state.logOutToast
   },
 }

@@ -24,10 +24,10 @@
             <p>
               {{
                 this.$i18n.locale == 'en'
-                  ? courseData.descriotion_en
+                  ? courseData.description_en
                   : this.$i18n.locale == 'ru'
-                  ? courseData.descriotion_ru
-                  : courseData.descriotion_uz
+                  ? courseData.description_ru
+                  : courseData.description_uz
               }}
             </p>
             <p>

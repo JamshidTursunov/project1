@@ -96,13 +96,7 @@ export default {
         })
         .catch((err) => {
           console.log('[GET CODE ERROR]', err)
-          this.showToast(
-            'danger',
-            'b-toaster-bottom-right',
-            '2000',
-            'Xatolik',
-            "Anketa to'gri to'ldirilmagan"
-          )
+          this.showToast('danger', 'Xatolik', "Anketa to'gri to'ldirilmagan")
         })
     },
     async checkCode(payload) {
@@ -116,13 +110,7 @@ export default {
         })
         .catch((err) => {
           console.log(err)
-          this.showToast(
-            'danger',
-            'b-toaster-bottom-right',
-            '2000',
-            'Xatolik',
-            'Kod xato terilgan'
-          )
+          this.showToast('danger', 'Xatolik', 'Kod xato terilgan')
         })
 
       if (this.form.token != '' && this.form.token != null) {

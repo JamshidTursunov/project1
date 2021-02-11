@@ -23,6 +23,10 @@ export default {
         src: 'https://kit.fontawesome.com/fe43db86c1.js',
         crossorigin: 'anonymous',
       },
+
+      {
+        src: '//code.jivosite.com/widget/TuzHwIPOp0',
+      },
     ],
   },
 
@@ -32,6 +36,7 @@ export default {
     { src: '~/plugins/yMap', mode: 'client' },
     { src: '~/plugins/aos', mode: 'client' },
     '~/plugins/clickaway',
+    { src: '~/plugins/localStorage.js', ssr: false },
   ],
 
   components: true,

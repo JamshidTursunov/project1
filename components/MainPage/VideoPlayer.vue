@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      postImage: require('~/assets/images/videoImage.jpg'),
+      postImage: '',
       videoSrc: '',
     }
   },
@@ -31,6 +31,7 @@ export default {
   methods: {
     changeVideo() {
       if (this.videoData) {
+        this.postImage = this.videoData.video_image
         this.videoSrc = this.videoData.video
       }
     },

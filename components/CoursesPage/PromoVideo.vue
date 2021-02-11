@@ -46,11 +46,11 @@ export default {
     promoDescription() {
       if (this.promo) {
         if (this.$i18n.locale == 'en') {
-          return this.promo[0].video_desctirption_en.trim().split(',')
+          return this.promo[0].video_description_en.trim().split(',')
         } else if (this.$i18n.locale == 'ru') {
-          return this.promo[0].video_desctirption_ru.trim().split(',')
+          return this.promo[0].video_description_ru.trim().split(',')
         } else {
-          return this.promo[0].video_desctirption_uz.trim().split(',')
+          return this.promo[0].video_description_uz.trim().split(',')
         }
       }
     },

@@ -36,13 +36,13 @@ export default {
     await this.$store.dispatch('course/allCourses')
     this.isLoading = false
   },
+
+  updated() {},
   methods: {
     createToast() {
       if (this.$store.getters['course/getToastShow']) {
         this.showToast(
           'success',
-          'b-toaster-bottom-right',
-          '3000',
           'Muvafaqiyatli',
           "Muvafaqiyatli ro'yxatdan o'tdingiz"
         )

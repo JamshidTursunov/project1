@@ -11,7 +11,13 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
+        <b-nav-item :to="localePath(`/courses`)">
+          {{ $t('navbar.AllCourses') }}
+        </b-nav-item>
+        <!-- <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
+          <b-dropdown-item :to="localePath(`/courses`)">{{
+            $t('navbar.AllCourses')
+          }}</b-dropdown-item>
           <b-dropdown-item
             v-for="navItem in allData"
             :id="navItem.id"
@@ -19,7 +25,7 @@
             :to="localePath(`/courses/${navItem.id}`)"
             >{{ navItem.courseName }}</b-dropdown-item
           >
-        </b-nav-item-dropdown>
+        </b-nav-item-dropdown> -->
         <b-nav-item :to="localePath('/pricing')">
           {{ $t('navbar.PlansAndPricing') }}
         </b-nav-item>
@@ -82,8 +88,7 @@
                   {{ $auth.user.user.last_name }}
                 </span>
                 <br />
-                <span class="user-email-text"
-                  >+998
+                <span class="user-email-text">
                   {{ $auth.user.user.phone_number }}
                 </span>
               </p>
@@ -102,7 +107,7 @@
           <b-dropdown-item href="/useraccount/mypurchase"
             >Purchage history</b-dropdown-item
           >
-          <b-dropdown-item href="/" @click.prevent="$auth.logout()"
+          <b-dropdown-item href="/" @click.prevent="showLogOutInfo()"
             >Logout</b-dropdown-item
           >
         </b-dropdown>
@@ -122,7 +127,9 @@
 </template>
 
 <script>
+import Toast from '~/utils/toast.js'
 export default {
+  mixins: [Toast],
   data() {
     return {
       loggedIn: false,
@@ -130,9 +137,9 @@ export default {
   },
 
   methods: {
-    logout() {
-      this.$store.dispatch('auth/logout')
-      console.log('logout')
+    showLogOutInfo() {
+      this.$auth.logout()
+      this.showToast('info', 'Xabar', 'Akkauntdan chiqdingiz')
     },
   },
 

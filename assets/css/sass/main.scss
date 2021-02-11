@@ -14,6 +14,7 @@
 @import 'components/controlFields/button';
 @import 'components/controlFields/input';
 
+@import 'components/coursesPage/allCourses';
 @import 'components/coursesPage/description';
 @import 'components/coursesPage/introduction';
 @import 'components/coursesPage/promoVideo';
@@ -21,6 +22,10 @@
 @import 'components/forms/forms';
 
 @import 'components/instructorApplication/instructorApplication';
+
+@import 'components/instructorPage/instructorMainPage';
+@import 'components/instructorPage/coursesAll';
+@import 'components/instructorPage/coursesSingle';
 
 @import 'components/instructors/instructorContent';
 @import 'components/instructors/instructorHeader';
