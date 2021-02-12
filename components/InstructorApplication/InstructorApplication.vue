@@ -23,7 +23,7 @@
           <span>{{ label }}</span> <span>Upload file</span>
         </label>
       </div>
-      <Input inputPlaceholder="Send your portfolio" />
+      <Input inputPlaceholder="Send link of your portfolio" />
       <Input
         controlType="textarea"
         textPlaceholder="Short information about your skills"

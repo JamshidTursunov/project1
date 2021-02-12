@@ -1,16 +1,24 @@
 <template>
   <div class="communication">
-    <h1>Communication</h1>
+  
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {}
+  },
+  methods: {
+    callback(key) {
+      console.log(key)
+    },
+  },
+}
 </script>
 
 <style scoped>
 .communication {
   height: 50rem;
-  background-color: lightcoral;
 }
 </style>

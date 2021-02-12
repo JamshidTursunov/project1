@@ -1985,6 +1985,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 600;
   font-size: 42px;
   margin-bottom: 1rem;
+  color: #333366;
 }
 
 .introduction__content p {
@@ -2608,11 +2609,112 @@ Due to the split circle of progress-left and progress right, we must use the ani
   transform: translateY(-0.1rem);
 }
 
+.landPage__container {
+  height: 100%;
+  padding: 3rem;
+  background-color: #f3f8ff;
+}
+
+.landPage__box {
+  background-color: #dae6eb;
+  padding: 1rem 2rem;
+  border: 1px solid #b6c2c7;
+  border-radius: 2px;
+}
+
+.landPage__label {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #333366;
+}
+
+.landPage__input {
+  margin-bottom: 0.7rem;
+}
+
+.landPage__group {
+  margin-bottom: 1rem;
+}
+
+.performance {
+  padding: 3rem 9.3rem;
+  background-color: #f3f8ff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.performance__container {
+  padding: 1rem 3rem 3rem;
+  background-color: white;
+  border-radius: 3px;
+  height: 100%;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.performance__tab {
+  color: #333366;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.performance__span {
+  color: #333366;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.performance__wrapper {
+  padding: 1.6rem 0.5rem;
+}
+
+.performance__filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.performance__price {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  margin: 0 0 1rem 1rem;
+  background-color: #f7f8fa;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.performance__select {
+  margin: 0 1rem 1rem 0;
+}
+
+.performance__select .ant-select-selection {
+  background-color: #5d30db;
+  border: none;
+  font-size: 1rem;
+}
+
+.performance__select .ant-select-selection__placeholder {
+  color: white;
+}
+
+.performance__select .ant-select-arrow {
+  color: white;
+}
+
+.performance__select .ant-select-selection-selected-value {
+  color: white;
+}
+
+.performance__chart {
+  height: 25rem;
+}
+
 .coursesSingle .sidebar {
   display: flex;
   flex-direction: column;
   background-color: #333366;
   padding: 3rem 3rem 25rem;
+  height: 100%;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
 }
@@ -2638,7 +2740,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   cursor: pointer;
 }
 
-.coursesSingle .sidebar ul li::after {
+.coursesSingle .sidebar ul li.active::after {
   content: '';
   position: absolute;
   top: 0.15rem;

@@ -83,7 +83,26 @@ export default {
     }
   },
 
-  created() {},
+  created() {
+    // this.$axios.get('course/').then((res) => {
+    //   console.log('All courses', res.data)
+    // })
+    // this.$axios.get('course/2/').then((res) => {
+    //   console.log('Single course', res.data)
+    // })
+    // this.$axios.get('course/video/').then((res) => {
+    //   console.log('All videos', res.data)
+    // })
+    // this.$axios.get('course/video/2/').then((res) => {
+    //   console.log('Single video', res.data)
+    // })
+    // this.$axios.get('course/lecture/').then((res) => {
+    //   console.log('all lectures', res.data)
+    // })
+    // this.$axios.get('course/lecture/2/').then((res) => {
+    //   console.log('single lecture', res.data)
+    // })
+  },
 
   methods: {
     addCourse() {
