@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import CoursesField from '~/components/Instructor-page/CoursesField.vue'
-import CoursesLandPage from '~/components/Instructor-page/CoursesLandPage.vue'
+import CoursesField from '~/components/Instructor-page/Courses/CoursesField'
+import CoursesLandPage from '~/components/Instructor-page/Courses/CoursesLandPage'
 export default {
   components: {
     'courses-field': CoursesField,

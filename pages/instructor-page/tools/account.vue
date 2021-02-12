@@ -1,9 +1,15 @@
 <template>
-  <div>Account</div>
+  <div class="courses__account">
+    <CoursesAccount />
+  </div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style></style>
+<style scoped>
+.courses__account {
+  height: 100%;
+}
+</style>
