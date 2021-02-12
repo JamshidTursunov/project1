@@ -9,7 +9,7 @@ export function instructorPageRedirect({ route, redirect }) {
     route.fullPath === '/instructor-page/' ||
     route.fullPath === '/instructor-page'
   ) {
-    return redirect('/en/instructor-page/courses')
+    return redirect('/instructor-page/courses')
   } else if (
     route.fullPath === '/ru/instructor-page/' ||
     route.fullPath === '/ru/instructor-page'
