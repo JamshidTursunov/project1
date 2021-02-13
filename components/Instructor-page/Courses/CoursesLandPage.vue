@@ -56,9 +56,28 @@
 <script>
 export default {
   data() {
+    // courseDetail: {
+    //     titleEn: '',
+    //     titleRu: '',
+    //     titleUz: '',
+    //     descriptionEn: '',
+    //     descriptionRu: '',
+    //     descriptionUz: '',
+    //     requirementEn: '',
+    //     requirementRu: '',
+    //     requirementUz: '',
+    //     contentEn: '',
+    //     contentRu: '',
+    //     contentUz: '',
+    //     instructorNameEn: '',
+    //     instructorNameRu: '',
+    //     instructorNameUz: '',
+    //     coursePromoVideo: '',
+    //     image: '',
+    //   },
     return {
+      allInfo: [],
       courseDetail: {
-        allInfo: [],
         coursePromoVideo: '',
         image: '',
       },
@@ -138,10 +157,7 @@ export default {
   },
   computed: {},
   methods: {
-    show() {
-      console.log('fsdfsd')
-      console.log(this.courseDetail.allInfo)
-    },
+    show() {},
   },
 }
 </script>
