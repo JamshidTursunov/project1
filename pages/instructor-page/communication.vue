@@ -1,11 +1,13 @@
 <template>
   <div class="communication">
-  
+    <OnGoingPage />
   </div>
 </template>
 
 <script>
+import OnGoingPage from '~/components/OnGoingPage.vue'
 export default {
+  components: { OnGoingPage },
   data() {
     return {}
   },

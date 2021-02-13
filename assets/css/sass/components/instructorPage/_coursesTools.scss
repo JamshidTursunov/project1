@@ -75,6 +75,9 @@
         align-items: center;
         border-bottom: 1px solid rgba(51, 51, 102, 0.5);
       }
+      &:nth-child(3) {
+        border-top: 1px solid rgba(51, 51, 102, 0.5);
+      }
       & h1 {
         font-weight: bold;
         font-size: 26px;
@@ -85,6 +88,34 @@
         font-size: 18px;
         color: $dark_blue;
       }
+    }
+  }
+
+  .tools__photo {
+    &__box {
+      display: flex;
+      justify-content: center;
+    }
+    &__photo {
+      height: 17rem;
+      display: flex;
+      width: 93%;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      outline-offset: 1.5rem;
+      background-color: rgba(196, 196, 196, 0.15);
+      outline: 1px solid $dark_blue;
+      margin-bottom: 4rem;
+    }
+    &__img {
+      height: 100%;
+    }
+  }
+
+  .tools__account {
+    &__label {
+      font-size: 1.1rem;
     }
   }
 }

@@ -2632,6 +2632,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 0.7rem;
 }
 
+.landPage__btn {
+  display: flex;
+  justify-content: flex-end !important;
+}
+
 .landPage__group {
   margin-bottom: 1rem;
 }
@@ -3040,6 +3045,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-bottom: 1px solid rgba(51, 51, 102, 0.5);
 }
 
+.instructorPage .tools__profile__wrapper:nth-child(3) {
+  border-top: 1px solid rgba(51, 51, 102, 0.5);
+}
+
 .instructorPage .tools__profile__wrapper h1 {
   font-weight: bold;
   font-size: 26px;
@@ -3050,6 +3059,32 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: normal;
   font-size: 18px;
   color: #333366;
+}
+
+.instructorPage .tools__photo__box {
+  display: flex;
+  justify-content: center;
+}
+
+.instructorPage .tools__photo__photo {
+  height: 17rem;
+  display: flex;
+  width: 93%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  outline-offset: 1.5rem;
+  background-color: rgba(196, 196, 196, 0.15);
+  outline: 1px solid #333366;
+  margin-bottom: 4rem;
+}
+
+.instructorPage .tools__photo__img {
+  height: 100%;
+}
+
+.instructorPage .tools__account__label {
+  font-size: 1.1rem;
 }
 
 .instructors__content {

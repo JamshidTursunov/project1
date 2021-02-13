@@ -20,9 +20,11 @@
             trim
           ></b-form-input>
         </div>
-        <b-button type="submit" size="md" variant="primary"
-          >Change data</b-button
-        >
+        <div class="landPage__group landPage__btn" role="group">
+          <b-button type="submit" size="md" variant="primary"
+            >Change data</b-button
+          >
+        </div>
       </form>
     </div>
   </div>

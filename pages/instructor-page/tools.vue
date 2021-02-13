@@ -55,7 +55,10 @@
 </template>
 
 <script>
+import { instructorToolsRedirect } from '~/middleware'
+
 export default {
+  middleware: [instructorToolsRedirect],
   data() {
     return {
       profileActive: true,

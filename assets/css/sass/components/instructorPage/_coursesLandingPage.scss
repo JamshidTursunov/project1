@@ -22,6 +22,11 @@
     margin-bottom: 0.7rem;
   }
 
+  &__btn {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+
   &__group {
     margin-bottom: 1rem;
   }
