@@ -3,24 +3,128 @@
     <div class="landPage__box">
       <transition name="fade">
         <form>
-          <div
-            v-for="(course, i) in courseData"
-            :key="i"
-            class="landPage__group"
-            role="group"
-          >
-            <label class="landPage__label" for="input-live-1">
-              {{ course.labelTitle }}
-            </label>
+          <div class="landPage__group" role="group">
+            <label class="landPage__label" for="input-live-1"
+              >Course Title:</label
+            >
             <b-form-input
-              @change="show"
-              v-for="(input, i) in course.inputs"
-              :key="i"
               class="landPage__input"
               id="input-live-1"
-              v-model="allInfo[i]"
-              :placeholder="input.placeholder"
+              v-model="courseDetail.titleEn"
+              placeholder="Enter course title in English"
               required
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.titleRu"
+              placeholder="Enter course title in Russian"
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.titleUz"
+              placeholder="Enter course title in Uzbek"
+              trim
+            ></b-form-input>
+          </div>
+          <div class="landPage__group" role="group">
+            <label class="landPage__label" for="input-live-2"
+              >Course Description:</label
+            >
+            <b-form-input
+              class="landPage__input"
+              id="input-live-2"
+              v-model="courseDetail.descriptionEn"
+              placeholder="Enter course description in English"
+              trim
+              required
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.descriptionRu"
+              placeholder="Enter course description in Russian"
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.descriptionUz"
+              placeholder="Enter course description in Uzbek"
+              trim
+            ></b-form-input>
+          </div>
+          <div class="landPage__group" role="group">
+            <label class="landPage__label" for="input-live-3"
+              >Course Requirement:</label
+            >
+            <b-form-input
+              class="landPage__input"
+              id="input-live-3"
+              v-model="courseDetail.requirementEn"
+              placeholder="Enter course requirement in English"
+              trim
+              required
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.requirementRu"
+              placeholder="Enter course requirement in Russian"
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.requirementUz"
+              placeholder="Enter course requirement in Uzbek"
+              trim
+            ></b-form-input>
+          </div>
+          <div class="landPage__group" role="group">
+            <label class="landPage__label" for="input-live-4"
+              >Course Content:</label
+            >
+            <b-form-input
+              class="landPage__input"
+              id="input-live-4"
+              v-model="courseDetail.contentEn"
+              placeholder="Enter course content in English"
+              trim
+              required
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.contentRu"
+              placeholder="Enter course content in Russian"
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.contentUz"
+              placeholder="Enter course content in Uzbek"
+              trim
+            ></b-form-input>
+          </div>
+          <div class="landPage__group" role="group">
+            <label class="landPage__label" for="input-live-6"
+              >Instructor Name:</label
+            >
+            <b-form-input
+              id="input-live-6"
+              class="landPage__input"
+              v-model="courseDetail.instructorNameEn"
+              required
+              placeholder="Enter instructor name in English letters"
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.instructorNameRu"
+              placeholder="Enter instructor name in Russian letters"
+              trim
+            ></b-form-input>
+            <b-form-input
+              class="landPage__input"
+              v-model="courseDetail.instructorNameUz"
+              placeholder="Enter instructor name in Uzbek letters"
               trim
             ></b-form-input>
           </div>
@@ -56,109 +160,30 @@
 <script>
 export default {
   data() {
-    // courseDetail: {
-    //     titleEn: '',
-    //     titleRu: '',
-    //     titleUz: '',
-    //     descriptionEn: '',
-    //     descriptionRu: '',
-    //     descriptionUz: '',
-    //     requirementEn: '',
-    //     requirementRu: '',
-    //     requirementUz: '',
-    //     contentEn: '',
-    //     contentRu: '',
-    //     contentUz: '',
-    //     instructorNameEn: '',
-    //     instructorNameRu: '',
-    //     instructorNameUz: '',
-    //     coursePromoVideo: '',
-    //     image: '',
-    //   },
     return {
-      allInfo: [],
       courseDetail: {
+        titleEn: '',
+        titleRu: '',
+        titleUz: '',
+        descriptionEn: '',
+        descriptionRu: '',
+        descriptionUz: '',
+        requirementEn: '',
+        requirementRu: '',
+        requirementUz: '',
+        contentEn: '',
+        contentRu: '',
+        contentUz: '',
+        instructorNameEn: '',
+        instructorNameRu: '',
+        instructorNameUz: '',
         coursePromoVideo: '',
         image: '',
       },
-      courseData: [
-        {
-          labelTitle: 'Course Title:',
-          inputs: [
-            {
-              placeholder: 'Enter course title in English',
-            },
-            {
-              placeholder: 'Enter course title in Russian',
-            },
-            {
-              placeholder: 'Enter course title in Uzbek',
-            },
-          ],
-        },
-        {
-          labelTitle: 'Course Description:',
-          inputs: [
-            {
-              placeholder: 'Enter course description in English',
-            },
-            {
-              placeholder: 'Enter course description in Russian',
-            },
-            {
-              placeholder: 'Enter course description in Uzbek',
-            },
-          ],
-        },
-        {
-          labelTitle: 'Course Requirement:',
-          inputs: [
-            {
-              placeholder: 'Enter course requirement in English',
-            },
-            {
-              placeholder: 'Enter course requirement in Russian',
-            },
-            {
-              placeholder: 'Enter course requirement in Uzbek',
-            },
-          ],
-        },
-        {
-          labelTitle: 'Course Content:',
-          inputs: [
-            {
-              placeholder: 'Enter course content in English',
-            },
-            {
-              placeholder: 'Enter course content in Russian',
-            },
-            {
-              placeholder: 'Enter course content in Uzbek',
-            },
-          ],
-        },
-        {
-          labelTitle: 'Instructor Name:',
-          inputs: [
-            {
-              placeholder: 'Enter instructor name in English letters',
-            },
-            {
-              placeholder: 'Enter instructor name in Russian letters',
-            },
-            {
-              placeholder: 'Enter instructor name in Uzbek letters',
-            },
-          ],
-        },
-      ],
     }
   },
   computed: {},
-  methods: {
-    show() {},
-  },
+  methods: {},
 }
 </script>
 
