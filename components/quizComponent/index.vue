@@ -1,15 +1,15 @@
 <template>
   <spinner v-if="isLoading" />
   <div v-else class="container-fluid">
-    <div v-if="!isFinished" class="row">
+    <div class="row">
       <div
         class="col-md-6 offset-md-3 wrapper"
         v-for="(question, index) in myQuestions"
         :key="index"
         v-show="index === currentIndex"
       >
-        <h1 class="question-text">{{ question }}</h1>
-        <b-form-group :label="question.question">
+        <h1 class="question-text">{{ question.question }}</h1>
+        <b-form-group>
           <b-form-radio
             v-model="answer[index]"
             name="some-radios"
@@ -39,24 +39,35 @@
             >{{ question.D }}</b-form-radio
           >
         </b-form-group>
-        {{ answer[index] }}
         <div class="btns row my-2">
-          <button class="btn btn-primary" @click="currentIndex--">
+          <button
+            class="btn btn-primary"
+            @click="currentIndex--"
+            :disabled="currentIndex === 0"
+          >
             Previous
           </button>
-          <button class="btn btn-primary" @click="next()">Next</button>
+          <button
+            class="btn btn-primary"
+            @click="next"
+            v-if="currentIndex != myQuestions.length - 1"
+          >
+            Next
+          </button>
+
+          <button v-else @click="finishAll">Finish all quiz answers</button>
         </div>
       </div>
     </div>
-    <is-finished-component v-else :score="totalScore" />
+    <quiz-modal />
   </div>
 </template>
 
 <script>
 import spinner from '../spinner.vue'
-import IsFinishedComponent from './isFinishedComponent.vue'
+import QuizModal from './quizModal.vue'
 export default {
-  components: { spinner, IsFinishedComponent },
+  components: { spinner, QuizModal },
   props: ['questions'],
   data() {
     return {
@@ -65,39 +76,53 @@ export default {
       answer: [],
       currentIndex: 0,
       myQuestions: [],
-      correct: 0,
-      setIndex: 0,
-      questionSet: [],
+      correctSet: [],
       totalScore: {
         persentageValue: null,
-        correctAnswers: this.correctSet,
         incorrectSet: 0,
-        correctSet: 0,
       },
     }
   },
   methods: {
+    reset() {
+      this.currentIndex = 0
+      this.isFinished = false
+    },
     check() {
-      console.log(this.answer)
       if (
         this.answer[this.currentIndex] ===
         this.myQuestions[this.currentIndex].answer
       ) {
-        this.totalScore.correctSet++
+        this.correctSet[this.currentIndex] = 1
       } else {
-        console.log('wrong answer')
-        this.totalScore.incorrectSet++
+        this.correctSet[this.currentIndex] = 0
       }
+      var correctIndex = null
+      this.correctSet.forEach((o) => {
+        if (o === 1) {
+          correctIndex++
+        }
+      })
+      this.$store.commit('quizModule/setCorrectIndex', correctIndex)
+    },
+    finishAll() {
+      const totalCorrect = this.$store.getters['quizModule/getCorrectIndex']
+      this.totalScore.persentageValue = Math.floor(
+        (totalCorrect / this.myQuestions.length) * 100
+      )
+      this.$store.commit(
+        'quizModule/setPersentage',
+        this.totalScore.persentageValue
+      )
+
+      console.log('finish button')
+      this.$nextTick(() => {
+        this.$bvModal.show('modal-quiz')
+      })
+      // await this.$router.push('/')
     },
     next() {
       this.currentIndex++
-      console.log('[NEXT][currentIndex]', this.currentIndex)
-      if (this.currentIndex === this.myQuestions.length) {
-        this.isFinished = true
-        this.totalScore.persentageValue = Math.floor(
-          (this.answer.length / this.myQuestions.length) * 100
-        )
-      }
     },
   },
   async created() {

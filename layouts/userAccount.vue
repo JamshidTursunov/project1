@@ -1,24 +1,9 @@
 <template>
   <div>
-    <Nuxt />
+    <Nuxt  />
     <scroll-up />
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      timerBool: true,
-    }
-  },
-  created() {
-    setTimeout(() => {
-      this.timerBool = false
-    }, 200)
-  },
-}
-</script>
 
 <style>
 *,

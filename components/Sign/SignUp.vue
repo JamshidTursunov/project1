@@ -34,7 +34,6 @@
       <form @submit.prevent="getCode">
         <Input inputPlaceholder="First Name" v-model="form.first_name" />
         <Input inputPlaceholder="Last Name" v-model="form.last_name" />
-        <!-- <Input type="email" inputPlaceholder="Email Address" /> -->
         <Input
           type="tel"
           inputPlaceholder="Phone number"

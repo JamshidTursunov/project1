@@ -164,9 +164,6 @@ export default {
 }
 </script>
 
-<<<<<<< HEAD ======= >>>>>>> 47debe607b67d12734f803cf3bf07e985a0784aa =======
->>>>>>> 3ac88574e3824c4f8e6e4ccc1eb82750752b8ac2 >>>>>>>
-ca1e03bdf182ad7cd3079373990bb32668bdfaa7
 <style scoped>
 .dropdown-fade-enter-active,
 .dropdown-fade-leave-active {

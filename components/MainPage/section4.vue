@@ -17,8 +17,14 @@
       </div>
       <div class="col-md-8 col-sm-12 row m-0">
         <div class="col-md-12 text-start text-white mt-5">
-          25 tests are ready to<br />
-          check your skills
+          <p v-if="!quizPercentage">
+            25 tests are ready to<br />
+            check your skills
+          </p>
+          <p v-else>
+            Your test results are ready <br />
+            status is: <span class="special-word">{{ quizPercentage }}%</span>
+          </p>
         </div>
 
         <div class="col-md-12 flex items-end">
@@ -45,8 +51,37 @@
 export default {
   data() {
     return {
-      isActive: 3,
+      isActive: 0,
     }
+  },
+  computed: {
+    quizPercentage() {
+      return localStorage.getItem('Percentage')
+    },
+  },
+  methods: {
+    determineLevel(payload) {
+      if (payload > -1 && payload <= 20) {
+        this.isActive = 1
+      } else if (payload > 20 && payload <= 40) {
+        this.isActive = 2
+      } else if (payload > 40 && payload <= 60) {
+        this.isActive = 3
+      } else if (payload > 60 && payload <= 80) {
+        this.isActive = 4
+      } else if (payload > 80) {
+        this.isActive = 5
+      }
+    },
+  },
+  created() {
+    this.determineLevel(this.quizPercentage)
   },
 }
 </script>
+
+<style scoped>
+.special-word {
+  color: orange;
+}
+</style>

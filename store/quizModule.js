@@ -1,15 +1,25 @@
 export const state = () => ({
-  trueAnswers: null,
+  totalPercentage: null,
+  correctIndex: null,
 })
 
 export const mutations = {
-  SET_ANSWERS(state, payload) {
-    state.trueAnswers = payload
+  setPersentage(state, percentage) {
+    localStorage.setItem('Percentage', percentage)
+    state.totalPercentage = percentage
+  },
+  setCorrectIndex(state, correctIndex) {
+    localStorage.setItem('correctAnswers', correctIndex)
+    state.correctIndex = correctIndex
   },
 }
-export const actions = {}
+// export const actions = {}  //for now is not usable
+
 export const getters = {
-  GET_ANSWERS(state) {
-    state.trueAnswers
+  getPercentage(state) {
+    return state.totalPercentage
+  },
+  getCorrectIndex(state) {
+    return state.correctIndex
   },
 }
