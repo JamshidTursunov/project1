@@ -55,7 +55,7 @@
             Next
           </button>
 
-          <button v-else @click="finishAll">Finish all quiz answers</button>
+          <button v-else @click="finishAll" class="btn btn-primary">Finish all quiz answers</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,15 @@
 <template>
   <spinner v-if="isLoading" />
   <div v-else class="container-fluid quiz-page">
-    <div class="row">
+    <div v-if="subjects.length === 0" class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center my-4 heading">Subject set is empty</h1>
+        <p class="text-center my-4 heading">
+          Please check your subjects list not empty or internet connection
+        </p>
+      </div>
+    </div>
+    <div v-else class="row">
       <div class="col-md-6 offset-md-3">
         <h1 class="text-center my-4 heading">
           Select subject you want to pass quiz
