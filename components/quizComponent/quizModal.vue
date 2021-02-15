@@ -32,7 +32,7 @@ export default {
       setTimeout(()=>{
         let section_4 = document.getElementById('section_4')
         section_4.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
-      }, 2000)
+      }, 2100)
       
 
     },
