@@ -33,7 +33,7 @@ export default {
     this.filteredQuestions = this.allQuestions.filter(
       (o) => o.subject === parseInt(`${this.$route.params.id}`)
     )
-    this.isLoading = false
+    setTimeout(()=>{ this.isLoading = false }, 100)
   },
 }
 </script>
