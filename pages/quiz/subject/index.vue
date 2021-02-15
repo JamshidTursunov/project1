@@ -1,27 +1,28 @@
 <template>
-  <div>
-    <spinner v-if="isLoading" />
-    <div v-else class="container-fluid quiz-page">
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <h1 class="text-center my-2 heading">
-            select subject you want to pass quiz
-          </h1>
-          <div class="cards">
-            <b-card
-              v-for="subject in subjects"
-              :key="subject.id"
-              img-src="https://picsum.photos/900/250/?image=3"
-              img-alt="Card image"
-              img-top
-            >
-              <b-card-text>
-                <p class="mb-2 course-title">{{ subject.title }}</p>
-                <nuxt-link :to="`/quiz/subject/${subject.id}`"
-                  >start quiz now</nuxt-link
-                >
-              </b-card-text>
-            </b-card>
+  <spinner v-if="isLoading" />
+  <div v-else class="container-fluid quiz-page">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center my-4 heading">
+          Select subject you want to pass quiz
+        </h1>
+        <div class="row mt-4">
+          <div
+            class="col-md-4 cart-wrap py-4 px-4 hover:shadow-lg"
+            v-for="subject in subjects"
+            :key="subject.id"
+          >
+            <div class="cart grid">
+              <h2 class="heading mb-4 text-center">
+                {{ subject.direction }}
+              </h2>
+              <nuxt-link
+                tag="button"
+                class="btn"
+                :to="`/quiz/subject/${subject.id}`"
+                >Start quiz
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -36,32 +37,19 @@ export default {
   name: 'subject',
   data() {
     return {
+      subjects: null,
       isLoading: true,
-      subjects: [
-        {
-          id: 1,
-          title: 'Front-end developer',
-        },
-        {
-          id: 2,
-          title: 'Back end developer',
-        },
-        {
-          id: 3,
-          title: 'Design Artichector',
-        },
-      ],
     }
   },
   methods: {
     async fetchSubjects() {
-      // await this.$axios
-      //   .get('quiz/subject/')
-      //   .then((res) => {
-      //     this.subjects = res.data
-      //     console.log('subjects', res)
-      //   })
-      //   .catch((err) => console.log(err))
+      await this.$axios
+        .get('quiz/subject/')
+        .then(({ data }) => {
+          this.subjects = data
+          console.log('subjects', this.subjects)
+        })
+        .catch((err) => console.log(err))
     },
   },
   async created() {
@@ -83,14 +71,24 @@ export default {
   color: #333366;
 }
 .quiz-page {
-  min-height: 75vh;
-  background: #f3f8ff;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f3f8ff;
+  z-index: 3;
 }
-.cards {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 1rem;
+.quiz-page::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  left: 0;
+  top: 0;
+  background: url('~assets/images/pricing/pricing.png');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
+
 .course-title {
   font-family: Open Sans;
   font-style: normal;
@@ -98,5 +96,24 @@ export default {
   font-size: 20px;
   line-height: 152%;
   color: #333366;
+}
+.cart-wrap {
+  transition: 0.5s;
+}
+.cart {
+  transition: 0.5s;
+}
+.cart-wrap:hover .cart {
+  transform: scale(1.1);
+}
+.btn {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.3125px;
+  line-height: 21px;
+  text-align: center;
+  background: #ff9900;
+  color: white;
 }
 </style>

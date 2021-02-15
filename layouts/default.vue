@@ -3,7 +3,7 @@
     <app-navbar-1 />
     <Nuxt />
     <app-footer />
-    <scroll-up />
+     <scroll-up />
   </div>
 </template>
 
