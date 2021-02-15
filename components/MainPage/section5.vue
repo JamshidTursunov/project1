@@ -5,7 +5,10 @@
         <h1 class="text-h1 my-4">Explore all our courses</h1>
       </div>
     </div>
-    <div class="row">
+    <div v-if="courses.length === 0" class="row">
+     <h1 class="ml-4 text-gray-400">No courses exist</h1>
+    </div>
+    <div class="row" v-else>
       <div class="col-md-4" v-for="course in courses" :key="course.id">
         <div class="cart grid hover:shadow-lg">
           <img

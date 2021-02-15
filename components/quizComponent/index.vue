@@ -55,7 +55,7 @@
             Next
           </button>
 
-          <button v-else @click="finishAll">Finish all quiz answers</button>
+          <button v-else @click="finishAll" class="btn btn-primary">Finish all quiz answers</button>
         </div>
       </div>
     </div>
@@ -97,6 +97,10 @@ export default {
       } else {
         this.correctSet[this.currentIndex] = 0
       }
+      setTimeout(()=>{
+         if(this.currentIndex === this.myQuestions.length-1){ return }
+         this.next()
+      },900)
       var correctIndex = null
       this.correctSet.forEach((o) => {
         if (o === 1) {

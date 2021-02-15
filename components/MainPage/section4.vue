@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid section-4">
+  <div class="container-fluid section-4" >
     <div class="row">
       <div class="col-md-4 col-sm-12 py-12">
         <h2 class="text-h2">
@@ -22,8 +22,8 @@
             check your skills
           </p>
           <p v-else>
-            Your test results are ready <br />
-            status is: <span class="special-word">{{ quizPercentage }}%</span>
+            Test results are ready: <br />
+            Your status is: <span class="special-word">{{ quizPercentage }}%</span>
           </p>
         </div>
 
@@ -31,7 +31,7 @@
           <img
             src="~assets/images/vector.png"
             alt="..."
-            class="google-image mt-16 flex-shrink"
+            class="google-image mt-16 flex-shrink "
           />
           <div class="progress-google flex flex-grow flex-shrink items-end">
             <div

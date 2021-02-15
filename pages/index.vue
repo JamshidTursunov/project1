@@ -2,12 +2,12 @@
   <div>
     <spinner v-if="isLoading" />
     <div v-else class="wrapper">
-      <section-1 class="limit-size" />
-      <section-2 class="limit-size" />
-      <section-3 class="limit-size" />
-      <section-4 class="custom-p" />
-      <section-5 class="custom-p" :courses="allCourses" />
-      <section-6 class="custom-p" v-if="!$auth.loggedIn" />
+      <section-1  />
+      <section-2  />
+      <section-3  />
+      <section-4  id="section_4" />
+      <section-5  :courses="allCourses" />
+      <section-6  v-if="!$auth.loggedIn" />
       <section-7 />
     </div>
   </div>
@@ -34,10 +34,9 @@ export default {
     await this.$store.dispatch('userModule/GET_USER')
     await this.createToast()
     await this.$store.dispatch('course/allCourses')
+    const percentageM = this.$store.getters['quizModule/getPercentage']
     this.isLoading = false
   },
-
-  updated() {},
   methods: {
     createToast() {
       if (this.$store.getters['course/getToastShow']) {
@@ -57,4 +56,5 @@ export default {
 .wrapper {
   overflow: hidden;
 }
+
 </style>
