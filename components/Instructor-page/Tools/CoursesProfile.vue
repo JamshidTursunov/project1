@@ -6,19 +6,33 @@
     </div>
     <div class="tools__profile__wrapper">
       <form>
-        <div class="landPage__group" role="group">
+        <div class="landPage__group d-flex align-items-center" role="group">
           <b-form-input
             class="landPage__input"
-            placeholder="Name"
+            placeholder="First Name"
+            v-model="firstName"
+            required
+            :disabled="!fName"
             trim
           ></b-form-input>
+          <i
+            @click="enableFName"
+            class="fas fa-pencil-alt tools__profile__icon"
+          />
         </div>
-        <div class="landPage__group" role="group">
+        <div class="landPage__group d-flex align-items-center" role="group">
           <b-form-input
             class="landPage__input"
             placeholder="Last name"
+            v-model="lastName"
+            required
+            :disabled="!lName"
             trim
           ></b-form-input>
+          <i
+            @click="enableLName"
+            class="fas fa-pencil-alt tools__profile__icon"
+          />
         </div>
         <div class="landPage__group landPage__btn" role="group">
           <b-button type="submit" size="md" variant="primary"
@@ -31,7 +45,24 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      firstName: 'Jakhongirmirzo',
+      lastName: 'Tursunaliev',
+      fName: false,
+      lName: false,
+    }
+  },
+  methods: {
+    enableFName() {
+      this.fName = true
+    },
+    enableLName() {
+      this.lName = true
+    },
+  },
+}
 </script>
 
 <style></style>

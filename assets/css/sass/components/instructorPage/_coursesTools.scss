@@ -11,7 +11,7 @@
       &:first-child {
         border-right: none;
       }
-      padding: 0 0 10rem 0 !important;
+      padding: 0;
     }
     &__photo {
       height: 15rem;
@@ -88,6 +88,13 @@
         font-size: 18px;
         color: $dark_blue;
       }
+    }
+    &__icon {
+      color: $dark_blue;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 0.7rem;
+      cursor: pointer;
     }
   }
 

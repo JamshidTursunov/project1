@@ -2984,7 +2984,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .instructorPage .tools__wrapper {
   border: 1px solid rgba(51, 51, 102, 0.5);
-  padding: 0 0 10rem 0 !important;
+  padding: 0;
 }
 
 .instructorPage .tools__wrapper:first-child {
@@ -3073,6 +3073,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: normal;
   font-size: 18px;
   color: #333366;
+}
+
+.instructorPage .tools__profile__icon {
+  color: #333366;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
 }
 
 .instructorPage .tools__photo__box {
