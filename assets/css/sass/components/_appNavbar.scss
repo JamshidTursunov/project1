@@ -89,7 +89,7 @@
   a:active {
     color: #ff9900 !important;
   }
-  
+
   .nuxt-link-active {
     color: #ff9900 !important;
   }
@@ -128,15 +128,19 @@
     a {
       font-size: 17px;
     }
+    .nuxt-link-active {
+      color: #333366 !important;
+    }
     &:hover {
       background: #333366;
     }
     &:hover a {
       color: #ffff !important;
     }
-    &:active a {
-      transform: scale(1.1);
-    }
+    // &:active a {
+    //   transform: scale(1.1);
+    //   color: #333366;
+    // }
 
     @media only screen and (max-width: 600px) {
       width: 30%;

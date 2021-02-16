@@ -5530,16 +5530,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 17px;
 }
 
+.app-navbar .btn-login .nuxt-link-active {
+  color: #333366 !important;
+}
+
 .app-navbar .btn-login:hover {
   background: #333366;
 }
 
 .app-navbar .btn-login:hover a {
   color: #ffff !important;
-}
-
-.app-navbar .btn-login:active a {
-  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
