@@ -55,7 +55,9 @@
             Next
           </button>
 
-          <button v-else @click="finishAll" class="btn btn-primary">Finish all quiz answers</button>
+          <button v-else @click="finishAll" class="btn btn-primary">
+            Finish all quiz answers
+          </button>
         </div>
       </div>
     </div>
@@ -73,10 +75,11 @@ export default {
     return {
       isFinished: false,
       isLoading: true,
-      answer: [],
+      answer: Array(this.myQuestions && this.myQuestions.length).fill(false),
       currentIndex: 0,
       myQuestions: [],
       correctSet: [],
+      inCorrect: 0,
       totalScore: {
         persentageValue: null,
         incorrectSet: 0,
@@ -97,11 +100,13 @@ export default {
       } else {
         this.correctSet[this.currentIndex] = 0
       }
-      setTimeout(()=>{
-         if(this.currentIndex === this.myQuestions.length-1){ return }
-         this.next()
-      },900)
-      var correctIndex = null
+      setTimeout(() => {
+        if (this.currentIndex === this.myQuestions.length - 1) {
+          return
+        }
+        this.next()
+      }, 350)
+      var correctIndex = 0
       this.correctSet.forEach((o) => {
         if (o === 1) {
           correctIndex++
@@ -111,6 +116,7 @@ export default {
     },
     finishAll() {
       const totalCorrect = this.$store.getters['quizModule/getCorrectIndex']
+      const inCorrect = this.answer.filter((o) => o === false).length
       this.totalScore.persentageValue = Math.floor(
         (totalCorrect / this.myQuestions.length) * 100
       )
@@ -119,11 +125,43 @@ export default {
         this.totalScore.persentageValue
       )
 
-      console.log('finish button')
-      this.$nextTick(() => {
-        this.$bvModal.show('modal-quiz')
+      const h = this.$createElement
+      const titleVNode = h('div', {
+        domProps: { innerHTML: 'Your score is now available' },
       })
-      // await this.$router.push('/')
+      const messageVNode = h('div', { class: ['foobar'] }, [
+        h('p', { class: ['text-left'] }, [
+          'Your current status is: ',
+          h('strong', { class: ['special-text'] }, [
+            `${this.totalScore.persentageValue}%`,
+          ]),
+        ]),
+        h('p', { class: ['text-left'] }, [
+          'Correct answer(s): ',
+          h('strong', { class: ['special-text'] }, [`${totalCorrect}`]),
+        ]),
+      ])
+      this.$bvModal
+        .msgBoxOk([messageVNode], {
+          title: [titleVNode],
+          buttonSize: 'sm',
+          centered: true,
+          size: 'sm',
+        })
+        .then(() => {
+          this.$router.push('/')
+          setTimeout(() => {
+            let section_4 = document.getElementById('section_4')
+            section_4.scrollIntoView({
+              behavior: 'smooth',
+              block: 'center',
+              inline: 'nearest',
+            })
+          }, 2000)
+        })
+        .catch((err) => {
+          console.log('message box error: ' + err)
+        })
     },
     next() {
       this.currentIndex++
@@ -131,7 +169,7 @@ export default {
   },
   async created() {
     await this.questions.map(async (o) => {
-      return await this.$axios
+      await this.$axios
         .get(`quiz/quiz/${o.id}`)
         .then(({ data }) => {
           this.myQuestions.push(data)
@@ -161,5 +199,8 @@ export default {
 }
 .wrapper {
   margin-top: 3rem;
+}
+.special-text {
+  color: orange;
 }
 </style>

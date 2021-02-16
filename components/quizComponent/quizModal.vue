@@ -1,5 +1,5 @@
 <template>
-  <b-modal id="modal-quiz" title="Your score is:" ref="quiz-modal">
+  <b-modal id="modal-quiz" @ title="Your score is:" ref="quiz-modal" >
     <p>
       Correct answers:
       <span class="special-color"> {{ getCorrectAnswers }} </span>
@@ -28,11 +28,7 @@ export default {
   methods: {
     hideModal() {
       this.$refs['quiz-modal'].hide()
-      this.$router.push('/')
-      setTimeout(()=>{
-        let section_4 = document.getElementById('section_4')
-        section_4.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
-      }, 2100)
+      
       
 
     },

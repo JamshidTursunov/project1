@@ -1,6 +1,6 @@
 export const state = () => ({
   totalPercentage: 0,
-  correctIndex: null,
+  correctIndex: 0,
 })
 
 export const mutations = {
@@ -9,7 +9,6 @@ export const mutations = {
     state.totalPercentage = percentage
   },
   setCorrectIndex(state, correctIndex) {
-    localStorage.setItem('correctAnswers', correctIndex)
     state.correctIndex = correctIndex
   },
 }

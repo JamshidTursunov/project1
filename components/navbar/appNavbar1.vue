@@ -7,7 +7,12 @@
         alt="logo image"
     /></b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse">
+      <template #default="{ expanded }">
+        <b-icon v-if="expanded" icon="x"></b-icon>
+        <b-icon v-else icon="list"></b-icon>
+      </template>
+    </b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
@@ -102,12 +107,12 @@
           <b-dropdown-item to="/useraccount/mynotifications"
             >Notifications</b-dropdown-item
           >
-          <b-dropdown-item href="#">Messages</b-dropdown-item>
+          <b-dropdown-item to="#">Messages</b-dropdown-item>
           <b-dropdown-item to="/userprofile">Account settings</b-dropdown-item>
-          <b-dropdown-item href="/useraccount/mypurchase"
+          <b-dropdown-item to="/useraccount/mypurchase"
             >Purchage history</b-dropdown-item
           >
-          <b-dropdown-item href="/" @click.prevent="showLogOutInfo()"
+          <b-dropdown-item to="/" @click.prevent="showLogOutInfo()"
             >Logout</b-dropdown-item
           >
         </b-dropdown>
@@ -133,6 +138,7 @@ export default {
   data() {
     return {
       loggedIn: false,
+      isActive: null,
     }
   },
 
