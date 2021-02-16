@@ -24,46 +24,96 @@
       </div>
     </div>
     <div class="row flex justify-center mt-8">
-      <div
-        class="col-lg mb-4 col-md-4 col-sm-6 col-6 flex items-center justify-center"
+      <div    
+        v-for="type in LangTypes"
+        :key="type.id"
+        class="col-md-2 flex items-center my-4"
       >
-        <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
-        <h1>PYTHON</h1>
-      </div>
-      <div
-        class="col-lg mb-4 col-md-4 col-sm-6 col-6 flex items-center justify-center"
-      >
-        <img src="~assets/images/python4.png" alt="...." class="w-20 h-20" />
-        <h1>Django</h1>
-      </div>
-      <div
-        class="col-lg mb-4 col-md-4 col-sm-6 col-6 d-none d-md-flex flex items-center justify-center"
-      >
-        <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
-        <h1>PYTHON</h1>
-      </div>
-      <div
-        class="col-lg mb-4 col-md-4 col-sm-6 col-6 d-none d-xl-flex items-center justify-center"
-      >
-        <img src="~assets/images/python4.png" alt="...." class="w-20 h-20" />
-        <h1>Django</h1>
-      </div>
-      <div
-        class="col-lg mb-4 col-md-4 col-sm-6 col-6 d-none d-xl-flex items-center justify-center"
-      >
-        <img src="~assets/images/python3.png" alt="...." class="w-20 h-20" />
-        <h1>PYTHON</h1>
+        <img
+          :src="require(`~/assets/images/langTypes/${type.image}.png`)"
+          alt="...."
+          class="w-20 h-20"
+        />
+        <h1 class="mx-1 text-center logo-title">{{ type.name }}</h1>
       </div>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      LangTypes: [
+        {
+          id: 6,
+          name: 'HTML 5',
+          image: 'html',
+        },
+        {
+          id: 7,
+          name: 'CSS 3',
+          image: 'css',
+        },
+        {
+          id: 8,
+          name: 'SASS',
+          image: 'sass',
+        },
+        {
+          id: 1,
+          name: 'Python',
+          image: 'python1',
+        },
+        {
+          id: 2,
+          name: 'Vue JS',
+          image: 'vue',
+        },
+        {
+          id: 4,
+          name: 'Nodejs',
+          image: 'node',
+        },
+        {
+          id: 3,
+          name: 'Django',
+          image: 'django1',
+        },
+        {
+          id: 5,
+          name: 'Javascript',
+          image: 'js',
+        },
+        {
+          id: 11,
+          name: 'Bootstrap',
+          image: 'bootstrap',
+        },
+        {
+          id: 12,
+          name: 'Nuxt js',
+          image: 'nuxt',
+        },
+        {
+          id: 13,
+          name: 'GoLang',
+          image: 'golang',
+        },
+      ],
+    }
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .section-1-wrapper {
   &.all-wrapper {
     position: relative;
+  }
+  .logo-title {
+    color: #5d30db;
+    font-weight: 600;
   }
 }
 </style>
