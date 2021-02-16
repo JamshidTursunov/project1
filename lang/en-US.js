@@ -4,6 +4,7 @@ export default {
     PlansAndPricing: 'Plans & pricing',
     Careers: 'Careers',
     AboutUs: 'About us',
+    Partner: 'Become partner',
     ContactUs: 'Contact us',
     logIn: 'Log in',
     signUp: 'Sign up',

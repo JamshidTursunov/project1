@@ -16,6 +16,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
+        <b-nav-item :to="localePath('/about')">
+          {{ $t('navbar.AboutUs') }}</b-nav-item
+        >
         <b-nav-item :to="localePath(`/courses`)">
           {{ $t('navbar.AllCourses') }}
         </b-nav-item>
@@ -30,9 +33,10 @@
             >Become an instructor</b-dropdown-item
           >
         </b-nav-item-dropdown>
-        <b-nav-item :to="localePath('/about')">
-          {{ $t('navbar.AboutUs') }}</b-nav-item
-        ><b-nav-item :to="localePath('/contact-us')">
+        <b-nav-item :to="localePath(`/partner-application`)">
+          {{ $t('navbar.Partner') }}
+        </b-nav-item>
+        <b-nav-item :to="localePath('/contact-us')">
           {{ $t('navbar.ContactUs') }}</b-nav-item
         >
       </b-navbar-nav>

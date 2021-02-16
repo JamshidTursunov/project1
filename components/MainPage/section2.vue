@@ -23,7 +23,7 @@
 <script>
 export default {
   created() {
-    this.$axios.get('main/').then((res) => console.log(res.data))
+    this.$axios.get('mainpage/').then((res) => console.log(res.data))
   },
 }
 </script>

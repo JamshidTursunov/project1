@@ -4,6 +4,7 @@ export default {
     PlansAndPricing: 'Reja var Narxlash',
     Careers: 'Karyera',
     AboutUs: 'Biz haqimizda',
+    Partner: "Hamkor bo'ling",
     ContactUs: "Biz bilan bog'laning",
     logIn: 'Kirish',
     signUp: "Ro'yxatdan o'tish",

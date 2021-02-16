@@ -3,6 +3,7 @@ export default {
     AllCourses: 'Все курсы',
     PlansAndPricing: 'Планы и цены',
     Careers: 'Карьера',
+    Partner: 'Стать партнером',
     AboutUs: 'О нас',
     ContactUs: 'Связаться с нами',
     logIn: 'Вход',
