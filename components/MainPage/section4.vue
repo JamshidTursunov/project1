@@ -1,29 +1,31 @@
 <template>
-  <div class="container-fluid section-4" >
+  <div class="container-fluid section-4">
     <div class="row">
       <div class="col-md-4 col-sm-12 py-12">
         <h2 class="text-h2">
-          Not sure how<br />
-          and where to
+          {{ $t('section4.Header') }}
+          <br />
+          {{ $t('section4.SubHeader') }}
         </h2>
-        <h1 class="text-h1 my-2">begin?</h1>
+        <h1 class="text-h1 my-2">{{ $t('section4.Title') }}</h1>
         <p class="text-paragraph my-4">
-          No need to worry, we’ll help you<br />
-          make sense of it all.
+          {{ $t('section4.Paragraph') }}<br />
+          {{ $t('section4.SubParagraph') }}
         </p>
         <button class="btn-quiz px-2" @click="$router.push('/quiz/subject/')">
-          Take Our 5 minute Quiz
+          {{ $t('section4.Btn') }}
         </button>
       </div>
       <div class="col-md-8 col-sm-12 row m-0">
         <div class="col-md-12 text-start text-white mt-5">
           <p v-if="!quizPercentage">
-            25 tests are ready to<br />
-            check your skills
+            {{ $t('section4.Result1') }}<br />
+            {{ $t('section4.SubResul1') }}
           </p>
           <p v-else>
-            Test results are ready: <br />
-            Your status is: <span class="special-word">{{ quizPercentage }}%</span>
+            {{ $t('section4.Resul2') }} <br />
+            {{ $t('section4.SubResul2') }}
+            <span class="special-word">{{ quizPercentage }}%</span>
           </p>
         </div>
 
@@ -31,7 +33,7 @@
           <img
             src="~assets/images/vector.png"
             alt="..."
-            class="google-image mt-16 flex-shrink "
+            class="google-image mt-16 flex-shrink"
           />
           <div class="progress-google flex flex-grow flex-shrink items-end">
             <div

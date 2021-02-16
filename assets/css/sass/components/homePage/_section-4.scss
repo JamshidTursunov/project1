@@ -17,8 +17,8 @@
       position: absolute;
       border-top: 8px dotted white;
       transform: rotate(-22.5deg) !important;
-      @media only screen and (max-width: 500px){
-      transform: rotate(-36deg) !important;
+      @media only screen and (max-width: 500px) {
+        transform: rotate(-36deg) !important;
       }
     }
 
@@ -96,7 +96,7 @@
       }
     }
     &::before {
-      content: 'Now';
+      content: 'Not Bad';
       position: absolute;
       top: -150px;
       left: 20%;
@@ -224,7 +224,7 @@
       }
     }
     &::before {
-      content: 'Just done';
+      content: 'Excellent';
       position: absolute;
       top: -160px;
       left: 20%;
@@ -290,7 +290,7 @@
       }
     }
     &::before {
-      content: 'Already';
+      content: 'Awesome';
       position: absolute;
       top: -160px;
       left: 20%;

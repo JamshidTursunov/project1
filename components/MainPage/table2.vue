@@ -3,13 +3,19 @@
     <thead>
       <tr class="table-header">
         <th class="col-md-6 col-sm-2" scope="col"></th>
-        <th class="col-md-3 col-sm-1 header-title" scope="col">GreatSoft</th>
-        <th class="col-md-3 col-sm-1 header-title" scope="col">Others</th>
+        <th class="col-md-3 col-sm-1 header-title" scope="col">
+          {{ $t('section2.ColHead1') }}
+        </th>
+        <th class="col-md-3 col-sm-1 header-title" scope="col">
+          {{ $t('section2.ColHead2') }}
+        </th>
       </tr>
     </thead>
     <tbody class="table-bordered table-striped">
       <tr>
-        <td class="col col-start col-md-6 col-sm-2">Learn by doing</td>
+        <td class="col col-start col-md-6 col-sm-2">
+          {{ $t('section2.Col1') }}
+        </td>
         <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
@@ -19,26 +25,8 @@
       </tr>
       <tr>
         <td class="col col-start col-md-6 col-sm-2">
-          Practitional lever - skills
+          {{ $t('section2.Col2') }}
         </td>
-        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
-          <b-icon icon="check-circle-fill" variant="warning"></b-icon>
-        </td>
-        <td class="col col-md-3 col-sm-1 right-side text-center">
-          <b-icon icon="x-circle" variant="secondary"></b-icon>
-        </td>
-      </tr>
-      <tr>
-        <td class="col col-start col-md-6 col-sm-2">Job focused content</td>
-        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
-          <b-icon icon="check-circle-fill" variant="warning"></b-icon>
-        </td>
-        <td class="col col-md-3 col-sm-1 right-side text-center">
-          <b-icon icon="x-circle" variant="secondary"></b-icon>
-        </td>
-      </tr>
-      <tr>
-        <td class="col col-start col-md-6 col-sm-2">Real human help</td>
         <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>
@@ -48,7 +36,7 @@
       </tr>
       <tr>
         <td class="col col-start col-md-6 col-sm-2">
-          Personalized code reviews
+          {{ $t('section2.Col3') }}
         </td>
         <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
@@ -58,7 +46,31 @@
         </td>
       </tr>
       <tr>
-        <td class="col col-start col-md-6 col-sm-2">Real life projects</td>
+        <td class="col col-start col-md-6 col-sm-2">
+          {{ $t('section2.Col4') }}
+        </td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
+          <b-icon icon="check-circle-fill" variant="warning"></b-icon>
+        </td>
+        <td class="col col-md-3 col-sm-1 right-side text-center">
+          <b-icon icon="x-circle" variant="secondary"></b-icon>
+        </td>
+      </tr>
+      <tr>
+        <td class="col col-start col-md-6 col-sm-2">
+          {{ $t('section2.Col5') }}
+        </td>
+        <td class="col col-md-3 col-sm-1 right-side left-top text-center">
+          <b-icon icon="check-circle-fill" variant="warning"></b-icon>
+        </td>
+        <td class="col col-md-3 col-sm-1 right-side text-center">
+          <b-icon icon="x-circle" variant="secondary"></b-icon>
+        </td>
+      </tr>
+      <tr>
+        <td class="col col-start col-md-6 col-sm-2">
+          {{ $t('section2.Col6') }}
+        </td>
         <td class="col col-md-3 col-sm-1 right-side left-top text-center">
           <b-icon icon="check-circle-fill" variant="warning"></b-icon>
         </td>

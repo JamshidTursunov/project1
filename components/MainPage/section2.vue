@@ -2,7 +2,8 @@
   <div class="container-fluid section-2-wrapper">
     <div class="row flex justify-end context">
       <h1 class="text-h1 my-8 mx-4">
-        Only at GreatSoft:<span class="text-h1-span"> Job-Ready Skills</span>
+        {{ $t('section2.Title')
+        }}<span class="text-h1-span"> {{ $t('section2.SubTitle') }}</span>
       </h1>
     </div>
     <div class="row row-wrapper">
@@ -19,3 +20,10 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  created() {
+    this.$axios.get('main/').then((res) => console.log(res.data))
+  },
+}
+</script>

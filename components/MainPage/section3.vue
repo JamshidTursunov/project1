@@ -1,8 +1,7 @@
 <template>
   <div class="container-fluid section-3">
     <h1 class="header-title mb-10">
-      First, we invented the best system for learning to code.<br />
-      Seven years and 45 million learners later, we've perfected it.
+      {{ $t('section3.Header') }}
     </h1>
     <div class="row py-4" data-aos="fade-down" data-aos-delay="100">
       <div class="col-md-2 flex justify-center items-center">
@@ -14,10 +13,9 @@
         <img class="image" src="~assets/images/iMac.png" alt="..." />
       </div>
       <div class="col-md-6 px-5">
-        <h1 class="text-h1 text-left mb-2">Choose what to learn</h1>
+        <h1 class="text-h1 text-left mb-2">{{ $t('section3.Title1') }}</h1>
         <p class="text-paragraph">
-          From building websites to analyzing data, the choice is yours. Not
-          sure where to start? Wellpoint you in the right direction
+          {{ $t('section3.Content1') }}
         </p>
       </div>
     </div>
@@ -31,10 +29,9 @@
         <img class="image" src="~assets/images/iMac.png" alt="..." />
       </div>
       <div class="col-md-6 px-5">
-        <h1 class="text-h1 text-left mb-2">Choose what to learn</h1>
+        <h1 class="text-h1 text-left mb-2">{{ $t('section3.Title2') }}</h1>
         <p class="text-paragraph">
-          From building websites to analyzing data, the choice is yours. Not
-          sure where to start? Wellpoint you in the right direction
+          {{ $t('section3.Content2') }}
         </p>
       </div>
     </div>
@@ -48,10 +45,9 @@
         <img class="image" src="~assets/images/iMac.png" alt="..." />
       </div>
       <div class="col-md-6 px-5">
-        <h1 class="text-h1 text-left mb-2">Choose what to learn</h1>
+        <h1 class="text-h1 text-left mb-2">{{ $t('section3.Title3') }}</h1>
         <p class="text-paragraph">
-          From building websites to analyzing data, the choice is yours. Not
-          sure where to start? Wellpoint you in the right direction
+          {{ $t('section3.Content3') }}
         </p>
       </div>
     </div>
@@ -65,10 +61,9 @@
         <img class="image" src="~assets/images/iMac.png" alt="..." />
       </div>
       <div class="col-md-6 px-5">
-        <h1 class="text-h1 text-left mb-2">Choose what to learn</h1>
+        <h1 class="text-h1 text-left mb-2">{{ $t('section3.Title4') }}</h1>
         <p class="text-paragraph">
-          From building websites to analyzing data, the choice is yours. Not
-          sure where to start? Wellpoint you in the right direction
+          {{ $t('section3.Content4') }}
         </p>
       </div>
     </div>

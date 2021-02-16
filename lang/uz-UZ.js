@@ -5,9 +5,91 @@ export default {
     Careers: 'Karyera',
     AboutUs: 'Biz haqimizda',
     ContactUs: "Biz bilan bog'laning",
-    logIn: 'Log in',
-    signUp: 'Sign up',
+    logIn: 'Kirish',
+    signUp: "Ro'yxatdan o'tish",
   },
+
+  ///////////////////////////////
+  //////////////////////////////
+
+  section1: {
+    Title: "O'z mahoratingizni oshiring va",
+    SubTitle: 'kelajagingizni yarating',
+    ContentContext: 'bu sening orzularing sari eng to‘g‘ri tanlov',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section2: {
+    Title: 'Faqat Bizda',
+    SubTitle: 'Ishga tayyorlash mahoratlari',
+    ColHead1: 'GreatSoft Academy',
+    ColHead2: 'Boshqalar',
+    Col1: "Amal qilib o'rganing",
+    Col2: "Amaliy qo'l - ko'nikmalar",
+    Col3: "Ishga yo'naltirilgan tarkib",
+    Col4: 'Haqiqiy inson yordami',
+    Col5: "Shaxsiy kodlar bo'yicha sharhlar",
+    Col6: 'Haqiqiy hayot loyihalari',
+  },
+
+  ///////////////////////////////
+  //////////////////////////////
+
+  section3: {
+    Header:
+      "Kelajakdagi martaba uchun ishga tayyor bo'lgan malakaga ega bo'lishning eng tezkor, eng samarali usulini kashf eting.",
+    Title1: "Nimani o'rganishni tanlang",
+    Content1:
+      "Veb-saytlarni yaratishdan tortib ma'lumotlarni tahlil qilishga qadar, tanlov siznikidir. Nimadan boshlashni bilmayapsizmi? Sizni to'g'ri yo'nalishga yo'naltiramiz.",
+    Title2: "Amal qilib o'rganing",
+    Content2:
+      "Sizning tajribangiz qanday bo'lishidan qat'iy nazar, siz bir necha daqiqada haqiqiy, ishlaydigan kodni yozasiz.",
+    Title3: 'Tezkor mulohazalarni oling',
+    Content3:
+      "Sizning kodingiz yuborilgandan so'ng darhol sinovdan o'tkaziladi, shuning uchun siz doimo to'g'ri yo'lda ekanligingizni bilasiz.",
+    Title4: "O'rganishingizni amalda qo'llang",
+    Content4:
+      "O'zingizning bilimlaringizni real hayotdagi loyihalar bilan qo'llang va o'zingizga mos ravishda o'tkazilgan viktorinalar yordamida bilimlaringizni sinab ko'ring.",
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section4: {
+    Header: 'Qanday qilib',
+    SubHeader: 'va qayerdan boshlashni',
+    Title: 'bilmaysizmi?',
+    Paragraph:
+      "Xavotir olishga hojat yo'q, biz sizga barchasini ma'noga keltirishga ",
+    SubParagraph: 'yordam beramiz',
+    Btn: 'Bizning 5 daqiqalik viktorinamizdan foydalaning',
+    Result1: "Sizning ko'nikmalaringizni tekshirish uchun",
+    SubResul1: '25 ta test tayyor',
+    Resul2: 'Sinov natijalari tayyor:',
+    SubResul2: 'Sizning holatingiz:',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section5: {
+    Title: "Bizning barcha kurslarimizni o'rganing",
+    Btn: "Batafsil ma'lumot",
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section7: {
+    Title: 'Bizning instruktor',
+    SubTitle: 'jamoamiz',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
   instructors: {
     Title: "GreatSoft Akademiyasining o'qituvchisi bo'ling",
     SubTitle:
