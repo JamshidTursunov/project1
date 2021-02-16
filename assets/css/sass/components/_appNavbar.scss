@@ -85,6 +85,14 @@
     color: #333366 !important;
     transition: all 0.2s linear;
   }
+  a:hover,
+  a:active {
+    color: #ff9900 !important;
+  }
+  
+  .nuxt-link-active {
+    color: #ff9900 !important;
+  }
   .btn-sign-up {
     background: #333366;
     box-sizing: border-box;

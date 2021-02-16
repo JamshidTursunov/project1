@@ -105,8 +105,8 @@ export default {
           return
         }
         this.next()
-      }, 500)
-      var correctIndex = null
+      }, 350)
+      var correctIndex = 0
       this.correctSet.forEach((o) => {
         if (o === 1) {
           correctIndex++
@@ -116,7 +116,6 @@ export default {
     },
     finishAll() {
       const totalCorrect = this.$store.getters['quizModule/getCorrectIndex']
-      const correct = this.answer.filter((o) => o != false).length
       const inCorrect = this.answer.filter((o) => o === false).length
       this.totalScore.persentageValue = Math.floor(
         (totalCorrect / this.myQuestions.length) * 100
@@ -139,7 +138,7 @@ export default {
         ]),
         h('p', { class: ['text-left'] }, [
           'Correct answer(s): ',
-          h('strong', { class: ['special-text'] }, [`${correct}`]),
+          h('strong', { class: ['special-text'] }, [`${totalCorrect}`]),
         ]),
       ])
       this.$bvModal

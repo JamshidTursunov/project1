@@ -33,11 +33,10 @@
     </button>
     <transition name="dropdown-fade">
       <ul
-        style="z-index: 9999"
         v-on-clickaway="hideDropdown"
         v-if="isVisible"
         ref="dropdown"
-        class="absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 lg:z-20"
+        class="list-wrap absolute normal-case z-30 font-normal xs:left-0 lg:right-0 bg-white shadow overflow-hidden rounded w-48 border mt-2 py-1 lg:z-20"
       >
         <li @click="hideDropdown" style="z-index: 9999">
           <nuxt-link
@@ -45,7 +44,6 @@
             v-for="(locale, i) in showLocales"
             :key="i"
             class="d-flex"
-            style="z-index: 9999"
           >
             <span class="ml-2">{{ locale.name }}</span>
           </nuxt-link>
@@ -123,5 +121,9 @@ export default {
 .dropdown-fade-leave-to {
   opacity: 0;
   transform: translateY(-12px);
+}
+.list-wrap {
+  z-index: 9999;
+  width: 100px;
 }
 </style>

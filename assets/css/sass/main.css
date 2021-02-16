@@ -6437,6 +6437,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   transition: all 0.2s linear;
 }
 
+.app-navbar a:hover,
+.app-navbar a:active {
+  color: #ff9900 !important;
+}
+
+.app-navbar .nuxt-link-active {
+  color: #ff9900 !important;
+}
+
 .app-navbar .btn-sign-up {
   background: #333366;
   -webkit-box-sizing: border-box;
