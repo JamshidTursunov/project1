@@ -3,7 +3,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  created() {
+    this.$store.dispatch('instructorsPage/initAllCoursesList')
+  },
+}
 </script>
 
 <style scoped></style>

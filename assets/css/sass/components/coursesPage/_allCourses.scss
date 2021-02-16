@@ -21,6 +21,7 @@
     &:visited {
       display: inline-block;
       width: 100%;
+      height: 100%;
       text-decoration: none;
       box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
       border-radius: 5px;
@@ -49,6 +50,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-position: center;
   }
 
   &__content {

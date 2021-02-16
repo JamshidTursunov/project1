@@ -41,3 +41,19 @@ export function instructorToolsRedirect({ route, redirect }) {
     return redirect('/uz/instructor-page/tools/profile')
   }
 }
+
+export function pricingPage({ route, redirect }) {
+  if (route.fullPath === '/pricing' || route.fullPath === '/pricing/') {
+    return redirect('/')
+  } else if (
+    route.fullPath === '/ru/pricing' ||
+    route.fullPath === '/ru/pricing/'
+  ) {
+    return redirect('/ru')
+  } else if (
+    route.fullPath === '/uz/pricing' ||
+    route.fullPath === '/uz/pricing/'
+  ) {
+    return redirect('/uz')
+  }
+}

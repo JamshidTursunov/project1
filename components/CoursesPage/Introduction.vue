@@ -5,7 +5,7 @@
       <div class="row d-lg-none d-md-block">
         <div class="col-lg-12">
           <div class="introduction__responsive__promo">
-            <VideoPlayer />
+            <VideoPlayer :videoData2="promoVideo" />
           </div>
         </div>
       </div>
@@ -13,32 +13,14 @@
         <div class="col-lg-12">
           <div class="introduction__content">
             <h1>
-              {{
-                this.$i18n.locale == 'en'
-                  ? courseData.course_name_en
-                  : this.$i18n.locale == 'ru'
-                  ? courseData.course_name_ru
-                  : courseData.course_name_uz
-              }}
+              {{ courseData.course_name }}
             </h1>
             <p>
-              {{
-                this.$i18n.locale == 'en'
-                  ? courseData.description_en
-                  : this.$i18n.locale == 'ru'
-                  ? courseData.description_ru
-                  : courseData.description_uz
-              }}
+              {{ courseData.description }}
             </p>
             <p>
               Created by
-              {{
-                this.$i18n.locale == 'en'
-                  ? courseInstructor.name_en
-                  : this.$i18n.locale == 'ru'
-                  ? courseInstructor.name_ru
-                  : courseInstructor.name_uz
-              }}
+              {{ courseInstructor.name }}
             </p>
           </div>
         </div>
@@ -86,7 +68,16 @@ export default {
     },
   },
 
-  computed: {},
+  computed: {
+    promoVideo() {
+      if (this.courseData.promo_video) {
+        return {
+          video: this.courseData.promo_video,
+          image: this.courseData.promo_image,
+        }
+      }
+    },
+  },
 
   data() {
     return {

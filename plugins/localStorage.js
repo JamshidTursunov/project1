@@ -1,11 +1,11 @@
-import createPersistedState from 'vuex-persistedstate'
+// import createPersistedState from 'vuex-persistedstate'
 
-export default ({ store }) => {
-  createPersistedState({
-    key: 'createdCourses',
-    paths: ['instructorsPage.createdCourses'],
-  })(store)
-}
+// export default ({ store }) => {
+//   createPersistedState({
+//     key: 'createdCourses',
+//     paths: ['instructorsPage.createdCourses'],
+//   })(store)
+// }
 
 // import createPersistedState from 'vuex-persistedstate'
 // import * as Cookies from 'js-cookie'

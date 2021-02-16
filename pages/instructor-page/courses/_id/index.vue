@@ -23,6 +23,9 @@ export default {
     'courses-field': CoursesField,
     'courses-land-page': CoursesLandPage,
   },
+  created() {
+    this.$axios.get(`course/lecture/`).then((res) => console.log(res.data))
+  },
   data() {
     return {
       component: 'courses-field',

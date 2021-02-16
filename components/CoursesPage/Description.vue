@@ -23,14 +23,8 @@ export default {
 
   computed: {
     courseRequirements() {
-      if (this.courseData.requirement_en) {
-        if (this.$i18n.locale == 'en') {
-          return this.courseData.requirement_en.trim().split(',')
-        } else if (this.$i18n.locale == 'ru') {
-          return this.courseData.requirement_ru.trim().split(',')
-        } else {
-          return this.courseData.requirement_uz.trim().split(',')
-        }
+      if (this.courseData.requirement) {
+        return this.courseData.requirement.trim().split(',')
       }
     },
   },

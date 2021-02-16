@@ -15,7 +15,7 @@
         </div>
         <div class="col-lg-5 d-none d-lg-block column__margin">
           <div class="courses__box">
-            <PromoVideo :promo="coursePromoVideo" />
+            <PromoVideo :courseData="courseSingleData" />
           </div>
         </div>
       </div>
@@ -35,7 +35,6 @@ export default {
   methods: {
     callSingleCourseData() {
       this.$store.dispatch('course/initSingleCourseData', this.$route.params.id)
-      this.$store.dispatch('course/initSinglePromoVideo', this.$route.params.id)
     },
   },
 
@@ -46,10 +45,6 @@ export default {
 
     courseInstructorData() {
       return this.$store.getters['course/getCourseInstructor']
-    },
-
-    coursePromoVideo() {
-      return this.$store.getters['course/getPromoVideo']
     },
   },
 }

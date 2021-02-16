@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="video-js__container">
     <video
       class="video-js my-video"
       data-setup="{}"
@@ -17,6 +17,9 @@ export default {
     videoData: {
       type: Object,
     },
+    videoData2: {
+      type: Object,
+    },
   },
   data() {
     return {
@@ -31,8 +34,11 @@ export default {
   methods: {
     changeVideo() {
       if (this.videoData) {
-        this.postImage = this.videoData.video_image
+        this.postImage = this.videoData.image
         this.videoSrc = this.videoData.video
+      } else if (this.videoData2) {
+        this.postImage = this.videoData2.image
+        this.videoSrc = this.videoData2.video
       }
     },
   },
@@ -45,5 +51,9 @@ export default {
 }
 .my-video {
   position: relative !important;
+}
+
+.video-js__container {
+  height: 100% !important;
 }
 </style>

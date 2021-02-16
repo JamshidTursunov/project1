@@ -7,7 +7,7 @@
         your career.
       </p>
     </div>
-    <form @submit.prevent="getCode" enctype="multipart/form-data">
+    <form @submit.prevent="getCode">
       <Input v-model="form.first_name" inputPlaceholder="First Name" />
       <Input v-model="form.last_name" inputPlaceholder="Last Name" />
       <Input
@@ -64,21 +64,22 @@ export default {
       form: {
         first_name: 'Jahongir',
         last_name: 'Tursunaliev',
-        phone_number: '+998903444447',
+        phone_number: '+998903444468',
         password: '23012001',
         partifol: 'www.smth.com',
         description: 'I am a developer',
         token: '',
+        resume: '',
       },
-      resume: '',
     }
   },
   methods: {
     valChange(event) {
       this.label = event.target.files[0].name
-      console.log(event.target.files[0])
       this.form.resume = event.target.files[0]
-      console.log(this.form)
+      console.log(this.form.resume)
+      // this.resume = event.target.files[0]
+      // console.log(this.resume)
     },
 
     async getCode() {
@@ -115,13 +116,18 @@ export default {
         })
 
       if (this.form.token != '' && this.form.token != null) {
-        const resumeFile = new FormData()
-        resumeFile.append('form', this.resume)
-        console.log(resumeFile)
+        const formData = new FormData()
+        formData.append('first_name', this.form.first_name)
+        formData.append('last_name', this.form.last_name)
+        formData.append('phone_number', this.form.phone_number)
+        formData.append('password', this.form.password)
+        formData.append('partifol', this.form.partifol)
+        formData.append('description', this.form.description)
+        formData.append('resume', this.form.resume)
+        formData.append('token', this.form.token)
+        console.log(formData)
         await this.$axios
-          .post('mentor/create/', {
-            headers: { 'Content-Type': 'multipart/form-data' },
-          })
+          .post('mentor/create/', formData)
           .then((res) => {
             console.log(res.data)
             // console.log('Final user/: ', res.data)
