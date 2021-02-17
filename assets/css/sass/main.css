@@ -2351,6 +2351,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #333366;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  display: flex;
+  align-items: center;
   padding: 4.4rem 9.3rem 2rem;
   border-bottom: 3px solid #ff9900;
 }
@@ -2359,6 +2361,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: white;
   font-size: 26px;
   margin-bottom: 1.9rem;
+}
+
+.instructorPage__logo {
+  height: 7rem;
+  width: 7rem;
+  margin-right: 1rem;
+}
+
+.instructorPage__logo__svg {
+  height: 100%;
+  width: 100%;
 }
 
 .instructorPage__list {
