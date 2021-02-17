@@ -1,16 +1,26 @@
 <template>
   <div class="communication">
-    <h1>Communication</h1>
+    <OnGoingPage />
   </div>
 </template>
 
 <script>
-export default {}
+import OnGoingPage from '~/components/OnGoingPage.vue'
+export default {
+  components: { OnGoingPage },
+  data() {
+    return {}
+  },
+  methods: {
+    callback(key) {
+      console.log(key)
+    },
+  },
+}
 </script>
 
 <style scoped>
 .communication {
   height: 50rem;
-  background-color: lightcoral;
 }
 </style>

@@ -28,7 +28,7 @@
 <script>
 export default {
   props: {
-    promo: {
+    courseData: {
       type: [Object, Array],
     },
   },
@@ -37,21 +37,20 @@ export default {
     return {}
   },
 
+  created() {},
+
   computed: {
     promoVideo() {
-      if (this.promo) {
-        return this.promo[0]
+      if (this.courseData.promo_video) {
+        return {
+          video: this.courseData.promo_video,
+          image: this.courseData.promo_image,
+        }
       }
     },
     promoDescription() {
-      if (this.promo) {
-        if (this.$i18n.locale == 'en') {
-          return this.promo[0].video_description_en.trim().split(',')
-        } else if (this.$i18n.locale == 'ru') {
-          return this.promo[0].video_description_ru.trim().split(',')
-        } else {
-          return this.promo[0].video_description_uz.trim().split(',')
-        }
+      if (this.courseData.content) {
+        return this.courseData.content.trim().split(',')
       }
     },
   },

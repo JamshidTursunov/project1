@@ -95,15 +95,15 @@ export default {
   methods: {
     async userLogin() {
       try {
-        let res = await this.$auth.loginWith('local', {
+        const resUser = await this.$auth.loginWith('local', {
           data: this.userInfo,
         })
+        console.log('[LOGIN RES]', resUser)
         this.showToast(
           'success',
           'Muvafaqiyatli',
           'Akkountga kirish muvafaqiyatli yakunlandi'
         )
-        console.log('[LOGIN RES]', res)
       } catch (err) {
         console.log(err)
         this.showToast(

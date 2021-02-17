@@ -2,11 +2,11 @@
   <div class="container-fluid section-5">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-h1 my-4">Explore all our courses</h1>
+        <h1 class="text-h1 my-4">{{ $t('section5.Title') }}</h1>
       </div>
     </div>
     <div v-if="courses.length === 0" class="row">
-     <h1 class="ml-4 text-gray-400">No courses exist</h1>
+      <h1 class="ml-4 text-gray-400">No courses exist</h1>
     </div>
     <div class="row" v-else>
       <div class="col-md-4" v-for="course in courses" :key="course.id">
@@ -33,7 +33,7 @@
     </div>
     <div class="row flex justify-end">
       <button class="btn btn-know-more px-4 py-2.5 flex items-center">
-        Know More
+        {{ $t('section5.Btn') }}
         <b-icon
           icon="arrow-right"
           animation="cylon"
@@ -49,8 +49,5 @@
 <script>
 export default {
   props: ['courses'],
-  created() {
-    console.log('my courses', this.courses)
-  },
 }
 </script>

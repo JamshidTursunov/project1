@@ -2,7 +2,8 @@
   <div class="courses__container">
     <div class="courses__header">
       <h1>All Courses</h1>
-      <button @click="addCourse">+New course</button>
+      <!-- <button @click="addCourse">+New course</button> -->
+      <button>+New course</button>
     </div>
     <div
       v-if="modalToggle"
@@ -46,25 +47,23 @@
       </form>
     </div>
     <div
-      v-for="(course, i) in createdCoursesArray"
+      v-for="(course, i) in allCourses"
       :key="i"
       :id="i"
       class="courses__edit"
     >
-      <img src="~assets/images/laptop.png" alt="photo" />
+      <img src="~assets/images/laptop.png" alt="course image" />
       <div>
-        <h2>{{ course.title }}</h2>
-        <p>{{ course.description }}</p>
+        <h2>{{ course.course_name }}</h2>
       </div>
       <div class="courses__edit__box">
         <nuxt-link
           class="courses__edit__link"
-          :to="localePath(`/instructor-page/courses/${i}`)"
+          :to="localePath(`/instructor-page/courses/${course.id}`)"
           >Edit</nuxt-link
         >
-        <button @click="deleteCourse(i)" class="courses__edit__delete">
-          Delete
-        </button>
+        <!-- <button @click="deleteCourse(i)" class="courses__edit__delete"> -->
+        <button class="courses__edit__delete">Delete</button>
       </div>
     </div>
   </div>
@@ -86,36 +85,43 @@ export default {
   created() {},
 
   methods: {
-    addCourse() {
-      this.modalToggle = true
-    },
-
-    createCourse() {
-      this.modalToggle = false
-      this.$store.dispatch(
-        'instructorsPage/initCreatedCourses',
-        this.courseData
-      )
-      this.courseData = {
-        title: '',
+    // addCourse() {
+    //   this.modalToggle = true
+    // },
+    // createCourse() {
+    //   this.modalToggle = false
+    //   this.$store.dispatch(
+    //     'instructorsPage/initCreatedCourses',
+    //     this.courseData
+    //   )
+    //   this.courseData = {
+    //     title: '',
+    //   }
+    // },
+    // deleteCourse(id) {
+    //   this.id = id
+    //   this.deleteToggler = true
+    // },
+    // proveDeleteCourse() {
+    //   this.$store.dispatch('instructorsPage/initDeleteCourse', this.id)
+    //   this.id = null
+    //   this.deleteToggler = false
+    // },
+    getImgUrl(img) {
+      if (img) {
+        return img
+      } else {
+        return
       }
-    },
-
-    deleteCourse(id) {
-      this.id = id
-      this.deleteToggler = true
-    },
-
-    proveDeleteCourse() {
-      this.$store.dispatch('instructorsPage/initDeleteCourse', this.id)
-      this.id = null
-      this.deleteToggler = false
     },
   },
 
   computed: {
-    createdCoursesArray() {
-      return this.$store.getters['instructorsPage/getCreatedCourses']
+    // createdCoursesArray() {
+    //   return this.$store.getters['instructorsPage/getCreatedCourses']
+    // },
+    allCourses() {
+      return this.$store.getters['instructorsPage/getAllCoursesList']
     },
   },
 }

@@ -2,8 +2,8 @@
   <div class="container-fluid section-7">
     <div class="row grid justify-center">
       <h1 class="text-h1 my-5">
-        Our instuctors<br />
-        team
+        {{ $t('section7.Title') }}<br />
+        {{ $t('section7.SubTitle') }}
       </h1>
     </div>
     <div class="row">

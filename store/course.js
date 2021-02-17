@@ -2,8 +2,6 @@ export const state = () => ({
   allCourseData: [],
   courseData: [],
   instructorName: [],
-  allPromoVideo: [],
-  singlePromoVideo: [],
   toastShow: false,
   logOutToast: false,
 })
@@ -18,12 +16,6 @@ export const mutations = {
   setInstructorName(state, data) {
     state.instructorName = data
   },
-  setAllPromoVideo(state, data) {
-    state.allPromoVideo = data
-  },
-  setSinglePromoVideo(state, data) {
-    state.singlePromoVideo = data
-  },
 
   setToastShow(state, data) {
     state.toastShow = data
@@ -36,10 +28,9 @@ export const mutations = {
 export const actions = {
   async allCourses({ commit }) {
     try {
-      const { data } = await this.$axios.get(
-        `course/?lang=${this.$i18n.locale}`
-      )
-
+      const { data } = await this.$axios.get('course/', {
+        headers: { 'Accept-Language': this.$i18n.locale },
+      })
       commit('setAllCourseData', data)
     } catch (err) {
       console.log(err)
@@ -48,7 +39,9 @@ export const actions = {
 
   async initSingleCourseData({ commit, dispatch }, payload) {
     try {
-      const { data } = await this.$axios.get(`course/${payload}/`)
+      const { data } = await this.$axios.get(`course/${payload}/`, {
+        headers: { 'Accept-Language': this.$i18n.locale },
+      })
       commit('setCourseData', data)
       dispatch('initIntructorName', data.instructor)
     } catch (err) {
@@ -58,19 +51,12 @@ export const actions = {
 
   async initIntructorName({ commit }, payload) {
     try {
-      const { data } = await this.$axios.get(`course/instructor/${payload}/`)
+      const { data } = await this.$axios.get(`course/instructor/${payload}/`, {
+        headers: { 'Accept-Language': this.$i18n.locale },
+      })
       commit('setInstructorName', data)
     } catch (err) {
       console.log(err)
-    }
-  },
-
-  initSinglePromoVideo({ commit, state }, payload) {
-    if (state.allPromoVideo.length) {
-      const singlePromo = state.allPromoVideo.filter((item) => {
-        return item.course == payload
-      })
-      commit('setSinglePromoVideo', singlePromo)
     }
   },
 
@@ -92,9 +78,6 @@ export const getters = {
   },
   getCourseInstructor(state) {
     return state.instructorName
-  },
-  getPromoVideo(state) {
-    return state.singlePromoVideo
   },
   getToastShow(state) {
     return state.toastShow

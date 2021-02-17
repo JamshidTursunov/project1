@@ -3,13 +3,13 @@
     <div class="row">
       <div class="col-md-12 col-lg-6 flex flex-column">
         <h1 class="text-h1 space-around my-14">
-          Boost your skills and <br />Build your future
+          {{ $t('section1.Title') }} <br />{{ $t('section1.SubTitle') }}
         </h1>
         <div class="flex justify-start">
           <div class="content">
             <h4 class="content-title">GreatSoft Academy-</h4>
             <p class="content-context">
-              bu sening orzularing sari eng to‘g‘ri tanlov
+              {{ $t('section1.ContentContext') }}
             </p>
           </div>
           <img
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="row flex justify-center mt-8">
-      <div    
+      <div
         v-for="type in LangTypes"
         :key="type.id"
         class="col-md-2 col-4 flex items-center flex-col md:flex-row my-4"

@@ -4,6 +4,7 @@
     flex-direction: column;
     background-color: $dark_blue;
     padding: 3rem 3rem 25rem;
+    height: 100%;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 
@@ -25,7 +26,7 @@
         transition: all 0.5s;
         position: relative;
         cursor: pointer;
-        &::after {
+        &.active::after {
           content: '';
           position: absolute;
           top: 0.15rem;

@@ -25,7 +25,10 @@
 
 @import 'components/instructorPage/instructorMainPage';
 @import 'components/instructorPage/coursesAll';
+@import 'components/instructorPage/coursesLandingPage';
+@import 'components/instructorPage/coursesPerformance';
 @import 'components/instructorPage/coursesSingle';
+@import 'components/instructorPage/coursesTools';
 
 @import 'components/instructors/instructorContent';
 @import 'components/instructors/instructorHeader';
@@ -33,6 +36,7 @@
 
 @import 'components/pricing/pricing';
 
+@import 'responsive/responsiveAllCoursesPage';
 @import 'responsive/responsiveAboutPage';
 @import 'responsive/responsiveContactPage';
 @import 'responsive/responsiveApplicationForms';
@@ -63,3 +67,4 @@
 @import 'components/userProfile/profile';
 @import 'responsive/section-4';
 @import 'layouts/payment';
+

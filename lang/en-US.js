@@ -4,9 +4,88 @@ export default {
     PlansAndPricing: 'Plans & pricing',
     Careers: 'Careers',
     AboutUs: 'About us',
+    Partner: 'Become partner',
     ContactUs: 'Contact us',
+    Instructor: 'Instructor profile',
     logIn: 'Log in',
     signUp: 'Sign up',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section1: {
+    Title: 'Boost your skills and',
+    SubTitle: 'Build your future',
+    ContentContext: 'It is the best choice to achieve your goals.',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section2: {
+    Title: 'Only at GreatSoft Academy:',
+    SubTitle: 'Job-Ready Skills',
+    ColHead1: 'GreatSoft Academy',
+    ColHead2: 'Others',
+    Col1: 'Learn by doing',
+    Col2: 'Practitional lever - skills',
+    Col3: 'Job focused content',
+    Col4: 'Real human help',
+    Col5: 'Personalized code reviews',
+    Col6: 'Real life projects',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section3: {
+    Header:
+      'Discover the fastest, most effective way to gain job-ready expertise for the careers of the future.',
+    Title1: 'Choose what to learn',
+    Content1:
+      "From building websites to analyzing data, the choice is yours. Not sure where to start? We'll point you in the right direction.",
+    Title2: 'Learn by doing',
+    Content2:
+      "No matter your experience level, you'll be writing real, working code in minutes.",
+    Title3: 'Get instant feedback',
+    Content3:
+      "Your code is tested as soon as you submit it, so you always know if you're on the right track.",
+    Title4: 'Put your learning into practice',
+    Content4:
+      'Apply your learning with real-world projects and test your knowledge with tailor-made quizzes.',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section4: {
+    Header: 'Not sure how',
+    SubHeader: 'and where to',
+    Title: 'begin?',
+    Paragraph: 'No need to worry, we’ll help you',
+    SubParagraph: 'make sense of it all.',
+    Btn: 'Take Our 5 minute Quiz',
+    Result1: '25 tests are ready to',
+    SubResul1: 'check your skills',
+    Resul2: 'Test results are ready:',
+    SubResul2: 'Your status is:',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section5: {
+    Title: 'Explore all our courses',
+    Btn: 'Know More',
+  },
+
+  ///////////////////////////////////
+  ///////////////////////////////////
+
+  section7: {
+    Title: "Our instuctor's",
+    SubTitle: 'team',
   },
 
   ///////////////////////////////////
@@ -100,4 +179,6 @@ export default {
       },
     ],
   },
+  ////////////////////////////////
+  ////////////////////////////////
 }

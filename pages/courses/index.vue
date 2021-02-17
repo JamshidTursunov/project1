@@ -4,7 +4,7 @@
       <div
         v-for="(direction, i) in getAllCoursesData"
         :key="i"
-        class="row mb-6"
+        class="row mb-4"
       >
         <div class="allCourses__container">
           <h1>{{ direction[0].yonalish }}</h1>
@@ -21,36 +21,25 @@
                 <div class="allCourses__wrapper">
                   <div class="allCourses__photo">
                     <img
-                      :src="item.icon"
+                      :src="item.promo_image"
                       alt="course photo"
                       class="allCourses__image"
                     />
                   </div>
                   <div class="allCourses__content">
                     <h2>
-                      {{
-                        description == 'en'
-                          ? item.course_name_en
-                          : description == 'ru'
-                          ? item.course_name_ru
-                          : item.course_name_uz
-                      }}
+                      {{ item.course_name }}
                     </h2>
                     <p>
-                      {{
-                        description == 'en'
-                          ? item.description_en
-                          : description == 'ru'
-                          ? item.description_ru
-                          : item.description_uz
-                      }}
+                      {{ item.description }}
                     </p>
-                    <h3>Prices:</h3>
-                    <ul>
+                    <h3>Prices: {{ item.price }} UZS</h3>
+                    <!-- <h3>Prices:</h3> -->
+                    <!-- <ul>
                       <li>Basic: {{ item.price_base }} UZS</li>
                       <li>Pro: {{ item.price_pro }} UZS</li>
                       <li>Premium: {{ item.price_pre }} UZS</li>
-                    </ul>
+                    </ul> -->
                   </div>
                 </div>
               </nuxt-link>

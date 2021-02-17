@@ -16,24 +16,15 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
+        <b-nav-item :to="localePath('/about')">
+          {{ $t('navbar.AboutUs') }}</b-nav-item
+        >
         <b-nav-item :to="localePath(`/courses`)">
           {{ $t('navbar.AllCourses') }}
         </b-nav-item>
-        <!-- <b-nav-item-dropdown :text="$t('navbar.AllCourses')" left>
-          <b-dropdown-item :to="localePath(`/courses`)">{{
-            $t('navbar.AllCourses')
-          }}</b-dropdown-item>
-          <b-dropdown-item
-            v-for="navItem in allData"
-            :id="navItem.id"
-            :key="navItem.id"
-            :to="localePath(`/courses/${navItem.id}`)"
-            >{{ navItem.courseName }}</b-dropdown-item
-          >
-        </b-nav-item-dropdown> -->
-        <b-nav-item :to="localePath('/pricing')">
+        <!-- <b-nav-item :to="localePath('/pricing')">
           {{ $t('navbar.PlansAndPricing') }}
-        </b-nav-item>
+        </b-nav-item> -->
         <b-nav-item-dropdown :text="$t('navbar.Careers')" left>
           <!-- <b-dropdown-item :to="localePath('/inProcess')"
             >Become a mentor
@@ -42,10 +33,14 @@
             >Become an instructor</b-dropdown-item
           >
         </b-nav-item-dropdown>
-        <b-nav-item :to="localePath('/about')">
-          {{ $t('navbar.AboutUs') }}</b-nav-item
-        ><b-nav-item :to="localePath('/contact-us')">
+        <b-nav-item :to="localePath(`/partner-application`)">
+          {{ $t('navbar.Partner') }}
+        </b-nav-item>
+        <b-nav-item :to="localePath('/contact-us')">
           {{ $t('navbar.ContactUs') }}</b-nav-item
+        >
+        <b-nav-item :to="localePath('/instructor-page')">
+          {{ $t('navbar.Instructor') }}</b-nav-item
         >
       </b-navbar-nav>
 
