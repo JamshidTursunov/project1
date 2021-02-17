@@ -2,22 +2,29 @@
   <div>
     <spinner v-if="isLoading" />
     <div v-else class="wrapper">
-      <section-1  />
-      <section-2  />
-      <section-3  />
-      <section-4  id="section_4" />
-      <section-5  :courses="allCourses" />
-      <section-6  v-if="!$auth.loggedIn" />
-      <section-7 />
+      <section1 />
+      <section2 />
+      <section3 />
+      <section4 id="section_4" />
+      <section5 :courses="allCourses" />
+      <section6 v-if="!$auth.loggedIn" />
+      <section7 />
     </div>
   </div>
 </template>
 
 <script>
+import section1 from '~/components/MainPage/section1'
+import section2 from '~/components/MainPage/section2'
+import section3 from '~/components/MainPage/section3'
+import section4 from '~/components/MainPage/section4'
+import section5 from '~/components/MainPage/section5'
+import section6 from '~/components/MainPage/section6'
+import section7 from '~/components/MainPage/section7'
 import spinner from '~/components/spinner.vue'
 import Toast from '~/utils/toast.js'
 export default {
-  components: { spinner },
+  components: { spinner, section1, section2,section3,section4,section5,section6,section7 },
   layout: 'HomePageLayout',
   mixins: [Toast],
   data() {
@@ -31,7 +38,7 @@ export default {
     },
   },
   async created() {
-    await this.$store.dispatch('userModule/GET_USER')
+    // await this.$store.dispatch('userModule/GET_USER')
     await this.createToast()
     await this.$store.dispatch('course/allCourses')
     const percentageM = this.$store.getters['quizModule/getPercentage']
@@ -56,5 +63,4 @@ export default {
 .wrapper {
   overflow: hidden;
 }
-
 </style>

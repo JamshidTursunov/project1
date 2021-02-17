@@ -77,6 +77,7 @@
 
 <script>
 export default {
+  name:'section3',
   data() {
     return {
       infos: [

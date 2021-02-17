@@ -42,7 +42,12 @@
 </template>
 
 <script>
-export default {}
+import VideoPlayer from '../MainPage/VideoPlayer.vue'
+export default {
+  components: {
+    VideoPlayer
+  }
+}
 </script>
 
 <style></style>

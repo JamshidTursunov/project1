@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Shadow&display=swap");
 .progress {
   width: 100px;
@@ -5,11 +6,9 @@
   line-height: 100px;
   background: none;
   margin: 0 auto;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   position: relative;
 }
-
 .progress:after {
   content: "";
   width: 100%;
@@ -20,7 +19,6 @@
   top: 0;
   left: 0;
 }
-
 .progress > span {
   width: 50%;
   height: 100%;
@@ -29,11 +27,9 @@
   top: 0;
   z-index: 1;
 }
-
 .progress .progress-left {
   left: 0;
 }
-
 .progress .progress-bar {
   width: 100%;
   height: 100%;
@@ -44,48 +40,35 @@
   top: 0;
   border-color: #4FA0E9;
 }
-
 .progress .progress-left .progress-bar {
   left: 100%;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-left: 0;
-  -webkit-transform-origin: center left;
   transform-origin: center left;
 }
-
 .progress .progress-right {
   right: 0;
 }
-
 .progress .progress-right .progress-bar {
   left: -100%;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   border-right: 0;
-  -webkit-transform-origin: center right;
   transform-origin: center right;
 }
-
 .progress .progress-value {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
   font-size: 1rem;
   text-align: center;
   line-height: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
   font-weight: 300;
 }
-
 .progress .progress-value span {
   font-size: 12px;
   text-transform: uppercase;
@@ -98,7 +81,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-1 0.5s linear forwards;
           animation: loading-1 0.5s linear forwards;
 }
-
 .progress[data-percentage="1"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -108,7 +90,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-2 0.5s linear forwards;
           animation: loading-2 0.5s linear forwards;
 }
-
 .progress[data-percentage="2"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -118,7 +99,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-3 0.5s linear forwards;
           animation: loading-3 0.5s linear forwards;
 }
-
 .progress[data-percentage="3"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -128,7 +108,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-4 0.5s linear forwards;
           animation: loading-4 0.5s linear forwards;
 }
-
 .progress[data-percentage="4"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -138,7 +117,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-5 0.5s linear forwards;
           animation: loading-5 0.5s linear forwards;
 }
-
 .progress[data-percentage="5"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -148,7 +126,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-6 0.5s linear forwards;
           animation: loading-6 0.5s linear forwards;
 }
-
 .progress[data-percentage="6"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -158,7 +135,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-7 0.5s linear forwards;
           animation: loading-7 0.5s linear forwards;
 }
-
 .progress[data-percentage="7"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -168,7 +144,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-8 0.5s linear forwards;
           animation: loading-8 0.5s linear forwards;
 }
-
 .progress[data-percentage="8"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -178,7 +153,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-9 0.5s linear forwards;
           animation: loading-9 0.5s linear forwards;
 }
-
 .progress[data-percentage="9"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -188,7 +162,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-10 0.5s linear forwards;
           animation: loading-10 0.5s linear forwards;
 }
-
 .progress[data-percentage="10"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -198,7 +171,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-11 0.5s linear forwards;
           animation: loading-11 0.5s linear forwards;
 }
-
 .progress[data-percentage="11"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -208,7 +180,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-12 0.5s linear forwards;
           animation: loading-12 0.5s linear forwards;
 }
-
 .progress[data-percentage="12"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -218,7 +189,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-13 0.5s linear forwards;
           animation: loading-13 0.5s linear forwards;
 }
-
 .progress[data-percentage="13"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -228,7 +198,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-14 0.5s linear forwards;
           animation: loading-14 0.5s linear forwards;
 }
-
 .progress[data-percentage="14"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -238,7 +207,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-15 0.5s linear forwards;
           animation: loading-15 0.5s linear forwards;
 }
-
 .progress[data-percentage="15"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -248,7 +216,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-16 0.5s linear forwards;
           animation: loading-16 0.5s linear forwards;
 }
-
 .progress[data-percentage="16"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -258,7 +225,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-17 0.5s linear forwards;
           animation: loading-17 0.5s linear forwards;
 }
-
 .progress[data-percentage="17"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -268,7 +234,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-18 0.5s linear forwards;
           animation: loading-18 0.5s linear forwards;
 }
-
 .progress[data-percentage="18"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -278,7 +243,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-19 0.5s linear forwards;
           animation: loading-19 0.5s linear forwards;
 }
-
 .progress[data-percentage="19"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -288,7 +252,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-20 0.5s linear forwards;
           animation: loading-20 0.5s linear forwards;
 }
-
 .progress[data-percentage="20"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -298,7 +261,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-21 0.5s linear forwards;
           animation: loading-21 0.5s linear forwards;
 }
-
 .progress[data-percentage="21"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -308,7 +270,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-22 0.5s linear forwards;
           animation: loading-22 0.5s linear forwards;
 }
-
 .progress[data-percentage="22"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -318,7 +279,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-23 0.5s linear forwards;
           animation: loading-23 0.5s linear forwards;
 }
-
 .progress[data-percentage="23"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -328,7 +288,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-24 0.5s linear forwards;
           animation: loading-24 0.5s linear forwards;
 }
-
 .progress[data-percentage="24"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -338,7 +297,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-25 0.5s linear forwards;
           animation: loading-25 0.5s linear forwards;
 }
-
 .progress[data-percentage="25"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -348,7 +306,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-26 0.5s linear forwards;
           animation: loading-26 0.5s linear forwards;
 }
-
 .progress[data-percentage="26"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -358,7 +315,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-27 0.5s linear forwards;
           animation: loading-27 0.5s linear forwards;
 }
-
 .progress[data-percentage="27"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -368,7 +324,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-28 0.5s linear forwards;
           animation: loading-28 0.5s linear forwards;
 }
-
 .progress[data-percentage="28"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -378,7 +333,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-29 0.5s linear forwards;
           animation: loading-29 0.5s linear forwards;
 }
-
 .progress[data-percentage="29"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -388,7 +342,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-30 0.5s linear forwards;
           animation: loading-30 0.5s linear forwards;
 }
-
 .progress[data-percentage="30"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -398,7 +351,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-31 0.5s linear forwards;
           animation: loading-31 0.5s linear forwards;
 }
-
 .progress[data-percentage="31"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -408,7 +360,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-32 0.5s linear forwards;
           animation: loading-32 0.5s linear forwards;
 }
-
 .progress[data-percentage="32"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -418,7 +369,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-33 0.5s linear forwards;
           animation: loading-33 0.5s linear forwards;
 }
-
 .progress[data-percentage="33"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -428,7 +378,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-34 0.5s linear forwards;
           animation: loading-34 0.5s linear forwards;
 }
-
 .progress[data-percentage="34"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -438,7 +387,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-35 0.5s linear forwards;
           animation: loading-35 0.5s linear forwards;
 }
-
 .progress[data-percentage="35"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -448,7 +396,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-36 0.5s linear forwards;
           animation: loading-36 0.5s linear forwards;
 }
-
 .progress[data-percentage="36"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -458,7 +405,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-37 0.5s linear forwards;
           animation: loading-37 0.5s linear forwards;
 }
-
 .progress[data-percentage="37"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -468,7 +414,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-38 0.5s linear forwards;
           animation: loading-38 0.5s linear forwards;
 }
-
 .progress[data-percentage="38"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -478,7 +423,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-39 0.5s linear forwards;
           animation: loading-39 0.5s linear forwards;
 }
-
 .progress[data-percentage="39"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -488,7 +432,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-40 0.5s linear forwards;
           animation: loading-40 0.5s linear forwards;
 }
-
 .progress[data-percentage="40"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -498,7 +441,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-41 0.5s linear forwards;
           animation: loading-41 0.5s linear forwards;
 }
-
 .progress[data-percentage="41"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -508,7 +450,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-42 0.5s linear forwards;
           animation: loading-42 0.5s linear forwards;
 }
-
 .progress[data-percentage="42"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -518,7 +459,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-43 0.5s linear forwards;
           animation: loading-43 0.5s linear forwards;
 }
-
 .progress[data-percentage="43"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -528,7 +468,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-44 0.5s linear forwards;
           animation: loading-44 0.5s linear forwards;
 }
-
 .progress[data-percentage="44"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -538,7 +477,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-45 0.5s linear forwards;
           animation: loading-45 0.5s linear forwards;
 }
-
 .progress[data-percentage="45"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -548,7 +486,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-46 0.5s linear forwards;
           animation: loading-46 0.5s linear forwards;
 }
-
 .progress[data-percentage="46"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -558,7 +495,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-47 0.5s linear forwards;
           animation: loading-47 0.5s linear forwards;
 }
-
 .progress[data-percentage="47"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -568,7 +504,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-48 0.5s linear forwards;
           animation: loading-48 0.5s linear forwards;
 }
-
 .progress[data-percentage="48"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -578,7 +513,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-49 0.5s linear forwards;
           animation: loading-49 0.5s linear forwards;
 }
-
 .progress[data-percentage="49"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -588,7 +522,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="50"] .progress-left .progress-bar {
   -webkit-animation: 0;
           animation: 0;
@@ -598,7 +531,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="51"] .progress-left .progress-bar {
   -webkit-animation: loading-1 0.5s linear forwards 0.5s;
           animation: loading-1 0.5s linear forwards 0.5s;
@@ -608,7 +540,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="52"] .progress-left .progress-bar {
   -webkit-animation: loading-2 0.5s linear forwards 0.5s;
           animation: loading-2 0.5s linear forwards 0.5s;
@@ -618,7 +549,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="53"] .progress-left .progress-bar {
   -webkit-animation: loading-3 0.5s linear forwards 0.5s;
           animation: loading-3 0.5s linear forwards 0.5s;
@@ -628,7 +558,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="54"] .progress-left .progress-bar {
   -webkit-animation: loading-4 0.5s linear forwards 0.5s;
           animation: loading-4 0.5s linear forwards 0.5s;
@@ -638,7 +567,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="55"] .progress-left .progress-bar {
   -webkit-animation: loading-5 0.5s linear forwards 0.5s;
           animation: loading-5 0.5s linear forwards 0.5s;
@@ -648,7 +576,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="56"] .progress-left .progress-bar {
   -webkit-animation: loading-6 0.5s linear forwards 0.5s;
           animation: loading-6 0.5s linear forwards 0.5s;
@@ -658,7 +585,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="57"] .progress-left .progress-bar {
   -webkit-animation: loading-7 0.5s linear forwards 0.5s;
           animation: loading-7 0.5s linear forwards 0.5s;
@@ -668,7 +594,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="58"] .progress-left .progress-bar {
   -webkit-animation: loading-8 0.5s linear forwards 0.5s;
           animation: loading-8 0.5s linear forwards 0.5s;
@@ -678,7 +603,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="59"] .progress-left .progress-bar {
   -webkit-animation: loading-9 0.5s linear forwards 0.5s;
           animation: loading-9 0.5s linear forwards 0.5s;
@@ -688,7 +612,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="60"] .progress-left .progress-bar {
   -webkit-animation: loading-10 0.5s linear forwards 0.5s;
           animation: loading-10 0.5s linear forwards 0.5s;
@@ -698,7 +621,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="61"] .progress-left .progress-bar {
   -webkit-animation: loading-11 0.5s linear forwards 0.5s;
           animation: loading-11 0.5s linear forwards 0.5s;
@@ -708,7 +630,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="62"] .progress-left .progress-bar {
   -webkit-animation: loading-12 0.5s linear forwards 0.5s;
           animation: loading-12 0.5s linear forwards 0.5s;
@@ -718,7 +639,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="63"] .progress-left .progress-bar {
   -webkit-animation: loading-13 0.5s linear forwards 0.5s;
           animation: loading-13 0.5s linear forwards 0.5s;
@@ -728,7 +648,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="64"] .progress-left .progress-bar {
   -webkit-animation: loading-14 0.5s linear forwards 0.5s;
           animation: loading-14 0.5s linear forwards 0.5s;
@@ -738,7 +657,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="65"] .progress-left .progress-bar {
   -webkit-animation: loading-15 0.5s linear forwards 0.5s;
           animation: loading-15 0.5s linear forwards 0.5s;
@@ -748,7 +666,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="66"] .progress-left .progress-bar {
   -webkit-animation: loading-16 0.5s linear forwards 0.5s;
           animation: loading-16 0.5s linear forwards 0.5s;
@@ -758,7 +675,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="67"] .progress-left .progress-bar {
   -webkit-animation: loading-17 0.5s linear forwards 0.5s;
           animation: loading-17 0.5s linear forwards 0.5s;
@@ -768,7 +684,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="68"] .progress-left .progress-bar {
   -webkit-animation: loading-18 0.5s linear forwards 0.5s;
           animation: loading-18 0.5s linear forwards 0.5s;
@@ -778,7 +693,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="69"] .progress-left .progress-bar {
   -webkit-animation: loading-19 0.5s linear forwards 0.5s;
           animation: loading-19 0.5s linear forwards 0.5s;
@@ -788,7 +702,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="70"] .progress-left .progress-bar {
   -webkit-animation: loading-20 0.5s linear forwards 0.5s;
           animation: loading-20 0.5s linear forwards 0.5s;
@@ -798,7 +711,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="71"] .progress-left .progress-bar {
   -webkit-animation: loading-21 0.5s linear forwards 0.5s;
           animation: loading-21 0.5s linear forwards 0.5s;
@@ -808,7 +720,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="72"] .progress-left .progress-bar {
   -webkit-animation: loading-22 0.5s linear forwards 0.5s;
           animation: loading-22 0.5s linear forwards 0.5s;
@@ -818,7 +729,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="73"] .progress-left .progress-bar {
   -webkit-animation: loading-23 0.5s linear forwards 0.5s;
           animation: loading-23 0.5s linear forwards 0.5s;
@@ -828,7 +738,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="74"] .progress-left .progress-bar {
   -webkit-animation: loading-24 0.5s linear forwards 0.5s;
           animation: loading-24 0.5s linear forwards 0.5s;
@@ -838,7 +747,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="75"] .progress-left .progress-bar {
   -webkit-animation: loading-25 0.5s linear forwards 0.5s;
           animation: loading-25 0.5s linear forwards 0.5s;
@@ -848,7 +756,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="76"] .progress-left .progress-bar {
   -webkit-animation: loading-26 0.5s linear forwards 0.5s;
           animation: loading-26 0.5s linear forwards 0.5s;
@@ -858,7 +765,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="77"] .progress-left .progress-bar {
   -webkit-animation: loading-27 0.5s linear forwards 0.5s;
           animation: loading-27 0.5s linear forwards 0.5s;
@@ -868,7 +774,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="78"] .progress-left .progress-bar {
   -webkit-animation: loading-28 0.5s linear forwards 0.5s;
           animation: loading-28 0.5s linear forwards 0.5s;
@@ -878,7 +783,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="79"] .progress-left .progress-bar {
   -webkit-animation: loading-29 0.5s linear forwards 0.5s;
           animation: loading-29 0.5s linear forwards 0.5s;
@@ -888,7 +792,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="80"] .progress-left .progress-bar {
   -webkit-animation: loading-30 0.5s linear forwards 0.5s;
           animation: loading-30 0.5s linear forwards 0.5s;
@@ -898,7 +801,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="81"] .progress-left .progress-bar {
   -webkit-animation: loading-31 0.5s linear forwards 0.5s;
           animation: loading-31 0.5s linear forwards 0.5s;
@@ -908,7 +810,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="82"] .progress-left .progress-bar {
   -webkit-animation: loading-32 0.5s linear forwards 0.5s;
           animation: loading-32 0.5s linear forwards 0.5s;
@@ -918,7 +819,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="83"] .progress-left .progress-bar {
   -webkit-animation: loading-33 0.5s linear forwards 0.5s;
           animation: loading-33 0.5s linear forwards 0.5s;
@@ -928,7 +828,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="84"] .progress-left .progress-bar {
   -webkit-animation: loading-34 0.5s linear forwards 0.5s;
           animation: loading-34 0.5s linear forwards 0.5s;
@@ -938,7 +837,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="85"] .progress-left .progress-bar {
   -webkit-animation: loading-35 0.5s linear forwards 0.5s;
           animation: loading-35 0.5s linear forwards 0.5s;
@@ -948,7 +846,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="86"] .progress-left .progress-bar {
   -webkit-animation: loading-36 0.5s linear forwards 0.5s;
           animation: loading-36 0.5s linear forwards 0.5s;
@@ -958,7 +855,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="87"] .progress-left .progress-bar {
   -webkit-animation: loading-37 0.5s linear forwards 0.5s;
           animation: loading-37 0.5s linear forwards 0.5s;
@@ -968,7 +864,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="88"] .progress-left .progress-bar {
   -webkit-animation: loading-38 0.5s linear forwards 0.5s;
           animation: loading-38 0.5s linear forwards 0.5s;
@@ -978,7 +873,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="89"] .progress-left .progress-bar {
   -webkit-animation: loading-39 0.5s linear forwards 0.5s;
           animation: loading-39 0.5s linear forwards 0.5s;
@@ -988,7 +882,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="90"] .progress-left .progress-bar {
   -webkit-animation: loading-40 0.5s linear forwards 0.5s;
           animation: loading-40 0.5s linear forwards 0.5s;
@@ -998,7 +891,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="91"] .progress-left .progress-bar {
   -webkit-animation: loading-41 0.5s linear forwards 0.5s;
           animation: loading-41 0.5s linear forwards 0.5s;
@@ -1008,7 +900,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="92"] .progress-left .progress-bar {
   -webkit-animation: loading-42 0.5s linear forwards 0.5s;
           animation: loading-42 0.5s linear forwards 0.5s;
@@ -1018,7 +909,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="93"] .progress-left .progress-bar {
   -webkit-animation: loading-43 0.5s linear forwards 0.5s;
           animation: loading-43 0.5s linear forwards 0.5s;
@@ -1028,7 +918,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="94"] .progress-left .progress-bar {
   -webkit-animation: loading-44 0.5s linear forwards 0.5s;
           animation: loading-44 0.5s linear forwards 0.5s;
@@ -1038,7 +927,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="95"] .progress-left .progress-bar {
   -webkit-animation: loading-45 0.5s linear forwards 0.5s;
           animation: loading-45 0.5s linear forwards 0.5s;
@@ -1048,7 +936,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="96"] .progress-left .progress-bar {
   -webkit-animation: loading-46 0.5s linear forwards 0.5s;
           animation: loading-46 0.5s linear forwards 0.5s;
@@ -1058,7 +945,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="97"] .progress-left .progress-bar {
   -webkit-animation: loading-47 0.5s linear forwards 0.5s;
           animation: loading-47 0.5s linear forwards 0.5s;
@@ -1068,7 +954,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="98"] .progress-left .progress-bar {
   -webkit-animation: loading-48 0.5s linear forwards 0.5s;
           animation: loading-48 0.5s linear forwards 0.5s;
@@ -1078,7 +963,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="99"] .progress-left .progress-bar {
   -webkit-animation: loading-49 0.5s linear forwards 0.5s;
           animation: loading-49 0.5s linear forwards 0.5s;
@@ -1088,7 +972,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-animation: loading-50 0.5s linear forwards;
           animation: loading-50 0.5s linear forwards;
 }
-
 .progress[data-percentage="100"] .progress-left .progress-bar {
   -webkit-animation: loading-50 0.5s linear forwards 0.5s;
           animation: loading-50 0.5s linear forwards 0.5s;
@@ -1096,1108 +979,808 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 @-webkit-keyframes loading-1 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(3.6);
     transform: rotate(3.6deg);
   }
 }
 
 @keyframes loading-1 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(3.6);
     transform: rotate(3.6deg);
   }
 }
-
 @-webkit-keyframes loading-2 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(7.2);
     transform: rotate(7.2deg);
   }
 }
-
 @keyframes loading-2 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(7.2);
     transform: rotate(7.2deg);
   }
 }
-
 @-webkit-keyframes loading-3 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(10.8);
     transform: rotate(10.8deg);
   }
 }
-
 @keyframes loading-3 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(10.8);
     transform: rotate(10.8deg);
   }
 }
-
 @-webkit-keyframes loading-4 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(14.4);
     transform: rotate(14.4deg);
   }
 }
-
 @keyframes loading-4 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(14.4);
     transform: rotate(14.4deg);
   }
 }
-
 @-webkit-keyframes loading-5 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(18);
     transform: rotate(18deg);
   }
 }
-
 @keyframes loading-5 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(18);
     transform: rotate(18deg);
   }
 }
-
 @-webkit-keyframes loading-6 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(21.6);
     transform: rotate(21.6deg);
   }
 }
-
 @keyframes loading-6 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(21.6);
     transform: rotate(21.6deg);
   }
 }
-
 @-webkit-keyframes loading-7 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(25.2);
     transform: rotate(25.2deg);
   }
 }
-
 @keyframes loading-7 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(25.2);
     transform: rotate(25.2deg);
   }
 }
-
 @-webkit-keyframes loading-8 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(28.8);
     transform: rotate(28.8deg);
   }
 }
-
 @keyframes loading-8 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(28.8);
     transform: rotate(28.8deg);
   }
 }
-
 @-webkit-keyframes loading-9 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(32.4);
     transform: rotate(32.4deg);
   }
 }
-
 @keyframes loading-9 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(32.4);
     transform: rotate(32.4deg);
   }
 }
-
 @-webkit-keyframes loading-10 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(36);
     transform: rotate(36deg);
   }
 }
-
 @keyframes loading-10 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(36);
     transform: rotate(36deg);
   }
 }
-
 @-webkit-keyframes loading-11 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(39.6);
     transform: rotate(39.6deg);
   }
 }
-
 @keyframes loading-11 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(39.6);
     transform: rotate(39.6deg);
   }
 }
-
 @-webkit-keyframes loading-12 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(43.2);
     transform: rotate(43.2deg);
   }
 }
-
 @keyframes loading-12 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(43.2);
     transform: rotate(43.2deg);
   }
 }
-
 @-webkit-keyframes loading-13 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(46.8);
     transform: rotate(46.8deg);
   }
 }
-
 @keyframes loading-13 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(46.8);
     transform: rotate(46.8deg);
   }
 }
-
 @-webkit-keyframes loading-14 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(50.4);
     transform: rotate(50.4deg);
   }
 }
-
 @keyframes loading-14 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(50.4);
     transform: rotate(50.4deg);
   }
 }
-
 @-webkit-keyframes loading-15 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(54);
     transform: rotate(54deg);
   }
 }
-
 @keyframes loading-15 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(54);
     transform: rotate(54deg);
   }
 }
-
 @-webkit-keyframes loading-16 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(57.6);
     transform: rotate(57.6deg);
   }
 }
-
 @keyframes loading-16 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(57.6);
     transform: rotate(57.6deg);
   }
 }
-
 @-webkit-keyframes loading-17 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(61.2);
     transform: rotate(61.2deg);
   }
 }
-
 @keyframes loading-17 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(61.2);
     transform: rotate(61.2deg);
   }
 }
-
 @-webkit-keyframes loading-18 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(64.8);
     transform: rotate(64.8deg);
   }
 }
-
 @keyframes loading-18 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(64.8);
     transform: rotate(64.8deg);
   }
 }
-
 @-webkit-keyframes loading-19 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(68.4);
     transform: rotate(68.4deg);
   }
 }
-
 @keyframes loading-19 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(68.4);
     transform: rotate(68.4deg);
   }
 }
-
 @-webkit-keyframes loading-20 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(72);
     transform: rotate(72deg);
   }
 }
-
 @keyframes loading-20 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(72);
     transform: rotate(72deg);
   }
 }
-
 @-webkit-keyframes loading-21 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(75.6);
     transform: rotate(75.6deg);
   }
 }
-
 @keyframes loading-21 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(75.6);
     transform: rotate(75.6deg);
   }
 }
-
 @-webkit-keyframes loading-22 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(79.2);
     transform: rotate(79.2deg);
   }
 }
-
 @keyframes loading-22 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(79.2);
     transform: rotate(79.2deg);
   }
 }
-
 @-webkit-keyframes loading-23 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(82.8);
     transform: rotate(82.8deg);
   }
 }
-
 @keyframes loading-23 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(82.8);
     transform: rotate(82.8deg);
   }
 }
-
 @-webkit-keyframes loading-24 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(86.4);
     transform: rotate(86.4deg);
   }
 }
-
 @keyframes loading-24 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(86.4);
     transform: rotate(86.4deg);
   }
 }
-
 @-webkit-keyframes loading-25 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(90);
     transform: rotate(90deg);
   }
 }
-
 @keyframes loading-25 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(90);
     transform: rotate(90deg);
   }
 }
-
 @-webkit-keyframes loading-26 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(93.6);
     transform: rotate(93.6deg);
   }
 }
-
 @keyframes loading-26 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(93.6);
     transform: rotate(93.6deg);
   }
 }
-
 @-webkit-keyframes loading-27 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(97.2);
     transform: rotate(97.2deg);
   }
 }
-
 @keyframes loading-27 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(97.2);
     transform: rotate(97.2deg);
   }
 }
-
 @-webkit-keyframes loading-28 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(100.8);
     transform: rotate(100.8deg);
   }
 }
-
 @keyframes loading-28 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(100.8);
     transform: rotate(100.8deg);
   }
 }
-
 @-webkit-keyframes loading-29 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(104.4);
     transform: rotate(104.4deg);
   }
 }
-
 @keyframes loading-29 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(104.4);
     transform: rotate(104.4deg);
   }
 }
-
 @-webkit-keyframes loading-30 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(108);
     transform: rotate(108deg);
   }
 }
-
 @keyframes loading-30 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(108);
     transform: rotate(108deg);
   }
 }
-
 @-webkit-keyframes loading-31 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(111.6);
     transform: rotate(111.6deg);
   }
 }
-
 @keyframes loading-31 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(111.6);
     transform: rotate(111.6deg);
   }
 }
-
 @-webkit-keyframes loading-32 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(115.2);
     transform: rotate(115.2deg);
   }
 }
-
 @keyframes loading-32 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(115.2);
     transform: rotate(115.2deg);
   }
 }
-
 @-webkit-keyframes loading-33 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(118.8);
     transform: rotate(118.8deg);
   }
 }
-
 @keyframes loading-33 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(118.8);
     transform: rotate(118.8deg);
   }
 }
-
 @-webkit-keyframes loading-34 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(122.4);
     transform: rotate(122.4deg);
   }
 }
-
 @keyframes loading-34 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(122.4);
     transform: rotate(122.4deg);
   }
 }
-
 @-webkit-keyframes loading-35 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(126);
     transform: rotate(126deg);
   }
 }
-
 @keyframes loading-35 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(126);
     transform: rotate(126deg);
   }
 }
-
 @-webkit-keyframes loading-36 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(129.6);
     transform: rotate(129.6deg);
   }
 }
-
 @keyframes loading-36 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(129.6);
     transform: rotate(129.6deg);
   }
 }
-
 @-webkit-keyframes loading-37 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(133.2);
     transform: rotate(133.2deg);
   }
 }
-
 @keyframes loading-37 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(133.2);
     transform: rotate(133.2deg);
   }
 }
-
 @-webkit-keyframes loading-38 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(136.8);
     transform: rotate(136.8deg);
   }
 }
-
 @keyframes loading-38 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(136.8);
     transform: rotate(136.8deg);
   }
 }
-
 @-webkit-keyframes loading-39 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(140.4);
     transform: rotate(140.4deg);
   }
 }
-
 @keyframes loading-39 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(140.4);
     transform: rotate(140.4deg);
   }
 }
-
 @-webkit-keyframes loading-40 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(144);
     transform: rotate(144deg);
   }
 }
-
 @keyframes loading-40 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(144);
     transform: rotate(144deg);
   }
 }
-
 @-webkit-keyframes loading-41 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(147.6);
     transform: rotate(147.6deg);
   }
 }
-
 @keyframes loading-41 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(147.6);
     transform: rotate(147.6deg);
   }
 }
-
 @-webkit-keyframes loading-42 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(151.2);
     transform: rotate(151.2deg);
   }
 }
-
 @keyframes loading-42 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(151.2);
     transform: rotate(151.2deg);
   }
 }
-
 @-webkit-keyframes loading-43 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(154.8);
     transform: rotate(154.8deg);
   }
 }
-
 @keyframes loading-43 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(154.8);
     transform: rotate(154.8deg);
   }
 }
-
 @-webkit-keyframes loading-44 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(158.4);
     transform: rotate(158.4deg);
   }
 }
-
 @keyframes loading-44 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(158.4);
     transform: rotate(158.4deg);
   }
 }
-
 @-webkit-keyframes loading-45 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(162);
     transform: rotate(162deg);
   }
 }
-
 @keyframes loading-45 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(162);
     transform: rotate(162deg);
   }
 }
-
 @-webkit-keyframes loading-46 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(165.6);
     transform: rotate(165.6deg);
   }
 }
-
 @keyframes loading-46 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(165.6);
     transform: rotate(165.6deg);
   }
 }
-
 @-webkit-keyframes loading-47 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(169.2);
     transform: rotate(169.2deg);
   }
 }
-
 @keyframes loading-47 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(169.2);
     transform: rotate(169.2deg);
   }
 }
-
 @-webkit-keyframes loading-48 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(172.8);
     transform: rotate(172.8deg);
   }
 }
-
 @keyframes loading-48 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(172.8);
     transform: rotate(172.8deg);
   }
 }
-
 @-webkit-keyframes loading-49 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(176.4);
     transform: rotate(176.4deg);
   }
 }
-
 @keyframes loading-49 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(176.4);
     transform: rotate(176.4deg);
   }
 }
-
 @-webkit-keyframes loading-50 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(180);
     transform: rotate(180deg);
   }
 }
-
 @keyframes loading-50 {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(180);
     transform: rotate(180deg);
   }
 }
-
 .instructors {
   padding: 2rem 9rem;
 }
-
 .instructors h1 {
   font-size: 4.5rem;
   color: #5d30db;
@@ -2205,34 +1788,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 700;
   margin-bottom: 1rem;
 }
-
 .instructors__column__margin {
   padding: 0;
   margin: 0;
 }
-
 .instructors__box {
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin: 1rem 0;
 }
-
 .instructors__box h1 {
   font-size: 4.5rem;
   color: #ff9900;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
-
 .instructors__box p {
   font-size: 2rem;
   color: #333366;
@@ -2245,8 +1817,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 2.5px 2px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 2.5px 2px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2257,25 +1828,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .partners {
   padding: 2rem 6rem;
 }
-
 .partners__box {
   margin: 2rem 3rem;
   height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .partners__img {
   height: 100%;
 }
-
 .partners h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 4.5rem;
@@ -2283,12 +1845,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 700;
   margin-left: 2.5rem;
 }
-
 .partners__column__margin {
   padding: 0;
   margin: 0;
 }
-
 .partners__btn, .partners__btn:link, .partners__btn:visited {
   padding: 0.5rem 1rem;
   background-color: #5d30db;
@@ -2297,28 +1857,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .partners__btn:hover {
   background-color: #4d25bb;
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
-  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
-
 .partners__btn:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .promo__short__video {
   position: relative;
   z-index: 20;
 }
-
 .promo__short__video .video-js {
   border-radius: 70px 7px 7px 7px;
   position: absolute;
@@ -2328,9 +1881,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
      object-fit: cover;
   z-index: 20;
 }
-
 .promo__short__video::before {
-  content: '';
+  content: "";
   height: 9rem;
   width: 13rem;
   position: absolute;
@@ -2339,18 +1891,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 6rem;
   left: -7rem;
   z-index: 10;
-  -webkit-box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
-          box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
+  box-shadow: 0 0.3rem 2rem rgba(255, 153, 0, 0.2);
 }
-
 @media only screen and (max-width: 992px) {
   .promo__short__video::before {
     display: none;
   }
 }
-
 .promo__short__video::after {
-  content: '';
+  content: "";
   height: 9rem;
   width: 13rem;
   position: absolute;
@@ -2359,74 +1908,57 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 23.5rem;
   left: 23.5rem;
   z-index: 10;
-  -webkit-box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
 }
-
 @media only screen and (max-width: 1200px) {
   .promo__short__video::after {
     left: 20rem;
   }
 }
-
 @media only screen and (max-width: 1112px) {
   .promo__short__video::after {
     left: 18rem;
   }
 }
-
 @media only screen and (max-width: 1044px) {
   .promo__short__video::after {
     left: 16rem;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .promo__short__video::after {
     display: none;
   }
 }
-
 .promo__heading__primary {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
 }
-
 .promo__paragraph {
   font-size: 0.9rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
 }
-
 .promo__column__margin {
   margin: 0;
   padding: 0;
 }
-
 .promo__box {
   background-color: #5d30db;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 13rem 9rem;
 }
-
 .promo__img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 5;
 }
-
 .promo__content {
   position: relative;
   z-index: 20;
@@ -2436,52 +1968,43 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #f3f8ff;
   padding: 1.875rem 3.125rem;
 }
-
 .chart__filter {
   display: inline-block;
   background-color: white;
   padding: 0.3rem 1rem;
   border-radius: 5px;
 }
-
 .chart__filter input:focus {
   outline: none;
 }
-
 .chart__bar {
   background-color: white;
-  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
   border-radius: 14px;
   padding: 1rem 1.5rem;
   height: 20.25rem;
 }
-
 .chart__line {
   background-color: white;
-  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.04);
   border-radius: 14px;
   padding: 1rem 1.5rem;
   height: 20.25rem;
 }
-
 .chart__card {
   padding: 1.5rem;
   background-color: white;
   border-radius: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
 }
-
 .chart__card h3 {
   text-transform: uppercase;
   font-size: 16px;
   color: #2c3241;
   margin-bottom: 1rem;
 }
-
 .chart__card h1 {
   font-size: 42px;
   color: #5d30db;
@@ -2494,14 +2017,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-image: url("~assets/images/contact/bitmap.png");
   background-size: contain;
 }
-
 .contact__us h1 {
   color: #333366;
   font-weight: 400;
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
 }
-
 .contact__us p {
   color: #333366;
   font-size: 1.5rem;
@@ -2512,40 +2033,33 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: 0;
   padding: 0;
 }
-
 .contact__input__group {
   margin-bottom: 2rem;
 }
-
 .contact__form__label {
   display: block;
   font-size: 1rem;
   color: #2c3241;
   font-weight: bold;
 }
-
 .contact__form__input {
   display: block;
   width: 100%;
   padding: 0.6rem 1rem;
   border-radius: 5px;
 }
-
 .contact__form__input:focus {
   outline: none;
 }
-
 .contact__form__textArea {
   display: block;
   width: 100%;
   padding: 0.6rem 1rem;
   border-radius: 5px;
 }
-
 .contact__form__textArea:focus {
   outline: none;
 }
-
 .contact__btn {
   display: block;
   width: 100%;
@@ -2562,13 +2076,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   width: 100%;
   margin: 2rem 0 4rem;
 }
-
 .contact__map__container .map-yandex {
   position: relative;
   height: 100%;
   width: 100%;
 }
-
 .contact__map__container .footer-map {
   width: 100%;
   height: 100%;
@@ -2576,60 +2088,39 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 0;
   left: 0;
 }
-
 .contact__map__container section.ymap-container {
   width: 100%;
   height: 100%;
 }
-
 .contact__map__content h3 {
   display: block;
   font-weight: bold;
   font-size: 24px;
   color: #333366;
 }
-
 .contact__map__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .contact__map__icons h3 {
   font-weight: bold;
   font-size: 24px;
   color: #333366;
 }
-
 .contact__map__copy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .contact__map__copy p {
   font-weight: 600;
   font-size: 14px;
   color: #333366;
   margin: 0 1rem 0.5rem 0;
 }
-
 .contact__map__i {
   font-size: 24px;
   color: #333366;
@@ -2645,20 +2136,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 5px;
   text-align: center;
 }
-
 .controlButtonSubmit {
   background-color: #5d30db;
 }
-
 .controlButtonSubmit:hover, .controlButtonSubmit:active {
   background-color: #4d25bb;
 }
-
 .controlButtonCancel {
   background-color: red;
   color: white;
 }
-
 .controlButtonCancel:hover, .controlButtonCancel:active {
   background-color: #c90e0e;
 }
@@ -2666,13 +2153,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .inputControl {
   position: relative;
 }
-
-.inputControl input,
-.inputControl textarea {
+.inputControl input, .inputControl textarea {
   display: block;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: inherit;
   border: 2px solid #ccc;
   padding: 0.4rem 1.2rem;
@@ -2680,17 +2164,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 5px;
   background-color: transparent;
 }
-
-.inputControl input:focus,
-.inputControl textarea:focus {
+.inputControl input:focus, .inputControl textarea:focus {
   background-color: #eaeef3;
   outline: none;
 }
-
 .inputControl__box {
   margin-bottom: 1rem;
 }
-
 .inputControl__file {
   width: 0.1px;
   height: 0.1px;
@@ -2699,7 +2179,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: absolute;
   z-index: -1;
 }
-
 .inputControl__file + label {
   width: 100%;
   font-size: 1.05em;
@@ -2709,20 +2188,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: transparent;
   border: 2px solid #ccc;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-radius: 5px;
 }
-
 .inputControl__file + label span:last-child {
   padding-left: 0.5rem;
   border-left: 2px solid #ccc;
 }
-
 .inputControl__file:focus + label {
   background-color: #eaeef3;
   outline: none;
@@ -2732,59 +2205,47 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 5rem 8rem;
   background-color: #f3f8ff;
 }
-
 .allCourses__container {
   width: 100%;
 }
-
 .allCourses__container h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 4rem;
   color: #333366;
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
-
 .allCourses__link, .allCourses__link:link, .allCourses__link:visited {
   display: inline-block;
   width: 100%;
   text-decoration: none;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .allCourses__link:hover {
   text-decoration: none;
-  -webkit-transform: translateY(-0.2rem) scale(1.03);
-          transform: translateY(-0.2rem) scale(1.03);
-  -webkit-box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.2rem) scale(1.03);
+  box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.2);
 }
-
 .allCourses__photo {
   height: 10rem;
   width: 100%;
   margin-bottom: 0.5rem;
 }
-
 .allCourses__image {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .allCourses__content {
   padding: 0.5rem 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 .allCourses__content h2 {
   color: black;
   font-weight: 700;
@@ -2793,7 +2254,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 1.4rem;
   margin-bottom: 0.3rem;
 }
-
 .allCourses__content h3 {
   color: black;
   font-weight: 600;
@@ -2802,26 +2262,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
-
 .allCourses__content p {
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
-
 .allCourses__content ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
 .allCourses__content ul li {
   margin-bottom: 0.1rem;
   color: black;
@@ -2832,25 +2284,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
-
 .description__container h1 {
   font-weight: 600;
   font-size: 42px;
   color: #333366;
   margin-bottom: 1rem;
 }
-
 .description__container ul {
   list-style: none;
 }
-
 .description__container ul li {
   font-size: 18px;
   margin-bottom: 0.3rem;
 }
-
 .description__container ul li::before {
-  content: '\2022';
+  content: "•";
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #ff9900;
   /* Change the color */
@@ -2867,16 +2315,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .introduction__container {
   padding: 0 0 2rem;
 }
-
 .introduction__h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   color: #5d30db;
   margin-bottom: 1.5rem;
 }
-
 .introduction__responsive__promo {
   height: 20rem;
   width: 100%;
@@ -2884,68 +2330,53 @@ Due to the split circle of progress-left and progress right, we must use the ani
   overflow: hidden;
   margin-bottom: 1rem;
 }
-
 .introduction__responsive__promo .video-js {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100% !important;
   width: 100% !important;
 }
-
 .introduction__content {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   color: #333366;
   margin-bottom: 3.5rem;
 }
-
 .introduction__content h1 {
   font-weight: 600;
   font-size: 42px;
   margin-bottom: 1rem;
 }
-
 .introduction__content p {
   font-weight: normal;
   font-size: 18px;
   margin-bottom: 1rem;
 }
-
 .introduction__info {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   color: #333366;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0 0 1.5rem 0;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 2px;
   padding: 1rem 1rem;
   white-space: normal;
 }
-
 .introduction__icons {
   font-size: 20px;
 }
-
 .introduction__iconss {
   margin-right: 0.5rem;
   font-size: 30px;
 }
-
 .introduction__button {
   margin: 0 0 1.5rem 0;
 }
-
 .introduction__link, .introduction__link:visited {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -2957,108 +2388,77 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 1rem 1rem;
   text-align: center;
   display: block;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .introduction__link:hover {
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
   text-decoration: none;
 }
-
 .introduction__link:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .introduction__link1 {
   background-color: #5d30db;
-  -webkit-box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
-          box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
+  box-shadow: 0px 16px 24px rgba(93, 48, 219, 0.24);
   color: white;
 }
-
 .introduction__link1:hover {
   color: white;
 }
-
 .introduction__link2:hover {
   color: #5d30db;
 }
-
 .introduction__link2 {
   border: 1px solid #5d30db;
   color: #5d30db;
-  -webkit-filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
-          filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
+  filter: drop-shadow(0px 16px 24px rgba(93, 48, 219, 0.24));
   background-color: transparent;
 }
 
 .video__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
-
 .video__wrapper {
   max-width: 24rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
 }
-
 .video__promo {
   width: 100%;
   height: 12.5rem;
   margin-bottom: 1rem;
 }
-
 .video__promo .video-js {
   height: 100% !important;
   width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .video__price {
   padding: 1.6rem 1.6rem 0.3rem 1.6rem;
   font-style: normal;
 }
-
 .video__price h1 {
   font-weight: 600;
   font-size: 42px;
   color: #333366;
   margin-bottom: 1.8rem;
 }
-
 .video__price p {
   text-align: center;
   color: #333366;
 }
-
 .video__content {
   padding: 1.6rem;
 }
-
 .video__button, .video__button:link, .video__button:visited {
   text-decoration: none;
   width: 100%;
@@ -3067,54 +2467,41 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 1rem;
-  -webkit-box-shadow: 0px 16px 24px rgba(255, 153, 0, 0.1);
-          box-shadow: 0px 16px 24px rgba(255, 153, 0, 0.1);
+  box-shadow: 0px 16px 24px rgba(255, 153, 0, 0.1);
   border-radius: 4px;
   text-align: center;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .video__button:hover {
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
   color: inherit;
 }
-
 .video__button:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .video__button1 {
   background-color: #ff9900;
   color: #ffffff;
 }
-
 .video__button2 {
   color: #ff9900;
   background-color: transparent;
   border: 2px solid #ff9900;
 }
-
 .video__content {
   color: #333366;
 }
-
 .video__content h3 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 1rem;
 }
-
 .video__content p {
   font-size: 16px;
 }
-
 .video__list {
   list-style: inside;
 }
-
 .video__list li {
   font-size: 14px;
   margin-bottom: 0.7rem;
@@ -3125,7 +2512,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
-
 .form__switch__box {
   padding: 1.2rem 3rem;
   border: 2px solid #ccc;
@@ -3136,71 +2522,44 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   background-color: #eaeef3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .form__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 3rem;
 }
-
 .form__search button {
   background-color: #ffffff;
   padding: 0.6rem 1rem;
   margin: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 17rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   font-weight: 600;
   font-size: 16px;
   color: #333366;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .form__search button:hover {
   background-color: #f3f3f3;
 }
-
 .form__search button:focus {
   outline: none;
 }
-
 .form__search__img {
   height: 2.1rem;
   float: left;
   margin-right: 1rem;
 }
-
 .form__wrapper {
   padding: 2.5rem 3.75rem;
   border-radius: 0px 0px 5px 5px !important;
@@ -3209,30 +2568,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-right: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
 }
-
 .form__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem;
 }
-
 .form__content h1 {
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 1rem;
 }
-
 .form__button h4 {
   font-weight: 600;
   font-size: 18px;
@@ -3240,46 +2587,33 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #5d30db;
   margin: 2rem 0;
 }
-
 .form__content__p {
   font-weight: normal;
   font-size: 18px;
   text-align: center;
 }
-
 .form__button p {
   text-align: left;
   font-size: 14px;
   margin-bottom: 2.5rem;
 }
-
 .form__button {
   text-align: center;
 }
-
 .form__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 2rem;
 }
-
 .form__line span {
   width: 45%;
   height: 1.5px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
 .form__link, .form__link:link, .form__link:visited {
   text-decoration: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #5d30db;
 }
@@ -3295,41 +2629,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
   z-index: 100;
 }
-
 .form__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3.8rem;
 }
-
 .form__content h1 {
   text-align: center;
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 1rem;
 }
-
 .form__button p {
   text-align: left;
   font-size: 14px;
   margin-bottom: 2.5rem;
 }
-
 .form__button {
   text-align: center;
 }
-
 .form__p {
   font-weight: normal;
   font-size: 18px;
@@ -3338,57 +2658,46 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .instructorPage__nav {
   background-color: #333366;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   padding: 4.4rem 9.3rem 2rem;
   border-bottom: 3px solid #ff9900;
 }
-
 .instructorPage__nav h1 {
   color: white;
   font-size: 26px;
   margin-bottom: 1.9rem;
 }
-
 .instructorPage__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .instructorPage__item {
   font-size: 18px;
   color: white;
   font-weight: normal;
   position: relative;
 }
-
 .instructorPage__item::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 0;
   position: absolute;
   bottom: -0.4rem;
   left: 0;
   background-color: #ff9900;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .instructorPage__item:hover::after {
   width: 100%;
 }
-
 .instructorPage__item:not(:last-child) {
   margin-right: 50px;
 }
-
 .instructorPage__link {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
-
 .instructorPage__link:hover {
   text-decoration: none;
   color: inherit;
@@ -3398,23 +2707,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #f3f8ff;
   padding: 3rem 9.3rem 25rem;
 }
-
 .courses__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 5rem;
 }
-
 .courses__header h1 {
   color: #333366;
   font-size: 2.2rem;
   font-weight: 600;
 }
-
 .courses__header button {
   color: white;
   background-color: #333366;
@@ -3422,22 +2724,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 1.3rem;
   font-weight: 600;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.2s;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
 }
-
 .courses__header button:hover {
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem);
 }
-
 .courses__header button:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .courses__modal {
   position: fixed;
   top: 0;
@@ -3447,61 +2742,39 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
-  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
 .courses__form {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(51, 51, 102, 0.9)), to(rgba(93, 48, 219, 0.9)));
   background-image: linear-gradient(to right, rgba(51, 51, 102, 0.9), rgba(93, 48, 219, 0.9));
   border-radius: 10px;
   top: 50%;
   left: 50%;
   position: absolute;
   padding: 2rem 6rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translate(-50%, -50%);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .courses__form h1 {
   color: white;
   font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
-
 .courses__form .form__group {
-  font-family: 'Open Sans', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Open Sans", sans-serif;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 1rem;
   position: relative;
 }
-
 .courses__form .form__group label {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
 }
-
 .courses__form .form__group input {
   background-color: white;
   padding: 0.3rem 1rem;
@@ -3510,12 +2783,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
   font-weight: 600;
 }
-
 .courses__form .form__group input:focus {
   outline: none;
   background-color: #ebfeff;
 }
-
 .courses__form .form__close {
   position: absolute;
   top: 0;
@@ -3524,86 +2795,58 @@ Due to the split circle of progress-left and progress right, we must use the ani
   cursor: pointer;
   font-size: 2rem;
 }
-
 .courses__form button {
   background-color: #e12e2e;
-  -webkit-box-shadow: 0 0.1rem 2rem rgba(225, 46, 46, 0.2);
-          box-shadow: 0 0.1rem 2rem rgba(225, 46, 46, 0.2);
+  box-shadow: 0 0.1rem 2rem rgba(225, 46, 46, 0.2);
   border-radius: 5px;
   padding: 0.3rem 0.5rem;
   color: white;
   font-weight: 600;
   margin-top: 0.8rem;
   font-size: 1.5rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .courses__form button:last-child {
   background-color: #35973d;
-  -webkit-box-shadow: 0 0.1rem 2rem rgba(53, 151, 61, 0.2);
-          box-shadow: 0 0.1rem 2rem rgba(53, 151, 61, 0.2);
+  box-shadow: 0 0.1rem 2rem rgba(53, 151, 61, 0.2);
 }
-
 .courses__form button:hover {
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem);
 }
-
 .courses__form button:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .courses__edit {
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0.3rem 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
-
 .courses__edit__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .courses__edit img {
   height: 10rem;
 }
-
 .courses__edit div {
   padding: 1rem;
 }
-
 .courses__edit div h2 {
   font-size: 2.3rem;
   font-weight: 600;
   color: #333366;
   margin-bottom: 0.6rem;
 }
-
 .courses__edit div p {
   font-size: 1.6rem;
   font-weight: 600;
   color: #333366;
 }
-
 .courses__edit__link {
   text-decoration: none;
   color: white;
@@ -3613,24 +2856,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #333366;
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.2s;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
 }
-
 .courses__edit__link:hover {
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem);
   text-decoration: none;
   color: white;
 }
-
 .courses__edit__link:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .courses__edit__delete {
   color: white;
   font-size: 1.4rem;
@@ -3638,67 +2874,44 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 0.3rem 1.5rem;
   background-color: #a73535;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.2s;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
   transition: all 0.2s;
 }
-
 .courses__edit__delete:hover {
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem);
 }
-
 .courses__edit__delete:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .coursesSingle .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #333366;
   padding: 3rem 3rem 25rem;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 .coursesSingle .sidebar h2 {
   color: white;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
-
 .coursesSingle .sidebar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   color: white;
 }
-
 .coursesSingle .sidebar ul li {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
   cursor: pointer;
 }
-
 .coursesSingle .sidebar ul li::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0.15rem;
   left: -0.5rem;
@@ -3706,11 +2919,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   width: 3px;
   background-color: #ff9900;
 }
-
 .coursesSingle .sidebar ul li:hover {
   margin-left: 0.4rem;
 }
-
 .coursesSingle .sidebar button {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -3720,51 +2931,39 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 600;
   border-radius: 5px;
   font-size: 1.4rem;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 0 0.1rem 2rem rgba(255, 153, 0, 0.2);
-          box-shadow: 0 0.1rem 2rem rgba(255, 153, 0, 0.2);
+  box-shadow: 0 0.1rem 2rem rgba(255, 153, 0, 0.2);
 }
-
 .coursesSingle .sidebar button:hover {
-  -webkit-transform: translateY(-0.25rem);
-          transform: translateY(-0.25rem);
+  transform: translateY(-0.25rem);
 }
-
 .coursesSingle .sidebar button:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .coursesSingle .coursesField {
   height: 100%;
   padding: 3rem;
   background-color: #f3f8ff;
 }
-
 .coursesSingle .coursesField .icon {
   color: #333366;
   font-size: 0.9rem;
   margin-left: 1.2rem;
   cursor: pointer;
 }
-
 .coursesSingle .coursesField .icon:last-child {
   margin-left: 0.7rem;
 }
-
 .coursesSingle .coursesField__data {
   margin-bottom: 2rem;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-weight: 600;
   color: #333366;
 }
-
 .coursesSingle .coursesField__data h3 {
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
-
 .coursesSingle .coursesField__data li {
   font-size: 1.1rem;
   background-color: white;
@@ -3772,44 +2971,29 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 0.3rem 0.7rem;
   margin-bottom: 0.3rem;
 }
-
 .coursesSingle .coursesField button {
   background-color: #03506f;
   padding: 0 0.5rem;
   color: white;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
-  -webkit-box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .coursesSingle .coursesField button:hover {
-  -webkit-transform: translateY(-0.15rem);
-          transform: translateY(-0.15rem);
+  transform: translateY(-0.15rem);
 }
-
 .coursesSingle .coursesField button:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .coursesSingle .coursesField__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
 }
-
 .coursesSingle .coursesField__section {
   background-color: #dae6eb;
   border-radius: 3px;
@@ -3817,82 +3001,58 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 2rem;
   border: 1px solid #b6c2c7;
 }
-
 .coursesSingle .coursesField__section .lecture {
   margin-bottom: 1rem;
   margin-top: 1rem;
   background-color: #007965;
   font-size: 1rem;
 }
-
 .coursesSingle .coursesField__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 0.5rem;
 }
-
 .coursesSingle .coursesField__group label {
   font-size: 1.1rem;
   color: #333366;
   font-weight: 600;
 }
-
 .coursesSingle .coursesField__group input {
   padding: 0.5rem 1rem;
   color: #333366;
   font-size: 1rem;
   border-radius: 3px;
 }
-
 .coursesSingle .coursesField__group input:focus {
   outline: none;
   background-color: #ebfeff;
 }
-
 .coursesSingle .coursesField__group .coursesField__input__edit {
   background-color: #e7e7e7;
 }
-
 .coursesSingle .coursesField__group h3 {
   font-size: 1.1rem;
   font-weight: 600;
   color: #333366;
   margin-bottom: 0.5rem;
 }
-
 .coursesSingle .coursesField__lecture {
   padding: 0.4rem 2rem;
   border-radius: 3px;
   background-color: #c3d9db;
   margin-bottom: 2rem;
 }
-
 .coursesSingle .coursesField__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .coursesSingle .coursesField__form__edit {
   border: 1px solid #333366;
   padding: 1rem;
   margin: 0.5rem 0;
 }
-
 .coursesSingle .coursesField__file {
   width: 0.1px;
   height: 0.1px;
@@ -3901,7 +3061,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: absolute;
   z-index: -1;
 }
-
 .coursesSingle .coursesField__file + label {
   width: 100%;
   font-size: 1.05em;
@@ -3909,20 +3068,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 0.5rem 1.2rem;
   background-color: white;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-radius: 3px;
 }
-
 .coursesSingle .coursesField__file + label span:first-child {
   color: #a4a1a1;
 }
-
 .coursesSingle .coursesField__file + label span:last-child {
   font-weight: 600;
   padding-left: 0.5rem;
@@ -3930,12 +3083,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-left: 2px solid #333366;
   color: #333366;
 }
-
 .coursesSingle .coursesField__file:focus + label {
   background-color: #ebfeff;
   outline: none;
 }
-
 .coursesSingle .coursesField .save {
   background-color: #ff9900;
   padding: 0.1rem 0.5rem;
@@ -3948,18 +3099,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
   padding: 3rem 8.2rem 6.75rem;
 }
-
 .instructors__content h2 {
   font-weight: 600;
   font-size: 26px;
   margin-bottom: 1.5rem;
 }
-
 .instructors__content ul {
   color: #333366;
   list-style: inside;
 }
-
 .instructors__content li {
   font-weight: normal;
   font-size: 18px;
@@ -3975,44 +3123,35 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-style: normal;
   color: #333366;
 }
-
 .header__instructor__container h1 {
   margin-left: 43%;
   font-weight: bold;
   font-size: 32px;
 }
-
 .header__instructor__container p {
   margin-left: 43%;
   font-weight: 600;
   font-size: 26px;
   margin-bottom: 3rem;
 }
-
 .header__instructor__link, .header__instructor__link:link, .header__instructor__link:visited {
   display: inline-block;
   font-size: 18px;
   text-decoration: none;
   color: white;
   background-color: #ff9900;
-  -webkit-box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
-          box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
+  box-shadow: 0px 0px 18px rgba(255, 153, 0, 0.6);
   border-radius: 4px;
   text-align: center;
   padding: 0.6rem 3rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin-left: 43%;
 }
-
 .header__instructor__link:hover {
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
 }
-
 .header__instructor__link:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .process__container {
@@ -4020,11 +3159,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-style: normal;
   padding: 0 8.2rem 6.75rem;
 }
-
 .process__wrapper {
   position: relative;
 }
-
 .process__wrapper h1 {
   font-weight: 600;
   font-size: 32px;
@@ -4032,7 +3169,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #5d30db;
   margin-bottom: 4.2rem;
 }
-
 .process__dotes {
   border-style: none none dotted;
   border-color: rgba(51, 51, 102, 0.45);
@@ -4043,26 +3179,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   left: 27.5%;
   z-index: 5;
 }
-
 .process__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 1rem 3rem;
   z-index: 100;
   position: relative;
 }
-
 .process__box h3 {
   font-size: 18px;
   color: #333366;
@@ -4070,7 +3195,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-weight: 600;
   text-align: center;
 }
-
 .process__box span {
   font-weight: 600;
   font-size: 38px;
@@ -4078,11 +3202,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 3.6rem;
   padding: 2rem 3rem;
   border-radius: 50%;
-  -webkit-box-shadow: 2px 4px 25px rgba(54, 54, 54, 0.12);
-          box-shadow: 2px 4px 25px rgba(54, 54, 54, 0.12);
+  box-shadow: 2px 4px 25px rgba(54, 54, 54, 0.12);
   background-color: white;
 }
-
 .process__box p {
   text-align: center;
   color: #333366;
@@ -4092,29 +3214,19 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .pricing__row {
   margin-bottom: 10rem;
 }
-
 .pricing__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 8rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .pricing__box h1 {
   font-family: "Open Sans", sans-serif;
   color: #333366;
   font-size: 3rem;
   font-weight: bold;
 }
-
 .pricing__dropdown p {
   font-family: "Open Sans", sans-serif;
   color: #333366;
@@ -4122,108 +3234,71 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 1.125rem;
   margin-bottom: 0.4rem;
 }
-
 .pricing__card {
   font-family: "Open Sans", sans-serif;
   margin: 0 1rem 3rem;
   background-color: #ffffff;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.25);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
 }
-
 .pricing__active__card {
-  -webkit-transform: scale(1.2, 1.3);
-          transform: scale(1.2, 1.3);
+  transform: scale(1.2, 1.3);
 }
-
 .pricing__tarif {
   background-color: #5d30db;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 1.5rem;
   font-style: normal;
   font-weight: bold;
   font-size: 1.75rem;
   color: #ffffff;
 }
-
 .pricing__content {
   font-style: normal;
   font-weight: normal;
   font-size: 22.9687px;
   padding: 1.25rem 3.875rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .pricing__price {
   padding: 1.25rem 3.875rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: relative;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   color: #202020;
 }
-
 .pricing__price span:nth-child(1) {
   position: absolute;
   top: 16%;
   left: 23%;
 }
-
 .pricing__price span:nth-child(2) {
   font-size: 69.1743px;
   line-height: 94px;
   color: #333366;
   font-weight: bold;
 }
-
 .pricing__price span:nth-child(4) {
   position: absolute;
   top: 19%;
   left: 52%;
 }
-
 .pricing__button__box {
   padding: 0 4rem;
 }
-
 .pricing__button, .pricing__button:link, .pricing__button:visited {
   display: block;
   text-align: center;
@@ -4236,57 +3311,44 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border: 2px solid #5d30db;
   padding: 0.5rem 0.4rem;
   border-radius: 6px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .pricing__button:hover {
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
-  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.3rem);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
 }
-
 .pricing__button:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem);
 }
-
 .pricing__active__button, .pricing__active__button:link, .pricing__active__button:visited {
   background: #ff9900;
   color: #ffffff;
   border: none;
 }
-
 .pricing__details__box {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   margin: 1rem;
 }
-
 .pricing__details__box h3 {
   font-size: 18px;
   color: #202020;
   margin-bottom: 0.7rem;
 }
-
 .pricing__details__list {
   list-style: none;
 }
-
 .pricing__details__item {
   margin-bottom: 0.5rem;
   font-size: 14px;
   color: #333366;
 }
-
 .pricing__details__item .check {
   font-size: 14px;
   color: #333366;
   margin-right: 0.4rem;
 }
-
 .pricing__details__item .check__gold {
   font-size: 14px;
   color: #ff9900;
@@ -4309,15 +3371,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .about .promo__short__video {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     padding: 0 2rem;
   }
@@ -4350,7 +3406,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 3.5rem;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .about .promo__box {
     background-color: transparent;
@@ -4387,7 +3442,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 3rem;
   }
 }
-
 @media only screen and (max-width: 30em) {
   .about .promo__box {
     padding: 3rem 2rem;
@@ -4405,9 +3459,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
   .about .instructors {
     padding: 4rem 3.7rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .about .instructors h1 {
     font-size: 2.5rem;
@@ -4425,13 +3477,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 2.5rem;
   }
 }
-
 @media only screen and (max-width: 75em) {
   .contact {
     padding: 5rem 7rem;
   }
 }
-
 @media only screen and (max-width: 62em) {
   .contact {
     padding: 4rem 5rem;
@@ -4446,7 +3496,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin: 0rem 0 3rem;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .contact {
     padding: 3rem 3rem;
@@ -4477,7 +3526,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 22px;
   }
 }
-
 @media only screen and (max-width: 26.8em) {
   .contact {
     padding: 2rem 1rem;
@@ -4505,7 +3553,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 20px;
   }
 }
-
 @media only screen and (max-width: 28.75em) {
   .instructor__application .form__wrapper {
     padding: 1.5rem 0.5rem;
@@ -4524,6 +3571,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 14px;
     margin-bottom: 1rem;
   }
+
   .signInPage .form__wrapper {
     padding: 1.5rem 0.5rem;
   }
@@ -4557,7 +3605,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 14px !important;
   }
 }
-
 @media only screen and (max-width: 62em) {
   .courses .introduction__container {
     padding: 0 0 1rem;
@@ -4597,7 +3644,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 18px;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .courses .introduction__h3 {
     font-size: 14px;
@@ -4627,7 +3673,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 14px;
   }
 }
-
 @media only screen and (max-width: 75em) {
   .instructorsPage .header__instructor__container {
     padding: 7.9rem 4rem 12.2rem;
@@ -4639,7 +3684,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 0 4rem 6.75rem;
   }
 }
-
 @media only screen and (max-width: 62em) {
   .instructorsPage .header__instructor__container {
     padding: 8rem;
@@ -4666,7 +3710,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     display: none;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .instructorsPage .header__instructor__container {
     padding: 6rem 4rem;
@@ -4700,7 +3743,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 1rem 2rem;
   }
 }
-
 @media only screen and (max-width: 26.8em) {
   .instructorsPage .header__instructor__container {
     padding: 4rem 2rem;
@@ -4731,7 +3773,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-bottom: 2.2rem;
   }
 }
-
 @media only screen and (max-width: 75em) {
   .pricing__content {
     padding: 1.25rem 1.5rem;
@@ -4740,20 +3781,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 1.25rem 1.5rem;
   }
 }
-
 @media only screen and (max-width: 62em) {
   .pricing__row {
     margin-bottom: 1rem;
   }
   .pricing__box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-bottom: 3rem;
   }
   .pricing__active__card {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   .pricing__content {
     font-size: 22.9687px;
@@ -4769,7 +3806,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 26%;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .pricing__box {
     padding: 0 1rem;
@@ -4787,7 +3823,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 1.25rem 2rem;
   }
 }
-
 @media only screen and (max-width: 25em) {
   .pricing__tarif {
     font-size: 1.3rem;
@@ -4812,7 +3847,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-bottom: 2.5rem;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .purchase-table .purchase-history {
     font-weight: bold;
@@ -4838,7 +3872,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     display: none;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .my-learning {
     padding: 0;
@@ -4857,35 +3890,23 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin: 0.8rem auto 1.2rem auto;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .my-cart .app-header {
     padding: 1rem 0.5rem;
   }
   .my-cart .app-header .nav-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 1rem auto;
   }
   .my-cart .app-header .nav-box .content-h2 {
     margin-bottom: 0.5rem;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .notification .nav-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .notification .nav-block .content-h1 {
     margin-bottom: 0.5rem;
@@ -4900,7 +3921,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 16px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .userprofile-container {
     padding: 0 1rem !important;
@@ -4967,7 +3987,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     line-height: 25px;
   }
 }
-
 .greatsoft-typography img {
   height: 70%;
   width: 75%;
@@ -4979,16 +3998,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
     display: none;
   }
 }
-
 .section-1-wrapper {
   position: relative;
   padding: 0 137px;
   background: #f3f8ff;
 }
-
 .section-1-wrapper::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -5%;
   right: -5%;
   width: 23%;
@@ -4996,10 +4013,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: url("~assets/images/shape1.png");
   background-repeat: no-repeat;
 }
-
 .section-1-wrapper::after {
   position: absolute;
-  content: '';
+  content: "";
   top: -8%;
   left: 0%;
   width: 20%;
@@ -5007,7 +4023,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: url("~assets/images/shape.png");
   background-repeat: no-repeat;
 }
-
 .section-1-wrapper .text-h1 {
   font-family: Roboto;
   font-style: normal;
@@ -5016,30 +4031,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 100%;
   color: #333366;
 }
-
 .section-1-wrapper .man-image {
   z-index: 10;
-  -webkit-transform: translate(-8%, -10%);
-          transform: translate(-8%, -10%);
+  transform: translate(-8%, -10%);
 }
-
 .section-1-wrapper .content {
   position: relative;
   z-index: 10;
   margin-top: 6%;
   margin-left: 4%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 2rem 2rem;
 }
-
 .section-1-wrapper .content::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -5049,9 +4055,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 4px 80px 4px 25px;
   z-index: -1;
 }
-
 .section-1-wrapper .content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4%;
   left: -6%;
@@ -5062,7 +4067,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 4px 80px 4px 25px;
   z-index: -1;
 }
-
 .section-1-wrapper .content-title {
   font-family: Oswald;
   font-style: normal;
@@ -5072,7 +4076,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #ffffff;
   margin-bottom: 1rem;
 }
-
 .section-1-wrapper .content-context {
   font-family: Open Sans;
   font-style: normal;
@@ -5081,17 +4084,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 107.5%;
   color: #333366;
 }
-
 @media only screen and (max-width: 80em) {
   .section-1-wrapper {
     padding: 0 100px;
   }
   .section-1-wrapper .man-image {
-    -webkit-transform: translate(-38%, 12%) scale(0.8);
-            transform: translate(-38%, 12%) scale(0.8);
+    transform: translate(-38%, 12%) scale(0.8);
   }
 }
-
 @media only screen and (max-width: 61.9em) {
   .section-1-wrapper .text-h1 {
     font-size: 55px;
@@ -5101,7 +4101,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 40px;
   }
 }
-
 @media only screen and (min-width: 37.5em) and (max-width: 45.6em) {
   .section-1-wrapper {
     padding: 0 80px;
@@ -5113,7 +4112,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 35px;
   }
 }
-
 @media only screen and (max-width: 37.5em) {
   .section-1-wrapper {
     padding: 0 50px;
@@ -5132,11 +4130,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 1rem 1rem;
   }
   .section-1-wrapper .man-image {
-    -webkit-transform: translate(-38%, 12%) scale(0.9);
-            transform: translate(-38%, 12%) scale(0.9);
+    transform: translate(-38%, 12%) scale(0.9);
   }
 }
-
 @media only screen and (max-width: 27.5em) {
   .section-1-wrapper .content::after {
     width: 230px;
@@ -5147,8 +4143,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     height: 200px;
   }
   .section-1-wrapper .man-image {
-    -webkit-transform: translate(-30%, 22%) scale(0.9);
-            transform: translate(-30%, 22%) scale(0.9);
+    transform: translate(-30%, 22%) scale(0.9);
     margin-bottom: 10%;
   }
 }
@@ -5159,10 +4154,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 0 137px;
   background: #f3f8ff;
 }
-
 .section-2-wrapper::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 70px;
   height: 70px;
   bottom: -5%;
@@ -5170,13 +4164,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-radius: 50%;
   background: #64edbf;
 }
-
 .section-2-wrapper .video-container {
   position: relative;
 }
-
 .section-2-wrapper .video-container::before {
-  content: '';
+  content: "";
   height: 30%;
   width: 30%;
   border: 8.09296px solid #5d30db;
@@ -5186,14 +4178,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
   right: -1rem;
   z-index: 5;
 }
-
 .section-2-wrapper .video-wrapper {
   border-radius: 69.3682px 6.93682px 6.93682px 6.93682px;
   overflow: hidden;
 }
-
 .section-2-wrapper .video-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url("~assets/images/dotes.png");
   height: 34%;
@@ -5204,9 +4194,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .section-2-wrapper .video-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 30%;
   width: 30%;
@@ -5215,16 +4204,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 2.6rem;
   left: -1.3rem;
 }
-
 .section-2-wrapper .video-wrapper .video-js {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 30;
   position: relative;
 }
-
 .section-2-wrapper .video-wrapper .video-js::after {
-  content: '' !important;
+  content: "" !important;
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -5232,7 +4219,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   height: 100% !important;
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 .section-2-wrapper .text-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -5241,7 +4227,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 38px;
   color: #ff9900;
 }
-
 .section-2-wrapper .text-h1-span {
   font-size: 29.7895px;
   font-weight: 700;
@@ -5250,38 +4235,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 @media only screen and (max-width: 1055px) {
   .section-2-wrapper .row-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .section-2-wrapper {
     padding: 1rem 1rem;
   }
   .section-2-wrapper .context {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .section-2-wrapper .context .text-h1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     justify-self: center;
     text-align: center;
     font-size: 26px;
@@ -5295,7 +4264,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin: 0;
   }
 }
-
 .section-3 {
   height: 100%;
   position: relative;
@@ -5303,19 +4271,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding-bottom: 2rem;
   background: #f3f8ff;
 }
-
 .section-3 .image {
   width: 80%;
   margin: auto;
 }
-
 .section-3 .row:last-child .circle::before {
   display: none;
 }
-
 .section-3::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 15%;
   left: -10%;
   width: 303px;
@@ -5323,20 +4288,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: rgba(100, 237, 191, 0.1);
   border-radius: 50%;
 }
-
 .section-3::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 30%;
   right: -2%;
   width: 70px;
   height: 70px;
   border: 11px solid #ff9900;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 50%;
 }
-
 .section-3 .header-title {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -5347,9 +4309,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
   position: relative;
 }
-
 .section-3 .header-title::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 40px;
   height: 40px;
@@ -5357,10 +4318,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: 30%;
   left: -5%;
   border: 7px solid #ff9900;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .section-3 .text-h1 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -5370,7 +4329,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
   color: #333366;
 }
-
 .section-3 .text-paragraph {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -5379,29 +4337,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 127.5%;
   color: #333366;
 }
-
 .section-3 .circle {
   background: #ffffff;
-  -webkit-box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15), inset 2px 2px 5px rgba(100, 106, 112, 0.15);
-          box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15), inset 2px 2px 5px rgba(100, 106, 112, 0.15);
+  box-shadow: inset -2px -2px 5px rgba(100, 106, 112, 0.15), inset 2px 2px 5px rgba(100, 106, 112, 0.15);
   border-radius: 50%;
   width: 103px;
   height: 103px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
-
 .section-3 .circle::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10%;
   left: 50%;
@@ -5410,23 +4359,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   height: 400px;
   z-index: -1 !important;
 }
-
 .section-3 .inner-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 70px;
   height: 70px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   border-radius: 50%;
   font-family: Open Sans;
@@ -5443,7 +4384,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     display: none;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .section-3 {
     padding: 1rem 1rem;
@@ -5458,21 +4398,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
     display: none;
   }
 }
-
 .section-4 {
   background: #5d30db;
   padding: 0 137px;
 }
-
 .section-4 .progress-google {
   background: transparent;
   width: 100%;
   height: 100%;
   position: relative;
 }
-
 .section-4 .progress-google::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 90%;
   height: 0%;
@@ -5480,42 +4417,32 @@ Due to the split circle of progress-left and progress right, we must use the ani
   left: 0;
   position: absolute;
   border-top: 8px dotted white;
-  -webkit-transform: rotate(-22.5deg) !important;
-          transform: rotate(-22.5deg) !important;
+  transform: rotate(-22.5deg) !important;
 }
-
 @media only screen and (max-width: 500px) {
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-36deg) !important;
-            transform: rotate(-36deg) !important;
+    transform: rotate(-36deg) !important;
   }
 }
-
 @-webkit-keyframes showUp {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
-
 @keyframes showUp {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 75%;
     height: 0%;
@@ -5523,21 +4450,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 0;
     position: absolute;
     border-top: 6px dotted white;
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
+    transform: rotate(-35deg);
   }
 }
-
 .section-4 .progress-google > div:nth-child(1) {
   width: 100px;
   height: 48px;
   background: #333366;
   position: relative;
 }
-
 .section-4 .progress-google > div:nth-child(1).is-active::after {
   position: absolute;
-  content: '';
+  content: "";
   top: -110px;
   left: 7px;
   width: 100px;
@@ -5550,7 +4474,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google > div:nth-child(1).is-active::after {
     top: -110px;
@@ -5559,7 +4482,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     height: 60px;
   }
 }
-
 .section-4 .progress-google > div:nth-child(1).is-active::before {
   -webkit-animation: showUp 1s ease-in-out alternate infinite;
           animation: showUp 1s ease-in-out alternate infinite;
@@ -5567,9 +4489,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-text-stroke: 0.5px white;
   -webkit-text-fill-color: orange;
 }
-
 .section-4 .progress-google > div:nth-child(1)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -58px;
   left: 41%;
@@ -5578,16 +4499,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: orange;
   border-radius: 50%;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google > div:nth-child(1)::after {
     top: -86px;
     left: 52%;
   }
 }
-
 .section-4 .progress-google > div:nth-child(1)::before {
-  content: 'Now';
+  content: "Now";
   position: absolute;
   top: -150px;
   left: 20%;
@@ -5598,25 +4517,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #e4dbff;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google > div:nth-child(1)::before {
     font-size: 14px;
     top: -140px;
   }
 }
-
 .section-4 .progress-google div:nth-child(2) {
   width: 109px;
   height: 94px;
   position: relative;
   background: #33337b;
 }
-
 .section-4 .progress-google div:nth-child(2).is-active::after {
   border-radius: 0;
   position: absolute;
-  content: '';
+  content: "";
   top: -120px;
   left: 12px;
   width: 100px;
@@ -5628,7 +4544,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(2).is-active::after {
     top: -108px;
@@ -5637,7 +4552,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     height: 60px;
   }
 }
-
 .section-4 .progress-google div:nth-child(2).is-active::before {
   -webkit-animation: showUp 1s ease-in-out alternate infinite;
           animation: showUp 1s ease-in-out alternate infinite;
@@ -5645,9 +4559,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-text-stroke: 0.5px white;
   -webkit-text-fill-color: orange;
 }
-
 .section-4 .progress-google div:nth-child(2)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -61px;
   left: 43%;
@@ -5656,16 +4569,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: orange;
   border-radius: 50%;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(2)::after {
     top: -76px;
     left: 40%;
   }
 }
-
 .section-4 .progress-google div:nth-child(2)::before {
-  content: 'Good';
+  content: "Good";
   position: absolute;
   top: -160px;
   left: 20%;
@@ -5676,25 +4587,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #e4dbff;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(2)::before {
     font-size: 14px;
     top: -130px;
   }
 }
-
 .section-4 .progress-google div:nth-child(3) {
   width: 109px;
   height: 138px;
   background: #383897;
   position: relative;
 }
-
 .section-4 .progress-google div:nth-child(3).is-active::after {
   border-radius: 0;
   position: absolute;
-  content: '';
+  content: "";
   top: -120px;
   left: 12px;
   width: 100px;
@@ -5706,7 +4614,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(3).is-active::after {
     top: -105px;
@@ -5715,7 +4622,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     height: 60px;
   }
 }
-
 .section-4 .progress-google div:nth-child(3).is-active::before {
   -webkit-animation: showUp 1s ease-in-out alternate infinite;
           animation: showUp 1s ease-in-out alternate infinite;
@@ -5723,9 +4629,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-text-stroke: 0.5px white;
   -webkit-text-fill-color: orange;
 }
-
 .section-4 .progress-google div:nth-child(3)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -66px;
   left: 42%;
@@ -5734,16 +4639,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: orange;
   border-radius: 50%;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(3)::after {
     top: -68px;
     left: 25%;
   }
 }
-
 .section-4 .progress-google div:nth-child(3)::before {
-  content: 'Just done';
+  content: "Just done";
   position: absolute;
   top: -160px;
   left: 20%;
@@ -5754,7 +4657,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #e4dbff;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(3)::before {
     top: -128;
@@ -5762,18 +4664,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
     font-size: 14px;
   }
 }
-
 .section-4 .progress-google div:nth-child(4) {
   width: 109px;
   height: 176px;
   background: #292996;
   position: relative;
 }
-
 .section-4 .progress-google div:nth-child(4).is-active::after {
   border-radius: 0;
   position: absolute;
-  content: '';
+  content: "";
   top: -133px;
   left: 12px;
   width: 100px;
@@ -5785,7 +4685,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(4).is-active::after {
     top: -110px;
@@ -5794,7 +4693,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     height: 65px;
   }
 }
-
 .section-4 .progress-google div:nth-child(4).is-active::before {
   -webkit-animation: showUp 1s ease-in-out alternate infinite;
           animation: showUp 1s ease-in-out alternate infinite;
@@ -5802,9 +4700,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-text-stroke: 0.5px white;
   -webkit-text-fill-color: orange;
 }
-
 .section-4 .progress-google div:nth-child(4)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -71px;
   left: 28.5%;
@@ -5813,16 +4710,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: orange;
   border-radius: 50%;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(4)::after {
     top: -78px;
     left: 35%;
   }
 }
-
 .section-4 .progress-google div:nth-child(4)::before {
-  content: 'Already';
+  content: "Already";
   position: absolute;
   top: -160px;
   left: 20%;
@@ -5833,25 +4728,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #e4dbff;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(4)::before {
     font-size: 14px;
     left: 0;
   }
 }
-
 .section-4 .progress-google div:nth-child(5) {
   width: 115px;
   height: 230px;
   background: #202084;
   position: relative;
 }
-
 .section-4 .progress-google div:nth-child(5).is-active::after {
   border-radius: 0;
   position: absolute;
-  content: '';
+  content: "";
   top: -115px;
   left: 0;
   width: 100%;
@@ -5863,7 +4755,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 @media only screen and (max-width: 900px) {
   .section-4 .progress-google div:nth-child(5).is-active::after {
     top: -100px;
@@ -5871,7 +4762,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     height: 70px;
   }
 }
-
 .section-4 .progress-google div:nth-child(5).is-active::before {
   -webkit-animation: showUp 1s ease-in-out alternate infinite;
           animation: showUp 1s ease-in-out alternate infinite;
@@ -5879,11 +4769,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   -webkit-text-stroke: 0.5px white;
   -webkit-text-fill-color: orange;
 }
-
 .section-4 .row .col-md-4 {
   color: #ffffff;
 }
-
 .section-4 .text-h1 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -5892,7 +4780,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #ffc700;
 }
-
 .section-4 .text-h2 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -5901,7 +4788,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #ffffff;
 }
-
 .section-4 .text-paragraph {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -5910,7 +4796,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 122.5%;
   color: #ffffff;
 }
-
 .section-4 .btn-quiz {
   background: #ff9900;
   border-radius: 3px;
@@ -5918,21 +4803,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #ffffff;
   outline: none;
 }
-
 .section-4 .btn-quiz:hover {
   color: #ff9900;
   background: #ffffff;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
 }
-
 .section-4 .btn-quiz:active {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
 }
-
 .section-4 .google-image {
   width: 204px;
   height: 214px;
@@ -5943,13 +4822,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 0 1rem;
   }
   .section-4 .row .col-md-4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
   .section-4 .btn-quiz {
@@ -5986,7 +4860,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     background: #202084;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .section-4 {
     padding: 0 0;
@@ -6021,20 +4894,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
     background: #202084;
   }
 }
-
 .section-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
   padding-right: 137px;
   padding-left: 137px;
 }
-
 .section-5 .cart {
   padding: 1.5rem 1.5rem;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
 .section-5 .text-h1 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6043,7 +4912,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 60px;
   color: #333366;
 }
-
 .section-5 .text-h2 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6052,7 +4920,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 30px;
   color: #333366;
 }
-
 .section-5 .text-paragraph {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6060,7 +4927,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 12px;
   line-height: 21px;
 }
-
 .section-5 .btn-know-more {
   background: #5d30db;
   border-radius: 4px;
@@ -6078,7 +4944,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 3rem 3rem;
   }
 }
-
 .section-6 {
   background: #5d30db;
   padding-top: 5rem !important;
@@ -6086,7 +4951,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   position: relative;
   overflow: hidden;
 }
-
 .section-6 .image-ellipse {
   position: absolute;
   width: 464px;
@@ -6096,7 +4960,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-image: url("~assets/images/Ellipse.png");
   background-repeat: no-repeat;
 }
-
 .section-6 .text-h1 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6106,7 +4969,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
   color: #ffffff;
 }
-
 .section-6 .text-paragraph {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6116,7 +4978,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
   color: #ffffff;
 }
-
 .section-6 .btn-outline-light {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6135,12 +4996,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
     display: none;
   }
 }
-
 .section-7 {
   min-height: 100vh;
   /* for temporary height */
 }
-
 .section-7 .text-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -6150,46 +5009,38 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: center;
   color: #333366;
 }
-
 .section-7 .text-h1-rotate {
-  font-family: 'Londrina Outline', cursive;
+  font-family: "Londrina Outline", cursive;
   font-style: normal;
   color: #ccc;
   font-weight: 400;
   font-size: 100px;
   line-height: 136px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .app-footer {
   background: #f3f8ff;
   height: 100%;
 }
-
 @media only screen and (max-width: 1100px) {
   .app-footer {
     padding: 30px 30px;
   }
 }
-
 .app-footer .map-yandex {
   position: relative;
   width: 320px;
   height: 320px;
 }
-
 @media only screen and (max-width: 990px) {
   .app-footer .map-yandex {
-    -webkit-box-flex: 1 !important;
-        -ms-flex: 1 100% !important;
-            flex: 1 100% !important;
+    flex: 1 100% !important;
     border-radius: 0;
     width: 90%;
     margin: 1rem auto;
   }
 }
-
 .app-footer .footer-map {
   width: 100%;
   height: 100%;
@@ -6201,7 +5052,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: -50%;
   left: -10%;
 }
-
 @media only screen and (max-width: 990px) {
   .app-footer .footer-map {
     border-radius: 0;
@@ -6209,12 +5059,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 0;
   }
 }
-
 .app-footer section.ymap-container {
   width: 100%;
   height: 100%;
 }
-
 .app-footer .text-h1 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6224,7 +5072,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
   margin: 1rem auto 2rem auto;
 }
-
 .app-footer ul li {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6233,7 +5080,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 21px;
   color: rgba(51, 51, 102, 0.6);
 }
-
 .app-footer .social-icons li a {
   width: 25.2px;
   height: 25.2px;
@@ -6247,30 +5093,24 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: #f3f8ff;
   height: 100%;
 }
-
 @media only screen and (max-width: 1100px) {
   .home-footer {
     padding: 30px 30px;
   }
 }
-
 .home-footer .map-yandex {
   position: relative;
   width: 320px;
   height: 320px;
 }
-
 @media only screen and (max-width: 990px) {
   .home-footer .map-yandex {
-    -webkit-box-flex: 1 !important;
-        -ms-flex: 1 100% !important;
-            flex: 1 100% !important;
+    flex: 1 100% !important;
     border-radius: 0;
     width: 90%;
     margin: 1rem auto;
   }
 }
-
 .home-footer .footer-map {
   width: 100%;
   height: 100%;
@@ -6282,7 +5122,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   top: -50%;
   left: -10%;
 }
-
 @media only screen and (max-width: 990px) {
   .home-footer .footer-map {
     border-radius: 0;
@@ -6290,12 +5129,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 0;
   }
 }
-
 .home-footer section.ymap-container {
   width: 100%;
   height: 100%;
 }
-
 .home-footer .text-h1 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6305,13 +5142,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: #333366;
   margin: 3rem auto 1rem auto;
 }
-
 @media only screen and (max-width: 990px) {
   .home-footer .text-h1 {
     margin: 1.2rem auto 1rem auto;
   }
 }
-
 .home-footer ul li {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -6320,7 +5155,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 21px;
   color: rgba(51, 51, 102, 0.6);
 }
-
 .home-footer .social-icons li a {
   width: 25.2px;
   height: 25.2px;
@@ -6332,42 +5166,31 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .app-navbar {
   padding: 0 110px;
-  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   min-height: 80px;
   z-index: 1;
   background: #fff;
 }
-
 .app-navbar *:active {
   outline: none;
 }
-
 .app-navbar *:focus {
   outline: none;
 }
-
 .app-navbar *:active:focus {
   outline: none;
 }
-
 @media only screen and (max-width: 600px) {
   .app-navbar {
     padding: 1rem 2rem;
   }
   .app-navbar .ul-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .app-navbar .navbar-brand:hover {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
-
 .app-navbar .dropdown-item {
   font-family: Open Sans;
   font-style: normal;
@@ -6376,11 +5199,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 212.18%;
   color: #333366 !important;
 }
-
 .app-navbar .dropdown-menu-right {
   min-width: 240px;
 }
-
 .app-navbar .user-fullname-text {
   font-family: Open Sans;
   font-style: normal;
@@ -6389,7 +5210,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 22px;
   color: #333366;
 }
-
 .app-navbar .user-email-text {
   font-family: Open Sans;
   font-style: normal;
@@ -6398,34 +5218,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 11px;
   color: #333366;
 }
-
 .app-navbar .btn-md {
   padding: 0 0 !important;
   border-radius: 50%;
 }
-
 .app-navbar .dropdown-menu {
   overflow: hidden;
   display: block !important;
   max-height: 0 !important;
   outline: none !important;
 }
-
 .app-navbar .dropdown-menu:active {
   outline: none !important;
 }
-
 .app-navbar .dropdown-menu:not(.show) {
   padding: 0;
   border: none;
 }
-
 .app-navbar .dropdown-menu.show {
-  -webkit-transition: max-height 0.7s ease-out;
   transition: max-height 0.7s ease-out;
   max-height: 800px !important;
 }
-
 .app-navbar a {
   font-family: Open Sans;
   font-style: normal;
@@ -6433,48 +5246,36 @@ Due to the split circle of progress-left and progress right, we must use the ani
   font-size: 18px;
   line-height: 25px;
   color: #333366 !important;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-
 .app-navbar a:hover,
 .app-navbar a:active {
   color: #ff9900 !important;
 }
-
 .app-navbar .nuxt-link-active {
   color: #ff9900 !important;
 }
-
 .app-navbar .btn-sign-up {
   background: #333366;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   padding: 0 0.5rem;
   margin-left: 0.6rem;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .app-navbar .btn-sign-up a {
   color: #ffffff !important;
   font-size: 17px;
 }
-
 .app-navbar .btn-sign-up:hover {
   background: #ffffff;
 }
-
 .app-navbar .btn-sign-up:hover a {
   color: #333366 !important;
 }
-
 .app-navbar .btn-sign-up:active a {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 @media only screen and (max-width: 600px) {
   .app-navbar .btn-sign-up {
     width: 30%;
@@ -6482,33 +5283,25 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-top: 0.5rem;
   }
 }
-
 .app-navbar .btn-login {
   border: 1px solid #333366;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   padding: 0 0.5rem;
-  -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
 }
-
 .app-navbar .btn-login a {
   font-size: 17px;
 }
-
 .app-navbar .btn-login .nuxt-link-active {
   color: #333366 !important;
 }
-
 .app-navbar .btn-login:hover {
   background: #333366;
 }
-
 .app-navbar .btn-login:hover a {
   color: #ffff !important;
 }
-
 @media only screen and (max-width: 600px) {
   .app-navbar .btn-login {
     width: 30%;
@@ -6521,14 +5314,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-left: -5px;
   }
   .btn-md:focus {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
-
 .page-leave-active,
 .page-enter-active {
-  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -6545,7 +5335,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 25px;
   color: #333366;
 }
-
 .purchase-table .header-content {
   font-family: Open Sans;
   font-style: normal;
@@ -6554,7 +5343,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 22px;
   color: #333366;
 }
-
 .purchase-table .purchase-history-column .context {
   font-family: Open Sans;
   font-style: normal;
@@ -6563,7 +5351,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 22px;
   color: #333366;
 }
-
 .purchase-table .purchase-history-column .all-courses-link {
   font-family: Open Sans;
   font-style: normal;
@@ -6572,7 +5359,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 22px;
   color: #5d30db;
 }
-
 .purchase-table .total-price {
   font-family: Open Sans;
   font-style: normal;
@@ -6581,7 +5367,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 22px;
   color: #333366;
 }
-
 .purchase-table .custom-text {
   font-family: Open Sans;
   font-style: normal;
@@ -6590,7 +5375,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 22px;
   color: #333366;
 }
-
 .purchase-table tr.data-row {
   height: 130px;
 }
@@ -6600,12 +5384,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: #f3f8ff;
   padding-bottom: 2rem;
 }
-
 .notification .app-header {
   height: 186px;
   background: #333366;
 }
-
 .notification .app-header .content-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -6620,44 +5402,35 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: #f3f8ff;
   min-height: 75vh;
 }
-
 .userprofile-container .showcase {
   min-height: 80vh;
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-
 .userprofile-container .showcase .left-bar {
   border: 1px solid rgba(51, 51, 102, 0.5);
   border-right: none;
   padding: 0 0;
 }
-
 .userprofile-container .showcase .left-bar .list-group .list-group-item {
   background: transparent;
   border: none;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .userprofile-container .showcase .left-bar .list-group .list-group-item:hover {
   padding-left: 1.8rem;
 }
-
 .userprofile-container .showcase .right-bar {
   border: 1px solid rgba(51, 51, 102, 0.5);
 }
-
 .userprofile-container .is-active {
   background: #5d30db !important;
   color: #fff !important;
 }
-
 .userprofile-container .top-header {
   border-bottom: 1px solid rgba(51, 51, 102, 0.5);
   min-height: 7rem;
 }
-
 .userprofile-container .top-header .content-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -6666,7 +5439,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 35px;
   color: #333366;
 }
-
 .userprofile-container .top-header .content-p {
   font-family: Open Sans;
   font-style: normal;
@@ -6675,7 +5447,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 25px;
   color: #333366;
 }
-
 .userprofile-container .text-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -6684,16 +5455,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 39px;
   color: #333366;
 }
-
 .userprofile-container .avatar-default {
   background: #333366;
 }
-
 .userprofile-container .user-profile .top-header {
   border-bottom: 1px solid rgba(51, 51, 102, 0.5);
   min-height: 7rem;
 }
-
 .userprofile-container .user-profile .top-header .content-h1 {
   font-family: Open Sans;
   font-style: normal;
@@ -6702,7 +5470,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 35px;
   color: #333366;
 }
-
 .userprofile-container .user-profile .top-header .content-p {
   font-family: Open Sans;
   font-style: normal;
@@ -6711,12 +5478,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 25px;
   color: #333366;
 }
-
 .userprofile-container .user-profile .data-form {
   width: 70%;
   margin: 5% auto;
 }
-
 .userprofile-container .user-profile .data-form input {
   background: transparent;
   font-family: Open Sans;
@@ -6726,7 +5491,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 25px;
   color: rgba(51, 51, 102, 0.5);
 }
-
 .userprofile-container .user-profile .data-form .data-submit {
   background: #5d30db;
   border-radius: 4px;
@@ -6743,93 +5507,76 @@ Due to the split circle of progress-left and progress right, we must use the ani
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-23deg);
-            transform: rotate(-23deg);
+    transform: rotate(-23deg);
   }
 }
-
 @media only screen and (max-width: 1495px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-25deg);
-            transform: rotate(-25deg);
+    transform: rotate(-25deg);
   }
 }
-
 @media only screen and (max-width: 1090px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-27.5deg);
-            transform: rotate(-27.5deg);
+    transform: rotate(-27.5deg);
   }
 }
-
 @media only screen and (max-width: 1100px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-26deg);
-            transform: rotate(-26deg);
+    transform: rotate(-26deg);
   }
 }
-
 @media only screen and (max-width: 965px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-31deg);
-            transform: rotate(-31deg);
+    transform: rotate(-31deg);
     top: 43%;
   }
 }
-
 @media only screen and (max-width: 875px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-31deg);
-            transform: rotate(-31deg);
+    transform: rotate(-31deg);
     top: 20%;
   }
 }
-
 @media only screen and (max-width: 950px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-34deg);
-            transform: rotate(-34deg);
+    transform: rotate(-34deg);
     top: 42%;
     left: 0;
   }
 }
-
 @media only screen and (max-width: 355px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
+    transform: rotate(-20deg);
     top: 42%;
   }
 }
-
 @media only screen and (max-width: 385px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-35.5deg);
-            transform: rotate(-35.5deg);
+    transform: rotate(-35.5deg);
     top: 18%;
   }
   .section-4 .progress-google div:nth-child(1)::after {
@@ -6849,14 +5596,12 @@ Due to the split circle of progress-left and progress right, we must use the ani
     left: 41%;
   }
 }
-
 @media only screen and (max-width: 620px) {
   .section-4 .progress-google {
     position: relative;
   }
   .section-4 .progress-google::before {
-    -webkit-transform: rotate(-35.5deg);
-            transform: rotate(-35.5deg);
+    transform: rotate(-35.5deg);
     top: 18%;
   }
   .section-4 .progress-google div:nth-child(1)::after {
@@ -6875,5 +5620,4 @@ Due to the split circle of progress-left and progress right, we must use the ani
     top: -81px;
     left: 41%;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

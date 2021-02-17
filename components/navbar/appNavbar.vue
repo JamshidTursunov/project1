@@ -133,7 +133,9 @@
 
 <script>
 import Toast from '~/utils/toast.js'
+import LanguageSwitcher from '~/components/navbar/LanguageSwitcher'
 export default {
+  components: { LanguageSwitcher },
   mixins: [Toast],
   data() {
     return {

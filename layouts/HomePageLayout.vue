@@ -1,11 +1,20 @@
 <template>
   <div>
-    <app-navbar-1 />
+    <app-navbar />
     <Nuxt />
-    <navbar-bottom />
+    <navbarBottom />
     <scroll-up />
   </div>
 </template>
+
+<script>
+import appNavbar from '~/components/navbar/appNavbar.vue'
+import navbarBottom from '~/components/Footer/navbarBottom'
+export default {
+  components: { appNavbar, navbarBottom },
+  name: 'HomePageLayout'
+}
+</script>
 
 <style>
 *,

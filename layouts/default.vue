@@ -1,14 +1,20 @@
 <template>
   <div>
-    <app-navbar-1 />
+    <appNavbar />
     <Nuxt />
-    <app-footer />
-     <scroll-up />
+    <appFooter />
+    <scroll-up />
   </div>
 </template>
 
 <script>
+import appNavbar from '~/components/navbar/appNavbar'
+import appFooter from '~/components/Footer/appFooter'
 export default {
+  components: {
+    appNavbar,
+    appFooter,
+  },
   data() {
     return {}
   },

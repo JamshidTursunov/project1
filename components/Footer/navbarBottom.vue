@@ -44,7 +44,7 @@
         </ul>
       </div>
       <div class="y-map">
-        <y-map />
+        <ymap />
       </div>
     </div>
     <hr class="mb-4" />
@@ -89,6 +89,15 @@
     </div>
   </div>
 </template>
+
+<script>
+import ymap from '~/components/Footer/yMap'
+export default {
+  components: {
+    ymap
+  }
+}
+</script>
 
 <style scoped>
 .home-footer {

@@ -19,3 +19,17 @@
     </div>
   </div>
 </template>
+
+<script>
+import Table2 from './table2.vue'
+import VideoPlayer from './VideoPlayer.vue'
+
+export default {
+  name: 'section2',
+  components: {
+    Table2,
+    VideoPlayer
+  }
+}
+</script>
+    

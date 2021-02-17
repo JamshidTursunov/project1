@@ -1,5 +1,5 @@
 import en from '../lang/en-US'
-import ru from '../lang/ru-Ru'
+import ru from '../lang/ru-RU'
 import uz from '../lang/uz-UZ'
 
 export const I18N = {

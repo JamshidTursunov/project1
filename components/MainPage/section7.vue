@@ -19,8 +19,11 @@
 
 <script>
 import { mapGetters } from 'vuex'
-
+import vueperslides from '~/components/MainPage/vueperslides'
 export default {
+  components: {
+    vueperslides
+  },
   data() {
     return {}
   },
