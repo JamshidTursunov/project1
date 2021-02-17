@@ -74,9 +74,16 @@
 
 <script>
 import Toast from '~/utils/toast.js'
+import Input from '~/components/ControlFields/Input'
+import Button from '../ControlFields/Button.vue'
+
 export default {
   props: {},
   mixins: [Toast],
+  components: {
+    Input,
+    Button
+  },
   data() {
     return {
       userInfo: {

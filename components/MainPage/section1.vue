@@ -27,14 +27,14 @@
       <div    
         v-for="type in LangTypes"
         :key="type.id"
-        class="col-md-2 flex items-center my-4"
+        class="col-md-2 col-4 flex items-center flex-col md:flex-row my-4"
       >
         <img
           :src="require(`~/assets/images/langTypes/${type.image}.png`)"
           alt="...."
           class="w-20 h-20"
         />
-        <h1 class="mx-1 text-center logo-title">{{ type.name }}</h1>
+        <h1 class="mx-1 text-center logo-title mt-2 md:mt-0">{{ type.name }}</h1>
       </div>
     </div>
   </div>

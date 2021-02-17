@@ -61,9 +61,11 @@
 
 <script>
 import Button from '../ControlFields/Button.vue'
+import Input from '~/components/ControlFields/Input'
 import Toast from '~/utils/toast.js'
+import CheckCode from '~/components/Sign/checkCode'
 export default {
-  components: { Button },
+  components: { Button, Input, CheckCode },
   props: {},
   mixins: [Toast],
   data() {
