@@ -1,6 +1,5 @@
 <template>
   <section class="allCourses">
-    <Loader />
     <div class="container-fluid">
       <div
         v-for="(direction, i) in getAllCoursesData"

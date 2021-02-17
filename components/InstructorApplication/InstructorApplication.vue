@@ -33,7 +33,7 @@
         </label>
       </div>
       <Input
-        v-model="form.partifol"
+        v-model="form.portfolio"
         inputPlaceholder="Send link of your portfolio"
       />
       <Input
@@ -64,22 +64,22 @@ export default {
       form: {
         first_name: 'Jahongir',
         last_name: 'Tursunaliev',
-        phone_number: '+998903444468',
+        phone_number: '+998903444474',
         password: '23012001',
-        partifol: 'www.smth.com',
+        portfolio: 'www.smth.com',
         description: 'I am a developer',
         token: '',
-        resume: '',
       },
+      resume: '',
     }
   },
   methods: {
     valChange(event) {
       this.label = event.target.files[0].name
-      this.form.resume = event.target.files[0]
-      console.log(this.form.resume)
-      // this.resume = event.target.files[0]
-      // console.log(this.resume)
+      // this.form.resume = event.target.files[0]
+      // console.log(this.form.resume)
+      this.resume = event.target.files[0]
+      console.log(this.resume)
     },
 
     async getCode() {
@@ -117,15 +117,7 @@ export default {
 
       if (this.form.token != '' && this.form.token != null) {
         const formData = new FormData()
-        formData.append('first_name', this.form.first_name)
-        formData.append('last_name', this.form.last_name)
-        formData.append('phone_number', this.form.phone_number)
-        formData.append('password', this.form.password)
-        formData.append('partifol', this.form.partifol)
-        formData.append('description', this.form.description)
-        formData.append('resume', this.form.resume)
-        formData.append('token', this.form.token)
-        console.log(formData)
+        formData.append('resume', this.resume)
         await this.$axios
           .post('mentor/create/', formData)
           .then((res) => {

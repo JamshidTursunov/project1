@@ -1824,7 +1824,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .allCourses {
   padding: 5rem 8rem;
   background-color: #f3f8ff;
-  position: relative;
 }
 
 .allCourses__container {
