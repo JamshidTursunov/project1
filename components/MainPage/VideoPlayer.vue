@@ -45,7 +45,7 @@ export default {
       } else if (this.videoData2) {
         this.postImage = this.videoData2.image
         this.videoSrc = this.videoData2.video
-      } else if (this.getPromo) {
+      } else {
         this.postImage = this.getPromo.image
         this.videoSrc = this.getPromo.video
       }
