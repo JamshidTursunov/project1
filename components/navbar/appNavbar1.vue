@@ -39,6 +39,9 @@
         <b-nav-item :to="localePath('/contact-us')">
           {{ $t('navbar.ContactUs') }}</b-nav-item
         >
+        <b-nav-item :to="localePath('/instructor-page')">
+          {{ $t('navbar.Instructor') }}</b-nav-item
+        >
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto" v-if="$auth.loggedIn">

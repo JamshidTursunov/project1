@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="row flex justify-center mt-8">
-      <div    
+      <div
         v-for="type in LangTypes"
         :key="type.id"
         class="col-md-2 flex items-center my-4"

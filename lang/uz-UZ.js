@@ -6,7 +6,7 @@ export default {
     AboutUs: 'Biz haqimizda',
     Partner: "Hamkor bo'ling",
     ContactUs: "Biz bilan bog'laning",
-    logIn: 'Kirish',
+    Instructor: "O'qituvchi profili",
     signUp: "Ro'yxatdan o'tish",
   },
 

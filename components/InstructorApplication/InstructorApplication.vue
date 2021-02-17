@@ -64,84 +64,78 @@ export default {
       form: {
         first_name: 'Jahongir',
         last_name: 'Tursunaliev',
-        phone_number: '+998903444474',
+        phone_number: '+998904000011',
         password: '23012001',
         portfolio: 'www.smth.com',
         description: 'I am a developer',
         token: '',
+        resume: '',
       },
-      resume: '',
+      file: '',
     }
   },
   methods: {
     valChange(event) {
       this.label = event.target.files[0].name
-      // this.form.resume = event.target.files[0]
-      // console.log(this.form.resume)
-      this.resume = event.target.files[0]
-      console.log(this.resume)
+      this.file = event.target.files[0]
     },
 
     async getCode() {
-      await this.$axios
-        .post('user/send/code/', {
-          phone_number: this.form.phone_number,
-        })
-        .then((res) => {
-          console.log('[Sent code]', res.data.code)
-          this.$nextTick(() => {
-            this.$bvModal.show('modal-check-code')
+      try {
+        await this.$axios
+          .post('user/send/code/', {
+            phone_number: this.form.phone_number,
           })
-        })
-        .catch((err) => {
-          console.log('[GET CODE ERROR]', err)
-          this.showToast('danger', 'Xatolik', "Anketa to'gri to'ldirilmagan")
-        })
+          .then((res) => {
+            console.log('[Sent code]', res.data.code)
+            this.$nextTick(() => {
+              this.$bvModal.show('modal-check-code')
+            })
+          })
+      } catch (err) {
+        this.showToast('danger', 'Xatolik', "Anketa to'gri to'ldirilmagan")
+        console.log(err)
+      }
     },
     async checkCode(payload) {
-      await this.$axios
-        .post('user/check/code/', {
-          phone_number: this.form.phone_number,
-          code: payload,
-        })
-        .then((res) => {
-          console.log(res.data)
-          this.form.token = res.data.token
-          console.log(this.form.token)
-          console.log(this.form)
-        })
-        .catch((err) => {
-          console.log(err)
-          this.showToast('danger', 'Xatolik', 'Kod xato terilgan')
-        })
-
-      if (this.form.token != '' && this.form.token != null) {
-        const formData = new FormData()
-        formData.append('resume', this.resume)
+      try {
         await this.$axios
-          .post('mentor/create/', formData)
-          .then((res) => {
-            console.log(res.data)
-            // console.log('Final user/: ', res.data)
-            // this.$auth.loginWith('local', { data: this.form })
-            // this.$router.push('/')
-            // this.$store.dispatch('course/initToastShow', true)
+          .post('user/check/code/', {
+            phone_number: this.form.phone_number,
+            code: payload,
           })
-          .catch((err) => console.log('[USER ERROR]', err))
-        this.form = {
-          first_name: '',
-          last_name: '',
-          phone_number: '',
-          password: '',
-          resume: '',
-          partifol: '',
-          description: '',
-          token: '',
+          .then((res) => {
+            this.form.token = res.data.token
+          })
+
+        if (this.form.token != '' && this.form.token != null) {
+          const formData = new FormData()
+          formData.append('file', this.file)
+          const resResume = await this.$axios.post('mentor/resume/', formData)
+          this.form.resume = resResume.data.file
+          const resCreate = await this.$axios.post('mentor/create/', this.form)
+          console.log(resCreate.data)
+          this.$nextTick(() => {
+            this.$bvModal.hide('modal-check-code')
+          })
+          this.$router.push(this.localePath({ path: '/' }))
+          this.$store.dispatch('course/initToastShow', true)
+          this.form = {
+            first_name: '',
+            last_name: '',
+            phone_number: '',
+            password: '',
+            resume: '',
+            portfolio: '',
+            description: '',
+            token: '',
+          }
+          this.file = ''
         }
+      } catch (err) {
+        this.showToast('danger', 'Xatolik', 'Kod xato terilgan')
+        console.log(err)
       }
-      this.$nextTick(() => {
-        this.$bvModal.hide('modal-check-code')
-      })
     },
   },
 }

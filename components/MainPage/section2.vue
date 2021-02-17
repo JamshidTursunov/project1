@@ -22,8 +22,6 @@
 </template>
 <script>
 export default {
-  created() {
-    this.$axios.get('mainpage/').then((res) => console.log(res.data))
-  },
+  computed: {},
 }
 </script>

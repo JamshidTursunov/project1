@@ -6,6 +6,7 @@ export default {
     AboutUs: 'About us',
     Partner: 'Become partner',
     ContactUs: 'Contact us',
+    Instructor: 'Instructor profile',
     logIn: 'Log in',
     signUp: 'Sign up',
   },

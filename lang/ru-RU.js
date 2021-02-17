@@ -6,6 +6,7 @@ export default {
     Partner: 'Стать партнером',
     AboutUs: 'О нас',
     ContactUs: 'Связаться с нами',
+    Instructor: 'Профиль инструктора',
     logIn: 'Вход',
     signUp: 'Регистрация',
   },

@@ -2,12 +2,12 @@
   <div>
     <spinner v-if="isLoading" />
     <div v-else class="wrapper">
-      <section-1  />
-      <section-2  />
-      <section-3  />
-      <section-4  id="section_4" />
-      <section-5  :courses="allCourses" />
-      <section-6  v-if="!$auth.loggedIn" />
+      <section-1 />
+      <section-2 />
+      <section-3 />
+      <section-4 id="section_4" />
+      <section-5 :courses="allCourses" />
+      <section-6 v-if="!$auth.loggedIn" />
       <section-7 />
     </div>
   </div>
@@ -56,5 +56,4 @@ export default {
 .wrapper {
   overflow: hidden;
 }
-
 </style>
