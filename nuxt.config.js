@@ -89,19 +89,10 @@ export default {
   },
   auth: {
     strategies: {
-      local1: {
-        _scheme: 'local',
+      local: {
         endpoints: {
           login: { url: 'token/', method: 'post', propertyName: 'access' },
           user: { url: 'user/profile', method: 'get', propertyName: false },
-          logout: false,
-        },
-      },
-      local2: {
-        _scheme: 'local',
-        endpoints: {
-          login: { url: 'token/', method: 'post', propertyName: 'access' },
-          user: { url: 'mentor/profile', method: 'get', propertyName: false },
           logout: false,
         },
       },

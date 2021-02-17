@@ -88,22 +88,10 @@ export default {
   methods: {
     async userLogin() {
       try {
-        try {
-          const resUser = await this.$auth.loginWith('local1', {
-            data: this.userInfo,
-          })
-          console.log('[LOGIN RES]', resUser)
-        } catch (err) {
-          throw err
-        }
-        try {
-          const resInstructor = await this.$auth.loginWith('local2', {
-            data: this.userInfo,
-          })
-          console.log(resInstructor)
-        } catch (err) {
-          throw err
-        }
+        const resUser = await this.$auth.loginWith('local', {
+          data: this.userInfo,
+        })
+        console.log('[LOGIN RES]', resUser)
         this.showToast(
           'success',
           'Muvafaqiyatli',
