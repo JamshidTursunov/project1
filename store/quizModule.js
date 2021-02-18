@@ -1,5 +1,5 @@
 export const state = () => ({
-  totalPercentage: 0,
+  totalPercentage: -1,
   correctIndex: 0,
 })
 

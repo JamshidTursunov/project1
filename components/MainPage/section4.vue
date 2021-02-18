@@ -31,12 +31,7 @@
 
         <div class="col-md-12 flex items-end">
           <div class="google-image-wrap mt-16 flex-shrink">
-            <img
-            style="border:1px solid red;"
-            src="~assets/images/vector.png"
-            alt="..."
-            class="google-image flex-shrink"
-          />
+            <span :class="{'activeImage':quizPercentage === null}"></span>
           </div>
           <div class="progress-google flex flex-grow flex-shrink items-end">
             <div
@@ -65,10 +60,13 @@ export default {
     },
   },
   methods: {
-    determineLevel(payload) {
-      if (payload > -1 && payload <= 20) {
+    determineLevel() {
+      if(this.quizPercentage === null){
+        console.log('quizPercentage is null',this.quizPercentage)
+        return 
+      }else if(this.quizPercentage >=0 && this.quizPercentage <=20){
         this.isActive = 1
-      } else if (payload > 20 && payload <= 40) {
+      }else if (payload > 20 && payload <= 40) {
         this.isActive = 2
       } else if (payload > 40 && payload <= 60) {
         this.isActive = 3
@@ -80,7 +78,7 @@ export default {
     },
   },
   created() {
-    this.determineLevel(this.quizPercentage)
+    this.determineLevel()
   },
 }
 </script>
