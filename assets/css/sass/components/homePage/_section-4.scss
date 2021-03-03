@@ -83,7 +83,7 @@
     &::after {
       content: '';
       position: absolute;
-      top: -58px;
+      top: -105%;
       left: 41%;
       width: 15px;
       height: 15px;
@@ -148,8 +148,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -61px;
-      left: 43%;
+      top: -58%;
+      left: 38%;
       width: 15px;
       height: 15px;
       background: orange;
@@ -277,8 +277,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: -71px;
-      left: 28.5%;
+      top: -47%;
+      left: 48%;
       width: 15px;
       height: 15px;
       background: orange;

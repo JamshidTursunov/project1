@@ -4736,7 +4736,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google > div:nth-child(1)::after {
   content: "";
   position: absolute;
-  top: -58px;
+  top: -105%;
   left: 41%;
   width: 15px;
   height: 15px;
@@ -4806,8 +4806,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google div:nth-child(2)::after {
   content: "";
   position: absolute;
-  top: -61px;
-  left: 43%;
+  top: -58%;
+  left: 38%;
   width: 15px;
   height: 15px;
   background: orange;
@@ -4947,8 +4947,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .section-4 .progress-google div:nth-child(4)::after {
   content: "";
   position: absolute;
-  top: -71px;
-  left: 28.5%;
+  top: -47%;
+  left: 48%;
   width: 15px;
   height: 15px;
   background: orange;
