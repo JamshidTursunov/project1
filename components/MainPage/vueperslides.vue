@@ -11,9 +11,13 @@
     <vueper-slide class="cart-self" v-for="mentor in mentors" :key="mentor.id">
       <template v-slot:content>
         <div class="cart-block">
-          <img class="cart-image" :src="mentor.mentorImg" alt="..." />
+          <img
+            class="cart-image"
+            :src="require(`~/assets/images/cart-image-${mentor.imgId}.png`)"
+            alt="..."
+          />
           <div class="w-full flex justify-between items-center">
-            <p class="user-name">{{ mentor.user }}</p>
+            <p class="user-name">{{ mentor.name }}</p>
           </div>
           <div class="w-full flex justify-between items-center my-2">
             <div class="flex flex-wrap user-profession pb-1">
@@ -61,10 +65,60 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
 export default {
-  props: ['mentors'],
+  // props: ['mentors'],
   components: { VueperSlides, VueperSlide },
   data() {
     return {
+      mentors: [
+        {
+          imgId: '1',
+          name: 'John Doe',
+          services: ['director', 'head-leader'],
+          current_work: 'Google',
+          description:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id incidunt expedita, illo tempora ',
+        },
+        {
+          imgId: '2',
+          name: 'Alex Andrey',
+          services: ['director', 'head-leader'],
+          current_work: 'EPAM',
+          description:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id incidunt expedita, illo tempora ',
+        },
+        {
+          imgId: '3',
+          name: 'Mario Judo',
+          services: ['director', 'head-leader'],
+          current_work: 'Facebook',
+          description:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id incidunt expedita, illo tempora ',
+        },
+        {
+          imgId: '4',
+          name: 'Morgenshtern',
+          services: ['musician'],
+          current_work: 'Moscow media',
+          description:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id incidunt expedita, illo tempora ',
+        },
+        {
+          imgId: '1',
+          name: 'John Doe',
+          services: ['director', 'head-leader'],
+          current_work: 'Google',
+          description:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id incidunt expedita, illo tempora ',
+        },
+        {
+          imgId: '4',
+          name: 'John Doe',
+          services: ['director', 'head-leader'],
+          current_work: 'Google',
+          description:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem id incidunt expedita, illo tempora ',
+        },
+      ],
       myBreakPoints: {
         1350: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 3 },
         1140: { visibleSlides: 3, slideMultiple: 2, slideRatio: 1 / 2.5 },
