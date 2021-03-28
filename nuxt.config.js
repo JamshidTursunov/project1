@@ -1,6 +1,10 @@
 import { I18N } from './config'
 
 export default {
+  target: 'static',
+  router: {
+    base: '/test/',
+  },
   layoutTransition: 'layout',
   head: {
     title: 'GreateSoft_academy',
